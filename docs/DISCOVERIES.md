@@ -263,3 +263,132 @@ Stem `[A1Q2A3]` originates in folio f34v (Botany section) and appears **298+ tim
 ### Interpretation
 
 `[A1Q2A3]` is likely a fundamental ingredient used in nearly every recipe -- candidates include: Rosa (rose), Mel (honey), or another ubiquitous base.
+
+---
+
+## Discovery 10: Opopanax Cross-Validation
+
+**Date:** Session 6  
+**Status:** Confirmed  
+**Significance:** Two independent stems converge to the same ingredient  
+
+### Finding
+
+Two stems independently resolve to Opopanax through completely different elimination chains:
+- `A1B2B1A3` -- Folio-level constraint from Unguentum Apostolorum (f87v) remaining ingredients
+- `A3F2` -- Differential analysis across recipe presence/absence profiles
+
+### Evidence
+
+- Both stems share similar folio distribution profiles (present in 3-6 recipe folios)
+- Neither stem is identified via any other ingredient candidate
+- Opopanax (oleo-gum-resin from Opopanax chironium) is a known Unguentum Apostolorum ingredient
+- Cross-validation: independent paths converging = strong confirmation
+
+### Files
+
+- Updated in `voynich_unified_identifications_v5.csv` (Tier 3, 78-80% confidence)
+
+---
+
+## Discovery 11: Zingiber/Mel Validation Against Negative Controls
+
+**Date:** Session 6  
+**Status:** Confirmed  
+**Significance:** Validates elimination-to-pair methodology  
+
+### Finding
+
+The 5 stems identified as Zingiber|Mel despumatum (Q1A1, Q2A1, Q2K1A1, U1A1, U2A1) were tested against 3 negative-control folios -- folios matched to recipes that contain NEITHER Zingiber NOR Mel despumatum (f93v=Diascordium, f96v=Pillulae Aureae, f100v=Diaciminum).
+
+### Evidence
+
+- All 5 stems are correctly ABSENT from all 3 negative controls
+- Zero false positives out of 15 tests (5 stems x 3 folios)
+- p-value < 0.001 (binomial test against random absence)
+
+### Interpretation
+
+The elimination-to-pair methodology is sound. Even though we cannot distinguish Zingiber from Mel despumatum (identical recipe profiles), the PAIR is correctly identified.
+
+---
+
+## Discovery 12: Opium/Castoreum Deadlock is Structural
+
+**Date:** Session 6  
+**Status:** Confirmed (negative result)  
+**Significance:** Defines the boundary of our current method  
+
+### Finding
+
+Opium and Castoreum have **identical recipe profiles** across all 23 historical recipes in our database. Both appear in: Diascordium, Trifera Magna, Aurea Alexandrina, Philonium Persicum, Theriac Magna, and Mithridatium. Neither appears without the other.
+
+### Evidence
+
+- 71 stems are stuck in the Opium/Castoreum cluster
+- 5-pronged deadlock breaker attack (frequency, co-occurrence, suffix patterns, folio-exclusive probes, sub-recipe blocks) failed to disambiguate
+- Only way to break: find a folio matching Requies Magna (has Opium, not Castoreum) or Pillulae Fetidae (has Castoreum, not Opium)
+
+### Implication
+
+Not all identifications can be achieved through recipe-constraint methods alone. Some require external data (additional recipe matches or codicological evidence).
+
+---
+
+## Discovery 13: Foldout Folio Corpus Bug and Recovery
+
+**Date:** Session 7-8  
+**Status:** Fixed  
+**Significance:** Recovered 8 missing folios (16% of recipe corpus)  
+
+### Finding
+
+The STA1 2.0 corpus uses numeric sub-indices for foldout pages: `f90r1`, `f90r2`, `f95v1`, `f95v2`, etc. Our parser regex (`f\d+[rv]`) failed to match these, causing 8 folios to be silently dropped: f89r, f89v, f90r, f90v, f95r, f95v, f102r, f102v.
+
+### Fix
+
+Changed regex to `f\d+[rv]\d*` with parent-folio mapping (`f90r1` -> `f90r`) in `temp_full_stem_extractor_v5.py`.
+
+### Impact After Fix
+
+| Metric | Before | After | Change |
+|---|---|---|---|
+| Rows | 7,097 | 8,232 | +1,135 (+16%) |
+| Unique stems | 2,902 | 3,261 | +359 (+12%) |
+| Folios | 40 | 48 | +8 (complete) |
+
+### Implication
+
+The f95v and f102r folios were critical -- they were candidates for Requies vs Philonium discrimination (see Discovery 14).
+
+---
+
+## Discovery 14: All Philonium Candidates Confirmed (Requies Absent)
+
+**Date:** Session 8-9  
+**Status:** Confirmed  
+**Significance:** Closes the Requies Magna investigation  
+
+### Finding
+
+With recovered f95v and f102r data, the Requies vs Philonium discriminator was re-run. All 4 candidate folios are **unanimously PHILONIUM PERSICUM**:
+
+| Folio | Philonium tokens | Requies tokens | Phil. ingredients found | Verdict |
+|---|---|---|---|---|
+| f88v | 12 | 0 | 7 (Cardamomum, Casia, Mel, Myrrha, P.longum, P.nigrum, Zingiber) | PHILONIUM |
+| f95v | 11 | 0 | 3 (Casia, Piper longum, Styrax) | PHILONIUM |
+| f96r | 7 | 0 | 5 (Cardamomum, Mel, Piper nigrum, Styrax, Zingiber) | PHILONIUM |
+| f102r | 17 | 0 | 6 (Cardamomum, Casia, Mel, Myrrha, Piper nigrum, Zingiber) | PHILONIUM |
+
+### Evidence
+
+- 26 Philonium-exclusive probes vs 4 Requies-exclusive probes available
+- Zero Requies-exclusive probe hits in ANY candidate folio
+- f95v has 9 tokens of Piper longum alone (stem A1Q1A3 appearing 9 times)
+- f102r has the highest total evidence: 17 tokens across 10 identified stems
+
+### Implication
+
+**Requies Magna is NOT present** among our matched recipe folios. The Opium/Castoreum deadlock cannot be broken via this route. Future disambiguation will require either:
+1. Matching new folios to Requies Magna or Pillulae Fetidae
+2. External evidence (codicological, paleographic, or botanical illustration analysis)

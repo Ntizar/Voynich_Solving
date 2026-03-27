@@ -50,18 +50,22 @@ with open(os.path.join(BASE, 'zenodo_voynich', 'corpus', 'voynich_sta.txt'), 'r'
     for line in f:
         line = line.strip()
         
-        # Folio header line: <f87v>     <! $Q=O ...>
-        folio_header = re.match(r'^<(f\d+[rv])>\s', line)
+        # Folio header line: <f87v> or <f90r1> (foldout sub-pages)
+        folio_header = re.match(r'^<(f\d+[rv]\d*)>\s', line)
         if folio_header:
-            current_folio = folio_header.group(1)
+            raw_folio = folio_header.group(1)
+            # Map foldout sub-pages to parent: f90r1 -> f90r, f95v2 -> f95v
+            current_folio = re.sub(r'^(f\d+[rv])\d+$', r'\1', raw_folio)
             continue
         
-        # Content line: <f87v.1,@P0>      tokens...
-        line_match = re.match(r'^<(f\d+[rv])\.\d+,[^>]*>\s+(.*)', line)
+        # Content line: <f87v.1,@P0> or <f90r1.3,@P0> (foldout sub-pages)
+        line_match = re.match(r'^<(f\d+[rv]\d*)\.\d+,[^>]*>\s+(.*)', line)
         if not line_match:
             continue
         
-        line_folio = line_match.group(1)
+        raw_line_folio = line_match.group(1)
+        # Map foldout sub-pages to parent
+        line_folio = re.sub(r'^(f\d+[rv])\d+$', r'\1', raw_line_folio)
         content = line_match.group(2).strip()
         
         # Skip if not a recipe folio

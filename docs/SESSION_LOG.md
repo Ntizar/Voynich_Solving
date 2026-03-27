@@ -209,21 +209,154 @@
 
 ---
 
+## Session 6: Full Corpus Extraction and Deadlock Breaker
+
+### Work Done
+
+1. **Full Corpus Stem Extraction**
+   - Extracted ALL stems from all 48 recipe folios (not just shared ones)
+   - 7,097 rows, 2,902 unique stems across 40/48 folios
+   - Discovered 8 folios missing (parsing bug, see Session 8)
+   - Generated `voynich_all_recipe_folio_stems.csv`
+
+2. **Opopanax Identification**
+   - A1B2B1A3 and A3F2 independently resolve to Opopanax
+   - Cross-validated: two independent stems converge to same ingredient
+   - NOT yet added to v4c at end of session
+
+3. **Zingiber/Mel Validation**
+   - Tested against 3 negative-control folios (f93v, f96v, f100v)
+   - All 5 Zingiber|Mel stems correctly ABSENT from controls
+   - Validates the elimination-to-pair methodology
+
+4. **Opium/Castoreum Deadlock Confirmed**
+   - Structurally impossible to disambiguate with current recipe set
+   - Both ingredients appear in identical recipe profiles
+   - Need Requies Magna or Pillulae Fetidae folio match to break
+
+5. **Five-Pronged Deadlock Breaker**
+   - Script `temp_solver_v5_deadlock_breaker.py` with 5 attack approaches
+   - Frequency analysis, co-occurrence, suffix patterns, folio-exclusive probes, sub-recipe blocks
+   - Partial progress but deadlock holds for Opium/Castoreum
+
+### Scripts Written
+- `temp_full_stem_extractor_v5.py`
+- `temp_solver_v5_deadlock_breaker.py`
+
+---
+
+## Session 7: Requies vs Philonium Discriminator and GitHub
+
+### Work Done
+
+1. **Requies vs Philonium Discriminator**
+   - Built 5-approach discriminator using identified stems as diagnostic probes
+   - 26 Philonium-exclusive probes vs 4 Requies-exclusive probes
+   - Confirmed: f88v = PHILONIUM (12 tokens, 8 stems), f96r = PHILONIUM (7 tokens, 6 stems)
+   - f95v and f102r: UNDETERMINED due to corpus parsing bug (folios not in extracted data)
+
+2. **Critical Bug Discovery: 8 Missing Folios**
+   - Folios f90r, f90v, f95r, f95v, f102r, f102v not found in corpus extraction
+   - Root cause: foldout pages use sub-indices (f90r1, f90r2, etc.)
+   - Parser regex `^<(f\d+[rv])>` doesn't match `f90r1`
+   - Full diagnosis deferred to next session
+
+3. **GitHub Repository Created**
+   - `git init`, `.gitignore` configured
+   - Initial commit: 307 files
+   - `gh repo create Ntizar/Voynich_Solving --public`
+   - Pushed to origin/master
+   - Repository: https://github.com/Ntizar/Voynich_Solving
+
+### Scripts Written
+- `temp_requies_vs_philonium_v6.py`
+
+---
+
+## Session 8: Dashboard, Bug Fix, and Opopanax Integration
+
+### Work Done
+
+1. **Investigated Ntizar Design System**
+   - Found `design-system/ntizar.css` (1379 lines) -- "Liquid Glass UI" with Azul/Naranja palette
+   - Includes glassmorphism at 3 levels, cards, badges, progress bars, tooltips, SVG refraction filter
+   - Found `design-system/demo.html` as reference implementation
+
+2. **Fixed Corpus Parsing Bug**
+   - Root cause confirmed: foldout folios use numeric sub-indices
+   - f90r -> f90r1+f90r2, f90v -> f90v1+f90v2, f95r -> f95r1+f95r2, f95v -> f95v1+f95v2, f102r -> f102r1+f102r2, f102v -> f102v1+f102v2
+   - Fixed regex in `temp_full_stem_extractor_v5.py`: `f\d+[rv]` -> `f\d+[rv]\d*` with parent mapping
+   - +12 sub-folios recovered
+
+3. **Added Opopanax to v5 Identification Table**
+   - A1B2B1A3 = Opopanax (80%, Tier 3)
+   - A3F2 = Opopanax (78%, Tier 3)
+   - Updated `voynich_unified_identifications_v5.csv` (now 59 entries)
+
+4. **Built Comprehensive HTML Dashboard**
+   - Full visual dashboard using Ntizar CSS design system
+   - Sections: Overview stats, Identification table, Recipe matching, Folio-recipe heatmap, 5 Chart.js graphs, Folio viewer with voynich.nu images
+   - Interactive: filterable tables, tabbed views, clickable folio thumbnails
+   - Generated `dashboard_voynich.html`
+
+### Scripts Written/Modified
+- `temp_full_stem_extractor_v5.py` (regex fix)
+- `dashboard_voynich.html` (new)
+
+---
+
+## Session 9: Corpus Recovery and Philonium Confirmation
+
+### Work Done
+
+1. **Re-ran Fixed Corpus Extractor**
+   - `temp_full_stem_extractor_v5.py` executed with patched regex
+   - All 8 missing folios recovered: f89r, f89v, f90r, f90v, f95r, f95v, f102r, f102v
+   - Results: 8,232 rows (+1,135), 3,261 unique stems (+359), 48/48 folios (complete)
+   - Updated `voynich_all_recipe_folio_stems.csv`
+
+2. **Re-ran Requies vs Philonium Discriminator**
+   - Updated `temp_requies_vs_philonium_v6.py` to use v5 identifications
+   - With recovered f95v and f102r data, ALL 4 candidates confirmed PHILONIUM:
+     - f88v: Phil=12 tokens (7 ings) vs Req=0
+     - f95v: Phil=11 tokens (3 ings) vs Req=0 (previously UNDETERMINED)
+     - f96r: Phil=7 tokens (5 ings) vs Req=0
+     - f102r: Phil=17 tokens (6 ings) vs Req=0 (previously UNDETERMINED)
+   - Conclusion: Requies Magna is NOT present in our matched folios
+   - Opium/Castoreum deadlock cannot be broken via this route
+
+3. **Updated Documentation**
+   - `DISCOVERIES.md`: Added discoveries 10-14 (Opopanax, Zingiber/Mel validation, Opium/Castoreum deadlock, corpus bug, Philonium confirmation)
+   - `IDENTIFICATIONS.md`: Complete rewrite with all 58 v5 entries organized by tier
+   - `SESSION_LOG.md`: Added Session 9, updated summary statistics
+
+### Scripts Modified
+- `temp_requies_vs_philonium_v6.py` (updated to use v5 identifications)
+
+---
+
 ## Summary Statistics
 
 | Metric | Value |
 |---|---|
 | Total scripts written | 29 |
 | Total CSV files generated | 18 |
+| HTML dashboards | 1 (dashboard_voynich.html) |
 | Obsidian notes generated | 130+ |
-| Unique stems catalogued | 217 |
-| Recipe folios profiled | 47 |
+| Unique stems in corpus | 3,261 (recipe folios, post-recovery) |
+| Unique entity stems (Botany) | 217 |
+| Recipe folios profiled | 48 (complete) |
 | Historical recipes compiled | 23 |
 | Perfect recipe matches | 9 |
 | Strong recipe matches | 19 |
 | Confirmed identifications (Tier 1-2) | 8 (Galbanum, Crocus, Myrrha x6) |
-| Strong identifications (Tier 3) | 17 (Crocus x9, Rosa, Zingiber/Mel x5, Cinnamomum x2) |
+| Strong identifications (Tier 3) | 19 (Crocus x9, Rosa, Zingiber/Mel x5, Cinnamomum x2, Opopanax x2) |
 | Moderate identifications (Tier 4) | 23 (Amomum, Piper, Bdellium, Casia, Cardamomum, Styrax, Saccharum) |
-| Function words identified | 14 |
-| Unique ingredients identified | 18 (13 single + 5 in pairs) |
+| Function words identified | 8 |
+| Total identification entries | 58 |
+| Unique ingredients identified | 19 (13 single + 5 in pairs + Opopanax) |
 | Novel structural discoveries | 4 (suffix channel, vertical alignment, column schema, foreign keys) |
+| Total documented discoveries | 14 |
+| Deadlocks confirmed | 2 (Opium/Castoreum, Zingiber/Mel) |
+| Philonium folios confirmed | 4 (f88v, f95v, f96r, f102r) |
+| Requies Magna folios found | 0 |

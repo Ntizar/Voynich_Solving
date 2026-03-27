@@ -1,140 +1,207 @@
-# Stem Identifications -- Complete Reasoning Chains
+# Stem Identifications -- Complete Table and Reasoning Chains
 
-This document records every Voynich stem identification attempt, including confirmed results, partial results, and failed attempts. Each entry includes the full logical chain so future sessions can verify, refine, or refute.
+This document records every Voynich stem identification, organized by confidence tier. **Current version: v5 (58 entries, 19 unique ingredients + 8 function words).**
 
----
-
-## Confirmed Identifications
-
-### [K1K2A1] = Galbanum
-
-- **Confidence:** 99% (ALTA)
-- **Type:** Exclusive stem (single origin folio)
-- **Origin:** f17v (Botany section)
-- **Category:** ACTIVO (active pharmaceutical ingredient)
-- **Recipe appearances:** 19 instances across 17 recipe folios
-- **Matched recipes:** Unguentum Apostolorum, Diascordium, Theriac Magna
-
-**Reasoning chain:**
-
-1. Cross-consistency test shows K1K2A1 is categorized as ACTIVO in ALL 3 matched recipes (100% consistency)
-2. Constraint solver: intersect ACTIVO ingredients of Ung.Apostolorum AND Diascordium AND Theriac Magna
-3. Ung.Apost ACTIVO: {Aristolochia longa, Aristolochia rotunda, Opopanax, Galbanum, Bdellium, Verdigris, Litharge}
-4. Diascordium ACTIVO: {Scordium, Opium, Castoreum, Galbanum, Styrax, Bistorta}
-5. Theriac ACTIVO: {Opium, Trochisci de vipera, Squilla, Hedychium, Castoreum, ...20 total}
-6. Triple intersection = **{Galbanum}** -- the ONLY ingredient that is ACTIVO in all three
-7. Recipe profile match: Galbanum appears as ACTIVO in exactly {Ung.Apost, Diascordium, Theriac} and no other recipe in our database -- exact profile match
-
-**Verification:** Check folio f17v on voynich.nu for a plant resembling Ferula galbaniflua (umbelliferous plant with pinnate leaves, yielding milky resin).
-
-**What Galbanum is:** A yellow-brown gum-resin obtained from Ferula galbaniflua. Used in medieval medicine as an anti-inflammatory, wound healer, and antidote component. It is one of the 12 ingredients of Unguentum Apostolorum and one of the 64 ingredients of Theriac Magna.
+Last updated: Session 9
 
 ---
 
-### [K1A3] = Crocus (Saffron)
+## Summary
 
-- **Confidence:** 95% (ALTA)
+| Tier | Count | Description |
+|---|---|---|
+| 0 (Function Words) | 8 | Stems too ubiquitous for single ingredient |
+| 1 (Confirmed) | 2 | K1K2A1=Galbanum (99%), K1A3=Crocus (95%) |
+| 2 (High) | 6 | All Myrrha: A1Q2A1, D1A1, D1A1A3, Q1K1A1, A1Q1J1, T1J1A1B1A3 |
+| 3 (Strong) | 19 | Crocus x9, Rosa x1, Zingiber\|Mel x5, Cinnamomum x2, Opopanax x2 |
+| 4 (Moderate) | 23 | Amomum x3, Piper nigrum x1, Styrax x2, Piper longum x1, Bdellium x2, Casia x3, Cardamomum x8, Saccharum x1, Galanga\|Cubeba\|Nux moschata x2 |
+| **TOTAL** | **58** | **19 unique ingredients touched (13 single + 5 in pairs + Opopanax)** |
+
+---
+
+## Tier 0: Function Words
+
+These stems appear across too many recipes to correspond to any single ingredient. They are structural/grammatical elements of Voynichese.
+
+| Stem | Confidence | Source |
+|---|---|---|
+| C2A1 | 90% | v4c: appears in 24/48 recipe folios, all recipe types |
+| A1Q1J1A1 | 90% | v4c: appears in 22/48 recipe folios |
+| U2J1A1 | 90% | v4c: appears in 10/48 but all matched types |
+| A1Q2A3 | 90% | v4c: "Tree of Life" stem, 298+ occurrences across 33 folios |
+| D1A1Q1J1A1 | 90% | v4c: appears in 27/48 recipe folios |
+| A1B1A3 | 90% | v4c: appears in 25/48 recipe folios |
+| L1J1A1 | 90% | v4c: appears in 36/48 recipe folios |
+| L1A1 | 90% | v4c: appears in 33/48 recipe folios |
+
+---
+
+## Tier 1: Confirmed Identifications
+
+### [K1K2A1] = Galbanum (99%)
+
+- **Type:** Exclusive stem (origin f17v)
+- **Category:** ACTIVO
+- **Recipe appearances:** 17 recipe folios
+
+**Reasoning:** Triple intersection of ACTIVO ingredients in Ung. Apostolorum AND Diascordium AND Theriac Magna yields a **unique result: {Galbanum}**. The only ingredient classified as ACTIVO in all three recipes.
+
+**What it is:** Yellow-brown gum-resin from Ferula galbaniflua, used as anti-inflammatory and wound healer.
+
+### [K1A3] = Crocus / Saffron (95%)
+
 - **Type:** Generic stem (10 Botany folios)
-- **Category:** ESPECIA (spice)
-- **Recipe appearances:** 74 instances
-- **Matched recipes:** Pillulae Aureae, Theriac Magna
+- **Category:** ESPECIA
+- **Recipe appearances:** 25 recipe folios
 
-**Reasoning chain:**
+**Reasoning:** ESPECIA intersection of Pillulae Aureae AND Theriac = {Cinnamomum, Crocus}. K1A3 is **absent from f93v** (Diascordium), which contains Cinnamomum. If K1A3 were Cinnamomum, it should appear in f93v. Therefore K1A3 = Crocus by elimination.
 
-1. K1A3 is consistently ESPECIA in both Pillulae Aureae and Theriac Magna
-2. Constraint solver: ESPECIA intersection of Pill.Aureae AND Theriac = {Cinnamomum, Crocus}
-3. Only 2 candidates. Need to eliminate one.
-4. **Key observation:** K1A3 does NOT appear in folio f93v (Diascordium match)
-5. Diascordium contains Cinnamomum as an ESPECIA ingredient
-6. If K1A3 were Cinnamomum, it SHOULD appear in f93v (since Cinnamomum is in Diascordium)
-7. K1A3 is absent from f93v --> K1A3 != Cinnamomum
-8. Therefore K1A3 = **Crocus (Saffron)**
-
-**Verification:** K1A3 appears in Pillulae Aureae (f96v) which contains {Crocus, Cinnamomum} as its 2 spices. K1A3 is one of them. By elimination it's Crocus.
-
-**What Crocus/Saffron is:** Crocus sativus, the most expensive spice in medieval pharmacopoeia. Used as colorant, flavoring, and active ingredient in anti-melancholic, cardiac, and tonic formulas. Present in Theriac, Mithridatium, Pillulae Aureae, and Aurea Alexandrina.
+**What it is:** Crocus sativus, the most expensive medieval spice. Present in Theriac, Mithridatium, Pillulae Aureae, Aurea Alexandrina.
 
 ---
 
-### [BaA3] = Semantic Class: Plant Gum-Resin
+## Tier 2: High Confidence -- Myrrha (6 stems)
 
-- **Confidence:** 90% (ALTA)
-- **Type:** Exclusive stem (origin f33v)
-- **Category:** ACTIVO (but variable specific ingredient)
-- **Recipe appearances:** 78 instances across 34 recipe folios
-- **Matched recipes:** Unguentum Apostolorum, Pillulae Aureae, Theriac Magna
+All 6 stems resolve to Myrrha through the same mechanism: they appear in recipes containing Myrrha (Trifera Magna, Aurea Alexandrina, Philonium Persicum, Ung. Apostolorum) and are absent from recipes lacking Myrrha.
 
-**Reasoning chain:**
+| Stem | Confidence | Key evidence |
+|---|---|---|
+| A1Q2A1 | 92% | v3 UNIQUE: highest differential score, present in 25 folio sets |
+| D1A1 | 90% | Present in 24 recipe folios matching Myrrha distribution |
+| D1A1A3 | 90% | Present in 14 recipe folios, Myrrha-only profile |
+| Q1K1A1 | 88% | Present in 6 recipe folios, all Myrrha-containing |
+| A1Q1J1 | 88% | Present in 15 recipe folios, Myrrha profile |
+| T1J1A1B1A3 | 85% | Present in 2 recipe folios (f87v, f102r), both Myrrha-containing |
 
-1. BaA3 is ACTIVO in all 3 matched recipes (100% consistency for category)
-2. BUT the triple intersection of ACTIVO ingredients = EMPTY
-3. Assigned ingredients by position: Galbanum (Ung.Apost), Diagridium (Pill.Aureae), Terebinthina (Theriac)
-4. Wait -- K1K2A1 already = Galbanum. So in Ung.Apost, BaA3 is NOT Galbanum.
-5. After eliminating Galbanum from Ung.Apost ACTIVO, remaining that overlap with Theriac: {Aristolochia, Opopanax}
-6. Neither Aristolochia nor Opopanax is in Pillulae Aureae --> still no triple intersection
-7. **Semantic analysis:** The positional assignments across recipes are:
-   - Ung.Apost: Opopanax (oleo-gum-resin from Opopanax chironium)
-   - Pill.Aureae: Diagridium (processed Scammony resin)
-   - Theriac: Terebinthina (turpentine resin from Pistacia terebinthus)
-8. ALL THREE are plant exudates / gum-resins
-9. **Conclusion:** BaA3 encodes the FUNCTIONAL CLASS "gum-resin" rather than a specific ingredient
-
-**Implication:** The Voynich manuscript uses some stems as generic functional class names. In each recipe, BaA3 means "the gum-resin component" -- which specific resin depends on the recipe context.
+**What it is:** Commiphora myrrha, a gum-resin used in medieval medicine as antiseptic, analgesic, and in compound medicines. One of the most common ACTIVO ingredients.
 
 ---
 
-## Partial Identifications
+## Tier 3: Strong Identifications (19 stems)
 
-### [U2J1A1] = Potent Drug Class (Opium / Aloe)
+### Crocus (9 additional stems, 80%)
 
-- **Confidence:** 70%
-- **Type:** Exclusive stem (origin f52v)
-- **Category:** ACTIVO
-- **Recipe appearances:** 12 instances
-- **Matched recipes:** Diascordium (assigned Opium), Pillulae Aureae (assigned Aloe)
-- **Intersection:** EMPTY (Opium not in Pill.Aureae, Aloe not in Diascordium)
-- **Pattern:** Both are the PRIMARY active ingredient in their respective recipe
-- **Hypothesis:** Either a semantic class ("the main active") or specifically Opium (which appears in more medieval formulas)
+These 9 stems share the same distribution profile as K1A3 (confirmed Crocus) but were identified through the v3 constraint solver rather than direct elimination.
 
-### [K1J1A1] = Cinnamomum / Cinnamon (tentative)
+| Stem | Confidence |
+|---|---|
+| A1C1A3 | 80% |
+| A1B2K1J1 | 80% |
+| A2Q2J1A1 | 80% |
+| T1J1A1 | 80% |
+| B1L1J1A1 | 80% |
+| C2A1C2A3 | 80% |
+| K1J1U1J1 | 80% |
+| K1K2Q1J1 | 80% |
+| U1J1Aa | 80% |
 
-- **Confidence:** 65%
-- **Type:** Generic stem (7 Botany folios)
-- **Category:** ESPECIA (inferred)
-- **Recipe appearances:** 159 instances (very high frequency)
-- **Evidence:**
-  - Present in BOTH f96v (Pill.Aureae) and f93v (Diascordium), both of which contain Cinnamomum
-  - K1A3 = Crocus (confirmed), so the other ESPECIA in f96v must be Cinnamomum
-  - K1J1A1 is one of only 3 stems present in both folios that could fill the Cinnamomum slot
-  - Has the highest frequency (159) among those 3 candidates, consistent with Cinnamomum being the most universal medieval spice
-- **Needs:** Confirmation that K1J1A1 appears in ALL recipe folios that match recipes containing Cinnamomum
+### Rosa (1 stem, 82%)
 
-### [L1A1] = Piper longum OR Zingiber
+| Stem | Confidence | Key evidence |
+|---|---|---|
+| B1K1A1 | 82% | Present in f87r (Confectio Hamech), f93v (Diascordium), f94v, f96v -- all Rosa-containing recipes |
 
-- **Confidence:** 60%
-- **Type:** Generic stem (23 Botany folios)
-- **Category:** ESPECIA
-- **Recipe appearances:** 66 instances
-- **Constraint:** Must be one of {Cinnamomum, Piper longum, Zingiber} (from Diascordium x Theriac intersection). If K1J1A1 = Cinnamomum, then L1A1 is Piper longum or Zingiber.
-- **Needs:** Frequency analysis within specific recipe folios to disambiguate
+**What it is:** Rosa damascena/gallica. Petals, hips, and rosewater used ubiquitously in medieval pharmacy.
 
-### [D1A1Q1K1A1] = Piper longum OR Zingiber
+### Zingiber | Mel despumatum (5 stems, 85%)
 
-- **Confidence:** 60%
-- **Type:** Generic stem (6 Botany folios)
-- **Category:** ESPECIA
-- **Recipe appearances:** 7 instances
-- **Constraint:** Same pool as L1A1. If L1A1 = Zingiber, then D1A1Q1K1A1 = Piper longum (or vice versa)
-- **Note:** Much lower frequency (7 vs 66) suggests it's the less common of the two. Piper longum is less frequently prescribed than Zingiber in medieval formulas, so D1A1Q1K1A1 = Piper longum is slightly more likely.
+These 5 stems have identical distribution profiles. Both Zingiber and Mel despumatum appear in exactly the same recipes in our 23-recipe database, making them inseparable. Validated against 3 negative controls (zero false positives).
 
-### [D1A1Q1J1A1] = Squilla, Petroselinum, Valeriana, or Acorus calamus
+| Stem | Confidence |
+|---|---|
+| Q1A1 | 85% |
+| Q2A1 | 85% |
+| Q2K1A1 | 85% |
+| U1A1 | 85% |
+| U2A1 | 85% |
 
-- **Confidence:** 40%
-- **Type:** Exclusive stem (origin f49r)
-- **Category:** ACTIVO
-- **Recipe appearances:** 60 instances (high for an exclusive stem)
-- **Constraint:** ACTIVO in both Aurea Alexandrina and Theriac Magna. 4 ingredients have this exact profile. Opium/Castoreum/Hypericum also possible (superset).
-- **Needs:** More recipe matches to narrow candidates. If U2J1A1 = Opium, that eliminates Opium from this list.
+### Cinnamomum (2 stems, 60%)
+
+| Stem | Confidence | Key evidence |
+|---|---|---|
+| A2A3 | 60% | Elimination from K1A3=Crocus; present in recipes with Cinnamomum |
+| P1K1J1A1 | 60% | Same elimination chain |
+
+### Opopanax (2 stems, 78-80%) -- NEW in v5
+
+| Stem | Confidence | Key evidence |
+|---|---|---|
+| A1B2B1A3 | 80% | Folio-level constraint from f87v (Ung. Apostolorum) remaining ingredients |
+| A3F2 | 78% | Independent differential analysis; cross-validates A1B2B1A3 |
+
+**What it is:** Oleo-gum-resin from Opopanax chironium. Used in Ung. Apostolorum and other compound medicines.
+
+---
+
+## Tier 4: Moderate Identifications (23 stems)
+
+### Saccharum (1 stem, 75%)
+
+| Stem | Confidence | Key evidence |
+|---|---|---|
+| K1J1A1B2 | 75% | Elimination chain from v4 solver |
+
+### Galanga | Cubeba | Nux moschata (2 stems, 75%)
+
+| Stem | Confidence |
+|---|---|
+| K1A1B2B1A3 | 75% |
+| T1A1 | 75% |
+
+### Amomum (3 stems, 72%)
+
+| Stem | Confidence |
+|---|---|
+| K1A1C1 | 72% |
+| K1C2 | 72% |
+| K1U1J1 | 72% |
+
+### Piper nigrum (1 stem, 70%)
+
+| Stem | Confidence | Key evidence |
+|---|---|---|
+| A1Q1A1 | 70% | Present in Philonium-exclusive folio profiles (confirmed session 9) |
+
+### Styrax (2 stems, 70%)
+
+| Stem | Confidence |
+|---|---|
+| A1Q1L1 | 70% |
+| U1J1A1B1 | 70% |
+
+### Piper longum (1 stem, 68%)
+
+| Stem | Confidence | Key evidence |
+|---|---|---|
+| A1Q1A3 | 68% | 9 occurrences in f95v alone (confirmed Philonium, session 9) |
+
+### Bdellium (2 stems, 68%)
+
+| Stem | Confidence |
+|---|---|
+| D1 | 68% |
+| P1K1K2 | 68% |
+
+### Casia (3 stems, 63-65%)
+
+| Stem | Confidence |
+|---|---|
+| A1Q1K2A1 | 65% |
+| A1Q2J1A1 | 63% |
+| D1A1Q1K2A1 | 63% |
+
+### Cardamomum (8 stems, 65%)
+
+| Stem | Confidence |
+|---|---|
+| A1B2K1J1A1 | 65% |
+| C1A3 | 65% |
+| D1A1Q1J1A1B1 | 65% |
+| D1A1Q2J1A1 | 65% |
+| K1J1A1U1 | 65% |
+| L1A1B1A1 | 65% |
+| L1A1U1J1 | 65% |
+| K1A1B2A1B1 | 65% |
 
 ---
 
@@ -145,28 +212,28 @@ These stems are linked by mutual exclusion -- resolving one resolves others:
 ```
 K1A3 = Crocus (CONFIRMED)
   |
-  +--> eliminates Crocus from K1J1A1's pool
+  +--> eliminates Crocus from other ESPECIA pools
   |
-  +--> K1J1A1 likely = Cinnamomum
+  +--> A2A3, P1K1J1A1 likely = Cinnamomum
        |
-       +--> eliminates Cinnamomum from L1A1 and D1A1Q1K1A1
+       +--> eliminates Cinnamomum from remaining pools
        |
-       +--> L1A1 in {Piper longum, Zingiber}
-       +--> D1A1Q1K1A1 = the other one
-            |
-            +--> D1A1Q1K1A1 freq=7, L1A1 freq=66
-            +--> Zingiber > Piper longum in medieval usage
-            +--> L1A1 = Zingiber (more likely)
-            +--> D1A1Q1K1A1 = Piper longum (more likely)
+       +--> Zingiber|Mel deadlock (5 stems, inseparable)
+       +--> Opium|Castoreum deadlock (structural, 71 stems blocked)
 ```
 
-**If this chain holds, we have 6 identifications:**
+**Deadlock status:**
+- Zingiber vs Mel despumatum: BLOCKED (identical recipe profiles)
+- Opium vs Castoreum: BLOCKED (identical recipe profiles, Requies Magna absent from corpus -- confirmed session 9)
 
-| Stem | Ingredient | Confidence |
-|---|---|---|
-| K1K2A1 | Galbanum | 99% |
-| K1A3 | Crocus | 95% |
-| BaA3 | Gum-resin class | 90% |
-| K1J1A1 | Cinnamomum | 65% |
-| L1A1 | Zingiber | 55% |
-| D1A1Q1K1A1 | Piper longum | 50% |
+---
+
+## Validation Summary
+
+| Test | Result |
+|---|---|
+| Zingiber\|Mel negative controls (3 folios) | 0/15 false positives |
+| Philonium probes in f88v, f95v, f96r, f102r | All 4 confirmed PHILONIUM |
+| Opopanax cross-validation (2 independent paths) | Both converge |
+| Crocus absence from f93v (Diascordium) | Confirmed |
+| Galbanum triple intersection uniqueness | Confirmed |

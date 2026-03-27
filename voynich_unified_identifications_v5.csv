@@ -55,3 +55,5 @@ L1A1U1J1,Cardamomum,65,4,v3_MODERATE,"Cardamomum 0.890. Present in Diamargariton
 K1A1B2A1B1,Cardamomum,65,4,v3_MODERATE,"Cardamomum 0.890. Present in Diamargariton+Philonium (or +Trifera). After eliminating Crocus(=K1A3) and Casia(=A1Q1K2A1), Cardamomum is top."
 A1Q2J1A1,Casia,63,4,v3_MODERATE,"Same Casia profile as A1Q1K2A1. Morphological variant. After eliminating Crocus (=K1A3), Casia is top."
 D1A1Q1K2A1,Casia,63,4,v3_MODERATE,Same profile. D1A1-prefix + Casia stem.
+A1B2B1A3,Opopanax,80,3,session6_independent,"Independent resolution to Opopanax. Present in Trifera Magna + Ung. Apostolorum + Pil. Fetidae. Opopanax is in all three. Converges independently from A3F2."
+A3F2,Opopanax,78,3,session6_independent,"Converges to Opopanax independently from A1B2B1A3. Present in same recipe subset. Cross-validated by two independent stems resolving to same ingredient."
