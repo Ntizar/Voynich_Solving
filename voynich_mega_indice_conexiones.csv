@@ -1,0 +1,218 @@
+Raiz_Planta,Tipo_Vocabulario,Folios_Origen_Botanica,Apariciones_en_Recetas,Folios_Destino_Recetas,Etiquetas_Dominantes_en_Recetas
+U1A3,Exclusiva (Nombre Propio),f1r,2,f113r (x1) | f116r (x1),C1:1 | B2:1
+K1J1A3,Comun (Generica),f17r | f1r | f23v | f24v | f28v | f35r | f8v,44,f111v (x12) | f108v (x6) | f111r (x6) | f89r (x3) | f113r (x3) | f88r (x2) | f103r (x2) | f112v (x2) | f113v (x2) | f116r (x2) | f89v (x1) | f104r (x1) | f106r (x1) | f108r (x1),C1:19 | B2:18 | B3:5
+A1B1A3,Comun (Generica),f1r | f32v | f52v,46,f105r (x6) | f105v (x6) | f107v (x4) | f104v (x3) | f106v (x3) | f114r (x3) | f93r (x2) | f104r (x2) | f87r (x1) | f88v (x1) | f89v (x1) | f95r (x1) | f95v (x1) | f96v (x1) | f99v (x1) | f101v (x1) | f102r (x1) | f102v (x1) | f106r (x1) | f108v (x1) | f111r (x1) | f113v (x1) | f114v (x1) | f115v (x1) | f116r (x1),G1:17 | C1:12 | F1:9
+B1K1A3,Exclusiva (Nombre Propio),f1r,0,NINGUNO,N/A
+K1A1,Comun (Generica),f10r | f10v | f15v | f16r | f17v | f18r | f18v | f19r | f19v | f1r | f20r | f21r | f22r | f22v | f24r | f24v | f25r | f27r | f28v | f29r | f2v | f30v | f32r | f35v | f37v | f39v | f3r | f45v | f49r | f49v | f4r | f4v | f52r | f52v | f54v | f56r | f56v | f5v | f6v | f8r | f8v | f9r | f9v,187,f113r (x14) | f89r (x13) | f115r (x10) | f100r (x9) | f88r (x8) | f89v (x8) | f107v (x8) | f100v (x7) | f101r (x7) | f101v (x7) | f102v (x7) | f112v (x7) | f102r (x6) | f96r (x5) | f104r (x5) | f104v (x5) | f106v (x5) | f114r (x5) | f99r (x4) | f112r (x4) | f87r (x3) | f90r (x3) | f93r (x3) | f95r (x3) | f107r (x3) | f115v (x3) | f90v (x2) | f99v (x2) | f106r (x2) | f108v (x2) | f111r (x2) | f114v (x2) | f116r (x2) | f87v (x1) | f88v (x1) | f93v (x1) | f94r (x1) | f103r (x1) | f103v (x1) | f105r (x1) | f105v (x1) | f108r (x1) | f111v (x1) | f113v (x1),B2:110 | C1:46 | C2:23
+K1A3,Comun (Generica),f1v | f23r | f24r | f34r | f35r | f35v | f42r | f47v | f55r | f6v,74,f107r (x7) | f111v (x7) | f113r (x7) | f103r (x6) | f104r (x5) | f111r (x5) | f106v (x4) | f116r (x4) | f103v (x3) | f106r (x3) | f108v (x3) | f112v (x3) | f107v (x2) | f108r (x2) | f114r (x2) | f115r (x2) | f94v (x1) | f95r (x1) | f95v (x1) | f96v (x1) | f104v (x1) | f112r (x1) | f113v (x1) | f114v (x1) | f115v (x1),C1:31 | B2:23 | G1:8
+L1A1,Comun (Generica),f10r | f11r | f15r | f18r | f18v | f1v | f23v | f28r | f29r | f29v | f2r | f32v | f34v | f36r | f37r | f42r | f45r | f46r | f4r | f4v | f52r | f52v | f8v,66,f93r (x4) | f100r (x4) | f104v (x4) | f106r (x4) | f108r (x4) | f113r (x4) | f87r (x3) | f95v (x3) | f101r (x3) | f89r (x2) | f89v (x2) | f99r (x2) | f103r (x2) | f103v (x2) | f105r (x2) | f108v (x2) | f114v (x2) | f115v (x2) | f88v (x1) | f90v (x1) | f93v (x1) | f94r (x1) | f95r (x1) | f99v (x1) | f101v (x1) | f102v (x1) | f106v (x1) | f107r (x1) | f107v (x1) | f111r (x1) | f112r (x1) | f114r (x1) | f115r (x1),B2:38 | C1:14 | B1:5
+Q2A1A1,Exclusiva (Nombre Propio),f1v,0,NINGUNO,N/A
+A1Q2A1K1A1,Exclusiva (Nombre Propio),f2r,0,NINGUNO,N/A
+K1J1A1P1K1A1,Exclusiva (Nombre Propio),f2v,0,NINGUNO,N/A
+Q1K1A1,Comun (Generica),f17v | f18r | f19v | f25v | f29v | f2v | f47r | f6v | f7v | f8v,6,f93r (x2) | f87v (x1) | f90r (x1) | f113r (x1) | f115r (x1),C1:3 | B2:3
+B1A1,Comun (Generica),f13r | f15r | f18v | f22v | f23v | f27r | f2v | f31v | f37v | f43r | f45r | f47r | f54r,51,f102r (x10) | f89r (x5) | f101r (x5) | f102v (x5) | f93r (x4) | f105v (x3) | f114r (x3) | f89v (x2) | f113r (x2) | f88r (x1) | f90r (x1) | f94r (x1) | f99r (x1) | f99v (x1) | f104v (x1) | f105r (x1) | f106r (x1) | f111r (x1) | f115r (x1) | f115v (x1) | f116r (x1),B2:28 | C1:14 | G1:3
+A2K1J1A1,Comun (Generica),f10r | f11v | f3r | f6v,11,f102r (x2) | f104v (x2) | f101v (x1) | f106r (x1) | f108r (x1) | f113r (x1) | f113v (x1) | f114r (x1) | f114v (x1),B2:7 | C1:2 | B1:2
+A1K1A1,Comun (Generica),f35r | f3r | f49v,3,f93r (x1) | f112r (x1) | f112v (x1),B2:1 | C1:1 | C2:1
+D1A1K1J1A1,Exclusiva (Nombre Propio),f3r,2,f104r (x1) | f111v (x1),B2:2
+A2L1J1A1,Exclusiva (Nombre Propio),f3r,4,f88v (x1) | f104v (x1) | f105v (x1) | f106r (x1),B1:2 | C1:2
+XbA1,Exclusiva (Nombre Propio),f3r,0,NINGUNO,N/A
+A2B1A3,Exclusiva (Nombre Propio),f3r,7,f89r (x2) | f101r (x1) | f102v (x1) | f104v (x1) | f113v (x1) | f114r (x1),G1:5 | B3:1 | C1:1
+D1A1Q1K1A1,Comun (Generica),f11v | f15r | f18r | f32r | f3r | f44r,7,f90r (x1) | f93v (x1) | f96r (x1) | f99v (x1) | f104r (x1) | f106v (x1) | f112v (x1),B2:5 | C1:1 | B1:1
+L1A3,Comun (Generica),f3r | f3v | f45r,35,f111v (x5) | f113r (x4) | f116r (x4) | f103v (x3) | f106r (x3) | f106v (x3) | f103r (x2) | f107r (x2) | f111r (x2) | f89r (x1) | f104r (x1) | f104v (x1) | f107v (x1) | f108v (x1) | f112v (x1) | f115v (x1),C1:12 | B2:8 | G1:6
+A1Q2K1A1,Comun (Generica),f11v | f15r | f15v | f16v | f28r | f35r | f3r,7,f88r (x1) | f89r (x1) | f90r (x1) | f99r (x1) | f104r (x1) | f105v (x1) | f113r (x1),B2:3 | C1:2 | B1:2
+T1A1,Exclusiva (Nombre Propio),f3v,5,f100r (x2) | f88r (x1) | f115v (x1) | f116r (x1),B2:4 | C1:1
+D1A1B1A3,Comun (Generica),f24r | f3v,35,f104r (x6) | f114r (x6) | f115r (x4) | f104v (x3) | f90r (x2) | f95v (x2) | f106v (x2) | f89r (x1) | f90v (x1) | f95r (x1) | f101r (x1) | f101v (x1) | f105r (x1) | f105v (x1) | f107r (x1) | f107v (x1) | f112r (x1),G1:20 | F1:8 | C1:3
+A2K1J1A3,Comun (Generica),f3v | f6v,3,f107r (x1) | f108v (x1) | f111v (x1),F1:2 | C1:1
+K1J1A1,Comun (Generica),f21r | f28v | f29r | f30r | f3v | f47v | f51r,159,f102v (x16) | f88r (x12) | f89r (x11) | f108v (x9) | f101v (x7) | f115r (x7) | f101r (x6) | f113v (x6) | f88v (x5) | f104v (x5) | f107r (x5) | f111v (x5) | f87r (x4) | f89v (x4) | f104r (x4) | f106r (x4) | f107v (x4) | f90v (x3) | f100r (x3) | f106v (x3) | f114v (x3) | f87v (x2) | f96r (x2) | f100v (x2) | f102r (x2) | f103r (x2) | f108r (x2) | f111r (x2) | f112r (x2) | f112v (x2) | f113r (x2) | f115v (x2) | f93r (x1) | f94r (x1) | f95r (x1) | f96v (x1) | f99r (x1) | f99v (x1) | f103v (x1) | f105r (x1) | f105v (x1) | f114r (x1) | f116r (x1),B2:93 | C1:31 | C2:22
+Q2K1A1,Comun (Generica),f13r | f16r | f17r | f18r | f35r | f35v | f36v | f3v | f52v | f6r,8,f93r (x2) | f87r (x1) | f90v (x1) | f95r (x1) | f102v (x1) | f112v (x1) | f113r (x1),C1:4 | C2:3 | B2:1
+A2Q2N1A3,Exclusiva (Nombre Propio),f3v,0,NINGUNO,N/A
+B1K1A1,Comun (Generica),f13r | f21r | f22r | f23r | f25v | f29v | f30r | f32r | f35v | f37v | f4r | f6v | f9v,4,f87r (x1) | f93v (x1) | f113r (x1) | f115r (x1),B2:2 | B4:1 | C2:1
+L1J1Aa,Exclusiva (Nombre Propio),f4r,5,f103v (x2) | f89v (x1) | f103r (x1) | f106r (x1),B2:3 | C1:2
+L1K2A1,Exclusiva (Nombre Propio),f4v,11,f101r (x3) | f102v (x2) | f88r (x1) | f89r (x1) | f101v (x1) | f108v (x1) | f111r (x1) | f112v (x1),B2:7 | C1:2 | C2:1
+Q1K1J1A1,Exclusiva (Nombre Propio),f4v,2,f101v (x1) | f113v (x1),B2:1 | C1:1
+Q1AaK1J1A1,Exclusiva (Nombre Propio),f5v,0,NINGUNO,N/A
+A2Q2A1,Comun (Generica),f36v | f39r | f5v,5,f90r (x2) | f90v (x1) | f96r (x1) | f102r (x1),B2:3 | C1:1 | B1:1
+D1A1Q2A1,Comun (Generica),f10r | f15r | f18v | f37v | f42r | f49r | f5v | f8r,19,f104v (x4) | f99r (x2) | f113v (x2) | f115r (x2) | f115v (x2) | f89r (x1) | f101r (x1) | f105v (x1) | f106r (x1) | f107v (x1) | f114r (x1) | f114v (x1),B2:12 | C1:5 | C2:1
+P2A1A3,Comun (Generica),f24v | f6r,0,NINGUNO,N/A
+P1A1K2A3,Exclusiva (Nombre Propio),f6r,1,f88r (x1),C1:1
+Q1L1A1,Comun (Generica),f49v | f6r,0,NINGUNO,N/A
+B1A3,Comun (Generica),f14r | f17r | f17v | f18r | f25v | f26v | f33r | f33v | f39v | f43r | f50v | f53r | f54v | f6r,398,f89r (x31) | f89v (x26) | f114r (x26) | f111r (x19) | f105v (x18) | f108v (x16) | f115r (x16) | f101r (x14) | f105r (x14) | f116r (x14) | f103v (x12) | f114v (x12) | f101v (x11) | f108r (x11) | f107v (x10) | f104r (x9) | f113v (x9) | f88v (x8) | f103r (x8) | f107r (x8) | f112v (x8) | f102v (x7) | f104v (x7) | f93r (x6) | f99v (x6) | f106r (x6) | f111v (x6) | f87r (x5) | f95v (x5) | f99r (x5) | f106v (x5) | f113r (x5) | f88r (x4) | f90r (x4) | f95r (x4) | f102r (x4) | f90v (x3) | f94r (x3) | f100v (x3) | f115v (x3) | f94v (x2) | f112r (x2) | f87v (x1) | f96r (x1) | f100r (x1),G1:188 | C1:58 | F1:48
+Q2A3,Comun (Generica),f33v | f39v | f46v | f54v | f6r,52,f111v (x7) | f107r (x6) | f104r (x4) | f105v (x4) | f95v (x3) | f107v (x3) | f113r (x3) | f103v (x2) | f108v (x2) | f111r (x2) | f112r (x2) | f114r (x2) | f89r (x1) | f95r (x1) | f103r (x1) | f104v (x1) | f105r (x1) | f106r (x1) | f106v (x1) | f108r (x1) | f112v (x1) | f113v (x1) | f114v (x1) | f115v (x1),G1:20 | C1:16 | F3:8
+U1A1,Comun (Generica),f24v | f6r,9,f99r (x3) | f93v (x2) | f90r (x1) | f93r (x1) | f96r (x1) | f100v (x1),B2:4 | C1:3 | C2:1
+A2K1A3,Exclusiva (Nombre Propio),f6r,3,f93r (x1) | f103r (x1) | f107r (x1),B3:1 | F1:1 | B2:1
+Q1A1A3C1A2C2A3,Exclusiva (Nombre Propio),f6v,0,NINGUNO,N/A
+K1K2Q1A3,Exclusiva (Nombre Propio),f6v,3,f104v (x1) | f111r (x1) | f112v (x1),F1:3
+A2K1A1,Comun (Generica),f17v | f19v | f22v | f23r | f24r | f44r | f45v | f6v | f9v,9,f93r (x2) | f106r (x2) | f90r (x1) | f93v (x1) | f99r (x1) | f99v (x1) | f102v (x1),C1:5 | B2:3 | C2:1
+B2A3,Comun (Generica),f45r | f6v,18,f105r (x3) | f116r (x3) | f106r (x2) | f108v (x2) | f111v (x2) | f105v (x1) | f111r (x1) | f113r (x1) | f113v (x1) | f114r (x1) | f115r (x1),G1:5 | C1:3 | F1:3
+D1A1Q1A1,Comun (Generica),f38r | f6v,57,f88r (x6) | f89v (x6) | f89r (x4) | f93r (x4) | f99v (x4) | f107v (x4) | f114v (x4) | f90r (x3) | f104v (x3) | f106v (x3) | f108r (x3) | f102r (x2) | f115r (x2) | f95r (x1) | f99r (x1) | f101v (x1) | f102v (x1) | f104r (x1) | f105r (x1) | f105v (x1) | f107r (x1) | f115v (x1),B2:37 | C1:13 | B1:4
+U2A3,Comun (Generica),f17r | f6v,2,f116r (x2),E2:1 | C1:1
+K1A1B2B1A3,Comun (Generica),f6v | f8v,2,f100r (x1) | f101r (x1),G1:2
+A1K2A3,Exclusiva (Nombre Propio),f7v,5,f104r (x2) | f89v (x1) | f102r (x1) | f112v (x1),C1:2 | B2:2 | G1:1
+K1A1C1K1J1A1,Exclusiva (Nombre Propio),f7v,0,NINGUNO,N/A
+K1A1B1A3,Exclusiva (Nombre Propio),f8r,31,f114r (x5) | f106v (x4) | f104v (x3) | f115v (x3) | f89r (x2) | f89v (x2) | f93r (x2) | f113r (x2) | f90v (x1) | f96r (x1) | f101r (x1) | f102v (x1) | f105v (x1) | f107r (x1) | f114v (x1) | f115r (x1),G1:17 | C1:6 | F1:4
+A1Q1A3,Comun (Generica),f23r | f40v | f55v | f8r,288,f113v (x25) | f107v (x22) | f111v (x18) | f107r (x16) | f103r (x15) | f104r (x15) | f108r (x15) | f116r (x13) | f106r (x12) | f113r (x11) | f105v (x10) | f106v (x10) | f108v (x10) | f112v (x10) | f95r (x9) | f114r (x9) | f103v (x8) | f112r (x7) | f89v (x6) | f95v (x6) | f105r (x6) | f104v (x5) | f114v (x5) | f94r (x4) | f111r (x4) | f115v (x4) | f89r (x3) | f90r (x3) | f94v (x2) | f88r (x1) | f88v (x1) | f99v (x1) | f100v (x1) | f115r (x1),G1:100 | F1:63 | C1:51
+C2A3,Comun (Generica),f17v | f24r | f33v | f54r | f8v,140,f112r (x10) | f108v (x9) | f103r (x8) | f111r (x8) | f112v (x8) | f89v (x6) | f103v (x6) | f111v (x6) | f88r (x5) | f104r (x5) | f106v (x5) | f89r (x4) | f102v (x4) | f106r (x4) | f107r (x4) | f87r (x3) | f90v (x3) | f104v (x3) | f107v (x3) | f113r (x3) | f114r (x3) | f115r (x3) | f87v (x2) | f90r (x2) | f99r (x2) | f100r (x2) | f100v (x2) | f105r (x2) | f108r (x2) | f115v (x2) | f116r (x2) | f88v (x1) | f93r (x1) | f94r (x1) | f95v (x1) | f96v (x1) | f101r (x1) | f101v (x1) | f105v (x1) | f113v (x1),G1:53 | C1:29 | F1:26
+P1K1A3,Exclusiva (Nombre Propio),f8v,0,NINGUNO,N/A
+A1Q2K1A3,Comun (Generica),f45r | f8v,4,f113v (x2) | f89r (x1) | f89v (x1),B3:2 | C1:2
+P2A1K1A1,Exclusiva (Nombre Propio),f9v,0,NINGUNO,N/A
+P1K1A1,Comun (Generica),f19r | f21r | f52v | f9v,7,f103v (x2) | f99r (x1) | f102v (x1) | f104r (x1) | f105v (x1) | f113r (x1),B2:4 | C1:3
+U2A1A1,Exclusiva (Nombre Propio),f10r,0,NINGUNO,N/A
+C2A1,Comun (Generica),f10r | f15v | f16v | f17v | f28v | f37r | f39v | f50r,35,f102r (x4) | f89v (x2) | f93r (x2) | f96v (x2) | f102v (x2) | f104v (x2) | f106v (x2) | f112r (x2) | f115r (x2) | f87r (x1) | f89r (x1) | f93v (x1) | f95v (x1) | f96r (x1) | f99r (x1) | f99v (x1) | f100r (x1) | f100v (x1) | f101r (x1) | f111v (x1) | f112v (x1) | f113r (x1) | f114v (x1) | f115v (x1),B2:14 | C1:11 | G1:6
+D1A1Q2K1A1,Comun (Generica),f10r | f14r | f15r | f19r | f30r | f30v | f36v | f37v | f42r,4,f93v (x2) | f90r (x1) | f96r (x1),B2:2 | C1:1 | C2:1
+A1A2Q1K1A1,Exclusiva (Nombre Propio),f10r,0,NINGUNO,N/A
+A1D1A1Q2Aa,Exclusiva (Nombre Propio),f10r,0,NINGUNO,N/A
+A1Q2A1,Comun (Generica),f10r | f17v | f21r | f23v | f25r | f28r,32,f106v (x3) | f113v (x3) | f89r (x2) | f105r (x2) | f105v (x2) | f114r (x2) | f114v (x2) | f87v (x1) | f88v (x1) | f89v (x1) | f93r (x1) | f95r (x1) | f99v (x1) | f101r (x1) | f102v (x1) | f103r (x1) | f104v (x1) | f106r (x1) | f107r (x1) | f107v (x1) | f108r (x1) | f112v (x1) | f116r (x1),B2:19 | C1:9 | A2:1
+ClA1Q2K1A1L1A1,Exclusiva (Nombre Propio),f10r,0,NINGUNO,N/A
+D1A1Q2K1A2Q2A1,Exclusiva (Nombre Propio),f10v,0,NINGUNO,N/A
+Q2A1C1L1A1,Exclusiva (Nombre Propio),f13r,0,NINGUNO,N/A
+A1K1Q1K1Aa,Exclusiva (Nombre Propio),f14r,0,NINGUNO,N/A
+A1Q1K1A1,Comun (Generica),f14v | f18v | f20r | f32r | f37r,5,f89v (x1) | f99r (x1) | f101r (x1) | f112r (x1) | f115r (x1),B2:3 | H1:1 | C1:1
+K1A1Q1L1A1,Exclusiva (Nombre Propio),f14v,0,NINGUNO,N/A
+Q2L1A1,Exclusiva (Nombre Propio),f15r,5,f90v (x1) | f95r (x1) | f95v (x1) | f99r (x1) | f106v (x1),C1:2 | B1:2 | B2:1
+Q2A1B2Q1A3G1,Exclusiva (Nombre Propio),f15r,0,NINGUNO,N/A
+P1A3C1A1,Exclusiva (Nombre Propio),f15v,0,NINGUNO,N/A
+CmK1A1,Exclusiva (Nombre Propio),f15v,0,NINGUNO,N/A
+U2A1,Comun (Generica),f15v | f18r | f19r | f19v | f24r | f25v | f36r | f36v | f37r | f52v,13,f89v (x3) | f93r (x3) | f113v (x2) | f87r (x1) | f88r (x1) | f90r (x1) | f93v (x1) | f101v (x1),B2:10 | C2:1 | C1:1
+A2Q2K1A1,Comun (Generica),f15v | f16v | f19r | f36r | f37v | f56r,1,f93v (x1),B2:1
+A2B1A1,Exclusiva (Nombre Propio),f16r,0,NINGUNO,N/A
+Q2A1C1A1,Exclusiva (Nombre Propio),f16r,0,NINGUNO,N/A
+D1A1Q1KaA1,Exclusiva (Nombre Propio),f16r,0,NINGUNO,N/A
+K1Q1Aa,Exclusiva (Nombre Propio),f16v,0,NINGUNO,N/A
+C2A1Q1A3,Exclusiva (Nombre Propio),f16v,1,f113r (x1),B2:1
+A1A3A1C1A3,Exclusiva (Nombre Propio),f16v,0,NINGUNO,N/A
+B1A2K1J1A3,Exclusiva (Nombre Propio),f17r,0,NINGUNO,N/A
+Q2K2A1,Exclusiva (Nombre Propio),f17v,3,f101r (x1) | f103v (x1) | f105r (x1),B2:2 | C1:1
+Q1K1A3,Exclusiva (Nombre Propio),f17v,0,NINGUNO,N/A
+A1A2Q2A1,Exclusiva (Nombre Propio),f17v,0,NINGUNO,N/A
+A1Q1J1A1,Exclusiva (Nombre Propio),f17v,52,f99r (x6) | f89v (x5) | f99v (x5) | f101r (x4) | f102v (x4) | f89r (x3) | f100v (x3) | f107v (x3) | f108r (x3) | f101v (x2) | f102r (x2) | f108v (x2) | f87r (x1) | f88r (x1) | f93r (x1) | f100r (x1) | f103r (x1) | f104v (x1) | f105v (x1) | f106r (x1) | f107r (x1) | f112v (x1),B2:42 | C1:5 | B3:2
+A2Q1J1A1,Exclusiva (Nombre Propio),f17v,10,f101r (x3) | f108r (x2) | f88r (x1) | f89r (x1) | f89v (x1) | f96r (x1) | f101v (x1),C1:5 | B2:5
+K1K2A1,Exclusiva (Nombre Propio),f17v,19,f104v (x2) | f112v (x2) | f87v (x1) | f88r (x1) | f88v (x1) | f89v (x1) | f90v (x1) | f93v (x1) | f96r (x1) | f100v (x1) | f101v (x1) | f102v (x1) | f104r (x1) | f113r (x1) | f114v (x1) | f115r (x1) | f115v (x1),C1:9 | B2:5 | C2:4
+L1J1A1,Comun (Generica),f17v | f42r | f49r | f50r,87,f90v (x7) | f101r (x6) | f104v (x6) | f113r (x6) | f89r (x5) | f89v (x4) | f99r (x4) | f88v (x3) | f90r (x3) | f96r (x3) | f100r (x3) | f103r (x3) | f115r (x3) | f88r (x2) | f102r (x2) | f102v (x2) | f105v (x2) | f106r (x2) | f106v (x2) | f107v (x2) | f108v (x2) | f115v (x2) | f93v (x1) | f95v (x1) | f99v (x1) | f101v (x1) | f103v (x1) | f104r (x1) | f105r (x1) | f107r (x1) | f108r (x1) | f111r (x1) | f111v (x1) | f113v (x1) | f114r (x1),B2:46 | C1:19 | C2:7
+A1L1A1,Exclusiva (Nombre Propio),f18r,0,NINGUNO,N/A
+A1C2K1J1A1,Exclusiva (Nombre Propio),f19r,0,NINGUNO,N/A
+D1A1Q1A1C1A3,Exclusiva (Nombre Propio),f19r,1,f89v (x1),C1:1
+A2L1A1,Exclusiva (Nombre Propio),f19r,4,f89r (x1) | f90r (x1) | f104r (x1) | f104v (x1),C1:2 | B2:1 | G1:1
+A2Q1K1A1,Comun (Generica),f19r | f56v,1,f89v (x1),B2:1
+A1C2A1U2A1,Exclusiva (Nombre Propio),f19r,0,NINGUNO,N/A
+B1Aa,Comun (Generica),f19v | f51r,6,f89r (x1) | f90v (x1) | f99r (x1) | f102v (x1) | f103v (x1) | f116r (x1),G1:2 | C1:2 | B2:1
+P2A3F2C2A3,Exclusiva (Nombre Propio),f20v,0,NINGUNO,N/A
+L1A1J1A1,Exclusiva (Nombre Propio),f21r,0,NINGUNO,N/A
+Q1J1A1,Comun (Generica),f21r | f38v,14,f87r (x2) | f108r (x2) | f108v (x2) | f87v (x1) | f88r (x1) | f89v (x1) | f93r (x1) | f102v (x1) | f112r (x1) | f114v (x1) | f115r (x1),B2:9 | C1:4 | C2:1
+P1A2C2A3G1A1,Exclusiva (Nombre Propio),f22v,0,NINGUNO,N/A
+A1P2K1A3,Exclusiva (Nombre Propio),f22v,0,NINGUNO,N/A
+P2L1A1,Exclusiva (Nombre Propio),f22v,0,NINGUNO,N/A
+L1A2Q2K1A1,Exclusiva (Nombre Propio),f22v,0,NINGUNO,N/A
+A1Q1L1A1,Exclusiva (Nombre Propio),f22v,0,NINGUNO,N/A
+A2Q1A1,Comun (Generica),f23r | f56v,1,f99r (x1),B2:1
+A1B2K1A3,Exclusiva (Nombre Propio),f23r,4,f106v (x1) | f108v (x1) | f111r (x1) | f112r (x1),B3:1 | C1:1 | B2:1
+D1A1Q2KbQ2A1,Exclusiva (Nombre Propio),f23v,0,NINGUNO,N/A
+A3F2A1,Exclusiva (Nombre Propio),f23v,0,NINGUNO,N/A
+A2U2A3,Exclusiva (Nombre Propio),f24r,0,NINGUNO,N/A
+D1JcQ1A3,Exclusiva (Nombre Propio),f24r,0,NINGUNO,N/A
+K1Q2A3,Exclusiva (Nombre Propio),f24r,11,f95v (x1) | f103v (x1) | f106v (x1) | f107r (x1) | f108r (x1) | f111r (x1) | f111v (x1) | f112v (x1) | f113r (x1) | f115r (x1) | f116r (x1),B2:4 | F1:3 | C1:2
+D1JcAa,Exclusiva (Nombre Propio),f24r,0,NINGUNO,N/A
+T2A3,Exclusiva (Nombre Propio),f24r,0,NINGUNO,N/A
+D1A1,Comun (Generica),f24r | f29r | f30r | f36r | f45r,58,f116r (x9) | f115r (x5) | f108v (x4) | f112r (x4) | f103v (x3) | f111v (x3) | f113v (x3) | f115v (x3) | f89v (x2) | f101v (x2) | f103r (x2) | f104r (x2) | f104v (x2) | f107r (x2) | f111r (x2) | f112v (x2) | f87v (x1) | f89r (x1) | f94r (x1) | f106r (x1) | f106v (x1) | f107v (x1) | f113r (x1) | f114r (x1),B2:29 | C1:5 | C2:4
+Q2K1A1B1A3,Exclusiva (Nombre Propio),f24v,1,f93v (x1),G1:1
+A1J1Aa,Exclusiva (Nombre Propio),f24v,0,NINGUNO,N/A
+A1Q1A1J1A1,Exclusiva (Nombre Propio),f24v,0,NINGUNO,N/A
+P1K1J1B1A3,Comun (Generica),f26v | f34v,10,f105v (x2) | f108v (x2) | f94r (x1) | f94v (x1) | f103r (x1) | f104r (x1) | f111v (x1) | f113r (x1),G1:3 | B2:3 | C1:2
+P1K1B1A3,Comun (Generica),f26v | f39r,8,f104r (x2) | f114v (x2) | f105v (x1) | f111r (x1) | f112v (x1) | f115v (x1),C1:2 | F3:2 | Bd:1
+A1P1A3,Exclusiva (Nombre Propio),f26v,19,f104r (x2) | f107r (x2) | f113v (x2) | f114r (x2) | f94r (x1) | f99v (x1) | f102v (x1) | f103v (x1) | f105r (x1) | f105v (x1) | f107v (x1) | f108r (x1) | f112r (x1) | f112v (x1) | f116r (x1),G1:4 | F3:4 | B2:4
+Q1C2A1,Exclusiva (Nombre Propio),f27r,0,NINGUNO,N/A
+K1Q1A3,Exclusiva (Nombre Propio),f27v,29,f95r (x3) | f107v (x3) | f111v (x3) | f107r (x2) | f111r (x2) | f113r (x2) | f115r (x2) | f115v (x2) | f89r (x1) | f89v (x1) | f103r (x1) | f105v (x1) | f106r (x1) | f106v (x1) | f108r (x1) | f112v (x1) | f113v (x1) | f116r (x1),G1:7 | F1:7 | B2:7
+P1K1A1B1A3,Exclusiva (Nombre Propio),f28r,5,f102v (x1) | f106v (x1) | f112v (x1) | f115r (x1) | f115v (x1),G1:2 | F1:2 | C1:1
+L1A1Q2K1A1,Exclusiva (Nombre Propio),f29v,0,NINGUNO,N/A
+K1A1Q1A1,Exclusiva (Nombre Propio),f29v,4,f88r (x1) | f99v (x1) | f104r (x1) | f113v (x1),B2:2 | C1:2
+K1Q2J1A1,Exclusiva (Nombre Propio),f29v,0,NINGUNO,N/A
+D1J1Q1J1A1K1A1,Exclusiva (Nombre Propio),f29v,0,NINGUNO,N/A
+D1A1K1A3,Exclusiva (Nombre Propio),f30r,1,f112v (x1),G1:1
+D1A1Q1K2A1,Exclusiva (Nombre Propio),f30v,19,f108v (x4) | f111r (x3) | f89r (x2) | f99v (x2) | f89v (x1) | f95v (x1) | f99r (x1) | f100r (x1) | f106r (x1) | f113r (x1) | f113v (x1) | f115r (x1),B2:10 | C1:6 | B1:2
+D1A1Q2A3,Comun (Generica),f31r | f36v,142,f114v (x14) | f104r (x13) | f104v (x10) | f106v (x9) | f107r (x9) | f111v (x9) | f113v (x8) | f115r (x8) | f103r (x7) | f115v (x7) | f114r (x6) | f103v (x5) | f112v (x5) | f116r (x5) | f107v (x3) | f108r (x3) | f108v (x3) | f113r (x3) | f95r (x2) | f95v (x2) | f105r (x2) | f111r (x2) | f112r (x2) | f89v (x1) | f94r (x1) | f94v (x1) | f105v (x1) | f106r (x1),G1:45 | F1:35 | C1:31
+A2Q1K2BaA3,Exclusiva (Nombre Propio),f31r,1,f112v (x1),F1:1
+A1B2L1J1A1,Exclusiva (Nombre Propio),f31r,1,f90v (x1),B1:1
+A1Q2J1A1,Exclusiva (Nombre Propio),f31r,27,f102v (x3) | f113v (x3) | f89r (x2) | f101r (x2) | f112r (x2) | f88r (x1) | f88v (x1) | f90v (x1) | f93r (x1) | f100r (x1) | f102r (x1) | f104v (x1) | f105r (x1) | f106v (x1) | f107v (x1) | f108r (x1) | f111r (x1) | f112v (x1) | f113r (x1) | f116r (x1),B2:15 | C1:5 | C2:4
+K1A1A3,Exclusiva (Nombre Propio),f31v,4,f104r (x1) | f106v (x1) | f114v (x1) | f115r (x1),G1:3 | C1:1
+A1Q1A1,Comun (Generica),f32r | f38r | f42v | f51v | f54r,47,f89v (x6) | f99v (x6) | f101r (x4) | f102r (x4) | f88r (x2) | f89r (x2) | f99r (x2) | f100v (x2) | f101v (x2) | f107v (x2) | f108r (x2) | f114r (x2) | f88v (x1) | f90r (x1) | f93r (x1) | f95r (x1) | f96r (x1) | f105v (x1) | f106r (x1) | f113r (x1) | f113v (x1) | f114v (x1) | f115v (x1),B2:31 | C1:10 | G1:4
+C2K1A1,Comun (Generica),f32r | f42v,1,f93r (x1),C2:1
+B1L1A3,Exclusiva (Nombre Propio),f32r,0,NINGUNO,N/A
+B1A2Q2K1A1,Exclusiva (Nombre Propio),f32r,0,NINGUNO,N/A
+Q2L1B1A3,Exclusiva (Nombre Propio),f33r,0,NINGUNO,N/A
+L1BaA1,Exclusiva (Nombre Propio),f33r,0,NINGUNO,N/A
+D1A1Q1A3,Comun (Generica),f33r | f40r | f42r | f46r | f50r,349,f111v (x39) | f107v (x34) | f116r (x27) | f103r (x20) | f106r (x20) | f104r (x19) | f107r (x19) | f103v (x17) | f113v (x17) | f113r (x13) | f106v (x12) | f104v (x10) | f114r (x9) | f115v (x9) | f95r (x8) | f108r (x8) | f108v (x8) | f115r (x8) | f111r (x7) | f112v (x7) | f95v (x6) | f114v (x6) | f105r (x5) | f89v (x4) | f105v (x4) | f112r (x4) | f94r (x3) | f94v (x2) | f89r (x1) | f99v (x1) | f101v (x1) | f102v (x1),G1:127 | F1:99 | C1:47
+Q2A3C1A3,Exclusiva (Nombre Propio),f33v,4,f113r (x2) | f107r (x1) | f107v (x1),F3:1 | G1:1 | C1:1
+Q2A1Q1A3,Exclusiva (Nombre Propio),f33v,2,f103v (x1) | f116r (x1),F1:2
+BaA3,Exclusiva (Nombre Propio),f33v,78,f89v (x15) | f89r (x11) | f99r (x6) | f102r (x4) | f95v (x3) | f108r (x3) | f108v (x3) | f88r (x2) | f88v (x2) | f95r (x2) | f101v (x2) | f105v (x2) | f114v (x2) | f87v (x1) | f94r (x1) | f94v (x1) | f96r (x1) | f96v (x1) | f100r (x1) | f101r (x1) | f102v (x1) | f103r (x1) | f103v (x1) | f104r (x1) | f105r (x1) | f106r (x1) | f106v (x1) | f107v (x1) | f111r (x1) | f112r (x1) | f113r (x1) | f113v (x1) | f114r (x1) | f116r (x1),G1:40 | F1:11 | C1:8
+B2K1A1A3,Exclusiva (Nombre Propio),f33v,0,NINGUNO,N/A
+A1B2A3,Exclusiva (Nombre Propio),f34r,43,f113v (x7) | f102r (x4) | f107v (x3) | f112r (x3) | f99r (x2) | f103v (x2) | f111r (x2) | f111v (x2) | f116r (x2) | f88v (x1) | f89v (x1) | f94r (x1) | f99v (x1) | f101r (x1) | f101v (x1) | f103r (x1) | f105v (x1) | f106v (x1) | f107r (x1) | f108r (x1) | f108v (x1) | f112v (x1) | f114r (x1) | f114v (x1) | f115v (x1),G1:25 | F1:4 | C1:4
+A2Q2A3,Exclusiva (Nombre Propio),f34r,27,f107r (x5) | f106v (x4) | f105v (x3) | f104v (x2) | f114r (x2) | f115v (x2) | f94v (x1) | f95r (x1) | f101v (x1) | f105r (x1) | f106r (x1) | f107v (x1) | f113r (x1) | f114v (x1) | f115r (x1),G1:11 | C1:9 | F1:5
+B2A1,Exclusiva (Nombre Propio),f34r,43,f111v (x5) | f115r (x5) | f107r (x3) | f113v (x3) | f115v (x3) | f116r (x3) | f93r (x2) | f103r (x2) | f103v (x2) | f107v (x2) | f112v (x2) | f89r (x1) | f89v (x1) | f96r (x1) | f101v (x1) | f102r (x1) | f104r (x1) | f104v (x1) | f106r (x1) | f108r (x1) | f108v (x1) | f111r (x1),C1:22 | B2:13 | H1:2
+K1J1Q1A3,Exclusiva (Nombre Propio),f34r,18,f95r (x5) | f89v (x3) | f111v (x2) | f112v (x2) | f94r (x1) | f104v (x1) | f106r (x1) | f107r (x1) | f108r (x1) | f113r (x1),B2:6 | F1:5 | G1:3
+L1J1A3,Exclusiva (Nombre Propio),f34v,21,f116r (x4) | f111r (x3) | f111v (x3) | f103r (x2) | f108v (x2) | f88r (x1) | f89v (x1) | f103v (x1) | f106r (x1) | f106v (x1) | f107r (x1) | f113v (x1),C1:10 | B2:9 | G1:1
+A1Q2A3,Exclusiva (Nombre Propio),f34v,298,f113v (x26) | f105v (x23) | f107r (x20) | f107v (x17) | f111v (x17) | f103v (x15) | f114v (x15) | f106v (x14) | f113r (x14) | f116r (x12) | f104r (x11) | f112r (x11) | f106r (x10) | f112v (x10) | f114r (x10) | f103r (x9) | f108r (x9) | f95v (x6) | f104v (x6) | f105r (x6) | f108v (x6) | f89v (x5) | f95r (x4) | f111r (x4) | f115r (x4) | f94v (x3) | f115v (x3) | f94r (x2) | f99v (x2) | f88r (x1) | f100r (x1) | f101r (x1) | f101v (x1),G1:81 | C1:64 | B2:57
+A1B2A1,Exclusiva (Nombre Propio),f35r,9,f113v (x2) | f95v (x1) | f101v (x1) | f103r (x1) | f103v (x1) | f106v (x1) | f108v (x1) | f111v (x1),C1:5 | G1:2 | C2:1
+P1A3C1K1A1,Exclusiva (Nombre Propio),f35v,0,NINGUNO,N/A
+Q2K1A1Q2K1A1,Exclusiva (Nombre Propio),f35v,0,NINGUNO,N/A
+K1A1C2A3,Exclusiva (Nombre Propio),f35v,2,f101r (x1) | f106v (x1),G1:2
+A1Q1K1A1K1A1,Exclusiva (Nombre Propio),f37r,0,NINGUNO,N/A
+B1L1A1,Comun (Generica),f37v | f44r | f44v | f45v,2,f88v (x1) | f103r (x1),C1:1 | B2:1
+A2A1Q1A1,Exclusiva (Nombre Propio),f37v,1,f89v (x1),C1:1
+K1AaC1A1,Exclusiva (Nombre Propio),f37v,0,NINGUNO,N/A
+C2A1Q1K1A1,Exclusiva (Nombre Propio),f37v,0,NINGUNO,N/A
+Q2A1B2A1,Exclusiva (Nombre Propio),f38r,0,NINGUNO,N/A
+B1K1B1A3,Exclusiva (Nombre Propio),f39r,1,f104v (x1),C1:1
+K1BaA3,Exclusiva (Nombre Propio),f39r,7,f106v (x2) | f94v (x1) | f95r (x1) | f95v (x1) | f105r (x1) | f107v (x1),G1:3 | B3:2 | B2:1
+A2Q2J1BaA2Q1A1,Exclusiva (Nombre Propio),f39v,0,NINGUNO,N/A
+A1J1Q1A3,Exclusiva (Nombre Propio),f39v,0,NINGUNO,N/A
+Q1J1A1B1A3,Exclusiva (Nombre Propio),f40r,2,f87r (x1) | f94r (x1),G1:2
+AaQ1A3,Exclusiva (Nombre Propio),f40r,16,f106r (x2) | f107r (x2) | f107v (x2) | f111v (x2) | f113r (x2) | f104r (x1) | f111r (x1) | f112r (x1) | f112v (x1) | f113v (x1) | f116r (x1),F1:8 | G1:6 | B2:1
+B2A1Q1A3,Exclusiva (Nombre Propio),f40r,2,f103r (x1) | f111r (x1),F1:1 | B3:1
+Q2A1,Comun (Generica),f40r | f48v | f54r,20,f89r (x2) | f90r (x2) | f96r (x2) | f87r (x1) | f88v (x1) | f89v (x1) | f90v (x1) | f93r (x1) | f95r (x1) | f99r (x1) | f102r (x1) | f102v (x1) | f104r (x1) | f107v (x1) | f111v (x1) | f113r (x1) | f115v (x1),B2:9 | C1:7 | C2:3
+Q2A1A3,Exclusiva (Nombre Propio),f40r,3,f89v (x1) | f96r (x1) | f104r (x1),G1:2 | C1:1
+Q2A1B1A3,Exclusiva (Nombre Propio),f40v,3,f94r (x1) | f94v (x1) | f114r (x1),G1:2 | B2:1
+K1J1Q2A3,Comun (Generica),f40v | f42r,9,f111v (x2) | f114v (x2) | f116r (x2) | f94v (x1) | f112v (x1) | f113r (x1),C1:3 | F1:3 | G1:2
+K1Q2L1A3,Exclusiva (Nombre Propio),f42r,0,NINGUNO,N/A
+D1A1P1A1,Exclusiva (Nombre Propio),f42r,4,f89v (x1) | f112r (x1) | f115r (x1) | f115v (x1),B2:3 | C1:1
+A1Q1J1A1Q1J1A3,Exclusiva (Nombre Propio),f42v,0,NINGUNO,N/A
+K1J1A1Q2K1A3,Exclusiva (Nombre Propio),f42v,0,NINGUNO,N/A
+P1A1L1J1A1,Exclusiva (Nombre Propio),f42v,1,f115r (x1),C2:1
+A2Q1A3,Comun (Generica),f43r | f46v | f50v | f52v,21,f105r (x3) | f94r (x2) | f95r (x2) | f107r (x2) | f114r (x2) | f88r (x1) | f89v (x1) | f104r (x1) | f104v (x1) | f106r (x1) | f106v (x1) | f108v (x1) | f112r (x1) | f113v (x1) | f115r (x1),G1:8 | C1:7 | B3:2
+P1L1B1A3,Exclusiva (Nombre Propio),f43r,1,f106r (x1),C1:1
+Q2A3C1K1A1,Exclusiva (Nombre Propio),f43v,0,NINGUNO,N/A
+A1Q1K1A3,Comun (Generica),f44v | f45r,4,f94v (x1) | f106r (x1) | f111v (x1) | f112r (x1),G1:2 | C1:2
+B2K1Aa,Exclusiva (Nombre Propio),f44v,0,NINGUNO,N/A
+B2K1A3,Exclusiva (Nombre Propio),f45r,8,f111v (x3) | f115v (x2) | f104v (x1) | f111r (x1) | f113v (x1),B2:5 | C1:1 | F1:1
+A2Q1L1J1A1,Exclusiva (Nombre Propio),f45v,0,NINGUNO,N/A
+Q2L1J1BaA3,Exclusiva (Nombre Propio),f46r,0,NINGUNO,N/A
+A1Q2K1J1A3B2Q2A3,Exclusiva (Nombre Propio),f46r,0,NINGUNO,N/A
+A3G3K1A3,Exclusiva (Nombre Propio),f46v,0,NINGUNO,N/A
+P2A1B2,Exclusiva (Nombre Propio),f47r,1,f101v (x1),C2:1
+D1A1Q1A1Q1A1,Exclusiva (Nombre Propio),f47r,0,NINGUNO,N/A
+K1J1A1Q2A3,Exclusiva (Nombre Propio),f47v,2,f107r (x1) | f114v (x1),F1:1 | G1:1
+Q1A1,Exclusiva (Nombre Propio),f48v,15,f101r (x4) | f105r (x2) | f87r (x1) | f88r (x1) | f89v (x1) | f90r (x1) | f90v (x1) | f95r (x1) | f101v (x1) | f102v (x1) | f114r (x1),C1:7 | B2:5 | A1:1
+P1K1J1BaA3,Exclusiva (Nombre Propio),f48v,2,f103r (x1) | f111r (x1),B2:1 | C1:1
+D1A1Q1J1A1,Exclusiva (Nombre Propio),f49r,60,f102v (x9) | f89r (x5) | f99v (x5) | f90r (x4) | f88r (x3) | f100v (x3) | f101v (x3) | f102r (x3) | f103r (x3) | f90v (x2) | f101r (x2) | f106r (x2) | f111r (x2) | f115r (x2) | f88v (x1) | f96r (x1) | f99r (x1) | f100r (x1) | f104r (x1) | f104v (x1) | f107r (x1) | f107v (x1) | f108r (x1) | f108v (x1) | f111v (x1) | f113r (x1),B2:36 | C1:13 | B1:6
+P2K1A1K1A1,Exclusiva (Nombre Propio),f49v,0,NINGUNO,N/A
+P1L1J1A1,Exclusiva (Nombre Propio),f50r,0,NINGUNO,N/A
+Q1A3,Comun (Generica),f50r | f50v,82,f107r (x12) | f104v (x5) | f105v (x5) | f107v (x5) | f111v (x5) | f104r (x4) | f106v (x4) | f111r (x4) | f112v (x4) | f114r (x4) | f114v (x4) | f95r (x3) | f106r (x3) | f113r (x3) | f113v (x3) | f94r (x2) | f103r (x2) | f105r (x2) | f108v (x2) | f115v (x2) | f90v (x1) | f103v (x1) | f108r (x1) | f115r (x1),G1:30 | C1:17 | F1:17
+L1K2Q1A3,Exclusiva (Nombre Propio),f50r,2,f111v (x1) | f114r (x1),C1:1 | C2:1
+A2K1A1C2A3,Exclusiva (Nombre Propio),f51r,0,NINGUNO,N/A
+D1A1Q1A1B1A3,Exclusiva (Nombre Propio),f51v,2,f87v (x1) | f114r (x1),B2:1 | G1:1
+A1A1,Exclusiva (Nombre Propio),f52v,2,f111r (x1) | f114r (x1),G1:1 | C1:1
+U2J1A1,Exclusiva (Nombre Propio),f52v,12,f101r (x2) | f102v (x2) | f88r (x1) | f90v (x1) | f93v (x1) | f96r (x1) | f96v (x1) | f99r (x1) | f99v (x1) | f100r (x1),B2:7 | C2:2 | C1:2
+D1A1J1Q1A3,Exclusiva (Nombre Propio),f52v,0,NINGUNO,N/A
+K1J1A1Q1A1,Exclusiva (Nombre Propio),f52v,1,f89r (x1),C1:1
+A2Q1J1A1B1A3,Exclusiva (Nombre Propio),f53r,2,f88v (x1) | f114r (x1),F1:1 | G1:1
+A1D1A1Aa,Exclusiva (Nombre Propio),f53r,0,NINGUNO,N/A
+C2A1B1A3,Exclusiva (Nombre Propio),f53r,0,NINGUNO,N/A
+A2A1,Exclusiva (Nombre Propio),f54r,1,f114v (x1),B4:1
+P1K1J1A1B1A3,Exclusiva (Nombre Propio),f54v,5,f106r (x2) | f113r (x1) | f114v (x1) | f115r (x1),F3:1 | C1:1 | G1:1
+AbQ1A3,Exclusiva (Nombre Propio),f54v,1,f87v (x1),G1:1
+Q2K1J1B1Aa,Exclusiva (Nombre Propio),f55r,0,NINGUNO,N/A
+B2K1A1,Exclusiva (Nombre Propio),f55r,3,f113r (x2) | f99v (x1),B2:2 | B1:1
+Q2Aa,Exclusiva (Nombre Propio),f55v,1,f107v (x1),B2:1
+K1J1A1A3,Exclusiva (Nombre Propio),f55v,7,f113r (x3) | f106v (x2) | f114r (x1) | f114v (x1),C1:3 | G1:2 | G3:1
+K1A1K1A1,Exclusiva (Nombre Propio),f56r,0,NINGUNO,N/A
+A3C1A3B2A3C1A3,Exclusiva (Nombre Propio),f57v,0,NINGUNO,N/A
+A1T2A1,Exclusiva (Nombre Propio),f57v,0,NINGUNO,N/A
+A1Q1J1A3,Exclusiva (Nombre Propio),f57v,12,f108v (x3) | f111r (x2) | f101r (x1) | f102v (x1) | f103r (x1) | f103v (x1) | f106v (x1) | f111v (x1) | f112r (x1),B2:5 | C1:5 | G1:1

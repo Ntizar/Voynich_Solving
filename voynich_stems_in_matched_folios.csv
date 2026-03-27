@@ -1,0 +1,80 @@
+Stem,Type,N_Matched_Folios,Matched_Folios,Matched_Recipes
+B1A3,GEN,26,f100r | f100v | f101r | f101v | f102r | f102v | f103v | f105r | f105v | f108r | f112r | f114v | f116r | f87r | f87v | f88r | f88v | f90r | f90v | f94r | f94v | f95r | f95v | f96r | f99r | f99v,Confectio Hamech | Unguentum Apostolorum | Trifera Magna | Diamargariton | Diaciminum | Trifera Magna | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Aurea Alexandrina | Aurea Alexandrina | Diascordium | Trifera Magna | Philonium Persicum | Philonium Persicum | Trifera Magna | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+K1A1,GEN,25,f100r | f100v | f101r | f101v | f102r | f102v | f103v | f105r | f105v | f108r | f112r | f114v | f116r | f87r | f87v | f88r | f88v | f90r | f90v | f93v | f94r | f95r | f96r | f99r | f99v,Confectio Hamech | Unguentum Apostolorum | Trifera Magna | Diascordium | Diamargariton | Diaciminum | Trifera Magna | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Aurea Alexandrina | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+K1J1A1,GEN,24,f100r | f100v | f101r | f101v | f102r | f102v | f103v | f105r | f105v | f108r | f112r | f114v | f116r | f87r | f87v | f88r | f88v | f90v | f94r | f95r | f96r | f96v | f99r | f99v,Confectio Hamech | Unguentum Apostolorum | Trifera Magna | Pillulae Aureae | Diamargariton | Diaciminum | Trifera Magna | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+BaA3,EXCL,22,f100r | f101r | f101v | f102r | f102v | f103v | f105r | f105v | f108r | f112r | f114v | f116r | f87v | f88r | f88v | f94r | f94v | f95r | f95v | f96r | f96v | f99r,Unguentum Apostolorum | Trifera Magna | Pillulae Aureae | Diamargariton | Trifera Magna | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Diascordium | Trifera Magna | Philonium Persicum | Philonium Persicum | Trifera Magna | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+C2A3,GEN,21,f100r | f100v | f101r | f101v | f102v | f103v | f105r | f105v | f108r | f112r | f116r | f87r | f87v | f88r | f88v | f90r | f90v | f94r | f95v | f96v | f99r,Confectio Hamech | Unguentum Apostolorum | Trifera Magna | Pillulae Aureae | Diamargariton | Diaciminum | Trifera Magna | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Aurea Alexandrina | Aurea Alexandrina | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+L1A1,GEN,18,f100r | f101r | f101v | f102v | f103v | f105r | f108r | f112r | f114v | f87r | f88v | f90v | f93v | f94r | f95r | f95v | f99r | f99v,Confectio Hamech | Diascordium | Diamargariton | Trifera Magna | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Aurea Alexandrina | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+L1J1A1,GEN,18,f100r | f101r | f101v | f102r | f102v | f103v | f105r | f105v | f108r | f88r | f88v | f90r | f90v | f93v | f95v | f96r | f99r | f99v,Trifera Magna | Diascordium | Diamargariton | Trifera Magna | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Aurea Alexandrina | Philonium Persicum | Philonium Persicum | Trifera Magna | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+A1Q2A3,EXCL,16,f100r | f101r | f101v | f103v | f105r | f105v | f108r | f112r | f114v | f116r | f88r | f94r | f94v | f95r | f95v | f99v,Trifera Magna | Diamargariton | Trifera Magna | Trifera Magna | Aurea Alexandrina | Diascordium | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+A1Q1A3,GEN,16,f100v | f103v | f105r | f105v | f108r | f112r | f114v | f116r | f88r | f88v | f90r | f94r | f94v | f95r | f95v | f99v,Trifera Magna | Diaciminum | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Aurea Alexandrina | Diascordium | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+C2A1,GEN,14,f100r | f100v | f101r | f102r | f102v | f112r | f114v | f87r | f93v | f95v | f96r | f96v | f99r | f99v,Confectio Hamech | Diascordium | Pillulae Aureae | Diamargariton | Diaciminum | Philonium Persicum | Philonium Persicum | Trifera Magna | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna
+D1A1Q1J1A1,EXCL,14,f100r | f100v | f101r | f101v | f102r | f102v | f108r | f88r | f88v | f90r | f90v | f96r | f99r | f99v,Trifera Magna | Diamargariton | Diaciminum | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Aurea Alexandrina | Philonium Persicum | Trifera Magna | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna
+A1Q1A1,GEN,14,f100v | f101r | f101v | f102r | f105v | f108r | f114v | f88r | f88v | f90r | f95r | f96r | f99r | f99v,Trifera Magna | Diaciminum | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna
+D1A1Q1A3,GEN,14,f101v | f102v | f103v | f105r | f105v | f108r | f112r | f114v | f116r | f94r | f94v | f95r | f95v | f99v,Trifera Magna | Trifera Magna | Aurea Alexandrina | Diascordium | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+A1B1A3,GEN,13,f101v | f102r | f102v | f105r | f105v | f114v | f116r | f87r | f88v | f95r | f95v | f96v | f99v,Confectio Hamech | Pillulae Aureae | Trifera Magna | Philonium Persicum | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+A1B2A3,EXCL,13,f101r | f101v | f102r | f103v | f105v | f108r | f112r | f114v | f116r | f88v | f94r | f99r | f99v,Trifera Magna | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Trifera Magna | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+A1Q1J1A1,EXCL,12,f100r | f100v | f101r | f101v | f102r | f102v | f105v | f108r | f87r | f88r | f99r | f99v,Confectio Hamech | Trifera Magna | Diamargariton | Diaciminum | Trifera Magna | Trifera Magna | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna
+D1A1Q1A1,GEN,12,f101v | f102r | f102v | f105r | f105v | f108r | f114v | f88r | f90r | f95r | f99r | f99v,Trifera Magna | Trifera Magna | Aurea Alexandrina | Trifera Magna | Trifera Magna | Aurea Alexandrina | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+A1Q2A1,GEN,11,f101r | f102v | f105r | f105v | f108r | f114v | f116r | f87v | f88v | f95r | f99v,Unguentum Apostolorum | Philonium Persicum | Trifera Magna | Aurea Alexandrina | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+A1Q2J1A1,EXCL,11,f100r | f101r | f102r | f102v | f105r | f108r | f112r | f116r | f88r | f88v | f90v,Trifera Magna | Diamargariton | Philonium Persicum | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+B1A1,GEN,11,f101r | f102r | f102v | f105r | f105v | f116r | f88r | f90r | f94r | f99r | f99v,Trifera Magna | Aurea Alexandrina | Aurea Alexandrina | Trifera Magna | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+D1A1Q2A3,GEN,11,f103v | f105r | f105v | f108r | f112r | f114v | f116r | f94r | f94v | f95r | f95v,Trifera Magna | Aurea Alexandrina | Diascordium | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+K1K2A1,EXCL,10,f100v | f101v | f102v | f114v | f87v | f88r | f88v | f90v | f93v | f96r,Unguentum Apostolorum | Trifera Magna | Diascordium | Diaciminum | Trifera Magna | Philonium Persicum | Aurea Alexandrina | Philonium Persicum | Trifera Magna | Trifera Magna
+U2J1A1,EXCL,10,f100r | f101r | f102v | f88r | f90v | f93v | f96r | f96v | f99r | f99v,Trifera Magna | Diascordium | Pillulae Aureae | Diamargariton | Aurea Alexandrina | Philonium Persicum | Trifera Magna | Aurea Alexandrina | Trifera Magna | Trifera Magna
+Q1A1,EXCL,9,f101r | f101v | f102v | f105r | f87r | f88r | f90r | f90v | f95r,Confectio Hamech | Trifera Magna | Trifera Magna | Aurea Alexandrina | Aurea Alexandrina | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+Q2A1,GEN,9,f102r | f102v | f87r | f88v | f90r | f90v | f95r | f96r | f99r,Confectio Hamech | Philonium Persicum | Aurea Alexandrina | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Philonium Persicum | Trifera Magna
+K1A3,GEN,9,f103v | f108r | f112r | f114v | f116r | f94v | f95r | f95v | f96v,Pillulae Aureae | Trifera Magna | Diascordium | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+D1A1B1A3,GEN,9,f101r | f101v | f105r | f105v | f112r | f90r | f90v | f95r | f95v,Trifera Magna | Aurea Alexandrina | Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+A1P1A3,EXCL,9,f102v | f103v | f105r | f105v | f108r | f112r | f116r | f94r | f99v,Trifera Magna | Aurea Alexandrina | Aurea Alexandrina | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+Q2A3,GEN,8,f103v | f105r | f105v | f108r | f112r | f114v | f95r | f95v,Trifera Magna | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+Q1A3,GEN,8,f103v | f105r | f105v | f108r | f114v | f90v | f94r | f95r,Trifera Magna | Aurea Alexandrina | Aurea Alexandrina | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+Q1J1A1,GEN,7,f102v | f108r | f112r | f114v | f87r | f87v | f88r,Confectio Hamech | Unguentum Apostolorum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+D1A1,GEN,6,f101v | f103v | f112r | f116r | f87v | f94r,Unguentum Apostolorum | Trifera Magna | Trifera Magna | Aurea Alexandrina | Trifera Magna | Trifera Magna
+A2Q2A3,EXCL,6,f101v | f105r | f105v | f114v | f94v | f95r,Trifera Magna | Diascordium | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+B2A1,EXCL,6,f101v | f102r | f103v | f108r | f116r | f96r,Trifera Magna | Trifera Magna | Philonium Persicum | Philonium Persicum | Trifera Magna | Trifera Magna
+K1A1B1A3,EXCL,6,f101r | f102v | f105v | f114v | f90v | f96r,Aurea Alexandrina | Philonium Persicum | Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+U2A1,GEN,5,f101v | f87r | f88r | f90r | f93v,Confectio Hamech | Trifera Magna | Diascordium | Trifera Magna | Aurea Alexandrina
+A2Q1J1A1,EXCL,5,f101r | f101v | f108r | f88r | f96r,Trifera Magna | Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna
+A2Q1A3,GEN,5,f105r | f112r | f88r | f94r | f95r,Trifera Magna | Aurea Alexandrina | Trifera Magna | Trifera Magna | Trifera Magna
+U1A1,GEN,5,f100v | f90r | f93v | f96r | f99r,Diascordium | Diaciminum | Aurea Alexandrina | Philonium Persicum | Trifera Magna
+A2K1A1,GEN,5,f102v | f90r | f93v | f99r | f99v,Diascordium | Aurea Alexandrina | Trifera Magna | Aurea Alexandrina | Trifera Magna
+B1Aa,GEN,5,f102v | f103v | f116r | f90v | f99r,Trifera Magna | Aurea Alexandrina | Trifera Magna | Trifera Magna | Trifera Magna
+Q2K1A1,GEN,4,f102v | f87r | f90v | f95r,Confectio Hamech | Aurea Alexandrina | Trifera Magna | Trifera Magna
+L1K2A1,EXCL,4,f101r | f101v | f102v | f88r,Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+A1Q2K1A1,GEN,4,f105v | f88r | f90r | f99r,Trifera Magna | Aurea Alexandrina | Trifera Magna | Trifera Magna
+D1A1Q1K1A1,GEN,4,f90r | f93v | f96r | f99v,Diascordium | Aurea Alexandrina | Philonium Persicum | Aurea Alexandrina
+D1A1Q1K2A1,EXCL,4,f100r | f95v | f99r | f99v,Diamargariton | Philonium Persicum | Trifera Magna | Aurea Alexandrina
+A2K1J1A1,GEN,4,f101v | f102r | f108r | f114v,Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna
+A1Q1J1A3,EXCL,4,f101r | f102v | f103v | f112r,Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+K1Q2A3,EXCL,4,f103v | f108r | f116r | f95v,Trifera Magna | Philonium Persicum | Trifera Magna | Trifera Magna
+P1K1A1,GEN,4,f102v | f103v | f105v | f99r,Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+A2Q2A1,GEN,4,f102r | f90r | f90v | f96r,Aurea Alexandrina | Aurea Alexandrina | Philonium Persicum | Philonium Persicum
+Q2L1A1,EXCL,4,f90v | f95r | f95v | f99r,Aurea Alexandrina | Trifera Magna | Philonium Persicum | Trifera Magna
+K1BaA3,EXCL,4,f105r | f94v | f95r | f95v,Diascordium | Trifera Magna | Philonium Persicum | Trifera Magna
+K1Q1A3,EXCL,4,f105v | f108r | f116r | f95r,Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+D1A1Q2A1,GEN,4,f101r | f105v | f114v | f99r,Trifera Magna | Trifera Magna | Trifera Magna | Trifera Magna
+T1A1,EXCL,3,f100r | f116r | f88r,Trifera Magna | Diamargariton | Trifera Magna
+L1J1A3,EXCL,3,f103v | f116r | f88r,Trifera Magna | Trifera Magna | Trifera Magna
+K1J1A3,GEN,3,f108r | f116r | f88r,Trifera Magna | Trifera Magna | Trifera Magna
+D1A1Q2K1A1,GEN,3,f90r | f93v | f96r,Diascordium | Aurea Alexandrina | Philonium Persicum
+A1B2A1,EXCL,3,f101v | f103v | f95v,Trifera Magna | Trifera Magna | Philonium Persicum
+Q2K2A1,EXCL,3,f101r | f103v | f105r,Trifera Magna | Trifera Magna | Trifera Magna
+K1J1Q1A3,EXCL,3,f108r | f94r | f95r,Aurea Alexandrina | Trifera Magna | Trifera Magna
+P1K1J1B1A3,GEN,3,f105v | f94r | f94v,Aurea Alexandrina | Diascordium | Trifera Magna
+K1J1Q2A3,GEN,3,f114v | f116r | f94v,Diascordium | Trifera Magna | Trifera Magna
+A1Q1K1A1,GEN,3,f101r | f112r | f99r,Trifera Magna | Trifera Magna | Trifera Magna
+B2A3,GEN,3,f105r | f105v | f116r,Trifera Magna | Trifera Magna | Trifera Magna
+Q1J1A1B1A3,EXCL,2,f87r | f94r,Confectio Hamech | Aurea Alexandrina
+B1K1A1,GEN,2,f87r | f93v,Confectio Hamech | Diascordium
+Q1K1A1,GEN,2,f87v | f90r,Unguentum Apostolorum | Aurea Alexandrina
+K1A1Q1A1,EXCL,2,f88r | f99v,Trifera Magna | Aurea Alexandrina
+K1A1B2B1A3,GEN,2,f100r | f101r,Diamargariton | Trifera Magna
+Q2A1Q1A3,EXCL,2,f103v | f116r,Trifera Magna | Trifera Magna
+L1A3,GEN,2,f103v | f116r,Trifera Magna | Trifera Magna
+A2L1J1A1,EXCL,2,f105v | f88v,Philonium Persicum | Trifera Magna
+Q2A1B1A3,EXCL,2,f94r | f94v,Aurea Alexandrina | Diascordium
+A1Q1K1A3,GEN,2,f112r | f94v,Diascordium | Trifera Magna
+A2B1A3,EXCL,2,f101r | f102v,Trifera Magna | Trifera Magna
+P1K1B1A3,GEN,2,f105v | f114v,Trifera Magna | Trifera Magna
+AaQ1A3,EXCL,2,f112r | f116r,Trifera Magna | Trifera Magna

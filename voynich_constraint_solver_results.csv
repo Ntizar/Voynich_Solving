@@ -1,0 +1,11 @@
+Stem,Type,Category,N_Recipes,Origin,Intersection_Size,Candidates,Confidence
+K1K2A1,Exclusivo,ACTIVO,3,f17v,1,Galbanum,HIGH (unique)
+BaA3,Exclusivo,ACTIVO,3,f33v,0,EMPTY,CONFLICT
+U2J1A1,Exclusivo,ACTIVO,2,f52v,0,EMPTY,CONFLICT
+D1A1Q1J1A1,Exclusivo,ACTIVO,2,f49r,7,Acorus calamus | Castoreum | Hypericum | Opium | Petroselinum | Phu/Valeriana | Squilla,VERY LOW (>6 candidates)
+L1A1,Generico,ESPECIA,2,multiple,3,Cinnamomum | Piper longum | Zingiber,MEDIUM (2-3 candidates)
+K1A3,Generico,ESPECIA,2,multiple,2,Cinnamomum | Crocus,MEDIUM (2-3 candidates)
+D1A1Q1K1A1,Generico,ESPECIA,2,multiple,3,Cinnamomum | Piper longum | Zingiber,MEDIUM (2-3 candidates)
+D1A1,Generico,DESCONOCIDO,2,multiple,N/A,UNKNOWN CATEGORY,NONE
+A2K1A1,Generico,DESCONOCIDO,2,multiple,N/A,UNKNOWN CATEGORY,NONE
+A1Q1A1,Generico,DESCONOCIDO,2,multiple,N/A,UNKNOWN CATEGORY,NONE

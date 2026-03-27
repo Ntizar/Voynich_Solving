@@ -1,0 +1,17 @@
+---
+tags: [voynich/planta, ingrediente]
+origen: "[[Folio_f31r]]"
+frecuencia_recetas: 1
+---
+# Planta: A2Q1K2BaA3
+
+## 🌿 Origen Botánico
+Esta planta se describe e ilustra originalmente en el folio: **[[Folio_f31r]]**.
+*Enlace a imagen original:* [Ver f31r en Voynich.nu](http://www.voynich.nu/fol/f31r.html)
+
+## ⚗️ Uso en Farmacia / Recetas
+Esta planta es utilizada como ingrediente en las siguientes recetas médicas:
+- Usado en receta: **[[Folio_f112v]]**
+
+## 📊 Etiquetas Dominantes en Recetas
+F1:1

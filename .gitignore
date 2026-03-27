@@ -1,0 +1,36 @@
+# ==============================================
+# Voynich_Solving -- .gitignore
+# ==============================================
+
+# --- External source data (download separately) ---
+zenodo_voynich/
+
+# --- Other projects sharing this directory ---
+.github/
+.netlify/
+.pytest_cache/
+AGENTS.MD/
+agents/
+design-system/
+ine/
+scripts/
+nul
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# --- OS ---
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# --- Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
