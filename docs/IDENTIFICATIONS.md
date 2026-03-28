@@ -1,8 +1,8 @@
 # Stem Identifications -- Complete Table and Reasoning Chains
 
-This document records every Voynich stem identification, organized by confidence tier. **Current version: v5 (58 entries, 19 unique ingredients + 8 function words).**
+This document records every Voynich stem identification, organized by confidence tier. **Current version: v6 (58 entries, 17 unique ingredients + 8 function words).**
 
-Last updated: Session 9
+Last updated: Session 12
 
 ---
 
@@ -13,9 +13,9 @@ Last updated: Session 9
 | 0 (Function Words) | 8 | Stems too ubiquitous for single ingredient |
 | 1 (Confirmed) | 2 | K1K2A1=Galbanum (99%), K1A3=Crocus (95%) |
 | 2 (High) | 6 | All Myrrha: A1Q2A1, D1A1, D1A1A3, Q1K1A1, A1Q1J1, T1J1A1B1A3 |
-| 3 (Strong) | 19 | Crocus x9, Rosa x1, Zingiber\|Mel x5, Cinnamomum x2, Opopanax x2 |
+| 3 (Strong) | 19 | Crocus x9, Rosa x1, **Mel despumatum x5**, Cinnamomum x2, Opopanax x2 |
 | 4 (Moderate) | 23 | Amomum x3, Piper nigrum x1, Styrax x2, Piper longum x1, Bdellium x2, Casia x3, Cardamomum x8, Saccharum x1, Galanga\|Cubeba\|Nux moschata x2 |
-| **TOTAL** | **58** | **19 unique ingredients touched (13 single + 5 in pairs + Opopanax)** |
+| **TOTAL** | **58** | **17 unique ingredients (15 single + Galanga\|Cubeba\|Nux moschata triple)** |
 
 ---
 
@@ -103,17 +103,19 @@ These 9 stems share the same distribution profile as K1A3 (confirmed Crocus) but
 
 **What it is:** Rosa damascena/gallica. Petals, hips, and rosewater used ubiquitously in medieval pharmacy.
 
-### Zingiber | Mel despumatum (5 stems, 85%)
+### Mel despumatum (5 stems, 88%) -- UPDATED in v6 (was Zingiber|Mel in v5)
 
-These 5 stems have identical distribution profiles. Both Zingiber and Mel despumatum appear in exactly the same recipes in our 23-recipe database, making them inseparable. Validated against 3 negative controls (zero false positives).
+These 5 stems were previously identified as the inseparable pair Zingiber|Mel despumatum (v5). In session 11-12, discriminating recipes (2 Zingiber-only, 4 Mel-only) broke the deadlock with a **41-0 unanimous verdict for Mel**. See Discovery 18.
 
 | Stem | Confidence |
 |---|---|
-| Q1A1 | 85% |
-| Q2A1 | 85% |
-| Q2K1A1 | 85% |
-| U1A1 | 85% |
-| U2A1 | 85% |
+| Q1A1 | 88% |
+| Q2A1 | 88% |
+| Q2K1A1 | 88% |
+| U1A1 | 88% |
+| U2A1 | 88% |
+
+**What it is:** Mel despumatum = clarified/skimmed honey. The most common BASE ingredient in medieval pharmacy, used as a binder, preservative, and vehicle for compound electuaries. Present in 30+ recipes.
 
 ### Cinnamomum (2 stems, 60%)
 
@@ -223,8 +225,10 @@ K1A3 = Crocus (CONFIRMED)
 ```
 
 **Deadlock status:**
-- Zingiber vs Mel despumatum: BLOCKED (identical recipe profiles)
-- Opium vs Castoreum: BLOCKED (identical recipe profiles, Requies Magna absent from corpus -- confirmed session 9)
+- Zingiber vs Mel despumatum: **RESOLVED** -- 41-0 verdict for Mel (session 11-12, Discovery 18)
+- Opium vs Castoreum: PARTIALLY BROKEN -- 6 Opium folios, 17 Castoreum folios, morphological differences identified (session 11, Discovery 16-17)
+- Galanga vs Cubeba vs Nux moschata: BLOCKED (identical recipe profiles, 2 stems)
+- Zingiber: UNIDENTIFIED -- no strong stem candidates found yet (session 12, Discovery 19)
 
 ---
 
@@ -233,7 +237,10 @@ K1A3 = Crocus (CONFIRMED)
 | Test | Result |
 |---|---|
 | Zingiber\|Mel negative controls (3 folios) | 0/15 false positives |
+| Zingiber vs Mel deadlock breaker (6 recipes) | 41-0 for Mel (session 11-12) |
 | Philonium probes in f88v, f95v, f96r, f102r | All 4 confirmed PHILONIUM |
 | Opopanax cross-validation (2 independent paths) | Both converge |
 | Crocus absence from f93v (Diascordium) | Confirmed |
 | Galbanum triple intersection uniqueness | Confirmed |
+| Content-based matching v6 (48 folios x 50 recipes) | Mean F1 = 54.3%, 37 GOOD matches |
+| Opium/Castoreum morphological analysis (948 stems) | 296 Opium-enriched, 363 Castoreum-enriched |

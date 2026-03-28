@@ -397,12 +397,84 @@
 
 ---
 
+## Session 11: Morphological Deadlock Analysis and Zingiber/Mel Breakthrough
+
+### Work Done
+
+1. **Opium/Castoreum Morphological Analysis**
+   - Comprehensive analysis of all 948 unidentified stems for Opium vs Castoreum enrichment
+   - Used Log Odds Ratio to classify stems: 296 Opium-enriched, 363 Castoreum-enriched, 288 neutral
+   - Found 5 strong Opium-exclusive stems (in 2+ opium folios, 0 castoreum): Q2A1B1A3, A1B2Q1A1, BaA1, K1A1B2Q1, K1Aa
+   - Found 301 strong Castoreum-exclusive stems (in 2+ castoreum folios, 0 opium)
+   - Morphological differences: Opium stems shorter (more 2-atom), more A1/B1-initial; Castoreum stems longer (6+ atom), more B2/P1-initial, L1J1-containing
+
+2. **Positional Ordering Analysis**
+   - 78.4% of (opium, castoreum) folio pairs have opium BEFORE castoreum
+   - Mean folio position: Opium = 196.3, Castoreum = 213.0
+   - Consistent with medieval pharmacopoeia organization (analgesics before stimulants)
+
+3. **Ingredient Profile Differences**
+   - Opium folios: 3.5x more Zingiber|Mel, 2.1x more P. nigrum
+   - Castoreum folios: 2.4x more Crocus, 3.8x more Cardamomum, exclusive Casia/Styrax/Rosa
+
+4. **Zingiber/Mel Deadlock -- BROKEN**
+   - Found discriminating recipes: 2 Zingiber-only (Benedicta Laxativa, Elec. de Succo Rosarum), 4 Mel-only (Hiera Picra, Theriac Diatessaron, Theriac Diatessaron Magna, Tiryaq al-Arba)
+   - Result: **41 folios favor MEL, 0 favor ZINGIBER, 6 tied, 1 insufficient**
+   - Unanimous verdict: 5 Zingiber|Mel stems are Mel despumatum (honey)
+
+### Scripts Written
+- Inline analysis (no named script -- morphological analysis run in session)
+
+### Files Generated
+- `voynich_deadlock_morphology_v3.csv` -- Enrichment analysis for all 948 unidentified stems
+- `voynich_zingiber_mel_deadlock.csv` -- Per-folio F1 comparison (41-0 verdict)
+
+---
+
+## Session 12: v6 Identification Update, Re-matching, and Zingiber Search
+
+### Work Done
+
+1. **Updated Identification Table v5 -> v6**
+   - Changed 5 Zingiber|Mel stems (Q1A1, Q2A1, Q2K1A1, U1A1, U2A1) to Mel despumatum at 88% confidence
+   - v6 has 58 entries, 17 unique ingredients (was 19 counting pairs)
+   - Generated `voynich_unified_identifications_v6.csv`
+
+2. **Re-ran Content-Based Matching with v6**
+   - 48 folios x 50 recipes matching using v6 identifications
+   - Results: 0 EXCELLENT (f113v dropped from 80% to 75% due to Mel being single ingredient), 37 GOOD, 8 MODERATE, 2 WEAK, 1 INSUFFICIENT
+   - Mean F1 (non-zero): 54.3%
+   - Most frequent best-match: Electuarium Justinum (14 folios), Trifera Saracenica (14 folios)
+   - Generated `voynich_matching_v6.csv`, `voynich_expanded_matching_v6.csv`, `voynich_matching_v6_top5.csv`
+
+3. **Searched for New Zingiber Stems**
+   - Attempted enrichment analysis for stems appearing in Zingiber-containing recipe folios
+   - 42/47 active folios match Zingiber-containing recipes -- enrichment non-discriminative
+   - No strong candidates identified; requires alternative approaches (morphological pairing, co-occurrence, recipe-specific probing)
+   - Generated `voynich_zingiber_candidates.csv`
+
+4. **Updated DISCOVERIES.md**
+   - Added discoveries 17 (Morphological Opium/Castoreum Analysis), 18 (Zingiber/Mel Broken 41-0), 19 (Zingiber Search Inconclusive)
+   - Now has 19 documented discoveries
+
+### Scripts Written
+- `temp_v6_update_and_match.py`
+
+### Files Generated
+- `voynich_unified_identifications_v6.csv` -- v6 identification table (58 entries)
+- `voynich_matching_v6.csv` -- Best match per folio (v6)
+- `voynich_expanded_matching_v6.csv` -- Full 48x50 matching matrix (v6)
+- `voynich_matching_v6_top5.csv` -- Top 5 recipe matches per folio (v6)
+- `voynich_zingiber_candidates.csv` -- Zingiber enrichment analysis
+
+---
+
 ## Summary Statistics
 
 | Metric | Value |
 |---|---|
-| Total scripts written | 31 |
-| Total CSV files generated | 21 |
+| Total scripts written | 32 |
+| Total CSV files generated | 28 |
 | HTML files | 2 (dashboard_voynich.html, README.html) |
 | Obsidian notes generated | 130+ |
 | Unique stems in corpus | 3,261 (recipe folios, post-recovery) |
@@ -413,17 +485,19 @@
 | Ingredient-recipe pairs | 613 |
 | Structural matching: perfect (100%) | 9 |
 | Structural matching: strong (>=90%) | 19 |
-| Content-based matching: excellent (F1>=80%) | 1 (f113v = Electuarium Justinum) |
-| Content-based matching: good (F1 50-79%) | 40 |
+| Content-based matching v6: best F1 | 75.0% (f113v = Electuarium Justinum) |
+| Content-based matching v6: good (F1 50-79%) | 37 |
+| Content-based matching v6: mean F1 | 54.3% |
 | Confirmed identifications (Tier 1-2) | 8 (Galbanum, Crocus, Myrrha x6) |
-| Strong identifications (Tier 3) | 19 (Crocus x9, Rosa, Zingiber/Mel x5, Cinnamomum x2, Opopanax x2) |
+| Strong identifications (Tier 3) | 19 (Crocus x9, Rosa, Mel despumatum x5, Cinnamomum x2, Opopanax x2) |
 | Moderate identifications (Tier 4) | 23 (Amomum, Piper, Bdellium, Casia, Cardamomum, Styrax, Saccharum) |
 | Function words identified | 8 |
-| Total identification entries | 58 |
-| Unique ingredients identified | 19 (13 single + 5 in pairs + Opopanax) |
+| Total identification entries (v6) | 58 |
+| Unique ingredients identified | 17 (Galbanum, Crocus, Myrrha, Mel, Rosa, Cinnamomum, Opopanax, Amomum, P.nigrum, P.longum, Styrax, Bdellium, Casia, Cardamomum, Saccharum + Galanga\|Cubeba\|Nux moschata triple) |
 | Novel structural discoveries | 4 (suffix channel, vertical alignment, column schema, foreign keys) |
-| Total documented discoveries | 16 |
-| Deadlocks | 2 (Opium/Castoreum partially broken, Zingiber/Mel active) |
+| Total documented discoveries | 19 |
+| Deadlocks resolved | 1 (Zingiber/Mel -- 41-0 verdict for Mel) |
+| Deadlocks active | 2 (Opium/Castoreum partially broken, Galanga/Cubeba/Nux moschata) |
 | Opium-favoring folios | 6 |
 | Castoreum-favoring folios | 17 |
 | Tied/insufficient folios | 25 |

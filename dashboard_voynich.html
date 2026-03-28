@@ -218,13 +218,14 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
     <a class="nav-link" onclick="scrollToSection('recipes')">Recetas</a>
     <a class="nav-link" onclick="scrollToSection('heatmap')">Heatmap</a>
     <a class="nav-link" onclick="scrollToSection('charts')">Graficos</a>
-    <a class="nav-link" onclick="scrollToSection('matching-v3')">Matching v3</a>
+    <a class="nav-link" onclick="scrollToSection('matching-v3')">Matching v6</a>
+    <a class="nav-link" onclick="scrollToSection('zingiber-mel')">Zingiber/Mel</a>
     <a class="nav-link" onclick="scrollToSection('deadlock')">Deadlock</a>
     <a class="nav-link" onclick="scrollToSection('folios')">Folios</a>
   </div>
   <div class="flex gap-3 items-center">
-    <span class="badge badge-glass no-dot">Sesion 10</span>
-    <span class="badge badge-success no-dot">v5 + Matching v3</span>
+    <span class="badge badge-glass no-dot">Sesion 12</span>
+    <span class="badge badge-success no-dot">v6 + Matching v6</span>
   </div>
 </nav>
 
@@ -241,7 +242,7 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
     </h1>
     <p style="font-size: var(--text-lg); max-width: 700px; margin-bottom: 2rem;">
       Base de datos farmaceutica medieval codificada en el Manuscrito Voynich (STA1 2.0).
-      58 stems identificados, 50 recetas historicas cruzadas, 48 folios analizados. Content-based matching con F1 scores.
+      58 stems identificados, 17 ingredientes unicos, 50 recetas historicas cruzadas, 48 folios analizados. Content-based matching v6. Deadlock Zingiber/Mel resuelto (41-0).
     </p>
   </div>
 
@@ -258,13 +259,13 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
       </div>
     </div>
     <div class="card card-glass stat-card card-accent-orange">
-      <div class="stat-number" style="color:var(--orange-400);">19</div>
+      <div class="stat-number" style="color:var(--orange-400);">17</div>
       <div class="stat-label">Ingredientes Unicos</div>
       <div class="mt-4">
         <div style="display:flex;justify-content:space-between;font-size:var(--text-xs);color:var(--text-muted);margin-bottom:0.25rem;">
-          <span>De ~152 en base de recetas</span><span style="color:var(--orange-300);">12.5%</span>
+          <span>De ~152 en base de recetas</span><span style="color:var(--orange-300);">11.2%</span>
         </div>
-        <div class="progress-wrap" style="height:6px;"><div class="progress-bar orange" style="width:12.5%;"></div></div>
+        <div class="progress-wrap" style="height:6px;"><div class="progress-bar orange" style="width:11.2%;"></div></div>
       </div>
     </div>
     <div class="card card-glass stat-card">
@@ -282,9 +283,9 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
       <div class="stat-label">Recetas Historicas</div>
       <div class="mt-4">
         <div style="display:flex;justify-content:space-between;font-size:var(--text-xs);color:var(--text-muted);margin-bottom:0.25rem;">
-          <span>Content-based F1>=50%</span><span style="color:#86efac;">41 folios</span>
+          <span>Content-based F1>=50%</span><span style="color:#86efac;">37 folios</span>
         </div>
-        <div class="progress-wrap" style="height:6px;"><div class="progress-bar" style="width:85%;background:linear-gradient(90deg,#22c55e,#86efac);box-shadow:0 0 12px rgba(34,197,94,0.5);"></div></div>
+        <div class="progress-wrap" style="height:6px;"><div class="progress-bar" style="width:77%;background:linear-gradient(90deg,#22c55e,#86efac);box-shadow:0 0 12px rgba(34,197,94,0.5);"></div></div>
       </div>
     </div>
   </div>
@@ -332,15 +333,15 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
 <section class="section" id="identifications">
   <div class="section-label">Desciframiento</div>
   <h2 style="margin-bottom:0.5rem;">Tabla de Identificaciones</h2>
-  <p style="margin-bottom:1.5rem;">56 stems con ingrediente asignado (v4c). Tiers 0-4, de funcion gramatical a candidato moderado.</p>
+  <p style="margin-bottom:1.5rem;">58 stems con ingrediente asignado (v6). Tiers 0-4, de funcion gramatical a candidato moderado. Mel despumatum confirmado (antes Zingiber|Mel).</p>
 
   <!-- Filter chips -->
   <div class="flex gap-2 flex-wrap mb-4">
-    <span class="filter-chip active" onclick="filterTable('all')">Todos (56)</span>
-    <span class="filter-chip" onclick="filterTable(0)">Tier 0 -- Funcion (14)</span>
+    <span class="filter-chip active" onclick="filterTable('all')">Todos (58)</span>
+    <span class="filter-chip" onclick="filterTable(0)">Tier 0 -- Funcion (8)</span>
     <span class="filter-chip" onclick="filterTable(1)">Tier 1 -- Confirmado (2)</span>
     <span class="filter-chip" onclick="filterTable(2)">Tier 2 -- Alto (6)</span>
-    <span class="filter-chip" onclick="filterTable(3)">Tier 3 -- Fuerte (17)</span>
+    <span class="filter-chip" onclick="filterTable(3)">Tier 3 -- Fuerte (19)</span>
     <span class="filter-chip" onclick="filterTable(4)">Tier 4 -- Moderado (23)</span>
   </div>
 
@@ -370,7 +371,7 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
 <section class="section" id="recipes">
   <div class="section-label">Matching</div>
   <h2 style="margin-bottom:0.5rem;">Folios vs Recetas Historicas</h2>
-  <p style="margin-bottom:1.5rem;">Cada folio se compara contra 23 recetas medievales (structural matching -- por conteo de ingredientes). Para content-based matching con F1, ver seccion Matching v3.</p>
+  <p style="margin-bottom:1.5rem;">Cada folio se compara contra 23 recetas medievales (structural matching -- por conteo de ingredientes). Para content-based matching con F1, ver seccion Matching v6.</p>
 
   <div class="tab-bar">
     <button class="tab-btn active" onclick="switchTab('perfect')">Perfectos (100%)</button>
@@ -473,28 +474,28 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
      CONTENT-BASED MATCHING V3
      ============================================================ -->
 <section class="section" id="matching-v3">
-  <div class="section-label">Session 10 -- NEW</div>
-  <h2 style="margin-bottom:0.5rem;">Content-Based Matching v3</h2>
-  <p style="margin-bottom:1.5rem;">Matching basado en ingredientes REALES identificados (v5). F1-score de ingredientes del folio vs cada receta historica (50 recetas).</p>
+  <div class="section-label">Session 12 -- UPDATED</div>
+  <h2 style="margin-bottom:0.5rem;">Content-Based Matching v6</h2>
+  <p style="margin-bottom:1.5rem;">Matching basado en ingredientes REALES identificados (v6 -- Mel despumatum confirmado). F1-score de ingredientes del folio vs cada receta historica (50 recetas).</p>
 
   <!-- Summary stat row -->
   <div class="grid grid-4 gap-4 mb-6">
     <div class="card card-glass stat-card card-accent-blue">
-      <div class="stat-number" style="color:#86efac;">1</div>
+      <div class="stat-number" style="color:#86efac;">0</div>
       <div class="stat-label">Excellent (F1>=80%)</div>
-      <small>f113v = Electuarium Justinum</small>
+      <small>f113v baja a 75% (Mel single)</small>
     </div>
     <div class="card card-glass stat-card">
-      <div class="stat-number text-gradient-blue">40</div>
+      <div class="stat-number text-gradient-blue">37</div>
       <div class="stat-label">Good (F1 50-79%)</div>
     </div>
     <div class="card card-glass stat-card">
-      <div class="stat-number" style="color:var(--orange-400);">5</div>
+      <div class="stat-number" style="color:var(--orange-400);">8</div>
       <div class="stat-label">Moderate (F1 30-49%)</div>
     </div>
     <div class="card card-glass stat-card">
-      <div class="stat-number" style="color:var(--text-muted);">2</div>
-      <div class="stat-label">Weak (F1<30%)</div>
+      <div class="stat-number" style="color:var(--text-muted);">2+1</div>
+      <div class="stat-label">Weak + Insufficient</div>
     </div>
   </div>
 
@@ -502,23 +503,23 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
   <div class="card card-glass glass-blue p-6 mb-6">
     <div class="flex gap-4 items-center flex-wrap">
       <div>
-        <span class="badge badge-success" style="font-size:var(--text-sm);">EXCELLENT MATCH</span>
+        <span class="badge badge-blue" style="font-size:var(--text-sm);">BEST MATCH v6</span>
         <h3 style="margin-top:0.5rem;">f113v = Electuarium Justinum</h3>
-        <p style="margin-top:0.25rem;font-size:var(--text-sm);">F1 = 80.0% -- 10 ingredientes en comun de 14 en la receta</p>
+        <p style="margin-top:0.25rem;font-size:var(--text-sm);">F1 = 75.0% -- 9 ingredientes en comun de 14 en la receta. (Baja de 80% en v3 porque Mel es ahora ingrediente unico, no par)</p>
       </div>
       <div style="flex:1;min-width:200px;">
         <div style="font-size:var(--text-xs);color:var(--text-muted);margin-bottom:0.5rem;">Ingredientes identificados en el folio:</div>
         <div class="flex gap-2 flex-wrap">
           <span class="badge badge-blue no-dot">Amomum</span>
+          <span class="badge badge-blue no-dot">Bdellium</span>
           <span class="badge badge-blue no-dot">Cardamomum</span>
           <span class="badge badge-blue no-dot">Casia</span>
           <span class="badge badge-blue no-dot">Cinnamomum</span>
           <span class="badge badge-orange no-dot">Crocus</span>
-          <span class="badge badge-blue no-dot">Mel desp.</span>
+          <span class="badge badge-success no-dot">Mel desp.</span>
           <span class="badge badge-orange no-dot">Myrrha</span>
           <span class="badge badge-blue no-dot">P. longum</span>
           <span class="badge badge-blue no-dot">P. nigrum</span>
-          <span class="badge badge-blue no-dot">Zingiber</span>
         </div>
       </div>
     </div>
@@ -526,7 +527,7 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
 
   <!-- V3 Chart: F1 by folio -->
   <div class="card card-glass p-4 mb-4">
-    <h4 style="margin-bottom:1rem;font-size:var(--text-base);">F1 Score por Folio (Best Match v3)</h4>
+    <h4 style="margin-bottom:1rem;font-size:var(--text-base);">F1 Score por Folio (Best Match v6)</h4>
     <div class="chart-container" style="height:300px;"><canvas id="chart-v3-f1"></canvas></div>
   </div>
 
@@ -546,6 +547,63 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
       </thead>
       <tbody id="v3-table-body"></tbody>
     </table>
+  </div>
+</section>
+
+<hr class="divider-gradient mt-6 mb-6">
+
+<!-- ============================================================
+     ZINGIBER/MEL DEADLOCK -- BROKEN
+     ============================================================ -->
+<section class="section" id="zingiber-mel">
+  <div class="section-label">Session 11-12 -- BREAKTHROUGH</div>
+  <h2 style="margin-bottom:0.5rem;">Deadlock Zingiber vs Mel -- <span style="color:#86efac;">RESUELTO</span></h2>
+  <p style="margin-bottom:1.5rem;">5 stems estaban bloqueados como Zingiber|Mel despumatum. Usando recetas discriminantes (2 solo-Zingiber, 4 solo-Mel), el veredicto es unanime: <strong>41-0 a favor de Mel</strong>.</p>
+
+  <!-- Verdict summary -->
+  <div class="grid grid-4 gap-4 mb-6">
+    <div class="card card-glass stat-card" style="border-top:2px solid #22c55e;">
+      <div class="stat-number" style="color:#86efac;">41</div>
+      <div class="stat-label">Favor MEL</div>
+      <small style="font-size:10px;">Unanime -- 0 folios favorecen Zingiber</small>
+    </div>
+    <div class="card card-glass stat-card" style="border-top:2px solid #ef4444;">
+      <div class="stat-number" style="color:#fca5a5;">0</div>
+      <div class="stat-label">Favor ZINGIBER</div>
+    </div>
+    <div class="card card-glass stat-card">
+      <div class="stat-number" style="color:var(--text-muted);">6</div>
+      <div class="stat-label">TIED</div>
+    </div>
+    <div class="card card-glass stat-card card-accent-blue">
+      <div class="stat-number text-gradient">88%</div>
+      <div class="stat-label">Confianza nueva</div>
+      <small style="font-size:10px;">5 stems: Q1A1, Q2A1, Q2K1A1, U1A1, U2A1</small>
+    </div>
+  </div>
+
+  <!-- Explanation card -->
+  <div class="card card-glass glass-blue p-6 mb-6">
+    <h4 style="margin-bottom:0.75rem;">Por que Mel (miel) y no Zingiber (jengibre)?</h4>
+    <div class="grid grid-2 gap-4" style="font-size:var(--text-sm);">
+      <div>
+        <p style="color:var(--text-primary);font-weight:var(--font-semi);margin-bottom:0.25rem;">Recetas solo-Zingiber (2):</p>
+        <p>Benedicta Laxativa, Elec. de Succo Rosarum</p>
+        <p style="margin-top:0.5rem;color:#fca5a5;">0 folios coinciden mejor con estas</p>
+      </div>
+      <div>
+        <p style="color:var(--text-primary);font-weight:var(--font-semi);margin-bottom:0.25rem;">Recetas solo-Mel (4):</p>
+        <p>Hiera Picra, Theriac Diatessaron, Theriac Diatessaron Magna, Tiryaq al-Arba</p>
+        <p style="margin-top:0.5rem;color:#86efac;">41 folios coinciden mejor con estas</p>
+      </div>
+    </div>
+    <p style="margin-top:1rem;font-size:var(--text-sm);">Mel despumatum es un ingrediente BASE (vehiculo/conservante), presente en 30+ recetas. Zingiber es ESPECIA, siempre acompanado de otras especias. La distribucion ubicua de los 5 stems es consistente con un ingrediente base, no con una especia.</p>
+  </div>
+
+  <!-- Chart: Mel vs Zingiber F1 per folio -->
+  <div class="card card-glass p-4">
+    <h4 style="margin-bottom:1rem;font-size:var(--text-base);">Mel F1 vs Zingiber F1 por Folio (41-0)</h4>
+    <div class="chart-container" style="height:350px;"><canvas id="chart-zingiber-mel"></canvas></div>
   </div>
 </section>
 
@@ -700,11 +758,11 @@ const IDENTIFICATIONS = [
   {stem:"Q1K1A1",ingredient:"Myrrha",confidence:88,tier:2,source:"v3_UNIQUE",reasoning:"Aurea Alex + Ung.Apostolorum only. Myrrha unique fit."},
   {stem:"A1Q1J1",ingredient:"Myrrha",confidence:88,tier:2,source:"v3_UNIQUE",reasoning:"Phil.Persicum + Trifera + Ung.Apost. Myrrha unique."},
   {stem:"T1J1A1B1A3",ingredient:"Myrrha",confidence:85,tier:2,source:"v3_UNIQUE",reasoning:"Philonium + Ung.Apost only. Myrrha shared."},
-  {stem:"Q1A1",ingredient:"Zingiber|Mel",confidence:85,tier:3,source:"elimination_to_pair",reasoning:"Reduced to 2 candidates with identical profiles."},
-  {stem:"Q2A1",ingredient:"Zingiber|Mel",confidence:85,tier:3,source:"elimination_to_pair",reasoning:"Same pair deadlock."},
-  {stem:"Q2K1A1",ingredient:"Zingiber|Mel",confidence:85,tier:3,source:"elimination_to_pair",reasoning:"Same pair deadlock."},
-  {stem:"U1A1",ingredient:"Zingiber|Mel",confidence:85,tier:3,source:"elimination_to_pair",reasoning:"Same pair deadlock."},
-  {stem:"U2A1",ingredient:"Zingiber|Mel",confidence:85,tier:3,source:"elimination_to_pair",reasoning:"Same pair deadlock."},
+  {stem:"Q1A1",ingredient:"Mel despumatum",confidence:88,tier:3,source:"deadlock_broken_v6",reasoning:"Zingiber/Mel deadlock broken: 41-0 verdict for Mel (session 11-12)."},
+  {stem:"Q2A1",ingredient:"Mel despumatum",confidence:88,tier:3,source:"deadlock_broken_v6",reasoning:"Same 41-0 verdict."},
+  {stem:"Q2K1A1",ingredient:"Mel despumatum",confidence:88,tier:3,source:"deadlock_broken_v6",reasoning:"Same 41-0 verdict."},
+  {stem:"U1A1",ingredient:"Mel despumatum",confidence:88,tier:3,source:"deadlock_broken_v6",reasoning:"Same 41-0 verdict."},
+  {stem:"U2A1",ingredient:"Mel despumatum",confidence:88,tier:3,source:"deadlock_broken_v6",reasoning:"Same 41-0 verdict."},
   {stem:"B1K1A1",ingredient:"Rosa",confidence:82,tier:3,source:"v3_STRONG",reasoning:"Conf.Hamech + Diascordium. Rosa top 0.882."},
   {stem:"A1C1A3",ingredient:"Crocus",confidence:80,tier:3,source:"v3_STRONG",reasoning:"Crocus 0.763 vs Cinnamomum 0.607."},
   {stem:"A1B2K1J1",ingredient:"Crocus",confidence:80,tier:3,source:"v3_STRONG",reasoning:"Crocus 0.763 vs Cinnamomum 0.607."},
@@ -821,11 +879,14 @@ const RECIPE_TYPES = {
 // Perfect match folios
 const PERFECT_FOLIOS = ["f87r","f87v","f88r","f93v","f96v","f100r","f100v","f101v","f103v"];
 
-// Content-based matching v3 -- [folio, recipe, f1, overlap, folioCov, recipeCov, ingredients]
-const MV3 = [["f87r","Itrifal Ustukhudus",40.0,3,100.0,25.0,"Mel despumatum | Rosa | Zingiber"],["f87v","Pillulae Fetidae",36.4,2,66.7,25.0,"Myrrha | Opopanax"],["f88r","Jawaarish Jalinusi",58.3,7,58.3,58.3,"Cardamomum | Casia | Crocus | Mel desp. | P. longum | P. nigrum | Zingiber"],["f88v","Trifera Saracenica",66.7,8,80.0,57.1,"Cardamomum | Casia | Crocus | Mel desp. | Myrrha | P. longum | P. nigrum | Zingiber"],["f89r","Trifera Saracenica",66.7,8,80.0,57.1,"Cardamomum | Casia | Crocus | Mel desp. | Myrrha | P. longum | P. nigrum | Zingiber"],["f89v","Trifera Saracenica",69.6,8,88.9,57.1,"Cardamomum | Casia | Crocus | Mel desp. | Myrrha | P. longum | P. nigrum | Zingiber"],["f90r","Philonium Romanum",70.6,6,100.0,54.5,"Crocus | Mel desp. | Myrrha | P. longum | P. nigrum | Zingiber"],["f90v","Electuarium Diacostum",42.9,3,100.0,27.3,"Casia | Mel desp. | Zingiber"],["f93r","Paulinum",52.6,5,83.3,38.5,"Casia | Mel desp. | Myrrha | P. nigrum | Zingiber"],["f93v","Jawaarish Jalinusi",55.6,5,83.3,41.7,"Casia | Crocus | Mel desp. | P. nigrum | Zingiber"],["f94r","Elec. Baccis Lauri",30.8,2,100.0,18.2,"Myrrha | P. longum"],["f94v","Elec. Baccis Lauri",53.3,4,100.0,36.4,"Mel desp. | Myrrha | P. longum | Zingiber"],["f95r","Elec. Justinum",63.6,7,87.5,50.0,"Amomum | Crocus | Mel desp. | Myrrha | P. longum | P. nigrum | Zingiber"],["f95v","Jawaarish Jalinusi",47.1,4,80.0,33.3,"Cardamomum | Casia | Crocus | P. longum"],["f96r","Jawaarish Jalinusi",52.6,5,71.4,41.7,"Cardamomum | Crocus | Mel desp. | P. nigrum | Zingiber"],["f96v","Pillulae Aureae",25.0,1,100.0,14.3,"Crocus"],["f99r","Elec. Justinum",60.0,6,100.0,42.9,"Amomum | Casia | Crocus | Mel desp. | P. nigrum | Zingiber"],["f99v","Jawaarish Jalinusi",50.0,4,100.0,33.3,"Casia | Cinnamomum | P. longum | P. nigrum"],["f100r","Suffuf al-Tib",70.6,6,75.0,66.7,"Cardamomum | Casia | Cinnamomum | Crocus | Galanga | Nux moschata"],["f100v","Diaciminum",58.8,5,83.3,45.5,"Amomum | Mel desp. | P. longum | P. nigrum | Zingiber"],["f101r","Elec. Justinum",64.0,8,72.7,57.1,"Amomum | Casia | Cinnamomum | Crocus | Mel desp. | Myrrha | P. nigrum | Zingiber"],["f101v","Trifera Saracenica",66.7,7,100.0,50.0,"Cardamomum | Cinnamomum | Crocus | Mel desp. | Myrrha | P. nigrum | Zingiber"],["f102r","Trifera Saracenica",63.6,7,87.5,50.0,"Cardamomum | Casia | Crocus | Mel desp. | Myrrha | P. nigrum | Zingiber"],["f102v","Trifera Saracenica",57.1,6,85.7,42.9,"Cardamomum | Casia | Crocus | Mel desp. | Myrrha | Zingiber"],["f103r","Elec. Justinum",52.6,5,100.0,35.7,"Amomum | Cardamomum | Crocus | Myrrha | P. longum"],["f103v","Elec. Justinum",60.0,6,100.0,42.9,"Amomum | Cardamomum | Cinnamomum | Crocus | Myrrha | P. longum"],["f104r","Elec. Justinum",63.6,7,87.5,50.0,"Amomum | Cardamomum | Crocus | Mel desp. | Myrrha | P. longum | Zingiber"],["f104v","Trifera Saracenica",57.1,6,85.7,42.9,"Cardamomum | Casia | Cinnamomum | Crocus | Myrrha | P. longum"],["f105r","Trifera Saracenica",69.6,8,88.9,57.1,"Cardamomum | Casia | Cinnamomum | Crocus | Mel desp. | Myrrha | P. longum | Zingiber"],["f105v","Elec. Justinum",50.0,5,83.3,35.7,"Amomum | Crocus | Myrrha | P. longum | P. nigrum"],["f106r","Trifera Saracenica",63.6,7,87.5,50.0,"Cardamomum | Casia | Cinnamomum | Crocus | Myrrha | P. longum | P. nigrum"],["f106v","Philonium Persicum",50.0,6,100.0,33.3,"Cardamomum | Casia | Crocus | Myrrha | P. longum | Styrax"],["f107r","Trifera Saracenica",52.6,5,100.0,35.7,"Cardamomum | Cinnamomum | Crocus | Myrrha | P. longum"],["f107v","Trifera Saracenica",69.6,8,88.9,57.1,"Cardamomum | Casia | Crocus | Mel desp. | Myrrha | P. longum | P. nigrum | Zingiber"],["f108r","Elec. Justinum",63.6,7,87.5,50.0,"Amomum | Cardamomum | Casia | Crocus | Myrrha | P. longum | P. nigrum"],["f108v","Elec. Justinum",66.7,7,100.0,50.0,"Amomum | Cardamomum | Casia | Cinnamomum | Crocus | Myrrha | P. longum"],["f111r","Elec. Justinum",54.5,6,75.0,42.9,"Amomum | Cardamomum | Casia | Crocus | Myrrha | P. longum"],["f111v","Elec. Justinum",69.6,8,88.9,57.1,"Amomum | Cardamomum | Casia | Crocus | Mel desp. | Myrrha | P. longum | Zingiber"],["f112r","Trifera Saracenica",57.1,6,85.7,42.9,"Cardamomum | Casia | Cinnamomum | Crocus | Myrrha | P. longum"],["f112v","Antidotum Hadriani",60.0,6,75.0,50.0,"Casia | Crocus | Mel desp. | Myrrha | P. longum | Zingiber"],["f113r","Elec. Justinum",69.2,9,75.0,64.3,"Amomum | Cardamomum | Casia | Crocus | Mel desp. | Myrrha | P. longum | P. nigrum | Zingiber"],["f113v","Elec. Justinum",80.0,10,90.9,71.4,"Amomum | Cardamomum | Casia | Cinnamomum | Crocus | Mel desp. | Myrrha | P. longum | P. nigrum | Zingiber"],["f114r","Philonium Romanum",70.0,7,77.8,63.6,"Cinnamomum | Crocus | Mel desp. | Myrrha | P. longum | P. nigrum | Zingiber"],["f114v","Trifera Saracenica",54.5,6,75.0,42.9,"Cardamomum | Cinnamomum | Crocus | Myrrha | P. longum | P. nigrum"],["f115r","Elec. Justinum",52.2,6,66.7,42.9,"Amomum | Cardamomum | Casia | Crocus | Myrrha | P. longum"],["f115v","Diasatyrion",59.3,8,61.5,57.1,"Cardamomum | Cinnamomum | Crocus | Galanga | Mel desp. | Nux moschata | P. longum | Zingiber"],["f116r","Trifera Magna",52.6,10,100.0,35.7,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Cubeba | Galanga | Myrrha | Nux moschata | P. longum"],["f116v","Theriac Magna",0.0,0,0.0,0.0,""]];
+// Content-based matching v6 -- [folio, recipe, f1, overlap, folioCov, recipeCov, ingredients]
+const MV3 = [["f87r","Theriac Diatessaron",28.6,1,50.0,20.0,"Mel desp. | Rosa"],["f87v","Pillulae Fetidae",61.5,4,80.0,50.0,"Bdellium | Crocus | Galbanum | Myrrha | Opopanax"],["f88r","Jawaarish Jalinusi",52.2,6,54.5,50.0,"Cardamomum | Casia | Crocus | Cubeba | Galanga | Galbanum | Mel desp. | Nux mosch. | Opopanax | P. longum | P. nigrum"],["f88v","Trifera Saracenica",63.6,7,87.5,50.0,"Cardamomum | Casia | Crocus | Galbanum | Mel desp. | Myrrha | P. longum | P. nigrum"],["f89r","Trifera Saracenica",58.3,7,70.0,50.0,"Bdellium | Cardamomum | Casia | Crocus | Mel desp. | Myrrha | Opopanax | P. longum | P. nigrum | Styrax"],["f89v","Trifera Saracenica",63.6,7,87.5,50.0,"Cardamomum | Casia | Crocus | Galbanum | Mel desp. | Myrrha | P. longum | P. nigrum"],["f90r","Theriac Diatessaron",44.4,2,50.0,40.0,"Bdellium | Mel desp. | Myrrha | P. longum"],["f90v","Antidotum Hadriani",47.1,4,80.0,33.3,"Casia | Cinnamomum | Galbanum | Mel desp. | Myrrha"],["f93r","Paulinum",44.4,4,80.0,30.8,"Casia | Mel desp. | Myrrha | P. nigrum | Styrax"],["f93v","Diascordium",42.1,4,66.7,30.8,"Casia | Galbanum | Mel desp. | P. nigrum | Rosa | Styrax"],["f94r","Elec. Baccis Lauri",30.8,2,100.0,18.2,"Myrrha | P. longum"],["f94v","Confectio Anacardia",46.2,3,100.0,30.0,"Crocus | Mel desp. | P. longum"],["f95r","Elec. Justinum",54.5,6,75.0,42.9,"Amomum | Bdellium | Crocus | Mel desp. | Myrrha | Opopanax | P. longum | P. nigrum"],["f95v","Jawaarish Jalinusi",37.5,3,75.0,25.0,"Casia | Crocus | P. longum | Styrax"],["f96r","Jawaarish Jalinusi",44.4,4,66.7,33.3,"Cardamomum | Crocus | Galbanum | Mel desp. | P. nigrum | Styrax"],["f96v","Pillulae Aureae",25.0,1,100.0,14.3,"Crocus"],["f99r","Elec. Justinum",52.6,5,100.0,35.7,"Amomum | Casia | Crocus | Mel desp. | P. nigrum"],["f99v","Paulinum",52.6,5,83.3,38.5,"Casia | Cinnamomum | Myrrha | P. longum | P. nigrum | Saccharum"],["f100r","Suffuf al-Tib",70.6,6,75.0,66.7,"Cardamomum | Casia | Cinnamomum | Crocus | Cubeba | Galanga | Nux mosch. | Saccharum"],["f100v","Diaciminum",50.0,4,80.0,36.4,"Amomum | Galbanum | Mel desp. | P. longum | P. nigrum"],["f101r","Elec. Justinum",61.5,8,66.7,57.1,"Amomum | Casia | Cinnamomum | Crocus | Cubeba | Galanga | Galbanum | Mel desp. | Myrrha | Nux mosch. | P. longum | P. nigrum"],["f101v","Trifera Saracenica",57.1,6,85.7,42.9,"Cardamomum | Cinnamomum | Crocus | Galbanum | Mel desp. | Myrrha | P. nigrum"],["f102r","Trifera Saracenica",54.5,6,75.0,42.9,"Bdellium | Cardamomum | Casia | Crocus | Mel desp. | Myrrha | Opopanax | P. nigrum"],["f102v","Trifera Saracenica",57.1,6,85.7,42.9,"Cardamomum | Casia | Crocus | Galbanum | Mel desp. | Myrrha | P. longum"],["f103r","Elec. Justinum",52.6,5,100.0,35.7,"Amomum | Cardamomum | Crocus | Myrrha | P. longum"],["f103v","Elec. Justinum",60.0,6,100.0,42.9,"Amomum | Cardamomum | Cinnamomum | Crocus | Myrrha | P. longum"],["f104r","Elec. Justinum",57.1,6,85.7,42.9,"Amomum | Cardamomum | Crocus | Galbanum | Mel desp. | Myrrha | P. longum"],["f104v","Trifera Saracenica",57.1,6,85.7,42.9,"Cardamomum | Casia | Cinnamomum | Crocus | Galbanum | Myrrha | P. longum"],["f105r","Trifera Saracenica",63.6,7,87.5,50.0,"Bdellium | Cardamomum | Casia | Cinnamomum | Crocus | Mel desp. | Myrrha | P. longum"],["f105v","Elec. Justinum",57.1,6,85.7,42.9,"Amomum | Cardamomum | Crocus | Myrrha | Opopanax | P. longum | P. nigrum"],["f106r","Trifera Saracenica",63.6,7,87.5,50.0,"Cardamomum | Casia | Cinnamomum | Crocus | Myrrha | P. longum | P. nigrum | Saccharum"],["f106v","Philonium Persicum",50.0,6,100.0,33.3,"Cardamomum | Casia | Crocus | Myrrha | P. longum | Styrax"],["f107r","Trifera Saracenica",52.6,5,100.0,35.7,"Cardamomum | Cinnamomum | Crocus | Myrrha | P. longum"],["f107v","Trifera Saracenica",63.6,7,87.5,50.0,"Bdellium | Cardamomum | Casia | Crocus | Mel desp. | Myrrha | P. longum | P. nigrum"],["f108r","Elec. Justinum",63.6,7,87.5,50.0,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Myrrha | P. longum | P. nigrum"],["f108v","Elec. Justinum",66.7,7,100.0,50.0,"Amomum | Cardamomum | Casia | Cinnamomum | Crocus | Myrrha | P. longum"],["f111r","Elec. Justinum",54.5,6,75.0,42.9,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Myrrha | Opopanax | P. longum"],["f111v","Elec. Justinum",63.6,7,87.5,50.0,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Mel desp. | Myrrha | P. longum"],["f112r","Trifera Saracenica",57.1,6,85.7,42.9,"Bdellium | Cardamomum | Casia | Cinnamomum | Crocus | Myrrha | P. longum"],["f112v","Antidotum Hadriani",52.6,5,71.4,41.7,"Bdellium | Casia | Crocus | Galbanum | Mel desp. | Myrrha | P. longum"],["f113r","Elec. Justinum",64.0,8,72.7,57.1,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Galbanum | Mel desp. | Myrrha | P. longum | P. nigrum | Rosa"],["f113v","Elec. Justinum",75.0,9,90.0,64.3,"Amomum | Bdellium | Cardamomum | Casia | Cinnamomum | Crocus | Mel desp. | Myrrha | P. longum | P. nigrum"],["f114r","Trifera Saracenica",63.6,7,87.5,50.0,"Cardamomum | Cinnamomum | Crocus | Mel desp. | Myrrha | Opopanax | P. longum | P. nigrum"],["f114v","Trifera Saracenica",54.5,6,75.0,42.9,"Bdellium | Cardamomum | Cinnamomum | Crocus | Galbanum | Myrrha | P. longum | P. nigrum"],["f115r","Elec. Justinum",52.2,6,66.7,42.9,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Galbanum | Myrrha | P. longum | Rosa"],["f115v","Trifera Magna",55.0,11,91.7,39.3,"Bdellium | Cardamomum | Cinnamomum | Crocus | Cubeba | Galanga | Galbanum | Mel desp. | Myrrha | Nux mosch. | P. longum | P. nigrum"],["f116r","Trifera Magna",52.6,10,100.0,35.7,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Cubeba | Galanga | Myrrha | Nux mosch. | P. longum"],["f116v","",0.0,0,0.0,0.0,""]];
 
 // Deadlock breaker v3 -- [folio, opiumF1, castF1, bothF1, verdict]
 const DL3 = [["f87r",28.6,33.3,37.5,"TIED"],["f87v",14.3,36.4,26.7,"CASTOREUM"],["f88r",43.5,48.3,55.0,"TIED"],["f88v",57.1,59.3,66.7,"TIED"],["f89r",57.1,59.3,66.7,"TIED"],["f89v",60.0,61.5,69.6,"TIED"],["f90r",70.6,62.5,63.2,"OPIUM"],["f90v",28.6,33.3,40.0,"TIED"],["f93r",47.1,43.5,52.6,"TIED"],["f93v",47.1,50.0,52.6,"TIED"],["f94r",30.8,21.1,28.6,"OPIUM"],["f94v",53.3,42.9,50.0,"OPIUM"],["f95r",63.2,56.0,63.6,"OPIUM"],["f95v",25.0,36.4,43.5,"CASTOREUM"],["f96r",44.4,47.1,48.0,"TIED"],["f96v",16.7,18.2,15.4,"TIED"],["f99r",47.1,52.2,52.6,"CASTOREUM"],["f99v",40.0,42.9,47.1,"TIED"],["f100r",32.0,32.0,38.9,"TIED"],["f100v",47.1,50.0,50.0,"TIED"],["f101r",54.5,57.1,58.3,"TIED"],["f101v",66.7,58.8,66.7,"OPIUM"],["f102r",52.6,56.0,63.6,"TIED"],["f102v",44.4,50.0,57.1,"CASTOREUM"],["f103r",37.5,45.5,42.1,"CASTOREUM"],["f103v",47.1,52.2,50.0,"CASTOREUM"],["f104r",52.6,56.0,54.5,"TIED"],["f104v",44.4,50.0,57.1,"CASTOREUM"],["f105r",60.0,61.5,69.6,"TIED"],["f105v",47.1,43.5,50.0,"TIED"],["f106r",52.6,56.0,63.6,"TIED"],["f106v",35.3,43.5,50.0,"CASTOREUM"],["f107r",50.0,45.5,52.6,"TIED"],["f107v",60.0,61.5,69.6,"TIED"],["f108r",42.1,56.0,54.5,"CASTOREUM"],["f108v",44.4,58.3,57.1,"CASTOREUM"],["f111r",31.6,48.0,45.5,"CASTOREUM"],["f111v",50.0,61.5,60.9,"CASTOREUM"],["f112r",44.4,50.0,57.1,"CASTOREUM"],["f112v",52.6,48.0,60.0,"TIED"],["f113r",52.2,62.1,61.5,"CASTOREUM"],["f113v",63.6,71.4,72.0,"CASTOREUM"],["f114r",70.0,63.2,69.6,"OPIUM"],["f114v",52.6,48.0,54.5,"TIED"],["f115r",30.0,46.2,43.5,"CASTOREUM"],["f115v",58.3,53.3,59.3,"TIED"],["f116r",28.6,44.4,52.6,"CASTOREUM"],["f116v",0.0,0.0,0.0,"INSUFFICIENT"]];
+
+// Zingiber vs Mel deadlock data [folio, zingiber_f1, mel_f1, verdict]
+const ZM_DATA = [["f87r",20.0,28.6,"MEL"],["f87v",0.0,20.0,"MEL"],["f88r",19.0,31.6,"MEL"],["f88v",20.0,33.3,"MEL"],["f89r",18.2,30.0,"MEL"],["f89v",20.0,33.3,"MEL"],["f90r",16.7,44.4,"MEL"],["f90v",33.3,50.0,"MEL"],["f93r",15.4,40.0,"MEL"],["f93v",21.1,35.3,"MEL"],["f94r",0.0,28.6,"MEL"],["f94v",25.0,44.4,"MEL"],["f95r",20.0,30.8,"MEL"],["f95v",12.5,28.6,"MEL"],["f96r",22.2,25.0,"TIED"],["f96v",15.4,18.2,"TIED"],["f99r",23.5,40.0,"MEL"],["f99v",28.6,28.6,"TIED"],["f100r",33.3,37.5,"TIED"],["f100v",15.4,20.0,"TIED"],["f101r",28.6,42.1,"MEL"],["f101v",31.6,40.0,"MEL"],["f102r",20.0,33.3,"MEL"],["f102v",21.1,35.3,"MEL"],["f103r",11.8,20.0,"MEL"],["f103v",22.2,28.6,"MEL"],["f104r",21.1,33.3,"MEL"],["f104v",21.1,35.3,"MEL"],["f105r",30.0,44.4,"MEL"],["f105v",10.5,16.7,"MEL"],["f106r",30.0,33.3,"TIED"],["f106v",11.1,25.0,"MEL"],["f107r",23.5,30.8,"MEL"],["f107v",20.0,33.3,"MEL"],["f108r",10.0,22.2,"MEL"],["f108v",21.1,35.3,"MEL"],["f111r",10.0,22.2,"MEL"],["f111v",20.0,33.3,"MEL"],["f112r",21.1,35.3,"MEL"],["f112v",21.1,35.3,"MEL"],["f113r",17.4,28.6,"MEL"],["f113v",27.3,40.0,"MEL"],["f114r",30.0,37.5,"MEL"],["f114v",20.0,25.0,"MEL"],["f115r",9.5,21.1,"MEL"],["f115v",27.3,33.3,"MEL"],["f116r",10.0,22.2,"MEL"],["f116v",0.0,0.0,"INSUFFICIENT"]];
 
 // ============================================================
 // RENDER FUNCTIONS
@@ -1225,6 +1286,42 @@ function renderDeadlockChart() {
 }
 
 // ============================================================
+// ZINGIBER/MEL CHART
+// ============================================================
+
+function renderZingiberMelChart() {
+  const data = ZM_DATA.filter(r => r[3] !== 'INSUFFICIENT');
+  new Chart(document.getElementById('chart-zingiber-mel'), {
+    type: 'bar',
+    data: {
+      labels: data.map(r => r[0]),
+      datasets: [
+        {
+          label: 'Zingiber F1',
+          data: data.map(r => r[1]),
+          backgroundColor: data.map(r => r[3]==='TIED' ? 'rgba(107,114,128,0.5)' : 'rgba(239,68,68,0.35)'),
+          borderRadius: 3, borderWidth: 0
+        },
+        {
+          label: 'Mel F1',
+          data: data.map(r => r[2]),
+          backgroundColor: data.map(r => r[3]==='MEL' ? 'rgba(34,197,94,0.7)' : 'rgba(107,114,128,0.5)'),
+          borderRadius: 3, borderWidth: 0
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position:'top', labels:{usePointStyle:true} } },
+      scales: {
+        x: { grid:{display:false}, ticks:{font:{size:9},maxRotation:90} },
+        y: { beginAtZero:true, max:60, ticks:{callback:v=>v+'%'} }
+      }
+    }
+  });
+}
+
+// ============================================================
 // NAV
 // ============================================================
 
@@ -1249,6 +1346,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initCharts();
   renderV3Chart();
   renderDeadlockChart();
+  renderZingiberMelChart();
 });
 
 </script>

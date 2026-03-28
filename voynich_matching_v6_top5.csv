@@ -1,0 +1,241 @@
+Folio,Rank,Recipe,F1,N_Overlap,Overlap_Ingredients
+f87r,1,Theriac Diatessaron,28.6,1,Mel despumatum
+f87r,2,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),28.6,1,Mel despumatum
+f87r,3,Itrifal Ustukhudus (Electuario de Espliego),28.6,2,Mel despumatum|Rosa
+f87r,4,Diascordium,26.7,2,Mel despumatum|Rosa
+f87r,5,Confectio Hamech,23.5,2,Mel despumatum|Rosa
+f87v,1,Pillulae Fetidae (Pildoras Fetidas),61.5,4,Bdellium|Galbanum|Myrrha|Opopanax
+f87v,2,Unguentum Apostolorum,47.1,4,Bdellium|Galbanum|Myrrha|Opopanax
+f87v,3,Theriac Abulcasis (contra venenos),42.1,4,Crocus|Galbanum|Myrrha|Opopanax
+f87v,4,Philonium Romanum,25.0,2,Crocus|Myrrha
+f87v,5,Trifera Magna,24.2,4,Bdellium|Crocus|Myrrha|Opopanax
+f88r,1,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),52.2,6,Cardamomum|Casia|Crocus|Mel despumatum|Piper longum|Piper nigrum
+f88r,2,Trifera Magna,51.3,10,Cardamomum|Casia|Crocus|Cubeba|Galanga|Mel despumatum|Nux moschata|Opopanax|Piper longum|Piper nigrum
+f88r,3,Suffuf al-Tib (Polvo aromatico de Avicena),50.0,5,Cardamomum|Casia|Crocus|Galanga|Nux moschata
+f88r,4,Diasatyrion,48.0,6,Cardamomum|Crocus|Galanga|Mel despumatum|Nux moschata|Piper longum
+f88r,5,Trifera Saracenica,48.0,6,Cardamomum|Casia|Crocus|Mel despumatum|Piper longum|Piper nigrum
+f88v,1,Trifera Saracenica,63.6,7,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f88v,2,Electuarium Justinum,63.6,7,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f88v,3,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),60.0,6,Cardamomum|Casia|Crocus|Mel despumatum|Piper longum|Piper nigrum
+f88v,4,Paulinum,57.1,6,Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f88v,5,Theodoricon Euporistum,56.0,7,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f89r,1,Trifera Saracenica,58.3,7,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f89r,2,Electuarium Justinum,58.3,7,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f89r,3,Philonium Persicum,57.1,8,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum|Styrax
+f89r,4,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),54.5,6,Cardamomum|Casia|Crocus|Mel despumatum|Piper longum|Piper nigrum
+f89r,5,Paulinum,52.2,6,Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f89v,1,Trifera Saracenica,63.6,7,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f89v,2,Electuarium Justinum,63.6,7,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f89v,3,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),60.0,6,Cardamomum|Casia|Crocus|Mel despumatum|Piper longum|Piper nigrum
+f89v,4,Paulinum,57.1,6,Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f89v,5,Theodoricon Euporistum,56.0,7,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f90r,1,Theriac Diatessaron,44.4,2,Mel despumatum|Myrrha
+f90r,2,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),44.4,2,Mel despumatum|Myrrha
+f90r,3,Electuarium de Baccis Lauri,40.0,3,Mel despumatum|Myrrha|Piper longum
+f90r,4,Philonium Romanum,40.0,3,Mel despumatum|Myrrha|Piper longum
+f90r,5,Antidotum Hadriani,37.5,3,Mel despumatum|Myrrha|Piper longum
+f90v,1,Antidotum Hadriani,47.1,4,Casia|Cinnamomum|Mel despumatum|Myrrha
+f90v,2,Theriac Diatessaron Magna,46.2,3,Cinnamomum|Mel despumatum|Myrrha
+f90v,3,Paulinum,44.4,4,Casia|Cinnamomum|Mel despumatum|Myrrha
+f90v,4,Trifera Saracenica,42.1,4,Casia|Cinnamomum|Mel despumatum|Myrrha
+f90v,5,Electuarium Justinum,42.1,4,Casia|Cinnamomum|Mel despumatum|Myrrha
+f93r,1,Paulinum,44.4,4,Casia|Mel despumatum|Myrrha|Piper nigrum
+f93r,2,Philonium Persicum,43.5,5,Casia|Mel despumatum|Myrrha|Piper nigrum|Styrax
+f93r,3,Trifera Saracenica,42.1,4,Casia|Mel despumatum|Myrrha|Piper nigrum
+f93r,4,Electuarium Justinum,42.1,4,Casia|Mel despumatum|Myrrha|Piper nigrum
+f93r,5,Theriac Diatessaron,40.0,2,Mel despumatum|Myrrha
+f93v,1,Diascordium,42.1,4,Galbanum|Mel despumatum|Rosa|Styrax
+f93v,2,Philonium Persicum,33.3,4,Casia|Mel despumatum|Piper nigrum|Styrax
+f93v,3,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),33.3,3,Casia|Mel despumatum|Piper nigrum
+f93v,4,Paulinum,31.6,3,Casia|Mel despumatum|Piper nigrum
+f93v,5,Trifera Saracenica,30.0,3,Casia|Mel despumatum|Piper nigrum
+f94r,1,Electuarium de Baccis Lauri,30.8,2,Myrrha|Piper longum
+f94r,2,Philonium Romanum,30.8,2,Myrrha|Piper longum
+f94r,3,Theriac Diatessaron,28.6,1,Myrrha
+f94r,4,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),28.6,1,Myrrha
+f94r,5,Antidotum Hadriani,28.6,2,Myrrha|Piper longum
+f94v,1,Confectio Anacardia,46.2,3,Crocus|Mel despumatum|Piper longum
+f94v,2,Philonium Romanum,42.9,3,Crocus|Mel despumatum|Piper longum
+f94v,3,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),40.0,3,Crocus|Mel despumatum|Piper longum
+f94v,4,Antidotum Hadriani,40.0,3,Crocus|Mel despumatum|Piper longum
+f94v,5,Paulinum,37.5,3,Crocus|Mel despumatum|Piper longum
+f95r,1,Electuarium Justinum,54.5,6,Amomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f95r,2,Theriac Abulcasis (contra venenos),54.5,6,Crocus|Mel despumatum|Myrrha|Opopanax|Piper longum|Piper nigrum
+f95r,3,Philonium Romanum,52.6,5,Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f95r,4,Theodoricon Euporistum,48.0,6,Amomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f95r,5,Paulinum,47.6,5,Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f95v,1,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),37.5,3,Casia|Crocus|Piper longum
+f95v,2,Antidotum Hadriani,37.5,3,Casia|Crocus|Piper longum
+f95v,3,Philonium Persicum,36.4,4,Casia|Crocus|Piper longum|Styrax
+f95v,4,Paulinum,35.3,3,Casia|Crocus|Piper longum
+f95v,5,Trifera Saracenica,33.3,3,Casia|Crocus|Piper longum
+f96r,1,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),44.4,4,Cardamomum|Crocus|Mel despumatum|Piper nigrum
+f96r,2,Philonium Persicum,41.7,5,Cardamomum|Crocus|Mel despumatum|Piper nigrum|Styrax
+f96r,3,Trifera Saracenica,40.0,4,Cardamomum|Crocus|Mel despumatum|Piper nigrum
+f96r,4,Electuarium Justinum,40.0,4,Cardamomum|Crocus|Mel despumatum|Piper nigrum
+f96r,5,Theriac Abulcasis (contra venenos),40.0,4,Crocus|Galbanum|Mel despumatum|Piper nigrum
+f96v,1,Pillulae Aureae,25.0,1,Crocus
+f96v,2,Rosata Novella,25.0,1,Crocus
+f96v,3,Pillulae de Hiera cum Agarico,20.0,1,Crocus
+f96v,4,Suffuf al-Tib (Polvo aromatico de Avicena),20.0,1,Crocus
+f96v,5,Hiera Picra (Hiera de Galeno),18.2,1,Crocus
+f99r,1,Electuarium Justinum,52.6,5,Amomum|Casia|Crocus|Mel despumatum|Piper nigrum
+f99r,2,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),47.1,4,Casia|Crocus|Mel despumatum|Piper nigrum
+f99r,3,Theodoricon Euporistum,45.5,5,Amomum|Casia|Crocus|Mel despumatum|Piper nigrum
+f99r,4,Paulinum,44.4,4,Casia|Crocus|Mel despumatum|Piper nigrum
+f99r,5,Trifera Saracenica,42.1,4,Casia|Crocus|Mel despumatum|Piper nigrum
+f99v,1,Paulinum,52.6,5,Casia|Cinnamomum|Myrrha|Piper longum|Piper nigrum
+f99v,2,Trifera Saracenica,50.0,5,Casia|Cinnamomum|Myrrha|Piper longum|Piper nigrum
+f99v,3,Electuarium Justinum,50.0,5,Casia|Cinnamomum|Myrrha|Piper longum|Piper nigrum
+f99v,4,Philonium Romanum,47.1,4,Cinnamomum|Myrrha|Piper longum|Piper nigrum
+f99v,5,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),44.4,4,Casia|Cinnamomum|Piper longum|Piper nigrum
+f100r,1,Suffuf al-Tib (Polvo aromatico de Avicena),70.6,6,Cardamomum|Casia|Cinnamomum|Crocus|Galanga|Nux moschata
+f100r,2,Diamargariton (Electuario de Perlas),66.7,8,Cardamomum|Casia|Cinnamomum|Crocus|Cubeba|Galanga|Nux moschata|Saccharum
+f100r,3,Diarodon Abbatis,66.7,8,Cardamomum|Casia|Cinnamomum|Crocus|Cubeba|Galanga|Nux moschata|Saccharum
+f100r,4,Rosata Novella,66.7,5,Cinnamomum|Crocus|Galanga|Nux moschata|Saccharum
+f100r,5,Letitia Galeni,63.6,7,Cardamomum|Cinnamomum|Crocus|Cubeba|Galanga|Nux moschata|Saccharum
+f100v,1,Diaciminum (Electuario de Comino),50.0,4,Amomum|Mel despumatum|Piper longum|Piper nigrum
+f100v,2,Electuarium Justinum,42.1,4,Amomum|Mel despumatum|Piper longum|Piper nigrum
+f100v,3,Theriac Abulcasis (contra venenos),42.1,4,Galbanum|Mel despumatum|Piper longum|Piper nigrum
+f100v,4,Confectio Anacardia,40.0,3,Mel despumatum|Piper longum|Piper nigrum
+f100v,5,Electuarium Diaspermaton,40.0,3,Amomum|Mel despumatum|Piper longum
+f101r,1,Electuarium Justinum,61.5,8,Amomum|Casia|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f101r,2,Paulinum,56.0,7,Casia|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f101r,3,Theodoricon Euporistum,55.2,8,Amomum|Casia|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f101r,4,Trifera Magna,55.0,11,Amomum|Casia|Cinnamomum|Crocus|Cubeba|Galanga|Mel despumatum|Myrrha|Nux moschata|Piper longum|Piper nigrum
+f101r,5,Trifera Saracenica,53.8,7,Casia|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f101v,1,Trifera Saracenica,57.1,6,Cardamomum|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper nigrum
+f101v,2,Electuarium Justinum,57.1,6,Cardamomum|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper nigrum
+f101v,3,Theriac Abulcasis (contra venenos),57.1,6,Cinnamomum|Crocus|Galbanum|Mel despumatum|Myrrha|Piper nigrum
+f101v,4,Philonium Romanum,55.6,5,Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper nigrum
+f101v,5,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),52.6,5,Cardamomum|Cinnamomum|Crocus|Mel despumatum|Piper nigrum
+f102r,1,Trifera Saracenica,54.5,6,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper nigrum
+f102r,2,Electuarium Justinum,54.5,6,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper nigrum
+f102r,3,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),50.0,5,Cardamomum|Casia|Crocus|Mel despumatum|Piper nigrum
+f102r,4,Theodoricon Euporistum,48.0,6,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper nigrum
+f102r,5,Paulinum,47.6,5,Casia|Crocus|Mel despumatum|Myrrha|Piper nigrum
+f102v,1,Trifera Saracenica,57.1,6,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum
+f102v,2,Electuarium Justinum,57.1,6,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum
+f102v,3,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),52.6,5,Cardamomum|Casia|Crocus|Mel despumatum|Piper longum
+f102v,4,Antidotum Hadriani,52.6,5,Casia|Crocus|Mel despumatum|Myrrha|Piper longum
+f102v,5,Theodoricon Euporistum,50.0,6,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum
+f103r,1,Electuarium Justinum,52.6,5,Amomum|Cardamomum|Crocus|Myrrha|Piper longum
+f103r,2,Theodoricon Euporistum,45.5,5,Amomum|Cardamomum|Crocus|Myrrha|Piper longum
+f103r,3,Trifera Saracenica,42.1,4,Cardamomum|Crocus|Myrrha|Piper longum
+f103r,4,Electuarium Diacostum,37.5,3,Amomum|Cardamomum|Piper longum
+f103r,5,Philonium Romanum,37.5,3,Crocus|Myrrha|Piper longum
+f103v,1,Electuarium Justinum,60.0,6,Amomum|Cardamomum|Cinnamomum|Crocus|Myrrha|Piper longum
+f103v,2,Theodoricon Euporistum,52.2,6,Amomum|Cardamomum|Cinnamomum|Crocus|Myrrha|Piper longum
+f103v,3,Trifera Saracenica,50.0,5,Cardamomum|Cinnamomum|Crocus|Myrrha|Piper longum
+f103v,4,Electuarium Diacostum,47.1,4,Amomum|Cardamomum|Cinnamomum|Piper longum
+f103v,5,Philonium Romanum,47.1,4,Cinnamomum|Crocus|Myrrha|Piper longum
+f104r,1,Electuarium Justinum,57.1,6,Amomum|Cardamomum|Crocus|Mel despumatum|Myrrha|Piper longum
+f104r,2,Theodoricon Euporistum,50.0,6,Amomum|Cardamomum|Crocus|Mel despumatum|Myrrha|Piper longum
+f104r,3,Trifera Saracenica,47.6,5,Cardamomum|Crocus|Mel despumatum|Myrrha|Piper longum
+f104r,4,Theriac Abulcasis (contra venenos),47.6,5,Crocus|Galbanum|Mel despumatum|Myrrha|Piper longum
+f104r,5,Electuarium Diacostum,44.4,4,Amomum|Cardamomum|Mel despumatum|Piper longum
+f104v,1,Trifera Saracenica,57.1,6,Cardamomum|Casia|Cinnamomum|Crocus|Myrrha|Piper longum
+f104v,2,Electuarium Justinum,57.1,6,Cardamomum|Casia|Cinnamomum|Crocus|Myrrha|Piper longum
+f104v,3,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),52.6,5,Cardamomum|Casia|Cinnamomum|Crocus|Piper longum
+f104v,4,Antidotum Hadriani,52.6,5,Casia|Cinnamomum|Crocus|Myrrha|Piper longum
+f104v,5,Theodoricon Euporistum,50.0,6,Cardamomum|Casia|Cinnamomum|Crocus|Myrrha|Piper longum
+f105r,1,Trifera Saracenica,63.6,7,Cardamomum|Casia|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum
+f105r,2,Electuarium Justinum,63.6,7,Cardamomum|Casia|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum
+f105r,3,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),60.0,6,Cardamomum|Casia|Cinnamomum|Crocus|Mel despumatum|Piper longum
+f105r,4,Antidotum Hadriani,60.0,6,Casia|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum
+f105r,5,Paulinum,57.1,6,Casia|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum
+f105v,1,Electuarium Justinum,57.1,6,Amomum|Cardamomum|Crocus|Myrrha|Piper longum|Piper nigrum
+f105v,2,Theodoricon Euporistum,50.0,6,Amomum|Cardamomum|Crocus|Myrrha|Piper longum|Piper nigrum
+f105v,3,Trifera Saracenica,47.6,5,Cardamomum|Crocus|Myrrha|Piper longum|Piper nigrum
+f105v,4,Theriac Abulcasis (contra venenos),47.6,5,Crocus|Myrrha|Opopanax|Piper longum|Piper nigrum
+f105v,5,Philonium Romanum,44.4,4,Crocus|Myrrha|Piper longum|Piper nigrum
+f106r,1,Trifera Saracenica,63.6,7,Cardamomum|Casia|Cinnamomum|Crocus|Myrrha|Piper longum|Piper nigrum
+f106r,2,Electuarium Justinum,63.6,7,Cardamomum|Casia|Cinnamomum|Crocus|Myrrha|Piper longum|Piper nigrum
+f106r,3,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),60.0,6,Cardamomum|Casia|Cinnamomum|Crocus|Piper longum|Piper nigrum
+f106r,4,Paulinum,57.1,6,Casia|Cinnamomum|Crocus|Myrrha|Piper longum|Piper nigrum
+f106r,5,Theodoricon Euporistum,56.0,7,Cardamomum|Casia|Cinnamomum|Crocus|Myrrha|Piper longum|Piper nigrum
+f106v,1,Philonium Persicum,50.0,6,Cardamomum|Casia|Crocus|Myrrha|Piper longum|Styrax
+f106v,2,Trifera Saracenica,50.0,5,Cardamomum|Casia|Crocus|Myrrha|Piper longum
+f106v,3,Electuarium Justinum,50.0,5,Cardamomum|Casia|Crocus|Myrrha|Piper longum
+f106v,4,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),44.4,4,Cardamomum|Casia|Crocus|Piper longum
+f106v,5,Antidotum Hadriani,44.4,4,Casia|Crocus|Myrrha|Piper longum
+f107r,1,Trifera Saracenica,52.6,5,Cardamomum|Cinnamomum|Crocus|Myrrha|Piper longum
+f107r,2,Electuarium Justinum,52.6,5,Cardamomum|Cinnamomum|Crocus|Myrrha|Piper longum
+f107r,3,Philonium Romanum,50.0,4,Cinnamomum|Crocus|Myrrha|Piper longum
+f107r,4,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),47.1,4,Cardamomum|Cinnamomum|Crocus|Piper longum
+f107r,5,Antidotum Hadriani,47.1,4,Cinnamomum|Crocus|Myrrha|Piper longum
+f107v,1,Trifera Saracenica,63.6,7,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f107v,2,Electuarium Justinum,63.6,7,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f107v,3,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),60.0,6,Cardamomum|Casia|Crocus|Mel despumatum|Piper longum|Piper nigrum
+f107v,4,Paulinum,57.1,6,Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f107v,5,Theodoricon Euporistum,56.0,7,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f108r,1,Electuarium Justinum,63.6,7,Amomum|Cardamomum|Casia|Crocus|Myrrha|Piper longum|Piper nigrum
+f108r,2,Theodoricon Euporistum,56.0,7,Amomum|Cardamomum|Casia|Crocus|Myrrha|Piper longum|Piper nigrum
+f108r,3,Trifera Saracenica,54.5,6,Cardamomum|Casia|Crocus|Myrrha|Piper longum|Piper nigrum
+f108r,4,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),50.0,5,Cardamomum|Casia|Crocus|Piper longum|Piper nigrum
+f108r,5,Paulinum,47.6,5,Casia|Crocus|Myrrha|Piper longum|Piper nigrum
+f108v,1,Electuarium Justinum,66.7,7,Amomum|Cardamomum|Casia|Cinnamomum|Crocus|Myrrha|Piper longum
+f108v,2,Theodoricon Euporistum,58.3,7,Amomum|Cardamomum|Casia|Cinnamomum|Crocus|Myrrha|Piper longum
+f108v,3,Trifera Saracenica,57.1,6,Cardamomum|Casia|Cinnamomum|Crocus|Myrrha|Piper longum
+f108v,4,Electuarium Diacostum,55.6,5,Amomum|Cardamomum|Casia|Cinnamomum|Piper longum
+f108v,5,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),52.6,5,Cardamomum|Casia|Cinnamomum|Crocus|Piper longum
+f111r,1,Electuarium Justinum,54.5,6,Amomum|Cardamomum|Casia|Crocus|Myrrha|Piper longum
+f111r,2,Theodoricon Euporistum,48.0,6,Amomum|Cardamomum|Casia|Crocus|Myrrha|Piper longum
+f111r,3,Trifera Saracenica,45.5,5,Cardamomum|Casia|Crocus|Myrrha|Piper longum
+f111r,4,Trifera Magna,44.4,8,Amomum|Bdellium|Cardamomum|Casia|Crocus|Myrrha|Opopanax|Piper longum
+f111r,5,Electuarium Diacostum,42.1,4,Amomum|Cardamomum|Casia|Piper longum
+f111v,1,Electuarium Justinum,63.6,7,Amomum|Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum
+f111v,2,Theodoricon Euporistum,56.0,7,Amomum|Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum
+f111v,3,Trifera Saracenica,54.5,6,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum
+f111v,4,Electuarium Diacostum,52.6,5,Amomum|Cardamomum|Casia|Mel despumatum|Piper longum
+f111v,5,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),50.0,5,Cardamomum|Casia|Crocus|Mel despumatum|Piper longum
+f112r,1,Trifera Saracenica,57.1,6,Cardamomum|Casia|Cinnamomum|Crocus|Myrrha|Piper longum
+f112r,2,Electuarium Justinum,57.1,6,Cardamomum|Casia|Cinnamomum|Crocus|Myrrha|Piper longum
+f112r,3,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),52.6,5,Cardamomum|Casia|Cinnamomum|Crocus|Piper longum
+f112r,4,Antidotum Hadriani,52.6,5,Casia|Cinnamomum|Crocus|Myrrha|Piper longum
+f112r,5,Theodoricon Euporistum,50.0,6,Cardamomum|Casia|Cinnamomum|Crocus|Myrrha|Piper longum
+f112v,1,Antidotum Hadriani,52.6,5,Casia|Crocus|Mel despumatum|Myrrha|Piper longum
+f112v,2,Paulinum,50.0,5,Casia|Crocus|Mel despumatum|Myrrha|Piper longum
+f112v,3,Trifera Saracenica,47.6,5,Casia|Crocus|Mel despumatum|Myrrha|Piper longum
+f112v,4,Electuarium Justinum,47.6,5,Casia|Crocus|Mel despumatum|Myrrha|Piper longum
+f112v,5,Theriac Abulcasis (contra venenos),47.6,5,Crocus|Galbanum|Mel despumatum|Myrrha|Piper longum
+f113r,1,Electuarium Justinum,64.0,8,Amomum|Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f113r,2,Theodoricon Euporistum,57.1,8,Amomum|Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f113r,3,Trifera Saracenica,56.0,7,Cardamomum|Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f113r,4,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),52.2,6,Cardamomum|Casia|Crocus|Mel despumatum|Piper longum|Piper nigrum
+f113r,5,Paulinum,50.0,6,Casia|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f113v,1,Electuarium Justinum,75.0,9,Amomum|Cardamomum|Casia|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f113v,2,Theodoricon Euporistum,66.7,9,Amomum|Cardamomum|Casia|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f113v,3,Trifera Saracenica,66.7,8,Cardamomum|Casia|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f113v,4,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),63.6,7,Cardamomum|Casia|Cinnamomum|Crocus|Mel despumatum|Piper longum|Piper nigrum
+f113v,5,Paulinum,60.9,7,Casia|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f114r,1,Trifera Saracenica,63.6,7,Cardamomum|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f114r,2,Electuarium Justinum,63.6,7,Cardamomum|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f114r,3,Theriac Abulcasis (contra venenos),63.6,7,Cinnamomum|Crocus|Mel despumatum|Myrrha|Opopanax|Piper longum|Piper nigrum
+f114r,4,Philonium Romanum,63.2,6,Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f114r,5,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),60.0,6,Cardamomum|Cinnamomum|Crocus|Mel despumatum|Piper longum|Piper nigrum
+f114v,1,Trifera Saracenica,54.5,6,Cardamomum|Cinnamomum|Crocus|Myrrha|Piper longum|Piper nigrum
+f114v,2,Electuarium Justinum,54.5,6,Cardamomum|Cinnamomum|Crocus|Myrrha|Piper longum|Piper nigrum
+f114v,3,Theriac Abulcasis (contra venenos),54.5,6,Cinnamomum|Crocus|Galbanum|Myrrha|Piper longum|Piper nigrum
+f114v,4,Philonium Romanum,52.6,5,Cinnamomum|Crocus|Myrrha|Piper longum|Piper nigrum
+f114v,5,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),50.0,5,Cardamomum|Cinnamomum|Crocus|Piper longum|Piper nigrum
+f115r,1,Electuarium Justinum,52.2,6,Amomum|Cardamomum|Casia|Crocus|Myrrha|Piper longum
+f115r,2,Theodoricon Euporistum,46.2,6,Amomum|Cardamomum|Casia|Crocus|Myrrha|Piper longum
+f115r,3,Suffuf al-Tib (Polvo aromatico de Avicena),44.4,4,Cardamomum|Casia|Crocus|Rosa
+f115r,4,Trifera Saracenica,43.5,5,Cardamomum|Casia|Crocus|Myrrha|Piper longum
+f115r,5,Electuarium Diacostum,40.0,4,Amomum|Cardamomum|Casia|Piper longum
+f115v,1,Trifera Magna,55.0,11,Bdellium|Cardamomum|Cinnamomum|Crocus|Cubeba|Galanga|Mel despumatum|Myrrha|Nux moschata|Piper longum|Piper nigrum
+f115v,2,Diasatyrion,53.8,7,Cardamomum|Cinnamomum|Crocus|Galanga|Mel despumatum|Nux moschata|Piper longum
+f115v,3,Trifera Saracenica,53.8,7,Cardamomum|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f115v,4,Electuarium Justinum,53.8,7,Cardamomum|Cinnamomum|Crocus|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f115v,5,Theriac Abulcasis (contra venenos),53.8,7,Cinnamomum|Crocus|Galbanum|Mel despumatum|Myrrha|Piper longum|Piper nigrum
+f116r,1,Trifera Magna,52.6,10,Amomum|Bdellium|Cardamomum|Casia|Crocus|Cubeba|Galanga|Myrrha|Nux moschata|Piper longum
+f116r,2,Suffuf al-Tib (Polvo aromatico de Avicena),52.6,5,Cardamomum|Casia|Crocus|Galanga|Nux moschata
+f116r,3,Electuarium Justinum,50.0,6,Amomum|Cardamomum|Casia|Crocus|Myrrha|Piper longum
+f116r,4,Diamargariton (Electuario de Perlas),46.2,6,Cardamomum|Casia|Crocus|Cubeba|Galanga|Nux moschata
+f116r,5,Diarodon Abbatis,46.2,6,Cardamomum|Casia|Crocus|Cubeba|Galanga|Nux moschata
+f116v,1,Theriac Magna (Triaca de Andromachus),0.0,0,
+f116v,2,Mithridatium,0.0,0,
+f116v,3,Diascordium,0.0,0,
+f116v,4,Pillulae Cochiae,0.0,0,
+f116v,5,Pillulae Aureae,0.0,0,

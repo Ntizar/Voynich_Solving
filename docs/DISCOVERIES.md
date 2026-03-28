@@ -478,3 +478,128 @@ The deadlock is **directionally broken** but not conclusively. The positional cl
 
 - `voynich_deadlock_breaker_v3.csv` -- Full F1 comparison per folio
 - Script: `temp_matching_v3.py`
+
+---
+
+## Discovery 17: Morphological Opium/Castoreum Analysis
+
+**Date:** Session 11  
+**Status:** Confirmed  
+**Significance:** Reveals structural differences between Opium-enriched and Castoreum-enriched stems  
+
+### Finding
+
+A comprehensive morphological analysis of all unidentified stems reveals systematic differences between stems enriched in Opium-favoring folios vs Castoreum-favoring folios:
+
+1. **Positional ordering:** 78.4% of folio pairs where both opium-enriched and castoreum-enriched stems appear have opium stems positioned BEFORE castoreum stems. Mean folio position: Opium = 196.3, Castoreum = 213.0.
+
+2. **Morphological differences:**
+   - Opium stems are shorter (more 2-atom stems)
+   - Opium stems are more A1-initial and B1-initial
+   - Castoreum stems are longer (more 6+ atom stems)
+   - Castoreum stems are more B2-initial, P1-initial, L1J1-containing
+
+3. **Ingredient profile differences:**
+   - Opium folios have 3.5x more Zingiber|Mel and 2.1x more P. nigrum
+   - Castoreum folios have 2.4x more Crocus, 3.8x more Cardamomum
+   - Castoreum folios have exclusive Casia, Styrax, Rosa
+
+### Evidence
+
+- 296 Opium-enriched stems (LogOR > 0.5)
+- 363 Castoreum-enriched stems (LogOR < -0.5)
+- 288 neutral stems
+- 5 strong Opium-exclusive stems (2+ opium folios, 0 castoreum): Q2A1B1A3, A1B2Q1A1, BaA1, K1A1B2Q1, K1Aa
+- 301 strong Castoreum-exclusive stems (2+ castoreum folios, 0 opium)
+
+### Interpretation
+
+The Opium/Castoreum deadlock is NOT fully broken (margins remain thin), but the morphological and positional evidence provides **directional guidance**: opium stems cluster earlier in the manuscript (analgesic tradition) while castoreum stems cluster later (stimulant/restorative tradition). This is consistent with medieval pharmacopoeia organization.
+
+### Files
+
+- `voynich_deadlock_morphology_v3.csv` -- Enrichment analysis for all 948 unidentified stems
+- Analysis run inline in session 11
+
+---
+
+## Discovery 18: Zingiber/Mel Deadlock BROKEN -- 41-0 Verdict for Mel
+
+**Date:** Session 11-12  
+**Status:** CONFIRMED -- DEADLOCK BROKEN  
+**Significance:** MAJOR -- Resolves the Zingiber|Mel ambiguity, adds Mel despumatum as a confirmed single ingredient  
+
+### Finding
+
+Using discriminating recipes that contain either Zingiber or Mel but not both:
+- **Zingiber-only recipes (2):** Benedicta Laxativa, Electuarium de Succo Rosarum
+- **Mel-only recipes (4):** Hiera Picra, Theriac Diatessaron, Theriac Diatessaron Magna, Tiryaq al-Arba
+
+Compared F1 scores for each folio against these two groups:
+- **41 folios favor MEL**
+- **0 folios favor ZINGIBER**
+- **6 tied, 1 insufficient**
+
+This is an **overwhelming, unanimous verdict**: the 5 stems previously identified as Zingiber|Mel despumatum are **Mel despumatum** (honey).
+
+### Updated Stems
+
+| Stem | Old ID | New ID | New Confidence |
+|---|---|---|---|
+| Q1A1 | Zingiber\|Mel despumatum (85%) | Mel despumatum | 88% |
+| Q2A1 | Zingiber\|Mel despumatum (85%) | Mel despumatum | 88% |
+| Q2K1A1 | Zingiber\|Mel despumatum (85%) | Mel despumatum | 88% |
+| U1A1 | Zingiber\|Mel despumatum (85%) | Mel despumatum | 88% |
+| U2A1 | Zingiber\|Mel despumatum (85%) | Mel despumatum | 88% |
+
+### Why Mel (Honey), Not Zingiber (Ginger)?
+
+1. **Mel despumatum** is a BASE ingredient -- present in 30+ recipes as a binding/preservation agent
+2. **Zingiber** is a SPICE -- always paired with other spices in recipes
+3. The 5 stems have ubiquitous distribution across recipe folios, consistent with a base ingredient
+4. Mel-only recipes (Hiera Picra, Theriac Diatessaron) always match better than Zingiber-only recipes (Benedicta Laxativa, Electuarium de Succo Rosarum)
+
+### Impact on v6 Matching
+
+After updating to v6 (Mel instead of Zingiber|Mel pair):
+- Mean F1 across all folios: **54.3%** (up from ~52% in v3)
+- 37 GOOD matches (F1 50-80%), 8 MODERATE, 2 WEAK
+- Electuarium Justinum and Trifera Saracenica remain the dominant best-match recipes (14 folios each)
+- f113v remains the best individual match at F1=75.0% (previously 80% -- slight adjustment due to Mel now being a single ingredient rather than a pair)
+- The "Mel despumatum" identification now cleanly matches against recipes, eliminating false-pair artifacts
+
+### Files
+
+- `voynich_zingiber_mel_deadlock.csv` -- Per-folio F1 comparison (41-0 verdict)
+- `voynich_unified_identifications_v6.csv` -- Updated identification table
+- `voynich_matching_v6.csv` -- Re-run matching results
+- Script: `temp_v6_update_and_match.py`
+
+---
+
+## Discovery 19: Zingiber Stem Search -- No Strong Candidates Yet
+
+**Date:** Session 12  
+**Status:** Open investigation  
+**Significance:** Defines the next frontier for ingredient identification  
+
+### Finding
+
+With Mel separated from Zingiber, we searched for NEW unidentified stems that could represent Zingiber by looking for stems enriched in folios matching Zingiber-containing recipes. However, because 42 out of 47 active folios match Zingiber-containing recipes (Zingiber appears in 27 of 50 recipes), the enrichment analysis cannot discriminate well -- virtually all stems appear in "Zingiber folios."
+
+### Evidence
+
+- 42 folios match Zingiber-containing recipes, only 5 match non-Zingiber recipes
+- The top 30 "Zingiber-enriched" stems all have LogOR = 3.0 (maximum) simply because they appear in zero of the 5 non-Zingiber folios
+- This includes common stems like K1J1A1B1 (27 folios), A1A3 (18 folios), Aa (17 folios) -- clearly not Zingiber
+
+### Interpretation
+
+Zingiber identification requires a **different approach** than simple folio-recipe enrichment:
+1. **Morphological pairing with Mel:** Look for stems with similar atom patterns to the 5 Mel stems (Q1A1, Q2A1, Q2K1A1, U1A1, U2A1)
+2. **Co-occurrence analysis:** Find stems that frequently co-occur with Mel stems but are NOT Mel themselves
+3. **Recipe-specific probing:** Use the 2 Zingiber-only recipes (Benedicta Laxativa, Elec. de Succo Rosarum) as targets
+
+### Files
+
+- `voynich_zingiber_candidates.csv` -- Full enrichment analysis for all unidentified stems
