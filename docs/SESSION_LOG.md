@@ -335,20 +335,86 @@
 
 ---
 
+## Session 10: Recipe Expansion, Content-Based Matching v3, and Deadlock Breaker
+
+### Work Done
+
+1. **Expanded Historical Recipe Database from 23 to 50 recipes**
+   - Added 27 new recipes from: Antidotarium Nicolai, Grabadin/Mesue, Avicenna Canon, Abulcasis, Salernitano
+   - Total unique ingredients: 152 (was 123)
+   - Total ingredient-recipe pairs: 613 (was 314)
+   - Key deadlock-breaking additions:
+     - **Philonium Romanum** (Opium WITHOUT Castoreum)
+     - **Requies Magna** (Opium WITHOUT Castoreum)
+     - **Theriac Diatessaron Magna** (Castoreum WITHOUT Opium)
+     - **Pillulae Fetidae** (Castoreum WITHOUT Opium)
+     - **Confectio Anacardia** (Castoreum WITHOUT Opium)
+   - Script: `temp_expand_recipes_v2.py`
+
+2. **Built Content-Based Matching Engine v3**
+   - Uses v5 identification table (58 entries) to map stems to ingredients
+   - For each folio: identifies which real ingredients are present via identified stems
+   - Matches identified ingredient sets against all 50 recipes using F1 score
+   - Results (48 folios x 50 recipes):
+     - **1 EXCELLENT match (F1>=80%):** f113v = Electuarium Justinum (F1=80%, 10 ingredient overlap: Amomum, Cardamomum, Casia, Cinnamomum, Crocus, Mel, Myrrha, P.longum, P.nigrum, Zingiber)
+     - **40 GOOD matches (F1 50-79%):** covering most recipe folios
+     - **5 MODERATE (30-49%), 2 WEAK (<30%)**
+   - Most frequent best-match recipes: Electuarium Justinum (14 folios), Trifera Saracenica (13 folios)
+   - Generated: `voynich_expanded_matching_v3.csv`, `voynich_matching_v3_top5.csv`
+   - Script: `temp_matching_v3.py`
+
+3. **Ran Opium vs Castoreum Deadlock Breaker**
+   - Method: compare each folio's best F1 score against Opium-only recipes vs Castoreum-only recipes
+   - Opium-only recipes: Philonium Romanum, Requies Magna
+   - Castoreum-only recipes: Confectio Anacardia, Dianucum, Pillulae Fetidae, Theodoricon Euporistum, Theriac Diatessaron Magna
+   - Results:
+     - **6 OPIUM-favoring folios:** f90r, f94r, f94v, f95r, f101v, f114r
+     - **17 CASTOREUM-favoring folios:** f87v, f95v, f99r, f102v, f103r, f103v, f104v, f106v, f108r, f108v, f111r, f111v, f112r, f113r, f113v, f115r, f116r
+     - **24 TIED, 1 INSUFFICIENT** (f116v -- only 2 words)
+   - Margins are thin (typically 5-10% F1 difference) -- deadlock NOT fully broken
+   - Generated: `voynich_deadlock_breaker_v3.csv`
+
+4. **Copied Voynich Corpus to Repo Root**
+   - `voynich_sta.txt` copied from `zenodo_voynich/corpus/` to repo root
+   - Verified NOT gitignored at root level
+
+5. **Built Bilingual README.html**
+   - Full Ntizar CSS (Liquid Glass UI) inlined
+   - English/Spanish language toggle
+   - Glassmorphism cards, progress bars, stats, discovery summaries
+   - Future exploration paths documented
+   - 523 lines
+
+### Scripts Written
+- `temp_expand_recipes_v2.py`
+- `temp_matching_v3.py`
+
+### Files Generated
+- `voynich_expanded_matching_v3.csv` -- Full 48x50 matching matrix
+- `voynich_matching_v3_top5.csv` -- Top 5 recipe matches per folio
+- `voynich_deadlock_breaker_v3.csv` -- Opium vs Castoreum F1 per folio
+- `README.html` -- Bilingual dashboard README
+
+---
+
 ## Summary Statistics
 
 | Metric | Value |
 |---|---|
-| Total scripts written | 29 |
-| Total CSV files generated | 18 |
-| HTML dashboards | 1 (dashboard_voynich.html) |
+| Total scripts written | 31 |
+| Total CSV files generated | 21 |
+| HTML files | 2 (dashboard_voynich.html, README.html) |
 | Obsidian notes generated | 130+ |
 | Unique stems in corpus | 3,261 (recipe folios, post-recovery) |
 | Unique entity stems (Botany) | 217 |
 | Recipe folios profiled | 48 (complete) |
-| Historical recipes compiled | 23 |
-| Perfect recipe matches | 9 |
-| Strong recipe matches | 19 |
+| Historical recipes compiled | 50 (expanded from 23 in session 10) |
+| Unique historical ingredients | 152 |
+| Ingredient-recipe pairs | 613 |
+| Structural matching: perfect (100%) | 9 |
+| Structural matching: strong (>=90%) | 19 |
+| Content-based matching: excellent (F1>=80%) | 1 (f113v = Electuarium Justinum) |
+| Content-based matching: good (F1 50-79%) | 40 |
 | Confirmed identifications (Tier 1-2) | 8 (Galbanum, Crocus, Myrrha x6) |
 | Strong identifications (Tier 3) | 19 (Crocus x9, Rosa, Zingiber/Mel x5, Cinnamomum x2, Opopanax x2) |
 | Moderate identifications (Tier 4) | 23 (Amomum, Piper, Bdellium, Casia, Cardamomum, Styrax, Saccharum) |
@@ -356,7 +422,10 @@
 | Total identification entries | 58 |
 | Unique ingredients identified | 19 (13 single + 5 in pairs + Opopanax) |
 | Novel structural discoveries | 4 (suffix channel, vertical alignment, column schema, foreign keys) |
-| Total documented discoveries | 14 |
-| Deadlocks confirmed | 2 (Opium/Castoreum, Zingiber/Mel) |
+| Total documented discoveries | 16 |
+| Deadlocks | 2 (Opium/Castoreum partially broken, Zingiber/Mel active) |
+| Opium-favoring folios | 6 |
+| Castoreum-favoring folios | 17 |
+| Tied/insufficient folios | 25 |
 | Philonium folios confirmed | 4 (f88v, f95v, f96r, f102r) |
 | Requies Magna folios found | 0 |

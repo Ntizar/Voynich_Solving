@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voynich Solving -- Structural Decipherment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+/* ============================================================
+   NTIZAR DESIGN SYSTEM -- Liquid Glass UI (inlined)
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+body { background-color: var(--bg-base); color: var(--text-primary); font-family: var(--font-sans); line-height: 1.6; min-height: 100vh; }
+:root {
+  --blue-50:#eff6ff;--blue-100:#dbeafe;--blue-200:#bfdbfe;--blue-300:#93c5fd;--blue-400:#60a5fa;--blue-500:#3b82f6;--blue-600:#2563eb;--blue-700:#1d4ed8;--blue-800:#1e40af;--blue-900:#1e3a8a;--blue-950:#0f1f5c;
+  --orange-50:#fff7ed;--orange-100:#ffedd5;--orange-200:#fed7aa;--orange-300:#fdba74;--orange-400:#fb923c;--orange-500:#f97316;--orange-600:#ea580c;--orange-700:#c2410c;--orange-800:#9a3412;--orange-900:#7c2d12;--orange-950:#431407;
+  --gray-950:#070b12;--gray-900:#0d1117;--gray-850:#111827;--gray-800:#1f2937;--gray-700:#374151;--gray-600:#4b5563;--gray-500:#6b7280;--gray-400:#9ca3af;--gray-300:#d1d5db;--gray-200:#e5e7eb;--gray-100:#f3f4f6;--gray-50:#f9fafb;
+  --bg-base:var(--gray-950);--bg-surface:var(--gray-900);--bg-elevated:var(--gray-850);
+  --text-primary:#f0f4ff;--text-secondary:#94a3b8;--text-muted:#4b5563;--text-inverse:var(--gray-950);
+  --border-subtle:rgba(255,255,255,0.06);--border-default:rgba(255,255,255,0.12);--border-strong:rgba(255,255,255,0.22);
+  --brand-primary:var(--blue-500);--brand-accent:var(--orange-500);
+  --glass-bg-subtle:rgba(255,255,255,0.04);--glass-bg-standard:rgba(255,255,255,0.08);--glass-bg-intense:rgba(255,255,255,0.14);
+  --glass-bg-blue-subtle:rgba(59,130,246,0.06);--glass-bg-blue-standard:rgba(59,130,246,0.12);
+  --glass-bg-orange-subtle:rgba(249,115,22,0.06);--glass-bg-orange-standard:rgba(249,115,22,0.12);
+  --glass-blur-sm:blur(8px);--glass-blur-md:blur(16px);--glass-blur-lg:blur(28px);
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.4),0 1px 2px rgba(0,0,0,0.5);--shadow-md:0 4px 16px rgba(0,0,0,0.5),0 2px 6px rgba(0,0,0,0.4);--shadow-lg:0 10px 40px rgba(0,0,0,0.6),0 4px 12px rgba(0,0,0,0.5);
+  --shadow-blue:0 4px 20px rgba(59,130,246,0.25);--shadow-orange:0 4px 20px rgba(249,115,22,0.25);
+  --radius-xs:4px;--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:24px;--radius-2xl:32px;--radius-full:9999px;
+  --transition-fast:150ms cubic-bezier(0.4,0,0.2,1);--transition-base:250ms cubic-bezier(0.4,0,0.2,1);
+  --font-sans:'Inter','SF Pro Display',system-ui,-apple-system,sans-serif;--font-mono:'JetBrains Mono','Fira Code','Cascadia Code',monospace;
+  --text-xs:0.75rem;--text-sm:0.875rem;--text-base:1rem;--text-lg:1.125rem;--text-xl:1.25rem;--text-2xl:1.5rem;--text-3xl:1.875rem;--text-4xl:2.25rem;--text-5xl:3rem;
+  --font-light:300;--font-normal:400;--font-medium:500;--font-semi:600;--font-bold:700;--font-black:900;
+  --leading-tight:1.25;--leading-normal:1.6;
+  --tracking-tight:-0.02em;--tracking-wider:0.1em;
+}
+h1,h2,h3,h4,h5,h6{font-weight:var(--font-semi);line-height:var(--leading-tight);letter-spacing:var(--tracking-tight);color:var(--text-primary)}
+h1{font-size:var(--text-4xl)}h2{font-size:var(--text-3xl)}h3{font-size:var(--text-2xl)}h4{font-size:var(--text-xl)}
+p{color:var(--text-secondary)}small{font-size:var(--text-sm);color:var(--text-muted)}
+code,pre{font-family:var(--font-mono);font-size:0.9em}
+@keyframes ntizar-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes ntizar-pulse-glow-blue{0%,100%{box-shadow:0 0 0 0 rgba(59,130,246,0)}50%{box-shadow:0 0 30px 6px rgba(59,130,246,0.35)}}
+@keyframes ntizar-shimmer{0%{background-position:-200% center}100%{background-position:200% center}}
+@keyframes ntizar-fade-up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.animate-fade-up{animation:ntizar-fade-up 0.5s ease forwards}
+.delay-1{animation-delay:0.1s}.delay-2{animation-delay:0.2s}.delay-3{animation-delay:0.3s}.delay-4{animation-delay:0.4s}.delay-5{animation-delay:0.5s}
+.glass-subtle{background:var(--glass-bg-subtle);backdrop-filter:var(--glass-blur-sm) saturate(1.4);-webkit-backdrop-filter:var(--glass-blur-sm) saturate(1.4);border:1px solid var(--border-subtle);border-radius:var(--radius-lg)}
+.glass-standard{background:var(--glass-bg-standard);backdrop-filter:var(--glass-blur-md) saturate(1.6) brightness(1.05);-webkit-backdrop-filter:var(--glass-blur-md) saturate(1.6) brightness(1.05);border:1px solid var(--border-default);border-radius:var(--radius-lg);box-shadow:var(--shadow-md),inset 0 1px 0 var(--border-default)}
+.glass-intense{background:var(--glass-bg-intense);backdrop-filter:var(--glass-blur-lg) saturate(1.8) brightness(1.08);-webkit-backdrop-filter:var(--glass-blur-lg) saturate(1.8) brightness(1.08);border:1px solid var(--border-strong);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg),inset 0 1px 0 var(--border-strong)}
+.glass-blue{background:var(--glass-bg-blue-standard);border-color:rgba(59,130,246,0.2);box-shadow:var(--shadow-blue),inset 0 1px 0 rgba(59,130,246,0.15)}
+.glass-orange{background:var(--glass-bg-orange-standard);border-color:rgba(249,115,22,0.2);box-shadow:var(--shadow-orange),inset 0 1px 0 rgba(249,115,22,0.15)}
+.card{background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-xl);padding:1.5rem;position:relative;overflow:hidden;transition:transform var(--transition-base),box-shadow var(--transition-base)}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.card-glass{background:var(--glass-bg-standard);backdrop-filter:var(--glass-blur-md) saturate(1.6);-webkit-backdrop-filter:var(--glass-blur-md) saturate(1.6);border-color:var(--border-default);box-shadow:var(--shadow-md),inset 0 1px 0 var(--border-default)}
+.card-accent-blue{border-top:2px solid var(--blue-500);box-shadow:0 -2px 20px rgba(59,130,246,0.15),var(--shadow-md)}
+.card-accent-orange{border-top:2px solid var(--orange-500);box-shadow:0 -2px 20px rgba(249,115,22,0.15),var(--shadow-md)}
+.card-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid var(--border-subtle)}
+.card-title{font-size:var(--text-lg);font-weight:var(--font-semi);color:var(--text-primary)}
+.card-body{color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-normal)}
+.badge{display:inline-flex;align-items:center;gap:0.25rem;padding:0.25rem 0.625rem;font-size:var(--text-xs);font-weight:var(--font-medium);line-height:1;border-radius:var(--radius-full);border:1px solid transparent;white-space:nowrap}
+.badge::before{content:'';width:5px;height:5px;border-radius:50%;background:currentColor;flex-shrink:0}
+.badge.no-dot::before{display:none}
+.badge-blue{background:rgba(59,130,246,0.15);color:var(--blue-300);border-color:rgba(59,130,246,0.25)}
+.badge-orange{background:rgba(249,115,22,0.15);color:var(--orange-300);border-color:rgba(249,115,22,0.25)}
+.badge-success{background:rgba(34,197,94,0.15);color:#86efac;border-color:rgba(34,197,94,0.25)}
+.badge-warning{background:rgba(234,179,8,0.15);color:#fde047;border-color:rgba(234,179,8,0.25)}
+.badge-danger{background:rgba(239,68,68,0.15);color:#fca5a5;border-color:rgba(239,68,68,0.25)}
+.navbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.875rem 1.5rem;background:var(--glass-bg-standard);backdrop-filter:var(--glass-blur-md) saturate(1.6);-webkit-backdrop-filter:var(--glass-blur-md) saturate(1.6);border-bottom:1px solid var(--border-default);position:sticky;top:0;z-index:100;box-shadow:0 1px 0 var(--border-subtle),var(--shadow-sm)}
+.navbar-brand{display:flex;align-items:center;gap:0.625rem;font-weight:var(--font-bold);font-size:var(--text-lg);color:var(--text-primary);text-decoration:none;letter-spacing:var(--tracking-tight)}
+.navbar-brand-dot{width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--blue-400),var(--orange-400));box-shadow:0 0 10px rgba(59,130,246,0.6);animation:ntizar-pulse-glow-blue 2s ease-in-out infinite}
+.navbar-nav{display:flex;align-items:center;gap:0.25rem;list-style:none}
+.nav-link{display:inline-flex;align-items:center;gap:0.375rem;padding:0.5rem 0.875rem;font-size:var(--text-sm);font-weight:var(--font-medium);color:var(--text-secondary);text-decoration:none;border-radius:var(--radius-md);border:1px solid transparent;transition:all var(--transition-fast)}
+.nav-link:hover{color:var(--text-primary);background:var(--glass-bg-subtle);border-color:var(--border-subtle)}
+.progress-wrap{width:100%;background:var(--glass-bg-subtle);border:1px solid var(--border-subtle);border-radius:var(--radius-full);overflow:hidden;height:8px}
+.progress-bar{height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--blue-600),var(--blue-400));box-shadow:0 0 12px rgba(59,130,246,0.5);transition:width 0.6s cubic-bezier(0.4,0,0.2,1);position:relative;overflow:hidden}
+.progress-bar::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,0.25) 50%,transparent 100%);background-size:200% 100%;animation:ntizar-shimmer 1.8s ease-in-out infinite}
+.progress-bar.orange{background:linear-gradient(90deg,var(--orange-600),var(--orange-400));box-shadow:0 0 12px rgba(249,115,22,0.5)}
+.progress-bar.gradient{background:linear-gradient(90deg,var(--blue-500),var(--orange-500));box-shadow:0 0 16px rgba(59,130,246,0.4)}
+.progress-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.375rem;font-size:var(--text-xs);color:var(--text-muted)}
+.divider-gradient{background:linear-gradient(90deg,transparent,var(--blue-500),var(--orange-500),transparent);height:1px;border:none;opacity:0.4}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.container-sm{max-width:768px}
+.flex{display:flex}.flex-col{display:flex;flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.flex-wrap{flex-wrap:wrap}
+.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}
+.grid{display:grid}.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}
+.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}
+.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}
+.text-center{text-align:center}.text-primary{color:var(--text-primary)}.text-secondary{color:var(--text-secondary)}.text-muted{color:var(--text-muted)}.text-blue{color:var(--blue-400)}.text-orange{color:var(--orange-400)}
+.text-gradient{background:linear-gradient(135deg,var(--blue-400),var(--orange-400));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.w-full{width:100%}.relative{position:relative}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;opacity:0.6;animation:ntizar-float 8s ease-in-out infinite}
+.orb-blue{background:var(--blue-500)}.orb-orange{background:var(--orange-500)}
+@media(prefers-color-scheme:light){:root{--bg-base:#f0f4ff;--bg-surface:#fff;--bg-elevated:#f8faff;--text-primary:#0f1729;--text-secondary:#374151;--text-muted:#9ca3af;--border-subtle:rgba(0,0,0,0.06);--border-default:rgba(0,0,0,0.10);--border-strong:rgba(0,0,0,0.18);--glass-bg-subtle:rgba(255,255,255,0.5);--glass-bg-standard:rgba(255,255,255,0.7);--glass-bg-intense:rgba(255,255,255,0.85);--shadow-sm:0 1px 3px rgba(0,0,0,0.08);--shadow-md:0 4px 16px rgba(0,0,0,0.10);--shadow-lg:0 10px 40px rgba(0,0,0,0.13)}}
+@media(max-width:768px){.grid-3,.grid-2{grid-template-columns:1fr}h1{font-size:var(--text-3xl)}h2{font-size:var(--text-2xl)}.navbar{padding:0.75rem 1rem}.hero-headline{font-size:2rem !important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.01ms !important}}
+
+/* === Page-specific === */
+.bg-scene{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+section{position:relative;z-index:1;padding:3rem 0}
+.hero{padding:5rem 0 3rem;text-align:center}
+.hero-headline{font-size:clamp(2.5rem,5vw,4rem);font-weight:var(--font-black);letter-spacing:-0.03em;line-height:1.1}
+.hero-sub{font-size:var(--text-lg);color:var(--text-secondary);max-width:700px;margin:1rem auto 0}
+.stat-number{font-size:var(--text-3xl);font-weight:var(--font-black);line-height:1}
+.stat-label{font-size:var(--text-xs);color:var(--text-muted);text-transform:uppercase;letter-spacing:var(--tracking-wider);margin-top:0.25rem}
+.lang-en,.lang-es{display:none}
+.lang-en.active,.lang-es.active{display:block}
+.lang-toggle{cursor:pointer;padding:0.4rem 0.875rem;font-size:var(--text-xs);font-weight:var(--font-medium);border-radius:var(--radius-sm);border:1px solid var(--border-default);background:var(--glass-bg-subtle);color:var(--text-secondary);transition:all var(--transition-fast)}
+.lang-toggle:hover,.lang-toggle.active{color:var(--blue-300);background:var(--glass-bg-blue-subtle);border-color:rgba(59,130,246,0.2)}
+table{width:100%;border-collapse:collapse;font-size:var(--text-sm)}
+th{text-align:left;padding:0.75rem 0.5rem;border-bottom:1px solid var(--border-default);color:var(--text-muted);font-weight:var(--font-medium);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:var(--tracking-wider)}
+td{padding:0.625rem 0.5rem;border-bottom:1px solid var(--border-subtle);color:var(--text-secondary)}
+tr:hover td{background:var(--glass-bg-subtle)}
+.mono{font-family:var(--font-mono)}
+a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+
+<!-- Background orbs -->
+<div class="bg-scene">
+  <div class="orb orb-blue" style="width:400px;height:400px;top:-100px;left:-100px"></div>
+  <div class="orb orb-orange" style="width:300px;height:300px;bottom:10%;right:-80px"></div>
+  <div class="orb orb-blue" style="width:200px;height:200px;top:50%;left:60%;opacity:0.3"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a class="navbar-brand" href="#">
+    <span class="navbar-brand-dot"></span>
+    Voynich Solving
+  </a>
+  <ul class="navbar-nav">
+    <li><a class="nav-link" href="#discoveries">Discoveries</a></li>
+    <li><a class="nav-link" href="#data">Data</a></li>
+    <li><a class="nav-link" href="#next">Next Steps</a></li>
+  </ul>
+  <div class="flex gap-2">
+    <button class="lang-toggle active" onclick="setLang('en')">EN</button>
+    <button class="lang-toggle" onclick="setLang('es')">ES</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <!-- EN -->
+    <div class="lang-en active">
+      <p class="mb-2"><span class="badge badge-blue no-dot">Open Research</span></p>
+      <h1 class="hero-headline">Decoding the <span class="text-gradient">Voynich Manuscript</span></h1>
+      <p class="hero-sub">A computational approach to proving the world's most mysterious manuscript is a medieval pharmaceutical database -- a Materia Medica cross-referenced with an Antidotarium.</p>
+    </div>
+    <!-- ES -->
+    <div class="lang-es">
+      <p class="mb-2"><span class="badge badge-orange no-dot">Investigacion Abierta</span></p>
+      <h1 class="hero-headline">Descifrando el <span class="text-gradient">Manuscrito Voynich</span></h1>
+      <p class="hero-sub">Un enfoque computacional para demostrar que el manuscrito mas misterioso del mundo es una base de datos farmaceutica medieval -- una Materia Medica cruzada con un Antidotarium.</p>
+    </div>
+
+    <hr class="divider-gradient mt-8 mb-6">
+
+    <!-- Stats -->
+    <div class="grid grid-3 gap-6" style="max-width:700px;margin:0 auto">
+      <div class="card card-glass text-center p-4 animate-fade-up delay-1">
+        <div class="stat-number text-blue">58</div>
+        <div class="stat-label lang-en active">Stems Identified</div>
+        <div class="stat-label lang-es">Stems Identificados</div>
+      </div>
+      <div class="card card-glass text-center p-4 animate-fade-up delay-2">
+        <div class="stat-number text-orange">50</div>
+        <div class="stat-label lang-en active">Historical Recipes</div>
+        <div class="stat-label lang-es">Recetas Historicas</div>
+      </div>
+      <div class="card card-glass text-center p-4 animate-fade-up delay-3">
+        <div class="stat-number text-gradient">48</div>
+        <div class="stat-label lang-en active">Folios Analyzed</div>
+        <div class="stat-label lang-es">Folios Analizados</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- The Approach -->
+<section>
+  <div class="container">
+    <div class="lang-en active">
+      <h2 class="mb-4">The Approach</h2>
+      <p class="mb-6" style="max-width:800px">While most Voynich research treats the text as one-dimensional prose, we treat it as what it structurally is: a <strong style="color:var(--text-primary)">two-dimensional database</strong>. Each line is a record. Each column position has a function. Suffixes encode categories. This is not a cipher over natural language -- it is a <strong style="color:var(--text-primary)">structured notation system</strong> for pharmaceutical recipes.</p>
+    </div>
+    <div class="lang-es">
+      <h2 class="mb-4">El Enfoque</h2>
+      <p class="mb-6" style="max-width:800px">Mientras la mayoria de la investigacion Voynich trata el texto como prosa unidimensional, nosotros lo tratamos como lo que estructuralmente es: una <strong style="color:var(--text-primary)">base de datos bidimensional</strong>. Cada linea es un registro. Cada posicion de columna tiene una funcion. Los sufijos codifican categorias. No es un cifrado sobre lenguaje natural -- es un <strong style="color:var(--text-primary)">sistema de notacion estructurado</strong> para recetas farmaceuticas.</p>
+    </div>
+
+    <div class="grid grid-2 gap-6">
+      <div class="card card-accent-blue animate-fade-up delay-1">
+        <div class="card-header">
+          <span class="card-title lang-en active">Source Data</span>
+          <span class="card-title lang-es">Datos Fuente</span>
+          <span class="badge badge-blue">STA1 2.0</span>
+        </div>
+        <div class="card-body">
+          <div class="lang-en active">Cesar Diaz-Cerio's Slot Transcription Alphabet (STA1 2.0), published on Zenodo. A structural transcription that decomposes each Voynich glyph into atomic slots -- enabling computational analysis impossible with traditional alphabets like EVA.</div>
+          <div class="lang-es">El Slot Transcription Alphabet (STA1 2.0) de Cesar Diaz-Cerio, publicado en Zenodo. Una transcripcion estructural que descompone cada glifo Voynich en slots atomicos -- habilitando analisis computacional imposible con alfabetos tradicionales como EVA.</div>
+        </div>
+      </div>
+      <div class="card card-accent-orange animate-fade-up delay-2">
+        <div class="card-header">
+          <span class="card-title lang-en active">Method</span>
+          <span class="card-title lang-es">Metodo</span>
+          <span class="badge badge-orange">Novel</span>
+        </div>
+        <div class="card-body">
+          <div class="lang-en active">Cross-reference Voynich folio stem profiles against ingredient lists from 50 real medieval pharmaceutical recipes (Antidotarium Nicolai, Grabadin, Avicenna, Abulcasis). Use constraint propagation to map Voynich stems to historical ingredients.</div>
+          <div class="lang-es">Cruzar perfiles de stems de folios Voynich contra listas de ingredientes de 50 recetas farmaceuticas medievales reales (Antidotarium Nicolai, Grabadin, Avicenna, Abulcasis). Usar propagacion de restricciones para mapear stems Voynich a ingredientes historicos.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Discoveries -->
+<section id="discoveries">
+  <div class="container">
+    <div class="lang-en active"><h2 class="mb-2">Key Discoveries</h2><p class="mb-6">14 documented discoveries across 10 research sessions.</p></div>
+    <div class="lang-es"><h2 class="mb-2">Descubrimientos Clave</h2><p class="mb-6">14 descubrimientos documentados en 10 sesiones de investigacion.</p></div>
+
+    <div class="grid grid-2 gap-6">
+      <!-- Discovery 1 -->
+      <div class="card card-glass animate-fade-up delay-1">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="badge badge-success">#1</span>
+          <div class="lang-en active"><h4>Functional Suffix Channel</h4></div>
+          <div class="lang-es"><h4>Canal de Sufijos Funcionales</h4></div>
+        </div>
+        <div class="card-body">
+          <div class="lang-en active">Voynich words decompose as <code>STEM + FINAL_ATOM</code>. The suffix carries grammatical function, not meaning. H(final|stem) = 1.246 bits vs null 2.096 bits (Z = -210). 82.2% of stems take only one suffix. Dominant endings: A2, B2, C1, G1 (79.1%).</div>
+          <div class="lang-es">Las palabras Voynich se descomponen como <code>STEM + ATOMO_FINAL</code>. El sufijo porta funcion gramatical, no significado. H(final|stem) = 1.246 bits vs null 2.096 bits (Z = -210). 82.2% de stems solo admiten un sufijo. Terminaciones dominantes: A2, B2, C1, G1 (79.1%).</div>
+        </div>
+      </div>
+
+      <!-- Discovery 2 -->
+      <div class="card card-glass animate-fade-up delay-2">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="badge badge-success">#2</span>
+          <div class="lang-en active"><h4>2D Vertical Alignment</h4></div>
+          <div class="lang-es"><h4>Alineacion Vertical 2D</h4></div>
+        </div>
+        <div class="card-body">
+          <div class="lang-en active"><strong style="color:var(--text-primary)">NOVEL FINDING.</strong> Functional suffixes align vertically across consecutive lines at 27% probability vs 8% in Latin/Spanish. This proves the text was written as a table, not prose.</div>
+          <div class="lang-es"><strong style="color:var(--text-primary)">HALLAZGO NUEVO.</strong> Los sufijos funcionales se alinean verticalmente entre lineas consecutivas con 27% de probabilidad vs 8% en Latin/Espanol. Esto prueba que el texto fue escrito como tabla, no como prosa.</div>
+        </div>
+      </div>
+
+      <!-- Discovery 3 -->
+      <div class="card card-glass animate-fade-up delay-3">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="badge badge-success">#3</span>
+          <div class="lang-en active"><h4>Cross-Section Foreign Keys</h4></div>
+          <div class="lang-es"><h4>Claves Foraneas entre Secciones</h4></div>
+        </div>
+        <div class="card-body">
+          <div class="lang-en active">46.9% of exclusive botany stems reappear in pharmacy/recipe sections with suffix changes (C1 to B2/B3). This proves a <strong style="color:var(--text-primary)">relational database</strong> structure linking plant catalog to recipe formulas.</div>
+          <div class="lang-es">46.9% de stems exclusivos de botanica reaparecen en secciones de farmacia/recetas con cambios de sufijo (C1 a B2/B3). Esto prueba una estructura de <strong style="color:var(--text-primary)">base de datos relacional</strong> conectando el catalogo de plantas con formulas de recetas.</div>
+        </div>
+      </div>
+
+      <!-- Discovery 4 -->
+      <div class="card card-glass animate-fade-up delay-4">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="badge badge-success">#4</span>
+          <div class="lang-en active"><h4>Recipe Matching (41/48 folios)</h4></div>
+          <div class="lang-es"><h4>Matching de Recetas (41/48 folios)</h4></div>
+        </div>
+        <div class="card-body">
+          <div class="lang-en active">41 out of 48 recipe-section folios match real historical recipes at F1 >= 50%. Top matches: Electuarium Justinum (14 folios), Trifera Saracenica (13 folios). 1 excellent match at F1=80% (f113v = Electuarium Justinum).</div>
+          <div class="lang-es">41 de 48 folios de la seccion de recetas coinciden con recetas historicas reales a F1 >= 50%. Mejores matches: Electuarium Justinum (14 folios), Trifera Saracenica (13 folios). 1 match excelente a F1=80% (f113v = Electuarium Justinum).</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Identification Table -->
+<section id="data">
+  <div class="container">
+    <div class="lang-en active"><h2 class="mb-2">Identification Table v5</h2><p class="mb-6">58 Voynich stems mapped to real medieval pharmaceutical ingredients, organized by confidence tier.</p></div>
+    <div class="lang-es"><h2 class="mb-2">Tabla de Identificaciones v5</h2><p class="mb-6">58 stems Voynich mapeados a ingredientes farmaceuticos medievales reales, organizados por nivel de confianza.</p></div>
+
+    <div class="card card-glass p-6 mb-6">
+      <div class="lang-en active"><h4 class="mb-4">Confidence Tiers</h4></div>
+      <div class="lang-es"><h4 class="mb-4">Niveles de Confianza</h4></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Tier</th>
+            <th class="lang-en active">Description</th><th class="lang-es">Descripcion</th>
+            <th>Count</th>
+            <th class="lang-en active">Examples</th><th class="lang-es">Ejemplos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="badge badge-warning no-dot">Tier 0</span></td>
+            <td class="lang-en active">Function words (not ingredients)</td><td class="lang-es">Palabras funcion (no ingredientes)</td>
+            <td>8</td>
+            <td class="mono">C2A1, A1Q1J1A1, U2J1A1...</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-success no-dot">Tier 1</span></td>
+            <td class="lang-en active">Confirmed (99-95%)</td><td class="lang-es">Confirmados (99-95%)</td>
+            <td>2</td>
+            <td><span class="mono">K1K2A1</span> = Galbanum, <span class="mono">K1A3</span> = Crocus</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-blue no-dot">Tier 2</span></td>
+            <td class="lang-en active">High confidence (92-85%)</td><td class="lang-es">Alta confianza (92-85%)</td>
+            <td>6</td>
+            <td>All Myrrha: <span class="mono">A1Q2A1, D1A1, Q1K1A1...</span></td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-blue no-dot">Tier 3</span></td>
+            <td class="lang-en active">Strong (85-60%)</td><td class="lang-es">Fuerte (85-60%)</td>
+            <td>19</td>
+            <td>Crocus x9, Rosa, Zingiber|Mel x5, Opopanax x2, Cinnamomum x2</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-orange no-dot">Tier 4</span></td>
+            <td class="lang-en active">Moderate (75-60%)</td><td class="lang-es">Moderado (75-60%)</td>
+            <td>23</td>
+            <td>Amomum x3, Cardamomum x8, Styrax x2, Bdellium x2, Casia x3, Piper x2...</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="divider-gradient mt-6 mb-4">
+
+      <div class="lang-en active"><p><strong style="color:var(--text-primary)">19 unique real ingredients</strong> touched across all tiers: Galbanum, Crocus, Myrrha, Rosa, Zingiber, Mel despumatum, Cinnamomum, Opopanax, Amomum, Cardamomum, Piper nigrum, Piper longum, Styrax, Bdellium, Casia, Saccharum, Galanga, Cubeba, Nux moschata.</p></div>
+      <div class="lang-es"><p><strong style="color:var(--text-primary)">19 ingredientes reales unicos</strong> cubiertos en todos los niveles: Galbanum, Crocus, Myrrha, Rosa, Zingiber, Mel despumatum, Cinnamomum, Opopanax, Amomum, Cardamomum, Piper nigrum, Piper longum, Styrax, Bdellium, Casia, Saccharum, Galanga, Cubeba, Nux moschata.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Progress -->
+<section>
+  <div class="container">
+    <div class="lang-en active"><h2 class="mb-6">Project Progress</h2></div>
+    <div class="lang-es"><h2 class="mb-6">Progreso del Proyecto</h2></div>
+
+    <div class="grid grid-2 gap-6">
+      <div class="card card-accent-blue p-6">
+        <div class="lang-en active"><h4 class="mb-4">Corpus & Infrastructure</h4></div>
+        <div class="lang-es"><h4 class="mb-4">Corpus e Infraestructura</h4></div>
+        <div class="flex-col gap-4">
+          <div>
+            <div class="progress-label"><span class="lang-en active">Corpus Extraction</span><span class="lang-es">Extraccion del Corpus</span><span>100%</span></div>
+            <div class="progress-wrap"><div class="progress-bar" style="width:100%"></div></div>
+          </div>
+          <div>
+            <div class="progress-label"><span class="lang-en active">Recipe Database (50/50)</span><span class="lang-es">Base de Recetas (50/50)</span><span>100%</span></div>
+            <div class="progress-wrap"><div class="progress-bar" style="width:100%"></div></div>
+          </div>
+          <div>
+            <div class="progress-label"><span class="lang-en active">Folio-Recipe Matching v3</span><span class="lang-es">Matching Folio-Receta v3</span><span>100%</span></div>
+            <div class="progress-wrap"><div class="progress-bar gradient" style="width:100%"></div></div>
+          </div>
+          <div>
+            <div class="progress-label"><span class="lang-en active">Interactive Dashboard</span><span class="lang-es">Dashboard Interactivo</span><span>85%</span></div>
+            <div class="progress-wrap"><div class="progress-bar" style="width:85%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-accent-orange p-6">
+        <div class="lang-en active"><h4 class="mb-4">Decipherment</h4></div>
+        <div class="lang-es"><h4 class="mb-4">Desciframiento</h4></div>
+        <div class="flex-col gap-4">
+          <div>
+            <div class="progress-label"><span class="lang-en active">Stems Identified (58/3261)</span><span class="lang-es">Stems Identificados (58/3261)</span><span>1.8%</span></div>
+            <div class="progress-wrap"><div class="progress-bar orange" style="width:1.8%"></div></div>
+          </div>
+          <div>
+            <div class="progress-label"><span class="lang-en active">Ingredients Mapped (19/152)</span><span class="lang-es">Ingredientes Mapeados (19/152)</span><span>12.5%</span></div>
+            <div class="progress-wrap"><div class="progress-bar orange" style="width:12.5%"></div></div>
+          </div>
+          <div>
+            <div class="progress-label"><span class="lang-en active">Opium/Castoreum Deadlock</span><span class="lang-es">Deadlock Opio/Castoreum</span><span class="lang-en active">Partial</span><span class="lang-es">Parcial</span></div>
+            <div class="progress-wrap"><div class="progress-bar gradient" style="width:40%"></div></div>
+          </div>
+          <div>
+            <div class="progress-label"><span class="lang-en active">Tier 1 Confirmations</span><span class="lang-es">Confirmaciones Tier 1</span><span>2</span></div>
+            <div class="progress-wrap"><div class="progress-bar orange" style="width:10%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Next Steps -->
+<section id="next">
+  <div class="container">
+    <div class="lang-en active"><h2 class="mb-2">Exploration Paths</h2><p class="mb-6">Where we go from here.</p></div>
+    <div class="lang-es"><h2 class="mb-2">Vias de Exploracion</h2><p class="mb-6">A donde vamos desde aqui.</p></div>
+
+    <div class="grid grid-3 gap-6">
+      <div class="card card-glass p-6 animate-fade-up delay-1">
+        <span class="badge badge-blue mb-4">Priority 1</span>
+        <div class="lang-en active">
+          <h4 class="mb-2">Break the Opium/Castoreum Deadlock</h4>
+          <p class="card-body">71 stems are blocked because Opium and Castoreum appear in identical recipe sets. New discriminator recipes (Philonium Romanum, Theriac Diatessaron Magna) show 6 folios favor Opium, 17 favor Castoreum. Next: morphological analysis of the candidate stems to split the pair.</p>
+        </div>
+        <div class="lang-es">
+          <h4 class="mb-2">Romper el Deadlock Opio/Castoreum</h4>
+          <p class="card-body">71 stems estan bloqueados porque Opio y Castoreum aparecen en conjuntos de recetas identicos. Nuevas recetas discriminadoras (Philonium Romanum, Theriac Diatessaron Magna) muestran que 6 folios favorecen Opio, 17 favorecen Castoreum. Siguiente: analisis morfologico de los stems candidatos para separar el par.</p>
+        </div>
+      </div>
+
+      <div class="card card-glass p-6 animate-fade-up delay-2">
+        <span class="badge badge-orange mb-4">Priority 2</span>
+        <div class="lang-en active">
+          <h4 class="mb-2">Positional Grammar Extraction</h4>
+          <p class="card-body">Column positions carry meaning: Columns 1-2 are entities (C1/G1 suffix), Columns 3+ are actions (A2). Build a formal grammar model: <code>[ENTITY]&rarr;[PROPERTY]&rarr;[ACTION LIST]</code>. This would allow predicting missing words and testing ingredient assignments structurally.</p>
+        </div>
+        <div class="lang-es">
+          <h4 class="mb-2">Extraccion de Gramatica Posicional</h4>
+          <p class="card-body">Las posiciones de columna portan significado: Columnas 1-2 son entidades (sufijo C1/G1), Columnas 3+ son acciones (A2). Construir un modelo gramatical formal: <code>[ENTIDAD]&rarr;[PROPIEDAD]&rarr;[LISTA DE ACCIONES]</code>. Esto permitiria predecir palabras faltantes y probar asignaciones de ingredientes estructuralmente.</p>
+        </div>
+      </div>
+
+      <div class="card card-glass p-6 animate-fade-up delay-3">
+        <span class="badge badge-success mb-4">Priority 3</span>
+        <div class="lang-en active">
+          <h4 class="mb-2">Expand to Botany Section</h4>
+          <p class="card-body">217 unique entity stems in botany (73.7% page-exclusive = plant IDs). Cross-correlate botany stem properties with known medieval simples (Circa Instans). If botany stem X is identified as Crocus via recipes, verify that its properties in botany match real saffron properties.</p>
+        </div>
+        <div class="lang-es">
+          <h4 class="mb-2">Expandir a la Seccion de Botanica</h4>
+          <p class="card-body">217 stems de entidad unicos en botanica (73.7% exclusivos de pagina = IDs de planta). Correlacionar propiedades de stems botanicos con simples medievales conocidos (Circa Instans). Si el stem X de botanica se identifica como Crocus via recetas, verificar que sus propiedades en botanica coinciden con las del azafran real.</p>
+        </div>
+      </div>
+
+      <div class="card card-glass p-6 animate-fade-up delay-4">
+        <span class="badge badge-blue mb-4">Priority 4</span>
+        <div class="lang-en active">
+          <h4 class="mb-2">Quantity/Weight Notation</h4>
+          <p class="card-body">Medieval recipes specify ingredient quantities (drams, scruples, ounces). Voynich recipe lines likely encode these too. Identify numerical/measurement stems by analyzing frequency patterns and positional regularities within recipe folios.</p>
+        </div>
+        <div class="lang-es">
+          <h4 class="mb-2">Notacion de Cantidades/Pesos</h4>
+          <p class="card-body">Las recetas medievales especifican cantidades de ingredientes (dracmas, escrupulos, onzas). Las lineas de recetas Voynich probablemente tambien las codifican. Identificar stems de numeros/medidas analizando patrones de frecuencia y regularidades posicionales dentro de los folios de recetas.</p>
+        </div>
+      </div>
+
+      <div class="card card-glass p-6 animate-fade-up delay-5">
+        <span class="badge badge-orange mb-4">Priority 5</span>
+        <div class="lang-en active">
+          <h4 class="mb-2">Statistical Publication</h4>
+          <p class="card-body">Formalize the suffix channel, 2D alignment, and foreign key discoveries as a statistical paper. The 27% vertical alignment rate (vs 8% null) and Z=-210 suffix entropy are publication-grade results that stand independent of any decipherment claims.</p>
+        </div>
+        <div class="lang-es">
+          <h4 class="mb-2">Publicacion Estadistica</h4>
+          <p class="card-body">Formalizar los descubrimientos del canal de sufijos, alineacion 2D y claves foraneas como articulo estadistico. La tasa de alineacion vertical del 27% (vs 8% nulo) y Z=-210 de entropia de sufijos son resultados de calidad publicable que son independientes de cualquier afirmacion de desciframiento.</p>
+        </div>
+      </div>
+
+      <div class="card card-glass p-6 animate-fade-up delay-5">
+        <span class="badge badge-warning mb-4">Ongoing</span>
+        <div class="lang-en active">
+          <h4 class="mb-2">Obsidian Knowledge Graph</h4>
+          <p class="card-body">130+ plant stem notes, folio notes for botany and recipe sections, all interlinked in an Obsidian vault. Every discovery, identification, and cross-reference is tracked as a navigable graph.</p>
+        </div>
+        <div class="lang-es">
+          <h4 class="mb-2">Grafo de Conocimiento Obsidian</h4>
+          <p class="card-body">130+ notas de stems de plantas, notas de folios para secciones de botanica y recetas, todo interconectado en una boveda Obsidian. Cada descubrimiento, identificacion y referencia cruzada se rastrea como un grafo navegable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Repository -->
+<section>
+  <div class="container">
+    <div class="card card-glass glass-blue p-8 text-center">
+      <div class="lang-en active">
+        <h3 class="mb-2">Open Source</h3>
+        <p class="mb-4">All data, scripts, and analysis are publicly available.</p>
+      </div>
+      <div class="lang-es">
+        <h3 class="mb-2">Codigo Abierto</h3>
+        <p class="mb-4">Todos los datos, scripts y analisis son publicos.</p>
+      </div>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="https://github.com/Ntizar/Voynich_Solving" class="badge badge-blue no-dot" style="font-size:var(--text-sm);padding:0.5rem 1rem">GitHub: Ntizar/Voynich_Solving</a>
+        <a href="dashboard_voynich.html" class="badge badge-orange no-dot" style="font-size:var(--text-sm);padding:0.5rem 1rem">Interactive Dashboard</a>
+      </div>
+      <div class="mt-6">
+        <div class="lang-en active"><small>Corpus source: Cesar Diaz-Cerio, STA1 2.0 transcription (Zenodo). Recipe sources: Antidotarium Nicolai, Grabadin/Mesue, Avicenna Canon, Abulcasis al-Tasrif, Salernitano compilations.</small></div>
+        <div class="lang-es"><small>Fuente del corpus: Cesar Diaz-Cerio, transcripcion STA1 2.0 (Zenodo). Fuentes de recetas: Antidotarium Nicolai, Grabadin/Mesue, Canon de Avicena, al-Tasrif de Abulcasis, compilaciones salernitanas.</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="padding:2rem 0;text-align:center">
+  <hr class="divider-gradient mb-6">
+  <small>Ntizar -- 2025-2026</small>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang-en, .lang-es').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.lang-' + lang).forEach(el => el.classList.add('active'));
+  document.querySelectorAll('.lang-toggle').forEach(btn => {
+    btn.classList.toggle('active', btn.textContent.trim() === lang.toUpperCase());
+  });
+  document.documentElement.lang = lang;
+}
+</script>
+
+</body>
+</html>
