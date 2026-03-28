@@ -1,0 +1,2401 @@
+Folio,Recipe,F1,N_TP
+f100r,Theriac Magna (Triaca de Andromachus),26.1,3
+f100r,Mithridatium,38.1,4
+f100r,Diascordium,11.8,1
+f100r,Pillulae Cochiae,0,0
+f100r,Pillulae Aureae,36.4,2
+f100r,Unguentum Apostolorum,0,0
+f100r,Electuarium de Succo Rosarum,36.4,2
+f100r,Aurea Alexandrina,42.1,4
+f100r,Confectio Hamech,30.8,2
+f100r,Hiera Picra (Hiera de Galeno),50.0,3
+f100r,Trifera Magna,56.0,7
+f100r,Diamargariton (Electuario de Perlas),100.0,8
+f100r,Diaciminum (Electuario de Comino),14.3,1
+f100r,Unguentum Basilicon,0,0
+f100r,Unguentum Populeon,0,0
+f100r,Pillulae de Hiera cum Agarico,36.4,2
+f100r,Pillulae Fetidae (Pildoras Fetidas),0,0
+f100r,Requies Magna (Requies Nicolai),61.5,4
+f100r,Diacodion (Jarabe de Adormidera),40.0,2
+f100r,Dialtea (Ungueento de Altea),0,0
+f100r,Philonium Persicum,42.1,4
+f100r,Oximel Compositum,0,0
+f100r,Theriac Diatessaron,0,0
+f100r,Theodoricon Euporistum,40.0,4
+f100r,Diasatyrion,70.6,6
+f100r,Diarodon Abbatis,94.1,8
+f100r,Rosata Novella,71.4,5
+f100r,Letitia Galeni,87.5,7
+f100r,Trifera Saracenica,44.4,4
+f100r,Paulinum,33.3,3
+f100r,Electuarium Justinum,42.1,4
+f100r,Electuarium de Baccis Lauri,13.3,1
+f100r,Syrupus de Fumaria,40.0,2
+f100r,Confectio Anacardia,26.7,2
+f100r,Electuarium Diacostum,40.0,3
+f100r,Unguentum Marciaton,0,0
+f100r,Suffuf al-Tib (Polvo aromatico de Avicena),80.0,6
+f100r,Itrifal Ustukhudus (Electuario de Espliego),30.8,2
+f100r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),0,0
+f100r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),50.0,4
+f100r,Unguentum Abulcasis (de vulneribus),0,0
+f100r,Theriac Abulcasis (contra venenos),21.1,2
+f100r,Antidotum Hadriani,35.3,3
+f100r,Electuarium Ducis,30.8,2
+f100r,Benedicta Laxativa,50.0,3
+f100r,Diatragacanthi,40.0,2
+f100r,Dianucum (Electuario de Nueces),15.4,1
+f100r,Electuarium Diaspermaton,14.3,1
+f100r,Philonium Romanum,26.7,2
+f100r,Theriac Diatessaron Magna,15.4,1
+f100v,Theriac Magna (Triaca de Andromachus),57.1,6
+f100v,Mithridatium,42.1,4
+f100v,Diascordium,53.3,4
+f100v,Pillulae Cochiae,0,0
+f100v,Pillulae Aureae,0,0
+f100v,Unguentum Apostolorum,20.0,1
+f100v,Electuarium de Succo Rosarum,22.2,1
+f100v,Aurea Alexandrina,47.1,4
+f100v,Confectio Hamech,36.4,2
+f100v,Hiera Picra (Hiera de Galeno),20.0,1
+f100v,Trifera Magna,43.5,5
+f100v,Diamargariton (Electuario de Perlas),0,0
+f100v,Diaciminum (Electuario de Comino),83.3,5
+f100v,Unguentum Basilicon,28.6,1
+f100v,Unguentum Populeon,0,0
+f100v,Pillulae de Hiera cum Agarico,0,0
+f100v,Pillulae Fetidae (Pildoras Fetidas),18.2,1
+f100v,Requies Magna (Requies Nicolai),0,0
+f100v,Diacodion (Jarabe de Adormidera),0,0
+f100v,Dialtea (Ungueento de Altea),0,0
+f100v,Philonium Persicum,47.1,4
+f100v,Oximel Compositum,60.0,3
+f100v,Theriac Diatessaron,22.2,1
+f100v,Theodoricon Euporistum,55.6,5
+f100v,Diasatyrion,40.0,3
+f100v,Diarodon Abbatis,0,0
+f100v,Rosata Novella,0,0
+f100v,Letitia Galeni,0,0
+f100v,Trifera Saracenica,50.0,4
+f100v,Paulinum,50.0,4
+f100v,Electuarium Justinum,58.8,5
+f100v,Electuarium de Baccis Lauri,46.2,3
+f100v,Syrupus de Fumaria,0,0
+f100v,Confectio Anacardia,61.5,4
+f100v,Electuarium Diacostum,61.5,4
+f100v,Unguentum Marciaton,0,0
+f100v,Suffuf al-Tib (Polvo aromatico de Avicena),0,0
+f100v,Itrifal Ustukhudus (Electuario de Espliego),36.4,2
+f100v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),22.2,1
+f100v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),57.1,4
+f100v,Unguentum Abulcasis (de vulneribus),0,0
+f100v,Theriac Abulcasis (contra venenos),58.8,5
+f100v,Antidotum Hadriani,40.0,3
+f100v,Electuarium Ducis,54.5,3
+f100v,Benedicta Laxativa,20.0,1
+f100v,Diatragacanthi,0,0
+f100v,Dianucum (Electuario de Nueces),54.5,3
+f100v,Electuarium Diaspermaton,66.7,4
+f100v,Philonium Romanum,61.5,4
+f100v,Theriac Diatessaron Magna,18.2,1
+f101r,Theriac Magna (Triaca de Andromachus),66.7,9
+f101r,Mithridatium,64.0,8
+f101r,Diascordium,38.1,4
+f101r,Pillulae Cochiae,0,0
+f101r,Pillulae Aureae,26.7,2
+f101r,Unguentum Apostolorum,12.5,1
+f101r,Electuarium de Succo Rosarum,26.7,2
+f101r,Aurea Alexandrina,69.6,8
+f101r,Confectio Hamech,35.3,3
+f101r,Hiera Picra (Hiera de Galeno),50.0,4
+f101r,Trifera Magna,82.8,12
+f101r,Diamargariton (Electuario de Perlas),60.0,6
+f101r,Diaciminum (Electuario de Comino),66.7,6
+f101r,Unguentum Basilicon,0,0
+f101r,Unguentum Populeon,0,0
+f101r,Pillulae de Hiera cum Agarico,26.7,2
+f101r,Pillulae Fetidae (Pildoras Fetidas),11.8,1
+f101r,Requies Magna (Requies Nicolai),35.3,3
+f101r,Diacodion (Jarabe de Adormidera),14.3,1
+f101r,Dialtea (Ungueento de Altea),0,0
+f101r,Philonium Persicum,69.6,8
+f101r,Oximel Compositum,37.5,3
+f101r,Theriac Diatessaron,26.7,2
+f101r,Theodoricon Euporistum,75.0,9
+f101r,Diasatyrion,66.7,7
+f101r,Diarodon Abbatis,57.1,6
+f101r,Rosata Novella,44.4,4
+f101r,Letitia Galeni,50.0,5
+f101r,Trifera Saracenica,72.7,8
+f101r,Paulinum,72.7,8
+f101r,Electuarium Justinum,78.3,9
+f101r,Electuarium de Baccis Lauri,52.6,5
+f101r,Syrupus de Fumaria,14.3,1
+f101r,Confectio Anacardia,63.2,6
+f101r,Electuarium Diacostum,63.2,6
+f101r,Unguentum Marciaton,0,0
+f101r,Suffuf al-Tib (Polvo aromatico de Avicena),52.6,5
+f101r,Itrifal Ustukhudus (Electuario de Espliego),47.1,4
+f101r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),26.7,2
+f101r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),70.0,7
+f101r,Unguentum Abulcasis (de vulneribus),15.4,1
+f101r,Theriac Abulcasis (contra venenos),60.9,7
+f101r,Antidotum Hadriani,66.7,7
+f101r,Electuarium Ducis,47.1,4
+f101r,Benedicta Laxativa,37.5,3
+f101r,Diatragacanthi,14.3,1
+f101r,Dianucum (Electuario de Nueces),47.1,4
+f101r,Electuarium Diaspermaton,55.6,5
+f101r,Philonium Romanum,73.7,7
+f101r,Theriac Diatessaron Magna,35.3,3
+f101v,Theriac Magna (Triaca de Andromachus),60.9,7
+f101v,Mithridatium,66.7,7
+f101v,Diascordium,47.1,4
+f101v,Pillulae Cochiae,0,0
+f101v,Pillulae Aureae,36.4,2
+f101v,Unguentum Apostolorum,33.3,2
+f101v,Electuarium de Succo Rosarum,36.4,2
+f101v,Aurea Alexandrina,63.2,6
+f101v,Confectio Hamech,46.2,3
+f101v,Hiera Picra (Hiera de Galeno),50.0,3
+f101v,Trifera Magna,56.0,7
+f101v,Diamargariton (Electuario de Perlas),37.5,3
+f101v,Diaciminum (Electuario de Comino),57.1,4
+f101v,Unguentum Basilicon,22.2,1
+f101v,Unguentum Populeon,0,0
+f101v,Pillulae de Hiera cum Agarico,36.4,2
+f101v,Pillulae Fetidae (Pildoras Fetidas),30.8,2
+f101v,Requies Magna (Requies Nicolai),30.8,2
+f101v,Diacodion (Jarabe de Adormidera),20.0,1
+f101v,Dialtea (Ungueento de Altea),0,0
+f101v,Philonium Persicum,73.7,7
+f101v,Oximel Compositum,33.3,2
+f101v,Theriac Diatessaron,36.4,2
+f101v,Theodoricon Euporistum,70.0,7
+f101v,Diasatyrion,58.8,5
+f101v,Diarodon Abbatis,35.3,3
+f101v,Rosata Novella,28.6,2
+f101v,Letitia Galeni,37.5,3
+f101v,Trifera Saracenica,77.8,7
+f101v,Paulinum,66.7,6
+f101v,Electuarium Justinum,73.7,7
+f101v,Electuarium de Baccis Lauri,53.3,4
+f101v,Syrupus de Fumaria,20.0,1
+f101v,Confectio Anacardia,66.7,5
+f101v,Electuarium Diacostum,53.3,4
+f101v,Unguentum Marciaton,0,0
+f101v,Suffuf al-Tib (Polvo aromatico de Avicena),40.0,3
+f101v,Itrifal Ustukhudus (Electuario de Espliego),61.5,4
+f101v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),36.4,2
+f101v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),75.0,6
+f101v,Unguentum Abulcasis (de vulneribus),22.2,1
+f101v,Theriac Abulcasis (contra venenos),73.7,7
+f101v,Antidotum Hadriani,58.8,5
+f101v,Electuarium Ducis,46.2,3
+f101v,Benedicta Laxativa,50.0,3
+f101v,Diatragacanthi,20.0,1
+f101v,Dianucum (Electuario de Nueces),61.5,4
+f101v,Electuarium Diaspermaton,42.9,3
+f101v,Philonium Romanum,80.0,6
+f101v,Theriac Diatessaron Magna,46.2,3
+f102r,Theriac Magna (Triaca de Andromachus),64.0,8
+f102r,Mithridatium,78.3,9
+f102r,Diascordium,31.6,3
+f102r,Pillulae Cochiae,18.2,1
+f102r,Pillulae Aureae,15.4,1
+f102r,Unguentum Apostolorum,42.9,3
+f102r,Electuarium de Succo Rosarum,15.4,1
+f102r,Aurea Alexandrina,66.7,7
+f102r,Confectio Hamech,26.7,2
+f102r,Hiera Picra (Hiera de Galeno),42.9,3
+f102r,Trifera Magna,74.1,10
+f102r,Diamargariton (Electuario de Perlas),33.3,3
+f102r,Diaciminum (Electuario de Comino),37.5,3
+f102r,Unguentum Basilicon,0,0
+f102r,Unguentum Populeon,0,0
+f102r,Pillulae de Hiera cum Agarico,15.4,1
+f102r,Pillulae Fetidae (Pildoras Fetidas),53.3,4
+f102r,Requies Magna (Requies Nicolai),13.3,1
+f102r,Diacodion (Jarabe de Adormidera),0,0
+f102r,Dialtea (Ungueento de Altea),0,0
+f102r,Philonium Persicum,76.2,8
+f102r,Oximel Compositum,28.6,2
+f102r,Theriac Diatessaron,30.8,2
+f102r,Theodoricon Euporistum,72.7,8
+f102r,Diasatyrion,42.1,4
+f102r,Diarodon Abbatis,31.6,3
+f102r,Rosata Novella,12.5,1
+f102r,Letitia Galeni,22.2,2
+f102r,Trifera Saracenica,80.0,8
+f102r,Paulinum,70.0,7
+f102r,Electuarium Justinum,66.7,7
+f102r,Electuarium de Baccis Lauri,35.3,3
+f102r,Syrupus de Fumaria,0,0
+f102r,Confectio Anacardia,58.8,5
+f102r,Electuarium Diacostum,47.1,4
+f102r,Unguentum Marciaton,0,0
+f102r,Suffuf al-Tib (Polvo aromatico de Avicena),35.3,3
+f102r,Itrifal Ustukhudus (Electuario de Espliego),40.0,3
+f102r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),30.8,2
+f102r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),66.7,6
+f102r,Unguentum Abulcasis (de vulneribus),18.2,1
+f102r,Theriac Abulcasis (contra venenos),66.7,7
+f102r,Antidotum Hadriani,63.2,6
+f102r,Electuarium Ducis,26.7,2
+f102r,Benedicta Laxativa,28.6,2
+f102r,Diatragacanthi,0,0
+f102r,Dianucum (Electuario de Nueces),53.3,4
+f102r,Electuarium Diaspermaton,25.0,2
+f102r,Philonium Romanum,58.8,5
+f102r,Theriac Diatessaron Magna,40.0,3
+f102v,Theriac Magna (Triaca de Andromachus),60.9,7
+f102v,Mithridatium,66.7,7
+f102v,Diascordium,47.1,4
+f102v,Pillulae Cochiae,0,0
+f102v,Pillulae Aureae,18.2,1
+f102v,Unguentum Apostolorum,33.3,2
+f102v,Electuarium de Succo Rosarum,18.2,1
+f102v,Aurea Alexandrina,63.2,6
+f102v,Confectio Hamech,30.8,2
+f102v,Hiera Picra (Hiera de Galeno),50.0,3
+f102v,Trifera Magna,56.0,7
+f102v,Diamargariton (Electuario de Perlas),37.5,3
+f102v,Diaciminum (Electuario de Comino),42.9,3
+f102v,Unguentum Basilicon,22.2,1
+f102v,Unguentum Populeon,0,0
+f102v,Pillulae de Hiera cum Agarico,18.2,1
+f102v,Pillulae Fetidae (Pildoras Fetidas),30.8,2
+f102v,Requies Magna (Requies Nicolai),15.4,1
+f102v,Diacodion (Jarabe de Adormidera),0,0
+f102v,Dialtea (Ungueento de Altea),0,0
+f102v,Philonium Persicum,73.7,7
+f102v,Oximel Compositum,50.0,3
+f102v,Theriac Diatessaron,36.4,2
+f102v,Theodoricon Euporistum,70.0,7
+f102v,Diasatyrion,58.8,5
+f102v,Diarodon Abbatis,35.3,3
+f102v,Rosata Novella,14.3,1
+f102v,Letitia Galeni,25.0,2
+f102v,Trifera Saracenica,77.8,7
+f102v,Paulinum,66.7,6
+f102v,Electuarium Justinum,73.7,7
+f102v,Electuarium de Baccis Lauri,53.3,4
+f102v,Syrupus de Fumaria,0,0
+f102v,Confectio Anacardia,53.3,4
+f102v,Electuarium Diacostum,66.7,5
+f102v,Unguentum Marciaton,0,0
+f102v,Suffuf al-Tib (Polvo aromatico de Avicena),40.0,3
+f102v,Itrifal Ustukhudus (Electuario de Espliego),46.2,3
+f102v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),36.4,2
+f102v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),75.0,6
+f102v,Unguentum Abulcasis (de vulneribus),22.2,1
+f102v,Theriac Abulcasis (contra venenos),63.2,6
+f102v,Antidotum Hadriani,70.6,6
+f102v,Electuarium Ducis,46.2,3
+f102v,Benedicta Laxativa,33.3,2
+f102v,Diatragacanthi,0,0
+f102v,Dianucum (Electuario de Nueces),30.8,2
+f102v,Electuarium Diaspermaton,42.9,3
+f102v,Philonium Romanum,66.7,5
+f102v,Theriac Diatessaron Magna,30.8,2
+f103r,Theriac Magna (Triaca de Andromachus),54.5,6
+f103r,Mithridatium,60.0,6
+f103r,Diascordium,37.5,3
+f103r,Pillulae Cochiae,0,0
+f103r,Pillulae Aureae,20.0,1
+f103r,Unguentum Apostolorum,18.2,1
+f103r,Electuarium de Succo Rosarum,20.0,1
+f103r,Aurea Alexandrina,55.6,5
+f103r,Confectio Hamech,16.7,1
+f103r,Hiera Picra (Hiera de Galeno),18.2,1
+f103r,Trifera Magna,58.3,7
+f103r,Diamargariton (Electuario de Perlas),26.7,2
+f103r,Diaciminum (Electuario de Comino),46.2,3
+f103r,Unguentum Basilicon,0,0
+f103r,Unguentum Populeon,0,0
+f103r,Pillulae de Hiera cum Agarico,20.0,1
+f103r,Pillulae Fetidae (Pildoras Fetidas),33.3,2
+f103r,Requies Magna (Requies Nicolai),16.7,1
+f103r,Diacodion (Jarabe de Adormidera),0,0
+f103r,Dialtea (Ungueento de Altea),0,0
+f103r,Philonium Persicum,66.7,6
+f103r,Oximel Compositum,36.4,2
+f103r,Theriac Diatessaron,20.0,1
+f103r,Theodoricon Euporistum,73.7,7
+f103r,Diasatyrion,50.0,4
+f103r,Diarodon Abbatis,25.0,2
+f103r,Rosata Novella,15.4,1
+f103r,Letitia Galeni,26.7,2
+f103r,Trifera Saracenica,70.6,6
+f103r,Paulinum,58.8,5
+f103r,Electuarium Justinum,66.7,6
+f103r,Electuarium de Baccis Lauri,42.9,3
+f103r,Syrupus de Fumaria,0,0
+f103r,Confectio Anacardia,57.1,4
+f103r,Electuarium Diacostum,57.1,4
+f103r,Unguentum Marciaton,0,0
+f103r,Suffuf al-Tib (Polvo aromatico de Avicena),28.6,2
+f103r,Itrifal Ustukhudus (Electuario de Espliego),33.3,2
+f103r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),20.0,1
+f103r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),53.3,4
+f103r,Unguentum Abulcasis (de vulneribus),25.0,1
+f103r,Theriac Abulcasis (contra venenos),55.6,5
+f103r,Antidotum Hadriani,62.5,5
+f103r,Electuarium Ducis,33.3,2
+f103r,Benedicta Laxativa,36.4,2
+f103r,Diatragacanthi,0,0
+f103r,Dianucum (Electuario de Nueces),33.3,2
+f103r,Electuarium Diaspermaton,46.2,3
+f103r,Philonium Romanum,57.1,4
+f103r,Theriac Diatessaron Magna,33.3,2
+f103v,Theriac Magna (Triaca de Andromachus),66.7,8
+f103v,Mithridatium,72.7,8
+f103v,Diascordium,44.4,4
+f103v,Pillulae Cochiae,0,0
+f103v,Pillulae Aureae,33.3,2
+f103v,Unguentum Apostolorum,15.4,1
+f103v,Electuarium de Succo Rosarum,33.3,2
+f103v,Aurea Alexandrina,70.0,7
+f103v,Confectio Hamech,28.6,2
+f103v,Hiera Picra (Hiera de Galeno),30.8,2
+f103v,Trifera Magna,69.2,9
+f103v,Diamargariton (Electuario de Perlas),35.3,3
+f103v,Diaciminum (Electuario de Comino),53.3,4
+f103v,Unguentum Basilicon,0,0
+f103v,Unguentum Populeon,0,0
+f103v,Pillulae de Hiera cum Agarico,33.3,2
+f103v,Pillulae Fetidae (Pildoras Fetidas),28.6,2
+f103v,Requies Magna (Requies Nicolai),28.6,2
+f103v,Diacodion (Jarabe de Adormidera),18.2,1
+f103v,Dialtea (Ungueento de Altea),0,0
+f103v,Philonium Persicum,70.0,7
+f103v,Oximel Compositum,46.2,3
+f103v,Theriac Diatessaron,16.7,1
+f103v,Theodoricon Euporistum,85.7,9
+f103v,Diasatyrion,55.6,5
+f103v,Diarodon Abbatis,33.3,3
+f103v,Rosata Novella,26.7,2
+f103v,Letitia Galeni,35.3,3
+f103v,Trifera Saracenica,73.7,7
+f103v,Paulinum,73.7,7
+f103v,Electuarium Justinum,80.0,8
+f103v,Electuarium de Baccis Lauri,62.5,5
+f103v,Syrupus de Fumaria,18.2,1
+f103v,Confectio Anacardia,62.5,5
+f103v,Electuarium Diacostum,62.5,5
+f103v,Unguentum Marciaton,0,0
+f103v,Suffuf al-Tib (Polvo aromatico de Avicena),37.5,3
+f103v,Itrifal Ustukhudus (Electuario de Espliego),42.9,3
+f103v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),16.7,1
+f103v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),58.8,5
+f103v,Unguentum Abulcasis (de vulneribus),20.0,1
+f103v,Theriac Abulcasis (contra venenos),60.0,6
+f103v,Antidotum Hadriani,66.7,6
+f103v,Electuarium Ducis,42.9,3
+f103v,Benedicta Laxativa,46.2,3
+f103v,Diatragacanthi,18.2,1
+f103v,Dianucum (Electuario de Nueces),42.9,3
+f103v,Electuarium Diaspermaton,66.7,5
+f103v,Philonium Romanum,62.5,5
+f103v,Theriac Diatessaron Magna,42.9,3
+f104r,Theriac Magna (Triaca de Andromachus),72.0,9
+f104r,Mithridatium,69.6,8
+f104r,Diascordium,52.6,5
+f104r,Pillulae Cochiae,0,0
+f104r,Pillulae Aureae,15.4,1
+f104r,Unguentum Apostolorum,28.6,2
+f104r,Electuarium de Succo Rosarum,15.4,1
+f104r,Aurea Alexandrina,66.7,7
+f104r,Confectio Hamech,26.7,2
+f104r,Hiera Picra (Hiera de Galeno),28.6,2
+f104r,Trifera Magna,66.7,9
+f104r,Diamargariton (Electuario de Perlas),22.2,2
+f104r,Diaciminum (Electuario de Comino),50.0,4
+f104r,Unguentum Basilicon,18.2,1
+f104r,Unguentum Populeon,0,0
+f104r,Pillulae de Hiera cum Agarico,15.4,1
+f104r,Pillulae Fetidae (Pildoras Fetidas),40.0,3
+f104r,Requies Magna (Requies Nicolai),13.3,1
+f104r,Diacodion (Jarabe de Adormidera),0,0
+f104r,Dialtea (Ungueento de Altea),0,0
+f104r,Philonium Persicum,66.7,7
+f104r,Oximel Compositum,57.1,4
+f104r,Theriac Diatessaron,30.8,2
+f104r,Theodoricon Euporistum,81.8,9
+f104r,Diasatyrion,52.6,5
+f104r,Diarodon Abbatis,21.1,2
+f104r,Rosata Novella,12.5,1
+f104r,Letitia Galeni,22.2,2
+f104r,Trifera Saracenica,70.0,7
+f104r,Paulinum,70.0,7
+f104r,Electuarium Justinum,76.2,8
+f104r,Electuarium de Baccis Lauri,58.8,5
+f104r,Syrupus de Fumaria,0,0
+f104r,Confectio Anacardia,58.8,5
+f104r,Electuarium Diacostum,58.8,5
+f104r,Unguentum Marciaton,0,0
+f104r,Suffuf al-Tib (Polvo aromatico de Avicena),23.5,2
+f104r,Itrifal Ustukhudus (Electuario de Espliego),40.0,3
+f104r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),30.8,2
+f104r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),55.6,5
+f104r,Unguentum Abulcasis (de vulneribus),18.2,1
+f104r,Theriac Abulcasis (contra venenos),66.7,7
+f104r,Antidotum Hadriani,63.2,6
+f104r,Electuarium Ducis,40.0,3
+f104r,Benedicta Laxativa,28.6,2
+f104r,Diatragacanthi,0,0
+f104r,Dianucum (Electuario de Nueces),40.0,3
+f104r,Electuarium Diaspermaton,62.5,5
+f104r,Philonium Romanum,58.8,5
+f104r,Theriac Diatessaron Magna,40.0,3
+f104v,Theriac Magna (Triaca de Andromachus),66.7,8
+f104v,Mithridatium,72.7,8
+f104v,Diascordium,55.6,5
+f104v,Pillulae Cochiae,0,0
+f104v,Pillulae Aureae,33.3,2
+f104v,Unguentum Apostolorum,30.8,2
+f104v,Electuarium de Succo Rosarum,33.3,2
+f104v,Aurea Alexandrina,70.0,7
+f104v,Confectio Hamech,28.6,2
+f104v,Hiera Picra (Hiera de Galeno),46.2,3
+f104v,Trifera Magna,61.5,8
+f104v,Diamargariton (Electuario de Perlas),47.1,4
+f104v,Diaciminum (Electuario de Comino),40.0,3
+f104v,Unguentum Basilicon,20.0,1
+f104v,Unguentum Populeon,0,0
+f104v,Pillulae de Hiera cum Agarico,33.3,2
+f104v,Pillulae Fetidae (Pildoras Fetidas),42.9,3
+f104v,Requies Magna (Requies Nicolai),28.6,2
+f104v,Diacodion (Jarabe de Adormidera),18.2,1
+f104v,Dialtea (Ungueento de Altea),0,0
+f104v,Philonium Persicum,80.0,8
+f104v,Oximel Compositum,30.8,2
+f104v,Theriac Diatessaron,16.7,1
+f104v,Theodoricon Euporistum,76.2,8
+f104v,Diasatyrion,55.6,5
+f104v,Diarodon Abbatis,44.4,4
+f104v,Rosata Novella,26.7,2
+f104v,Letitia Galeni,35.3,3
+f104v,Trifera Saracenica,84.2,8
+f104v,Paulinum,73.7,7
+f104v,Electuarium Justinum,70.0,7
+f104v,Electuarium de Baccis Lauri,50.0,4
+f104v,Syrupus de Fumaria,18.2,1
+f104v,Confectio Anacardia,62.5,5
+f104v,Electuarium Diacostum,62.5,5
+f104v,Unguentum Marciaton,0,0
+f104v,Suffuf al-Tib (Polvo aromatico de Avicena),50.0,4
+f104v,Itrifal Ustukhudus (Electuario de Espliego),42.9,3
+f104v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),16.7,1
+f104v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),70.6,6
+f104v,Unguentum Abulcasis (de vulneribus),20.0,1
+f104v,Theriac Abulcasis (contra venenos),70.0,7
+f104v,Antidotum Hadriani,77.8,7
+f104v,Electuarium Ducis,42.9,3
+f104v,Benedicta Laxativa,46.2,3
+f104v,Diatragacanthi,18.2,1
+f104v,Dianucum (Electuario de Nueces),42.9,3
+f104v,Electuarium Diaspermaton,40.0,3
+f104v,Philonium Romanum,62.5,5
+f104v,Theriac Diatessaron Magna,42.9,3
+f105r,Theriac Magna (Triaca de Andromachus),64.0,8
+f105r,Mithridatium,78.3,9
+f105r,Diascordium,52.6,5
+f105r,Pillulae Cochiae,18.2,1
+f105r,Pillulae Aureae,30.8,2
+f105r,Unguentum Apostolorum,28.6,2
+f105r,Electuarium de Succo Rosarum,30.8,2
+f105r,Aurea Alexandrina,76.2,8
+f105r,Confectio Hamech,40.0,3
+f105r,Hiera Picra (Hiera de Galeno),57.1,4
+f105r,Trifera Magna,74.1,10
+f105r,Diamargariton (Electuario de Perlas),44.4,4
+f105r,Diaciminum (Electuario de Comino),50.0,4
+f105r,Unguentum Basilicon,0,0
+f105r,Unguentum Populeon,0,0
+f105r,Pillulae de Hiera cum Agarico,30.8,2
+f105r,Pillulae Fetidae (Pildoras Fetidas),40.0,3
+f105r,Requies Magna (Requies Nicolai),26.7,2
+f105r,Diacodion (Jarabe de Adormidera),16.7,1
+f105r,Dialtea (Ungueento de Altea),0,0
+f105r,Philonium Persicum,85.7,9
+f105r,Oximel Compositum,42.9,3
+f105r,Theriac Diatessaron,30.8,2
+f105r,Theodoricon Euporistum,81.8,9
+f105r,Diasatyrion,63.2,6
+f105r,Diarodon Abbatis,42.1,4
+f105r,Rosata Novella,25.0,2
+f105r,Letitia Galeni,33.3,3
+f105r,Trifera Saracenica,90.0,9
+f105r,Paulinum,80.0,8
+f105r,Electuarium Justinum,76.2,8
+f105r,Electuarium de Baccis Lauri,58.8,5
+f105r,Syrupus de Fumaria,16.7,1
+f105r,Confectio Anacardia,70.6,6
+f105r,Electuarium Diacostum,70.6,6
+f105r,Unguentum Marciaton,0,0
+f105r,Suffuf al-Tib (Polvo aromatico de Avicena),47.1,4
+f105r,Itrifal Ustukhudus (Electuario de Espliego),53.3,4
+f105r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),30.8,2
+f105r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),77.8,7
+f105r,Unguentum Abulcasis (de vulneribus),18.2,1
+f105r,Theriac Abulcasis (contra venenos),66.7,7
+f105r,Antidotum Hadriani,84.2,8
+f105r,Electuarium Ducis,53.3,4
+f105r,Benedicta Laxativa,42.9,3
+f105r,Diatragacanthi,16.7,1
+f105r,Dianucum (Electuario de Nueces),53.3,4
+f105r,Electuarium Diaspermaton,50.0,4
+f105r,Philonium Romanum,70.6,6
+f105r,Theriac Diatessaron Magna,53.3,4
+f105v,Theriac Magna (Triaca de Andromachus),72.0,9
+f105v,Mithridatium,78.3,9
+f105v,Diascordium,31.6,3
+f105v,Pillulae Cochiae,0,0
+f105v,Pillulae Aureae,15.4,1
+f105v,Unguentum Apostolorum,28.6,2
+f105v,Electuarium de Succo Rosarum,15.4,1
+f105v,Aurea Alexandrina,66.7,7
+f105v,Confectio Hamech,13.3,1
+f105v,Hiera Picra (Hiera de Galeno),14.3,1
+f105v,Trifera Magna,74.1,10
+f105v,Diamargariton (Electuario de Perlas),22.2,2
+f105v,Diaciminum (Electuario de Comino),50.0,4
+f105v,Unguentum Basilicon,0,0
+f105v,Unguentum Populeon,0,0
+f105v,Pillulae de Hiera cum Agarico,15.4,1
+f105v,Pillulae Fetidae (Pildoras Fetidas),40.0,3
+f105v,Requies Magna (Requies Nicolai),13.3,1
+f105v,Diacodion (Jarabe de Adormidera),0,0
+f105v,Dialtea (Ungueento de Altea),0,0
+f105v,Philonium Persicum,66.7,7
+f105v,Oximel Compositum,42.9,3
+f105v,Theriac Diatessaron,15.4,1
+f105v,Theodoricon Euporistum,81.8,9
+f105v,Diasatyrion,42.1,4
+f105v,Diarodon Abbatis,21.1,2
+f105v,Rosata Novella,12.5,1
+f105v,Letitia Galeni,22.2,2
+f105v,Trifera Saracenica,70.0,7
+f105v,Paulinum,70.0,7
+f105v,Electuarium Justinum,76.2,8
+f105v,Electuarium de Baccis Lauri,47.1,4
+f105v,Syrupus de Fumaria,0,0
+f105v,Confectio Anacardia,58.8,5
+f105v,Electuarium Diacostum,47.1,4
+f105v,Unguentum Marciaton,0,0
+f105v,Suffuf al-Tib (Polvo aromatico de Avicena),23.5,2
+f105v,Itrifal Ustukhudus (Electuario de Espliego),26.7,2
+f105v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),15.4,1
+f105v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),55.6,5
+f105v,Unguentum Abulcasis (de vulneribus),18.2,1
+f105v,Theriac Abulcasis (contra venenos),66.7,7
+f105v,Antidotum Hadriani,52.6,5
+f105v,Electuarium Ducis,26.7,2
+f105v,Benedicta Laxativa,28.6,2
+f105v,Diatragacanthi,0,0
+f105v,Dianucum (Electuario de Nueces),40.0,3
+f105v,Electuarium Diaspermaton,50.0,4
+f105v,Philonium Romanum,58.8,5
+f105v,Theriac Diatessaron Magna,26.7,2
+f106r,Theriac Magna (Triaca de Andromachus),69.2,9
+f106r,Mithridatium,83.3,10
+f106r,Diascordium,40.0,4
+f106r,Pillulae Cochiae,0,0
+f106r,Pillulae Aureae,28.6,2
+f106r,Unguentum Apostolorum,13.3,1
+f106r,Electuarium de Succo Rosarum,42.9,3
+f106r,Aurea Alexandrina,90.9,10
+f106r,Confectio Hamech,37.5,3
+f106r,Hiera Picra (Hiera de Galeno),40.0,3
+f106r,Trifera Magna,71.4,10
+f106r,Diamargariton (Electuario de Perlas),52.6,5
+f106r,Diaciminum (Electuario de Comino),47.1,4
+f106r,Unguentum Basilicon,0,0
+f106r,Unguentum Populeon,0,0
+f106r,Pillulae de Hiera cum Agarico,28.6,2
+f106r,Pillulae Fetidae (Pildoras Fetidas),25.0,2
+f106r,Requies Magna (Requies Nicolai),37.5,3
+f106r,Diacodion (Jarabe de Adormidera),30.8,2
+f106r,Dialtea (Ungueento de Altea),0,0
+f106r,Philonium Persicum,81.8,9
+f106r,Oximel Compositum,40.0,3
+f106r,Theriac Diatessaron,14.3,1
+f106r,Theodoricon Euporistum,87.0,10
+f106r,Diasatyrion,60.0,6
+f106r,Diarodon Abbatis,50.0,5
+f106r,Rosata Novella,35.3,3
+f106r,Letitia Galeni,42.1,4
+f106r,Trifera Saracenica,85.7,9
+f106r,Paulinum,85.7,9
+f106r,Electuarium Justinum,81.8,9
+f106r,Electuarium de Baccis Lauri,55.6,5
+f106r,Syrupus de Fumaria,30.8,2
+f106r,Confectio Anacardia,66.7,6
+f106r,Electuarium Diacostum,55.6,5
+f106r,Unguentum Marciaton,0,0
+f106r,Suffuf al-Tib (Polvo aromatico de Avicena),44.4,4
+f106r,Itrifal Ustukhudus (Electuario de Espliego),37.5,3
+f106r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),14.3,1
+f106r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),73.7,7
+f106r,Unguentum Abulcasis (de vulneribus),16.7,1
+f106r,Theriac Abulcasis (contra venenos),63.6,7
+f106r,Antidotum Hadriani,70.0,7
+f106r,Electuarium Ducis,50.0,4
+f106r,Benedicta Laxativa,53.3,4
+f106r,Diatragacanthi,30.8,2
+f106r,Dianucum (Electuario de Nueces),50.0,4
+f106r,Electuarium Diaspermaton,47.1,4
+f106r,Philonium Romanum,66.7,6
+f106r,Theriac Diatessaron Magna,37.5,3
+f106v,Theriac Magna (Triaca de Andromachus),60.9,7
+f106v,Mithridatium,66.7,7
+f106v,Diascordium,47.1,4
+f106v,Pillulae Cochiae,0,0
+f106v,Pillulae Aureae,18.2,1
+f106v,Unguentum Apostolorum,16.7,1
+f106v,Electuarium de Succo Rosarum,18.2,1
+f106v,Aurea Alexandrina,63.2,6
+f106v,Confectio Hamech,15.4,1
+f106v,Hiera Picra (Hiera de Galeno),33.3,2
+f106v,Trifera Magna,56.0,7
+f106v,Diamargariton (Electuario de Perlas),37.5,3
+f106v,Diaciminum (Electuario de Comino),28.6,2
+f106v,Unguentum Basilicon,0,0
+f106v,Unguentum Populeon,0,0
+f106v,Pillulae de Hiera cum Agarico,18.2,1
+f106v,Pillulae Fetidae (Pildoras Fetidas),30.8,2
+f106v,Requies Magna (Requies Nicolai),15.4,1
+f106v,Diacodion (Jarabe de Adormidera),0,0
+f106v,Dialtea (Ungueento de Altea),0,0
+f106v,Philonium Persicum,84.2,8
+f106v,Oximel Compositum,33.3,2
+f106v,Theriac Diatessaron,18.2,1
+f106v,Theodoricon Euporistum,70.0,7
+f106v,Diasatyrion,47.1,4
+f106v,Diarodon Abbatis,35.3,3
+f106v,Rosata Novella,14.3,1
+f106v,Letitia Galeni,25.0,2
+f106v,Trifera Saracenica,77.8,7
+f106v,Paulinum,66.7,6
+f106v,Electuarium Justinum,63.2,6
+f106v,Electuarium de Baccis Lauri,40.0,3
+f106v,Syrupus de Fumaria,0,0
+f106v,Confectio Anacardia,53.3,4
+f106v,Electuarium Diacostum,53.3,4
+f106v,Unguentum Marciaton,0,0
+f106v,Suffuf al-Tib (Polvo aromatico de Avicena),40.0,3
+f106v,Itrifal Ustukhudus (Electuario de Espliego),30.8,2
+f106v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),18.2,1
+f106v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),62.5,5
+f106v,Unguentum Abulcasis (de vulneribus),22.2,1
+f106v,Theriac Abulcasis (contra venenos),52.6,5
+f106v,Antidotum Hadriani,70.6,6
+f106v,Electuarium Ducis,30.8,2
+f106v,Benedicta Laxativa,33.3,2
+f106v,Diatragacanthi,0,0
+f106v,Dianucum (Electuario de Nueces),30.8,2
+f106v,Electuarium Diaspermaton,28.6,2
+f106v,Philonium Romanum,53.3,4
+f106v,Theriac Diatessaron Magna,30.8,2
+f107r,Theriac Magna (Triaca de Andromachus),54.5,6
+f107r,Mithridatium,70.0,7
+f107r,Diascordium,50.0,4
+f107r,Pillulae Cochiae,0,0
+f107r,Pillulae Aureae,40.0,2
+f107r,Unguentum Apostolorum,18.2,1
+f107r,Electuarium de Succo Rosarum,40.0,2
+f107r,Aurea Alexandrina,66.7,6
+f107r,Confectio Hamech,33.3,2
+f107r,Hiera Picra (Hiera de Galeno),36.4,2
+f107r,Trifera Magna,58.3,7
+f107r,Diamargariton (Electuario de Perlas),40.0,3
+f107r,Diaciminum (Electuario de Comino),46.2,3
+f107r,Unguentum Basilicon,0,0
+f107r,Unguentum Populeon,0,0
+f107r,Pillulae de Hiera cum Agarico,40.0,2
+f107r,Pillulae Fetidae (Pildoras Fetidas),33.3,2
+f107r,Requies Magna (Requies Nicolai),33.3,2
+f107r,Diacodion (Jarabe de Adormidera),22.2,1
+f107r,Dialtea (Ungueento de Altea),0,0
+f107r,Philonium Persicum,77.8,7
+f107r,Oximel Compositum,36.4,2
+f107r,Theriac Diatessaron,20.0,1
+f107r,Theodoricon Euporistum,73.7,7
+f107r,Diasatyrion,62.5,5
+f107r,Diarodon Abbatis,37.5,3
+f107r,Rosata Novella,30.8,2
+f107r,Letitia Galeni,40.0,3
+f107r,Trifera Saracenica,82.4,7
+f107r,Paulinum,70.6,6
+f107r,Electuarium Justinum,66.7,6
+f107r,Electuarium de Baccis Lauri,57.1,4
+f107r,Syrupus de Fumaria,22.2,1
+f107r,Confectio Anacardia,71.4,5
+f107r,Electuarium Diacostum,57.1,4
+f107r,Unguentum Marciaton,0,0
+f107r,Suffuf al-Tib (Polvo aromatico de Avicena),42.9,3
+f107r,Itrifal Ustukhudus (Electuario de Espliego),50.0,3
+f107r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),20.0,1
+f107r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),66.7,5
+f107r,Unguentum Abulcasis (de vulneribus),25.0,1
+f107r,Theriac Abulcasis (contra venenos),66.7,6
+f107r,Antidotum Hadriani,75.0,6
+f107r,Electuarium Ducis,50.0,3
+f107r,Benedicta Laxativa,54.5,3
+f107r,Diatragacanthi,22.2,1
+f107r,Dianucum (Electuario de Nueces),50.0,3
+f107r,Electuarium Diaspermaton,46.2,3
+f107r,Philonium Romanum,71.4,5
+f107r,Theriac Diatessaron Magna,50.0,3
+f107v,Theriac Magna (Triaca de Andromachus),64.0,8
+f107v,Mithridatium,78.3,9
+f107v,Diascordium,42.1,4
+f107v,Pillulae Cochiae,18.2,1
+f107v,Pillulae Aureae,15.4,1
+f107v,Unguentum Apostolorum,28.6,2
+f107v,Electuarium de Succo Rosarum,15.4,1
+f107v,Aurea Alexandrina,76.2,8
+f107v,Confectio Hamech,26.7,2
+f107v,Hiera Picra (Hiera de Galeno),42.9,3
+f107v,Trifera Magna,74.1,10
+f107v,Diamargariton (Electuario de Perlas),33.3,3
+f107v,Diaciminum (Electuario de Comino),50.0,4
+f107v,Unguentum Basilicon,0,0
+f107v,Unguentum Populeon,0,0
+f107v,Pillulae de Hiera cum Agarico,15.4,1
+f107v,Pillulae Fetidae (Pildoras Fetidas),40.0,3
+f107v,Requies Magna (Requies Nicolai),13.3,1
+f107v,Diacodion (Jarabe de Adormidera),0,0
+f107v,Dialtea (Ungueento de Altea),0,0
+f107v,Philonium Persicum,85.7,9
+f107v,Oximel Compositum,42.9,3
+f107v,Theriac Diatessaron,30.8,2
+f107v,Theodoricon Euporistum,81.8,9
+f107v,Diasatyrion,52.6,5
+f107v,Diarodon Abbatis,31.6,3
+f107v,Rosata Novella,12.5,1
+f107v,Letitia Galeni,22.2,2
+f107v,Trifera Saracenica,90.0,9
+f107v,Paulinum,80.0,8
+f107v,Electuarium Justinum,76.2,8
+f107v,Electuarium de Baccis Lauri,47.1,4
+f107v,Syrupus de Fumaria,0,0
+f107v,Confectio Anacardia,70.6,6
+f107v,Electuarium Diacostum,58.8,5
+f107v,Unguentum Marciaton,0,0
+f107v,Suffuf al-Tib (Polvo aromatico de Avicena),35.3,3
+f107v,Itrifal Ustukhudus (Electuario de Espliego),40.0,3
+f107v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),30.8,2
+f107v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),77.8,7
+f107v,Unguentum Abulcasis (de vulneribus),18.2,1
+f107v,Theriac Abulcasis (contra venenos),66.7,7
+f107v,Antidotum Hadriani,73.7,7
+f107v,Electuarium Ducis,40.0,3
+f107v,Benedicta Laxativa,28.6,2
+f107v,Diatragacanthi,0,0
+f107v,Dianucum (Electuario de Nueces),53.3,4
+f107v,Electuarium Diaspermaton,37.5,3
+f107v,Philonium Romanum,70.6,6
+f107v,Theriac Diatessaron Magna,40.0,3
+f108r,Theriac Magna (Triaca de Andromachus),69.2,9
+f108r,Mithridatium,75.0,9
+f108r,Diascordium,30.0,3
+f108r,Pillulae Cochiae,16.7,1
+f108r,Pillulae Aureae,14.3,1
+f108r,Unguentum Apostolorum,26.7,2
+f108r,Electuarium de Succo Rosarum,14.3,1
+f108r,Aurea Alexandrina,72.7,8
+f108r,Confectio Hamech,12.5,1
+f108r,Hiera Picra (Hiera de Galeno),26.7,2
+f108r,Trifera Magna,78.6,11
+f108r,Diamargariton (Electuario de Perlas),31.6,3
+f108r,Diaciminum (Electuario de Comino),47.1,4
+f108r,Unguentum Basilicon,0,0
+f108r,Unguentum Populeon,0,0
+f108r,Pillulae de Hiera cum Agarico,14.3,1
+f108r,Pillulae Fetidae (Pildoras Fetidas),37.5,3
+f108r,Requies Magna (Requies Nicolai),12.5,1
+f108r,Diacodion (Jarabe de Adormidera),0,0
+f108r,Dialtea (Ungueento de Altea),0,0
+f108r,Philonium Persicum,72.7,8
+f108r,Oximel Compositum,40.0,3
+f108r,Theriac Diatessaron,14.3,1
+f108r,Theodoricon Euporistum,87.0,10
+f108r,Diasatyrion,40.0,4
+f108r,Diarodon Abbatis,30.0,3
+f108r,Rosata Novella,11.8,1
+f108r,Letitia Galeni,21.1,2
+f108r,Trifera Saracenica,76.2,8
+f108r,Paulinum,76.2,8
+f108r,Electuarium Justinum,81.8,9
+f108r,Electuarium de Baccis Lauri,44.4,4
+f108r,Syrupus de Fumaria,0,0
+f108r,Confectio Anacardia,55.6,5
+f108r,Electuarium Diacostum,55.6,5
+f108r,Unguentum Marciaton,0,0
+f108r,Suffuf al-Tib (Polvo aromatico de Avicena),33.3,3
+f108r,Itrifal Ustukhudus (Electuario de Espliego),25.0,2
+f108r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),14.3,1
+f108r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),63.2,6
+f108r,Unguentum Abulcasis (de vulneribus),16.7,1
+f108r,Theriac Abulcasis (contra venenos),54.5,6
+f108r,Antidotum Hadriani,60.0,6
+f108r,Electuarium Ducis,25.0,2
+f108r,Benedicta Laxativa,26.7,2
+f108r,Diatragacanthi,0,0
+f108r,Dianucum (Electuario de Nueces),37.5,3
+f108r,Electuarium Diaspermaton,47.1,4
+f108r,Philonium Romanum,55.6,5
+f108r,Theriac Diatessaron Magna,25.0,2
+f108v,Theriac Magna (Triaca de Andromachus),72.0,9
+f108v,Mithridatium,78.3,9
+f108v,Diascordium,42.1,4
+f108v,Pillulae Cochiae,0,0
+f108v,Pillulae Aureae,30.8,2
+f108v,Unguentum Apostolorum,14.3,1
+f108v,Electuarium de Succo Rosarum,30.8,2
+f108v,Aurea Alexandrina,76.2,8
+f108v,Confectio Hamech,26.7,2
+f108v,Hiera Picra (Hiera de Galeno),42.9,3
+f108v,Trifera Magna,74.1,10
+f108v,Diamargariton (Electuario de Perlas),44.4,4
+f108v,Diaciminum (Electuario de Comino),50.0,4
+f108v,Unguentum Basilicon,0,0
+f108v,Unguentum Populeon,0,0
+f108v,Pillulae de Hiera cum Agarico,30.8,2
+f108v,Pillulae Fetidae (Pildoras Fetidas),26.7,2
+f108v,Requies Magna (Requies Nicolai),26.7,2
+f108v,Diacodion (Jarabe de Adormidera),16.7,1
+f108v,Dialtea (Ungueento de Altea),0,0
+f108v,Philonium Persicum,76.2,8
+f108v,Oximel Compositum,42.9,3
+f108v,Theriac Diatessaron,15.4,1
+f108v,Theodoricon Euporistum,90.9,10
+f108v,Diasatyrion,52.6,5
+f108v,Diarodon Abbatis,42.1,4
+f108v,Rosata Novella,25.0,2
+f108v,Letitia Galeni,33.3,3
+f108v,Trifera Saracenica,80.0,8
+f108v,Paulinum,80.0,8
+f108v,Electuarium Justinum,85.7,9
+f108v,Electuarium de Baccis Lauri,58.8,5
+f108v,Syrupus de Fumaria,16.7,1
+f108v,Confectio Anacardia,58.8,5
+f108v,Electuarium Diacostum,70.6,6
+f108v,Unguentum Marciaton,0,0
+f108v,Suffuf al-Tib (Polvo aromatico de Avicena),47.1,4
+f108v,Itrifal Ustukhudus (Electuario de Espliego),40.0,3
+f108v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),15.4,1
+f108v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),66.7,6
+f108v,Unguentum Abulcasis (de vulneribus),18.2,1
+f108v,Theriac Abulcasis (contra venenos),57.1,6
+f108v,Antidotum Hadriani,73.7,7
+f108v,Electuarium Ducis,40.0,3
+f108v,Benedicta Laxativa,42.9,3
+f108v,Diatragacanthi,16.7,1
+f108v,Dianucum (Electuario de Nueces),40.0,3
+f108v,Electuarium Diaspermaton,62.5,5
+f108v,Philonium Romanum,58.8,5
+f108v,Theriac Diatessaron Magna,40.0,3
+f111r,Theriac Magna (Triaca de Andromachus),69.2,9
+f111r,Mithridatium,75.0,9
+f111r,Diascordium,30.0,3
+f111r,Pillulae Cochiae,16.7,1
+f111r,Pillulae Aureae,14.3,1
+f111r,Unguentum Apostolorum,40.0,3
+f111r,Electuarium de Succo Rosarum,14.3,1
+f111r,Aurea Alexandrina,63.6,7
+f111r,Confectio Hamech,12.5,1
+f111r,Hiera Picra (Hiera de Galeno),26.7,2
+f111r,Trifera Magna,78.6,11
+f111r,Diamargariton (Electuario de Perlas),31.6,3
+f111r,Diaciminum (Electuario de Comino),35.3,3
+f111r,Unguentum Basilicon,0,0
+f111r,Unguentum Populeon,0,0
+f111r,Pillulae de Hiera cum Agarico,14.3,1
+f111r,Pillulae Fetidae (Pildoras Fetidas),50.0,4
+f111r,Requies Magna (Requies Nicolai),12.5,1
+f111r,Diacodion (Jarabe de Adormidera),0,0
+f111r,Dialtea (Ungueento de Altea),0,0
+f111r,Philonium Persicum,63.6,7
+f111r,Oximel Compositum,40.0,3
+f111r,Theriac Diatessaron,14.3,1
+f111r,Theodoricon Euporistum,78.3,9
+f111r,Diasatyrion,40.0,4
+f111r,Diarodon Abbatis,30.0,3
+f111r,Rosata Novella,11.8,1
+f111r,Letitia Galeni,21.1,2
+f111r,Trifera Saracenica,66.7,7
+f111r,Paulinum,66.7,7
+f111r,Electuarium Justinum,72.7,8
+f111r,Electuarium de Baccis Lauri,44.4,4
+f111r,Syrupus de Fumaria,0,0
+f111r,Confectio Anacardia,44.4,4
+f111r,Electuarium Diacostum,55.6,5
+f111r,Unguentum Marciaton,0,0
+f111r,Suffuf al-Tib (Polvo aromatico de Avicena),33.3,3
+f111r,Itrifal Ustukhudus (Electuario de Espliego),25.0,2
+f111r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),14.3,1
+f111r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),52.6,5
+f111r,Unguentum Abulcasis (de vulneribus),16.7,1
+f111r,Theriac Abulcasis (contra venenos),54.5,6
+f111r,Antidotum Hadriani,60.0,6
+f111r,Electuarium Ducis,25.0,2
+f111r,Benedicta Laxativa,26.7,2
+f111r,Diatragacanthi,0,0
+f111r,Dianucum (Electuario de Nueces),25.0,2
+f111r,Electuarium Diaspermaton,47.1,4
+f111r,Philonium Romanum,44.4,4
+f111r,Theriac Diatessaron Magna,25.0,2
+f111v,Theriac Magna (Triaca de Andromachus),69.2,9
+f111v,Mithridatium,75.0,9
+f111v,Diascordium,40.0,4
+f111v,Pillulae Cochiae,16.7,1
+f111v,Pillulae Aureae,14.3,1
+f111v,Unguentum Apostolorum,26.7,2
+f111v,Electuarium de Succo Rosarum,14.3,1
+f111v,Aurea Alexandrina,72.7,8
+f111v,Confectio Hamech,25.0,2
+f111v,Hiera Picra (Hiera de Galeno),40.0,3
+f111v,Trifera Magna,78.6,11
+f111v,Diamargariton (Electuario de Perlas),31.6,3
+f111v,Diaciminum (Electuario de Comino),47.1,4
+f111v,Unguentum Basilicon,0,0
+f111v,Unguentum Populeon,0,0
+f111v,Pillulae de Hiera cum Agarico,14.3,1
+f111v,Pillulae Fetidae (Pildoras Fetidas),37.5,3
+f111v,Requies Magna (Requies Nicolai),12.5,1
+f111v,Diacodion (Jarabe de Adormidera),0,0
+f111v,Dialtea (Ungueento de Altea),0,0
+f111v,Philonium Persicum,72.7,8
+f111v,Oximel Compositum,53.3,4
+f111v,Theriac Diatessaron,28.6,2
+f111v,Theodoricon Euporistum,87.0,10
+f111v,Diasatyrion,50.0,5
+f111v,Diarodon Abbatis,30.0,3
+f111v,Rosata Novella,11.8,1
+f111v,Letitia Galeni,21.1,2
+f111v,Trifera Saracenica,76.2,8
+f111v,Paulinum,76.2,8
+f111v,Electuarium Justinum,81.8,9
+f111v,Electuarium de Baccis Lauri,55.6,5
+f111v,Syrupus de Fumaria,0,0
+f111v,Confectio Anacardia,55.6,5
+f111v,Electuarium Diacostum,66.7,6
+f111v,Unguentum Marciaton,0,0
+f111v,Suffuf al-Tib (Polvo aromatico de Avicena),33.3,3
+f111v,Itrifal Ustukhudus (Electuario de Espliego),37.5,3
+f111v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),28.6,2
+f111v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),63.2,6
+f111v,Unguentum Abulcasis (de vulneribus),16.7,1
+f111v,Theriac Abulcasis (contra venenos),54.5,6
+f111v,Antidotum Hadriani,70.0,7
+f111v,Electuarium Ducis,37.5,3
+f111v,Benedicta Laxativa,26.7,2
+f111v,Diatragacanthi,0,0
+f111v,Dianucum (Electuario de Nueces),37.5,3
+f111v,Electuarium Diaspermaton,58.8,5
+f111v,Philonium Romanum,55.6,5
+f111v,Theriac Diatessaron Magna,37.5,3
+f112r,Theriac Magna (Triaca de Andromachus),58.3,7
+f112r,Mithridatium,72.7,8
+f112r,Diascordium,44.4,4
+f112r,Pillulae Cochiae,20.0,1
+f112r,Pillulae Aureae,33.3,2
+f112r,Unguentum Apostolorum,30.8,2
+f112r,Electuarium de Succo Rosarum,33.3,2
+f112r,Aurea Alexandrina,70.0,7
+f112r,Confectio Hamech,28.6,2
+f112r,Hiera Picra (Hiera de Galeno),46.2,3
+f112r,Trifera Magna,69.2,9
+f112r,Diamargariton (Electuario de Perlas),47.1,4
+f112r,Diaciminum (Electuario de Comino),40.0,3
+f112r,Unguentum Basilicon,0,0
+f112r,Unguentum Populeon,0,0
+f112r,Pillulae de Hiera cum Agarico,33.3,2
+f112r,Pillulae Fetidae (Pildoras Fetidas),42.9,3
+f112r,Requies Magna (Requies Nicolai),28.6,2
+f112r,Diacodion (Jarabe de Adormidera),18.2,1
+f112r,Dialtea (Ungueento de Altea),0,0
+f112r,Philonium Persicum,80.0,8
+f112r,Oximel Compositum,30.8,2
+f112r,Theriac Diatessaron,16.7,1
+f112r,Theodoricon Euporistum,76.2,8
+f112r,Diasatyrion,55.6,5
+f112r,Diarodon Abbatis,44.4,4
+f112r,Rosata Novella,26.7,2
+f112r,Letitia Galeni,35.3,3
+f112r,Trifera Saracenica,84.2,8
+f112r,Paulinum,73.7,7
+f112r,Electuarium Justinum,70.0,7
+f112r,Electuarium de Baccis Lauri,50.0,4
+f112r,Syrupus de Fumaria,18.2,1
+f112r,Confectio Anacardia,62.5,5
+f112r,Electuarium Diacostum,62.5,5
+f112r,Unguentum Marciaton,0,0
+f112r,Suffuf al-Tib (Polvo aromatico de Avicena),50.0,4
+f112r,Itrifal Ustukhudus (Electuario de Espliego),42.9,3
+f112r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),16.7,1
+f112r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),70.6,6
+f112r,Unguentum Abulcasis (de vulneribus),20.0,1
+f112r,Theriac Abulcasis (contra venenos),60.0,6
+f112r,Antidotum Hadriani,77.8,7
+f112r,Electuarium Ducis,42.9,3
+f112r,Benedicta Laxativa,46.2,3
+f112r,Diatragacanthi,18.2,1
+f112r,Dianucum (Electuario de Nueces),42.9,3
+f112r,Electuarium Diaspermaton,40.0,3
+f112r,Philonium Romanum,62.5,5
+f112r,Theriac Diatessaron Magna,42.9,3
+f112v,Theriac Magna (Triaca de Andromachus),72.0,9
+f112v,Mithridatium,69.6,8
+f112v,Diascordium,63.2,6
+f112v,Pillulae Cochiae,18.2,1
+f112v,Pillulae Aureae,15.4,1
+f112v,Unguentum Apostolorum,42.9,3
+f112v,Electuarium de Succo Rosarum,15.4,1
+f112v,Aurea Alexandrina,66.7,7
+f112v,Confectio Hamech,26.7,2
+f112v,Hiera Picra (Hiera de Galeno),42.9,3
+f112v,Trifera Magna,59.3,8
+f112v,Diamargariton (Electuario de Perlas),22.2,2
+f112v,Diaciminum (Electuario de Comino),37.5,3
+f112v,Unguentum Basilicon,18.2,1
+f112v,Unguentum Populeon,0,0
+f112v,Pillulae de Hiera cum Agarico,15.4,1
+f112v,Pillulae Fetidae (Pildoras Fetidas),53.3,4
+f112v,Requies Magna (Requies Nicolai),13.3,1
+f112v,Diacodion (Jarabe de Adormidera),0,0
+f112v,Dialtea (Ungueento de Altea),0,0
+f112v,Philonium Persicum,66.7,7
+f112v,Oximel Compositum,42.9,3
+f112v,Theriac Diatessaron,46.2,3
+f112v,Theodoricon Euporistum,63.6,7
+f112v,Diasatyrion,42.1,4
+f112v,Diarodon Abbatis,21.1,2
+f112v,Rosata Novella,12.5,1
+f112v,Letitia Galeni,11.1,1
+f112v,Trifera Saracenica,70.0,7
+f112v,Paulinum,70.0,7
+f112v,Electuarium Justinum,57.1,6
+f112v,Electuarium de Baccis Lauri,58.8,5
+f112v,Syrupus de Fumaria,0,0
+f112v,Confectio Anacardia,58.8,5
+f112v,Electuarium Diacostum,47.1,4
+f112v,Unguentum Marciaton,0,0
+f112v,Suffuf al-Tib (Polvo aromatico de Avicena),23.5,2
+f112v,Itrifal Ustukhudus (Electuario de Espliego),40.0,3
+f112v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),46.2,3
+f112v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),55.6,5
+f112v,Unguentum Abulcasis (de vulneribus),18.2,1
+f112v,Theriac Abulcasis (contra venenos),76.2,8
+f112v,Antidotum Hadriani,84.2,8
+f112v,Electuarium Ducis,40.0,3
+f112v,Benedicta Laxativa,28.6,2
+f112v,Diatragacanthi,0,0
+f112v,Dianucum (Electuario de Nueces),40.0,3
+f112v,Electuarium Diaspermaton,37.5,3
+f112v,Philonium Romanum,58.8,5
+f112v,Theriac Diatessaron Magna,53.3,4
+f113r,Theriac Magna (Triaca de Andromachus),75.9,11
+f113r,Mithridatium,74.1,10
+f113r,Diascordium,52.2,6
+f113r,Pillulae Cochiae,13.3,1
+f113r,Pillulae Aureae,23.5,2
+f113r,Unguentum Apostolorum,33.3,3
+f113r,Electuarium de Succo Rosarum,11.8,1
+f113r,Aurea Alexandrina,72.0,9
+f113r,Confectio Hamech,31.6,3
+f113r,Hiera Picra (Hiera de Galeno),33.3,3
+f113r,Trifera Magna,77.4,12
+f113r,Diamargariton (Electuario de Perlas),27.3,3
+f113r,Diaciminum (Electuario de Comino),50.0,5
+f113r,Unguentum Basilicon,13.3,1
+f113r,Unguentum Populeon,0,0
+f113r,Pillulae de Hiera cum Agarico,23.5,2
+f113r,Pillulae Fetidae (Pildoras Fetidas),42.1,4
+f113r,Requies Magna (Requies Nicolai),21.1,2
+f113r,Diacodion (Jarabe de Adormidera),0,0
+f113r,Dialtea (Ungueento de Altea),0,0
+f113r,Philonium Persicum,72.0,9
+f113r,Oximel Compositum,44.4,4
+f113r,Theriac Diatessaron,23.5,2
+f113r,Theodoricon Euporistum,84.6,11
+f113r,Diasatyrion,43.5,5
+f113r,Diarodon Abbatis,34.8,4
+f113r,Rosata Novella,20.0,2
+f113r,Letitia Galeni,27.3,3
+f113r,Trifera Saracenica,75.0,9
+f113r,Paulinum,75.0,9
+f113r,Electuarium Justinum,80.0,10
+f113r,Electuarium de Baccis Lauri,47.6,5
+f113r,Syrupus de Fumaria,0,0
+f113r,Confectio Anacardia,57.1,6
+f113r,Electuarium Diacostum,57.1,6
+f113r,Unguentum Marciaton,0,0
+f113r,Suffuf al-Tib (Polvo aromatico de Avicena),38.1,4
+f113r,Itrifal Ustukhudus (Electuario de Espliego),42.1,4
+f113r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),23.5,2
+f113r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),63.6,7
+f113r,Unguentum Abulcasis (de vulneribus),13.3,1
+f113r,Theriac Abulcasis (contra venenos),64.0,8
+f113r,Antidotum Hadriani,60.9,7
+f113r,Electuarium Ducis,31.6,3
+f113r,Benedicta Laxativa,22.2,2
+f113r,Diatragacanthi,0,0
+f113r,Dianucum (Electuario de Nueces),42.1,4
+f113r,Electuarium Diaspermaton,50.0,5
+f113r,Philonium Romanum,57.1,6
+f113r,Theriac Diatessaron Magna,31.6,3
+f113v,Theriac Magna (Triaca de Andromachus),78.6,11
+f113v,Mithridatium,84.6,11
+f113v,Diascordium,45.5,5
+f113v,Pillulae Cochiae,14.3,1
+f113v,Pillulae Aureae,25.0,2
+f113v,Unguentum Apostolorum,23.5,2
+f113v,Electuarium de Succo Rosarum,25.0,2
+f113v,Aurea Alexandrina,83.3,10
+f113v,Confectio Hamech,33.3,3
+f113v,Hiera Picra (Hiera de Galeno),47.1,4
+f113v,Trifera Magna,86.7,13
+f113v,Diamargariton (Electuario de Perlas),38.1,4
+f113v,Diaciminum (Electuario de Comino),63.2,6
+f113v,Unguentum Basilicon,0,0
+f113v,Unguentum Populeon,0,0
+f113v,Pillulae de Hiera cum Agarico,25.0,2
+f113v,Pillulae Fetidae (Pildoras Fetidas),33.3,3
+f113v,Requies Magna (Requies Nicolai),22.2,2
+f113v,Diacodion (Jarabe de Adormidera),13.3,1
+f113v,Dialtea (Ungueento de Altea),0,0
+f113v,Philonium Persicum,83.3,10
+f113v,Oximel Compositum,47.1,4
+f113v,Theriac Diatessaron,25.0,2
+f113v,Theodoricon Euporistum,96.0,12
+f113v,Diasatyrion,54.5,6
+f113v,Diarodon Abbatis,36.4,4
+f113v,Rosata Novella,21.1,2
+f113v,Letitia Galeni,28.6,3
+f113v,Trifera Saracenica,87.0,10
+f113v,Paulinum,87.0,10
+f113v,Electuarium Justinum,91.7,11
+f113v,Electuarium de Baccis Lauri,60.0,6
+f113v,Syrupus de Fumaria,13.3,1
+f113v,Confectio Anacardia,70.0,7
+f113v,Electuarium Diacostum,70.0,7
+f113v,Unguentum Marciaton,0,0
+f113v,Suffuf al-Tib (Polvo aromatico de Avicena),40.0,4
+f113v,Itrifal Ustukhudus (Electuario de Espliego),44.4,4
+f113v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),25.0,2
+f113v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),76.2,8
+f113v,Unguentum Abulcasis (de vulneribus),14.3,1
+f113v,Theriac Abulcasis (contra venenos),66.7,8
+f113v,Antidotum Hadriani,72.7,8
+f113v,Electuarium Ducis,44.4,4
+f113v,Benedicta Laxativa,35.3,3
+f113v,Diatragacanthi,13.3,1
+f113v,Dianucum (Electuario de Nueces),55.6,5
+f113v,Electuarium Diaspermaton,63.2,6
+f113v,Philonium Romanum,70.0,7
+f113v,Theriac Diatessaron Magna,44.4,4
+f114r,Theriac Magna (Triaca de Andromachus),76.9,10
+f114r,Mithridatium,91.7,11
+f114r,Diascordium,60.0,6
+f114r,Pillulae Cochiae,0,0
+f114r,Pillulae Aureae,28.6,2
+f114r,Unguentum Apostolorum,26.7,2
+f114r,Electuarium de Succo Rosarum,28.6,2
+f114r,Aurea Alexandrina,72.7,8
+f114r,Confectio Hamech,37.5,3
+f114r,Hiera Picra (Hiera de Galeno),40.0,3
+f114r,Trifera Magna,71.4,10
+f114r,Diamargariton (Electuario de Perlas),31.6,3
+f114r,Diaciminum (Electuario de Comino),58.8,5
+f114r,Unguentum Basilicon,0,0
+f114r,Unguentum Populeon,0,0
+f114r,Pillulae de Hiera cum Agarico,28.6,2
+f114r,Pillulae Fetidae (Pildoras Fetidas),37.5,3
+f114r,Requies Magna (Requies Nicolai),25.0,2
+f114r,Diacodion (Jarabe de Adormidera),15.4,1
+f114r,Dialtea (Ungueento de Altea),0,0
+f114r,Philonium Persicum,81.8,9
+f114r,Oximel Compositum,40.0,3
+f114r,Theriac Diatessaron,42.9,3
+f114r,Theodoricon Euporistum,78.3,9
+f114r,Diasatyrion,60.0,6
+f114r,Diarodon Abbatis,30.0,3
+f114r,Rosata Novella,23.5,2
+f114r,Letitia Galeni,31.6,3
+f114r,Trifera Saracenica,85.7,9
+f114r,Paulinum,76.2,8
+f114r,Electuarium Justinum,72.7,8
+f114r,Electuarium de Baccis Lauri,66.7,6
+f114r,Syrupus de Fumaria,15.4,1
+f114r,Confectio Anacardia,77.8,7
+f114r,Electuarium Diacostum,55.6,5
+f114r,Unguentum Marciaton,0,0
+f114r,Suffuf al-Tib (Polvo aromatico de Avicena),33.3,3
+f114r,Itrifal Ustukhudus (Electuario de Espliego),50.0,4
+f114r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),42.9,3
+f114r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),73.7,7
+f114r,Unguentum Abulcasis (de vulneribus),16.7,1
+f114r,Theriac Abulcasis (contra venenos),90.9,10
+f114r,Antidotum Hadriani,80.0,8
+f114r,Electuarium Ducis,50.0,4
+f114r,Benedicta Laxativa,40.0,3
+f114r,Diatragacanthi,15.4,1
+f114r,Dianucum (Electuario de Nueces),62.5,5
+f114r,Electuarium Diaspermaton,47.1,4
+f114r,Philonium Romanum,77.8,7
+f114r,Theriac Diatessaron Magna,62.5,5
+f114v,Theriac Magna (Triaca de Andromachus),64.0,8
+f114v,Mithridatium,69.6,8
+f114v,Diascordium,52.6,5
+f114v,Pillulae Cochiae,18.2,1
+f114v,Pillulae Aureae,30.8,2
+f114v,Unguentum Apostolorum,42.9,3
+f114v,Electuarium de Succo Rosarum,30.8,2
+f114v,Aurea Alexandrina,66.7,7
+f114v,Confectio Hamech,26.7,2
+f114v,Hiera Picra (Hiera de Galeno),28.6,2
+f114v,Trifera Magna,66.7,9
+f114v,Diamargariton (Electuario de Perlas),33.3,3
+f114v,Diaciminum (Electuario de Comino),50.0,4
+f114v,Unguentum Basilicon,18.2,1
+f114v,Unguentum Populeon,0,0
+f114v,Pillulae de Hiera cum Agarico,30.8,2
+f114v,Pillulae Fetidae (Pildoras Fetidas),53.3,4
+f114v,Requies Magna (Requies Nicolai),26.7,2
+f114v,Diacodion (Jarabe de Adormidera),16.7,1
+f114v,Dialtea (Ungueento de Altea),0,0
+f114v,Philonium Persicum,76.2,8
+f114v,Oximel Compositum,28.6,2
+f114v,Theriac Diatessaron,15.4,1
+f114v,Theodoricon Euporistum,72.7,8
+f114v,Diasatyrion,52.6,5
+f114v,Diarodon Abbatis,31.6,3
+f114v,Rosata Novella,25.0,2
+f114v,Letitia Galeni,33.3,3
+f114v,Trifera Saracenica,80.0,8
+f114v,Paulinum,70.0,7
+f114v,Electuarium Justinum,66.7,7
+f114v,Electuarium de Baccis Lauri,47.1,4
+f114v,Syrupus de Fumaria,16.7,1
+f114v,Confectio Anacardia,70.6,6
+f114v,Electuarium Diacostum,47.1,4
+f114v,Unguentum Marciaton,0,0
+f114v,Suffuf al-Tib (Polvo aromatico de Avicena),35.3,3
+f114v,Itrifal Ustukhudus (Electuario de Espliego),40.0,3
+f114v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),15.4,1
+f114v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),66.7,6
+f114v,Unguentum Abulcasis (de vulneribus),18.2,1
+f114v,Theriac Abulcasis (contra venenos),76.2,8
+f114v,Antidotum Hadriani,63.2,6
+f114v,Electuarium Ducis,40.0,3
+f114v,Benedicta Laxativa,42.9,3
+f114v,Diatragacanthi,16.7,1
+f114v,Dianucum (Electuario de Nueces),53.3,4
+f114v,Electuarium Diaspermaton,37.5,3
+f114v,Philonium Romanum,70.6,6
+f114v,Theriac Diatessaron Magna,40.0,3
+f115r,Theriac Magna (Triaca de Andromachus),61.5,8
+f115r,Mithridatium,58.3,7
+f115r,Diascordium,50.0,5
+f115r,Pillulae Cochiae,16.7,1
+f115r,Pillulae Aureae,28.6,2
+f115r,Unguentum Apostolorum,40.0,3
+f115r,Electuarium de Succo Rosarum,14.3,1
+f115r,Aurea Alexandrina,54.5,6
+f115r,Confectio Hamech,25.0,2
+f115r,Hiera Picra (Hiera de Galeno),26.7,2
+f115r,Trifera Magna,64.3,9
+f115r,Diamargariton (Electuario de Perlas),31.6,3
+f115r,Diaciminum (Electuario de Comino),35.3,3
+f115r,Unguentum Basilicon,16.7,1
+f115r,Unguentum Populeon,0,0
+f115r,Pillulae de Hiera cum Agarico,28.6,2
+f115r,Pillulae Fetidae (Pildoras Fetidas),50.0,4
+f115r,Requies Magna (Requies Nicolai),25.0,2
+f115r,Diacodion (Jarabe de Adormidera),0,0
+f115r,Dialtea (Ungueento de Altea),0,0
+f115r,Philonium Persicum,63.6,7
+f115r,Oximel Compositum,26.7,2
+f115r,Theriac Diatessaron,14.3,1
+f115r,Theodoricon Euporistum,69.6,8
+f115r,Diasatyrion,40.0,4
+f115r,Diarodon Abbatis,40.0,4
+f115r,Rosata Novella,23.5,2
+f115r,Letitia Galeni,31.6,3
+f115r,Trifera Saracenica,66.7,7
+f115r,Paulinum,57.1,6
+f115r,Electuarium Justinum,63.6,7
+f115r,Electuarium de Baccis Lauri,33.3,3
+f115r,Syrupus de Fumaria,0,0
+f115r,Confectio Anacardia,44.4,4
+f115r,Electuarium Diacostum,55.6,5
+f115r,Unguentum Marciaton,0,0
+f115r,Suffuf al-Tib (Polvo aromatico de Avicena),44.4,4
+f115r,Itrifal Ustukhudus (Electuario de Espliego),37.5,3
+f115r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),14.3,1
+f115r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),52.6,5
+f115r,Unguentum Abulcasis (de vulneribus),16.7,1
+f115r,Theriac Abulcasis (contra venenos),54.5,6
+f115r,Antidotum Hadriani,60.0,6
+f115r,Electuarium Ducis,25.0,2
+f115r,Benedicta Laxativa,26.7,2
+f115r,Diatragacanthi,0,0
+f115r,Dianucum (Electuario de Nueces),25.0,2
+f115r,Electuarium Diaspermaton,35.3,3
+f115r,Philonium Romanum,44.4,4
+f115r,Theriac Diatessaron Magna,25.0,2
+f115v,Theriac Magna (Triaca de Andromachus),62.1,9
+f115v,Mithridatium,66.7,9
+f115v,Diascordium,52.2,6
+f115v,Pillulae Cochiae,13.3,1
+f115v,Pillulae Aureae,23.5,2
+f115v,Unguentum Apostolorum,33.3,3
+f115v,Electuarium de Succo Rosarum,23.5,2
+f115v,Aurea Alexandrina,64.0,8
+f115v,Confectio Hamech,31.6,3
+f115v,Hiera Picra (Hiera de Galeno),33.3,3
+f115v,Trifera Magna,83.9,13
+f115v,Diamargariton (Electuario de Perlas),54.5,6
+f115v,Diaciminum (Electuario de Comino),50.0,5
+f115v,Unguentum Basilicon,13.3,1
+f115v,Unguentum Populeon,0,0
+f115v,Pillulae de Hiera cum Agarico,23.5,2
+f115v,Pillulae Fetidae (Pildoras Fetidas),42.1,4
+f115v,Requies Magna (Requies Nicolai),31.6,3
+f115v,Diacodion (Jarabe de Adormidera),12.5,1
+f115v,Dialtea (Ungueento de Altea),0,0
+f115v,Philonium Persicum,72.0,9
+f115v,Oximel Compositum,33.3,3
+f115v,Theriac Diatessaron,23.5,2
+f115v,Theodoricon Euporistum,69.2,9
+f115v,Diasatyrion,69.6,8
+f115v,Diarodon Abbatis,52.2,6
+f115v,Rosata Novella,40.0,4
+f115v,Letitia Galeni,54.5,6
+f115v,Trifera Saracenica,75.0,9
+f115v,Paulinum,66.7,8
+f115v,Electuarium Justinum,64.0,8
+f115v,Electuarium de Baccis Lauri,47.6,5
+f115v,Syrupus de Fumaria,12.5,1
+f115v,Confectio Anacardia,66.7,7
+f115v,Electuarium Diacostum,47.6,5
+f115v,Unguentum Marciaton,0,0
+f115v,Suffuf al-Tib (Polvo aromatico de Avicena),47.6,5
+f115v,Itrifal Ustukhudus (Electuario de Espliego),42.1,4
+f115v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),23.5,2
+f115v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),63.6,7
+f115v,Unguentum Abulcasis (de vulneribus),13.3,1
+f115v,Theriac Abulcasis (contra venenos),72.0,9
+f115v,Antidotum Hadriani,60.9,7
+f115v,Electuarium Ducis,42.1,4
+f115v,Benedicta Laxativa,33.3,3
+f115v,Diatragacanthi,12.5,1
+f115v,Dianucum (Electuario de Nueces),52.6,5
+f115v,Electuarium Diaspermaton,40.0,4
+f115v,Philonium Romanum,66.7,7
+f115v,Theriac Diatessaron Magna,42.1,4
+f116r,Theriac Magna (Triaca de Andromachus),51.9,7
+f116r,Mithridatium,56.0,7
+f116r,Diascordium,28.6,3
+f116r,Pillulae Cochiae,15.4,1
+f116r,Pillulae Aureae,13.3,1
+f116r,Unguentum Apostolorum,25.0,2
+f116r,Electuarium de Succo Rosarum,13.3,1
+f116r,Aurea Alexandrina,52.2,6
+f116r,Confectio Hamech,11.8,1
+f116r,Hiera Picra (Hiera de Galeno),25.0,2
+f116r,Trifera Magna,82.8,12
+f116r,Diamargariton (Electuario de Perlas),60.0,6
+f116r,Diaciminum (Electuario de Comino),33.3,3
+f116r,Unguentum Basilicon,0,0
+f116r,Unguentum Populeon,0,0
+f116r,Pillulae de Hiera cum Agarico,13.3,1
+f116r,Pillulae Fetidae (Pildoras Fetidas),35.3,3
+f116r,Requies Magna (Requies Nicolai),23.5,2
+f116r,Diacodion (Jarabe de Adormidera),0,0
+f116r,Dialtea (Ungueento de Altea),0,0
+f116r,Philonium Persicum,60.9,7
+f116r,Oximel Compositum,25.0,2
+f116r,Theriac Diatessaron,13.3,1
+f116r,Theodoricon Euporistum,66.7,8
+f116r,Diasatyrion,57.1,6
+f116r,Diarodon Abbatis,57.1,6
+f116r,Rosata Novella,33.3,3
+f116r,Letitia Galeni,50.0,5
+f116r,Trifera Saracenica,63.6,7
+f116r,Paulinum,54.5,6
+f116r,Electuarium Justinum,60.9,7
+f116r,Electuarium de Baccis Lauri,31.6,3
+f116r,Syrupus de Fumaria,0,0
+f116r,Confectio Anacardia,42.1,4
+f116r,Electuarium Diacostum,52.6,5
+f116r,Unguentum Marciaton,0,0
+f116r,Suffuf al-Tib (Polvo aromatico de Avicena),52.6,5
+f116r,Itrifal Ustukhudus (Electuario de Espliego),23.5,2
+f116r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),13.3,1
+f116r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),50.0,5
+f116r,Unguentum Abulcasis (de vulneribus),15.4,1
+f116r,Theriac Abulcasis (contra venenos),43.5,5
+f116r,Antidotum Hadriani,57.1,6
+f116r,Electuarium Ducis,23.5,2
+f116r,Benedicta Laxativa,25.0,2
+f116r,Diatragacanthi,0,0
+f116r,Dianucum (Electuario de Nueces),23.5,2
+f116r,Electuarium Diaspermaton,33.3,3
+f116r,Philonium Romanum,42.1,4
+f116r,Theriac Diatessaron Magna,23.5,2
+f116v,Theriac Magna (Triaca de Andromachus),0.0,0
+f116v,Mithridatium,0.0,0
+f116v,Diascordium,0.0,0
+f116v,Pillulae Cochiae,0.0,0
+f116v,Pillulae Aureae,0.0,0
+f116v,Unguentum Apostolorum,0.0,0
+f116v,Electuarium de Succo Rosarum,0.0,0
+f116v,Aurea Alexandrina,0.0,0
+f116v,Confectio Hamech,0.0,0
+f116v,Hiera Picra (Hiera de Galeno),0.0,0
+f116v,Trifera Magna,0.0,0
+f116v,Diamargariton (Electuario de Perlas),0.0,0
+f116v,Diaciminum (Electuario de Comino),0.0,0
+f116v,Unguentum Basilicon,0.0,0
+f116v,Unguentum Populeon,0.0,0
+f116v,Pillulae de Hiera cum Agarico,0.0,0
+f116v,Pillulae Fetidae (Pildoras Fetidas),0.0,0
+f116v,Requies Magna (Requies Nicolai),0.0,0
+f116v,Diacodion (Jarabe de Adormidera),0.0,0
+f116v,Dialtea (Ungueento de Altea),0.0,0
+f116v,Philonium Persicum,0.0,0
+f116v,Oximel Compositum,0.0,0
+f116v,Theriac Diatessaron,0.0,0
+f116v,Theodoricon Euporistum,0.0,0
+f116v,Diasatyrion,0.0,0
+f116v,Diarodon Abbatis,0.0,0
+f116v,Rosata Novella,0.0,0
+f116v,Letitia Galeni,0.0,0
+f116v,Trifera Saracenica,0.0,0
+f116v,Paulinum,0.0,0
+f116v,Electuarium Justinum,0.0,0
+f116v,Electuarium de Baccis Lauri,0.0,0
+f116v,Syrupus de Fumaria,0.0,0
+f116v,Confectio Anacardia,0.0,0
+f116v,Electuarium Diacostum,0.0,0
+f116v,Unguentum Marciaton,0.0,0
+f116v,Suffuf al-Tib (Polvo aromatico de Avicena),0.0,0
+f116v,Itrifal Ustukhudus (Electuario de Espliego),0.0,0
+f116v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),0.0,0
+f116v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),0.0,0
+f116v,Unguentum Abulcasis (de vulneribus),0.0,0
+f116v,Theriac Abulcasis (contra venenos),0.0,0
+f116v,Antidotum Hadriani,0.0,0
+f116v,Electuarium Ducis,0.0,0
+f116v,Benedicta Laxativa,0.0,0
+f116v,Diatragacanthi,0.0,0
+f116v,Dianucum (Electuario de Nueces),0.0,0
+f116v,Electuarium Diaspermaton,0.0,0
+f116v,Philonium Romanum,0.0,0
+f116v,Theriac Diatessaron Magna,0.0,0
+f87r,Theriac Magna (Triaca de Andromachus),11.8,1
+f87r,Mithridatium,13.3,1
+f87r,Diascordium,36.4,2
+f87r,Pillulae Cochiae,0,0
+f87r,Pillulae Aureae,40.0,1
+f87r,Unguentum Apostolorum,0,0
+f87r,Electuarium de Succo Rosarum,0,0
+f87r,Aurea Alexandrina,15.4,1
+f87r,Confectio Hamech,57.1,2
+f87r,Hiera Picra (Hiera de Galeno),33.3,1
+f87r,Trifera Magna,10.5,1
+f87r,Diamargariton (Electuario de Perlas),0,0
+f87r,Diaciminum (Electuario de Comino),25.0,1
+f87r,Unguentum Basilicon,0,0
+f87r,Unguentum Populeon,0,0
+f87r,Pillulae de Hiera cum Agarico,40.0,1
+f87r,Pillulae Fetidae (Pildoras Fetidas),0,0
+f87r,Requies Magna (Requies Nicolai),28.6,1
+f87r,Diacodion (Jarabe de Adormidera),0,0
+f87r,Dialtea (Ungueento de Altea),0,0
+f87r,Philonium Persicum,15.4,1
+f87r,Oximel Compositum,33.3,1
+f87r,Theriac Diatessaron,40.0,1
+f87r,Theodoricon Euporistum,14.3,1
+f87r,Diasatyrion,18.2,1
+f87r,Diarodon Abbatis,18.2,1
+f87r,Rosata Novella,25.0,1
+f87r,Letitia Galeni,20.0,1
+f87r,Trifera Saracenica,16.7,1
+f87r,Paulinum,16.7,1
+f87r,Electuarium Justinum,15.4,1
+f87r,Electuarium de Baccis Lauri,22.2,1
+f87r,Syrupus de Fumaria,0,0
+f87r,Confectio Anacardia,22.2,1
+f87r,Electuarium Diacostum,22.2,1
+f87r,Unguentum Marciaton,0,0
+f87r,Suffuf al-Tib (Polvo aromatico de Avicena),22.2,1
+f87r,Itrifal Ustukhudus (Electuario de Espliego),57.1,2
+f87r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),40.0,1
+f87r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),20.0,1
+f87r,Unguentum Abulcasis (de vulneribus),0,0
+f87r,Theriac Abulcasis (contra venenos),15.4,1
+f87r,Antidotum Hadriani,18.2,1
+f87r,Electuarium Ducis,28.6,1
+f87r,Benedicta Laxativa,0,0
+f87r,Diatragacanthi,0,0
+f87r,Dianucum (Electuario de Nueces),28.6,1
+f87r,Electuarium Diaspermaton,25.0,1
+f87r,Philonium Romanum,22.2,1
+f87r,Theriac Diatessaron Magna,28.6,1
+f87v,Theriac Magna (Triaca de Andromachus),40.0,4
+f87v,Mithridatium,33.3,3
+f87v,Diascordium,14.3,1
+f87v,Pillulae Cochiae,33.3,1
+f87v,Pillulae Aureae,0,0
+f87v,Unguentum Apostolorum,88.9,4
+f87v,Electuarium de Succo Rosarum,0,0
+f87v,Aurea Alexandrina,25.0,2
+f87v,Confectio Hamech,0,0
+f87v,Hiera Picra (Hiera de Galeno),22.2,1
+f87v,Trifera Magna,36.4,4
+f87v,Diamargariton (Electuario de Perlas),15.4,1
+f87v,Diaciminum (Electuario de Comino),0,0
+f87v,Unguentum Basilicon,33.3,1
+f87v,Unguentum Populeon,0,0
+f87v,Pillulae de Hiera cum Agarico,0,0
+f87v,Pillulae Fetidae (Pildoras Fetidas),80.0,4
+f87v,Requies Magna (Requies Nicolai),0,0
+f87v,Diacodion (Jarabe de Adormidera),0,0
+f87v,Dialtea (Ungueento de Altea),0,0
+f87v,Philonium Persicum,25.0,2
+f87v,Oximel Compositum,0,0
+f87v,Theriac Diatessaron,25.0,1
+f87v,Theodoricon Euporistum,23.5,2
+f87v,Diasatyrion,0,0
+f87v,Diarodon Abbatis,14.3,1
+f87v,Rosata Novella,0,0
+f87v,Letitia Galeni,0,0
+f87v,Trifera Saracenica,26.7,2
+f87v,Paulinum,26.7,2
+f87v,Electuarium Justinum,25.0,2
+f87v,Electuarium de Baccis Lauri,16.7,1
+f87v,Syrupus de Fumaria,0,0
+f87v,Confectio Anacardia,0,0
+f87v,Electuarium Diacostum,16.7,1
+f87v,Unguentum Marciaton,0,0
+f87v,Suffuf al-Tib (Polvo aromatico de Avicena),16.7,1
+f87v,Itrifal Ustukhudus (Electuario de Espliego),0,0
+f87v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),25.0,1
+f87v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),15.4,1
+f87v,Unguentum Abulcasis (de vulneribus),33.3,1
+f87v,Theriac Abulcasis (contra venenos),37.5,3
+f87v,Antidotum Hadriani,28.6,2
+f87v,Electuarium Ducis,0,0
+f87v,Benedicta Laxativa,0,0
+f87v,Diatragacanthi,0,0
+f87v,Dianucum (Electuario de Nueces),0,0
+f87v,Electuarium Diaspermaton,0,0
+f87v,Philonium Romanum,16.7,1
+f87v,Theriac Diatessaron Magna,20.0,1
+f88r,Theriac Magna (Triaca de Andromachus),64.3,9
+f88r,Mithridatium,69.2,9
+f88r,Diascordium,36.4,4
+f88r,Pillulae Cochiae,0,0
+f88r,Pillulae Aureae,12.5,1
+f88r,Unguentum Apostolorum,23.5,2
+f88r,Electuarium de Succo Rosarum,12.5,1
+f88r,Aurea Alexandrina,58.3,7
+f88r,Confectio Hamech,22.2,2
+f88r,Hiera Picra (Hiera de Galeno),35.3,3
+f88r,Trifera Magna,80.0,12
+f88r,Diamargariton (Electuario de Perlas),57.1,6
+f88r,Diaciminum (Electuario de Comino),42.1,4
+f88r,Unguentum Basilicon,14.3,1
+f88r,Unguentum Populeon,0,0
+f88r,Pillulae de Hiera cum Agarico,12.5,1
+f88r,Pillulae Fetidae (Pildoras Fetidas),22.2,2
+f88r,Requies Magna (Requies Nicolai),22.2,2
+f88r,Diacodion (Jarabe de Adormidera),0,0
+f88r,Dialtea (Ungueento de Altea),0,0
+f88r,Philonium Persicum,58.3,7
+f88r,Oximel Compositum,47.1,4
+f88r,Theriac Diatessaron,12.5,1
+f88r,Theodoricon Euporistum,64.0,8
+f88r,Diasatyrion,63.6,7
+f88r,Diarodon Abbatis,54.5,6
+f88r,Rosata Novella,31.6,3
+f88r,Letitia Galeni,47.6,5
+f88r,Trifera Saracenica,60.9,7
+f88r,Paulinum,60.9,7
+f88r,Electuarium Justinum,66.7,8
+f88r,Electuarium de Baccis Lauri,40.0,4
+f88r,Syrupus de Fumaria,0,0
+f88r,Confectio Anacardia,50.0,5
+f88r,Electuarium Diacostum,50.0,5
+f88r,Unguentum Marciaton,0,0
+f88r,Suffuf al-Tib (Polvo aromatico de Avicena),50.0,5
+f88r,Itrifal Ustukhudus (Electuario de Espliego),33.3,3
+f88r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),12.5,1
+f88r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),66.7,7
+f88r,Unguentum Abulcasis (de vulneribus),0,0
+f88r,Theriac Abulcasis (contra venenos),58.3,7
+f88r,Antidotum Hadriani,45.5,5
+f88r,Electuarium Ducis,33.3,3
+f88r,Benedicta Laxativa,23.5,2
+f88r,Diatragacanthi,0,0
+f88r,Dianucum (Electuario de Nueces),33.3,3
+f88r,Electuarium Diaspermaton,42.1,4
+f88r,Philonium Romanum,50.0,5
+f88r,Theriac Diatessaron Magna,11.1,1
+f88v,Theriac Magna (Triaca de Andromachus),72.0,9
+f88v,Mithridatium,78.3,9
+f88v,Diascordium,52.6,5
+f88v,Pillulae Cochiae,0,0
+f88v,Pillulae Aureae,15.4,1
+f88v,Unguentum Apostolorum,28.6,2
+f88v,Electuarium de Succo Rosarum,15.4,1
+f88v,Aurea Alexandrina,76.2,8
+f88v,Confectio Hamech,26.7,2
+f88v,Hiera Picra (Hiera de Galeno),42.9,3
+f88v,Trifera Magna,66.7,9
+f88v,Diamargariton (Electuario de Perlas),33.3,3
+f88v,Diaciminum (Electuario de Comino),50.0,4
+f88v,Unguentum Basilicon,18.2,1
+f88v,Unguentum Populeon,0,0
+f88v,Pillulae de Hiera cum Agarico,15.4,1
+f88v,Pillulae Fetidae (Pildoras Fetidas),40.0,3
+f88v,Requies Magna (Requies Nicolai),13.3,1
+f88v,Diacodion (Jarabe de Adormidera),0,0
+f88v,Dialtea (Ungueento de Altea),0,0
+f88v,Philonium Persicum,85.7,9
+f88v,Oximel Compositum,42.9,3
+f88v,Theriac Diatessaron,30.8,2
+f88v,Theodoricon Euporistum,81.8,9
+f88v,Diasatyrion,52.6,5
+f88v,Diarodon Abbatis,31.6,3
+f88v,Rosata Novella,12.5,1
+f88v,Letitia Galeni,22.2,2
+f88v,Trifera Saracenica,90.0,9
+f88v,Paulinum,80.0,8
+f88v,Electuarium Justinum,76.2,8
+f88v,Electuarium de Baccis Lauri,47.1,4
+f88v,Syrupus de Fumaria,0,0
+f88v,Confectio Anacardia,70.6,6
+f88v,Electuarium Diacostum,58.8,5
+f88v,Unguentum Marciaton,0,0
+f88v,Suffuf al-Tib (Polvo aromatico de Avicena),35.3,3
+f88v,Itrifal Ustukhudus (Electuario de Espliego),40.0,3
+f88v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),30.8,2
+f88v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),77.8,7
+f88v,Unguentum Abulcasis (de vulneribus),18.2,1
+f88v,Theriac Abulcasis (contra venenos),76.2,8
+f88v,Antidotum Hadriani,73.7,7
+f88v,Electuarium Ducis,40.0,3
+f88v,Benedicta Laxativa,28.6,2
+f88v,Diatragacanthi,0,0
+f88v,Dianucum (Electuario de Nueces),53.3,4
+f88v,Electuarium Diaspermaton,37.5,3
+f88v,Philonium Romanum,70.6,6
+f88v,Theriac Diatessaron Magna,40.0,3
+f89r,Theriac Magna (Triaca de Andromachus),78.6,11
+f89r,Mithridatium,84.6,11
+f89r,Diascordium,45.5,5
+f89r,Pillulae Cochiae,14.3,1
+f89r,Pillulae Aureae,12.5,1
+f89r,Unguentum Apostolorum,35.3,3
+f89r,Electuarium de Succo Rosarum,12.5,1
+f89r,Aurea Alexandrina,75.0,9
+f89r,Confectio Hamech,22.2,2
+f89r,Hiera Picra (Hiera de Galeno),35.3,3
+f89r,Trifera Magna,80.0,12
+f89r,Diamargariton (Electuario de Perlas),28.6,3
+f89r,Diaciminum (Electuario de Comino),42.1,4
+f89r,Unguentum Basilicon,0,0
+f89r,Unguentum Populeon,0,0
+f89r,Pillulae de Hiera cum Agarico,12.5,1
+f89r,Pillulae Fetidae (Pildoras Fetidas),44.4,4
+f89r,Requies Magna (Requies Nicolai),11.1,1
+f89r,Diacodion (Jarabe de Adormidera),0,0
+f89r,Dialtea (Ungueento de Altea),0,0
+f89r,Philonium Persicum,83.3,10
+f89r,Oximel Compositum,47.1,4
+f89r,Theriac Diatessaron,25.0,2
+f89r,Theodoricon Euporistum,80.0,10
+f89r,Diasatyrion,45.5,5
+f89r,Diarodon Abbatis,27.3,3
+f89r,Rosata Novella,10.5,1
+f89r,Letitia Galeni,19.0,2
+f89r,Trifera Saracenica,78.3,9
+f89r,Paulinum,78.3,9
+f89r,Electuarium Justinum,75.0,9
+f89r,Electuarium de Baccis Lauri,50.0,5
+f89r,Syrupus de Fumaria,0,0
+f89r,Confectio Anacardia,60.0,6
+f89r,Electuarium Diacostum,50.0,5
+f89r,Unguentum Marciaton,0,0
+f89r,Suffuf al-Tib (Polvo aromatico de Avicena),30.0,3
+f89r,Itrifal Ustukhudus (Electuario de Espliego),33.3,3
+f89r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),25.0,2
+f89r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),66.7,7
+f89r,Unguentum Abulcasis (de vulneribus),14.3,1
+f89r,Theriac Abulcasis (contra venenos),66.7,8
+f89r,Antidotum Hadriani,63.6,7
+f89r,Electuarium Ducis,33.3,3
+f89r,Benedicta Laxativa,23.5,2
+f89r,Diatragacanthi,0,0
+f89r,Dianucum (Electuario de Nueces),44.4,4
+f89r,Electuarium Diaspermaton,42.1,4
+f89r,Philonium Romanum,60.0,6
+f89r,Theriac Diatessaron Magna,33.3,3
+f89v,Theriac Magna (Triaca de Andromachus),72.0,9
+f89v,Mithridatium,78.3,9
+f89v,Diascordium,52.6,5
+f89v,Pillulae Cochiae,0,0
+f89v,Pillulae Aureae,15.4,1
+f89v,Unguentum Apostolorum,28.6,2
+f89v,Electuarium de Succo Rosarum,15.4,1
+f89v,Aurea Alexandrina,76.2,8
+f89v,Confectio Hamech,26.7,2
+f89v,Hiera Picra (Hiera de Galeno),42.9,3
+f89v,Trifera Magna,66.7,9
+f89v,Diamargariton (Electuario de Perlas),33.3,3
+f89v,Diaciminum (Electuario de Comino),50.0,4
+f89v,Unguentum Basilicon,18.2,1
+f89v,Unguentum Populeon,0,0
+f89v,Pillulae de Hiera cum Agarico,15.4,1
+f89v,Pillulae Fetidae (Pildoras Fetidas),40.0,3
+f89v,Requies Magna (Requies Nicolai),13.3,1
+f89v,Diacodion (Jarabe de Adormidera),0,0
+f89v,Dialtea (Ungueento de Altea),0,0
+f89v,Philonium Persicum,85.7,9
+f89v,Oximel Compositum,42.9,3
+f89v,Theriac Diatessaron,30.8,2
+f89v,Theodoricon Euporistum,81.8,9
+f89v,Diasatyrion,52.6,5
+f89v,Diarodon Abbatis,31.6,3
+f89v,Rosata Novella,12.5,1
+f89v,Letitia Galeni,22.2,2
+f89v,Trifera Saracenica,90.0,9
+f89v,Paulinum,80.0,8
+f89v,Electuarium Justinum,76.2,8
+f89v,Electuarium de Baccis Lauri,47.1,4
+f89v,Syrupus de Fumaria,0,0
+f89v,Confectio Anacardia,70.6,6
+f89v,Electuarium Diacostum,58.8,5
+f89v,Unguentum Marciaton,0,0
+f89v,Suffuf al-Tib (Polvo aromatico de Avicena),35.3,3
+f89v,Itrifal Ustukhudus (Electuario de Espliego),40.0,3
+f89v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),30.8,2
+f89v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),77.8,7
+f89v,Unguentum Abulcasis (de vulneribus),18.2,1
+f89v,Theriac Abulcasis (contra venenos),76.2,8
+f89v,Antidotum Hadriani,73.7,7
+f89v,Electuarium Ducis,40.0,3
+f89v,Benedicta Laxativa,28.6,2
+f89v,Diatragacanthi,0,0
+f89v,Dianucum (Electuario de Nueces),53.3,4
+f89v,Electuarium Diaspermaton,37.5,3
+f89v,Philonium Romanum,70.6,6
+f89v,Theriac Diatessaron Magna,40.0,3
+f90r,Theriac Magna (Triaca de Andromachus),54.5,6
+f90r,Mithridatium,60.0,6
+f90r,Diascordium,50.0,4
+f90r,Pillulae Cochiae,25.0,1
+f90r,Pillulae Aureae,0,0
+f90r,Unguentum Apostolorum,36.4,2
+f90r,Electuarium de Succo Rosarum,20.0,1
+f90r,Aurea Alexandrina,55.6,5
+f90r,Confectio Hamech,33.3,2
+f90r,Hiera Picra (Hiera de Galeno),18.2,1
+f90r,Trifera Magna,50.0,6
+f90r,Diamargariton (Electuario de Perlas),0,0
+f90r,Diaciminum (Electuario de Comino),46.2,3
+f90r,Unguentum Basilicon,0,0
+f90r,Unguentum Populeon,0,0
+f90r,Pillulae de Hiera cum Agarico,0,0
+f90r,Pillulae Fetidae (Pildoras Fetidas),33.3,2
+f90r,Requies Magna (Requies Nicolai),0,0
+f90r,Diacodion (Jarabe de Adormidera),0,0
+f90r,Dialtea (Ungueento de Altea),0,0
+f90r,Philonium Persicum,44.4,4
+f90r,Oximel Compositum,72.7,4
+f90r,Theriac Diatessaron,60.0,3
+f90r,Theodoricon Euporistum,52.6,5
+f90r,Diasatyrion,37.5,3
+f90r,Diarodon Abbatis,0,0
+f90r,Rosata Novella,0,0
+f90r,Letitia Galeni,0,0
+f90r,Trifera Saracenica,47.1,4
+f90r,Paulinum,58.8,5
+f90r,Electuarium Justinum,55.6,5
+f90r,Electuarium de Baccis Lauri,85.7,6
+f90r,Syrupus de Fumaria,0,0
+f90r,Confectio Anacardia,42.9,3
+f90r,Electuarium Diacostum,42.9,3
+f90r,Unguentum Marciaton,0,0
+f90r,Suffuf al-Tib (Polvo aromatico de Avicena),0,0
+f90r,Itrifal Ustukhudus (Electuario de Espliego),33.3,2
+f90r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),60.0,3
+f90r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),40.0,3
+f90r,Unguentum Abulcasis (de vulneribus),25.0,1
+f90r,Theriac Abulcasis (contra venenos),55.6,5
+f90r,Antidotum Hadriani,62.5,5
+f90r,Electuarium Ducis,50.0,3
+f90r,Benedicta Laxativa,18.2,1
+f90r,Diatragacanthi,0,0
+f90r,Dianucum (Electuario de Nueces),33.3,2
+f90r,Electuarium Diaspermaton,61.5,4
+f90r,Philonium Romanum,57.1,4
+f90r,Theriac Diatessaron Magna,50.0,3
+f90v,Theriac Magna (Triaca de Andromachus),69.6,8
+f90v,Mithridatium,66.7,7
+f90v,Diascordium,58.8,5
+f90v,Pillulae Cochiae,0,0
+f90v,Pillulae Aureae,36.4,2
+f90v,Unguentum Apostolorum,33.3,2
+f90v,Electuarium de Succo Rosarum,36.4,2
+f90v,Aurea Alexandrina,63.2,6
+f90v,Confectio Hamech,46.2,3
+f90v,Hiera Picra (Hiera de Galeno),66.7,4
+f90v,Trifera Magna,48.0,6
+f90v,Diamargariton (Electuario de Perlas),37.5,3
+f90v,Diaciminum (Electuario de Comino),42.9,3
+f90v,Unguentum Basilicon,22.2,1
+f90v,Unguentum Populeon,0,0
+f90v,Pillulae de Hiera cum Agarico,36.4,2
+f90v,Pillulae Fetidae (Pildoras Fetidas),30.8,2
+f90v,Requies Magna (Requies Nicolai),30.8,2
+f90v,Diacodion (Jarabe de Adormidera),20.0,1
+f90v,Dialtea (Ungueento de Altea),0,0
+f90v,Philonium Persicum,63.2,6
+f90v,Oximel Compositum,33.3,2
+f90v,Theriac Diatessaron,54.5,3
+f90v,Theodoricon Euporistum,60.0,6
+f90v,Diasatyrion,47.1,4
+f90v,Diarodon Abbatis,35.3,3
+f90v,Rosata Novella,28.6,2
+f90v,Letitia Galeni,25.0,2
+f90v,Trifera Saracenica,66.7,6
+f90v,Paulinum,66.7,6
+f90v,Electuarium Justinum,63.2,6
+f90v,Electuarium de Baccis Lauri,66.7,5
+f90v,Syrupus de Fumaria,20.0,1
+f90v,Confectio Anacardia,53.3,4
+f90v,Electuarium Diacostum,53.3,4
+f90v,Unguentum Marciaton,0,0
+f90v,Suffuf al-Tib (Polvo aromatico de Avicena),40.0,3
+f90v,Itrifal Ustukhudus (Electuario de Espliego),61.5,4
+f90v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),54.5,3
+f90v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),62.5,5
+f90v,Unguentum Abulcasis (de vulneribus),22.2,1
+f90v,Theriac Abulcasis (contra venenos),73.7,7
+f90v,Antidotum Hadriani,82.4,7
+f90v,Electuarium Ducis,46.2,3
+f90v,Benedicta Laxativa,50.0,3
+f90v,Diatragacanthi,20.0,1
+f90v,Dianucum (Electuario de Nueces),46.2,3
+f90v,Electuarium Diaspermaton,42.9,3
+f90v,Philonium Romanum,66.7,5
+f90v,Theriac Diatessaron Magna,61.5,4
+f93r,Theriac Magna (Triaca de Andromachus),63.6,7
+f93r,Mithridatium,60.0,6
+f93r,Diascordium,50.0,4
+f93r,Pillulae Cochiae,0,0
+f93r,Pillulae Aureae,0,0
+f93r,Unguentum Apostolorum,18.2,1
+f93r,Electuarium de Succo Rosarum,20.0,1
+f93r,Aurea Alexandrina,66.7,6
+f93r,Confectio Hamech,33.3,2
+f93r,Hiera Picra (Hiera de Galeno),36.4,2
+f93r,Trifera Magna,50.0,6
+f93r,Diamargariton (Electuario de Perlas),13.3,1
+f93r,Diaciminum (Electuario de Comino),46.2,3
+f93r,Unguentum Basilicon,0,0
+f93r,Unguentum Populeon,0,0
+f93r,Pillulae de Hiera cum Agarico,0,0
+f93r,Pillulae Fetidae (Pildoras Fetidas),33.3,2
+f93r,Requies Magna (Requies Nicolai),0,0
+f93r,Diacodion (Jarabe de Adormidera),0,0
+f93r,Dialtea (Ungueento de Altea),0,0
+f93r,Philonium Persicum,77.8,7
+f93r,Oximel Compositum,36.4,2
+f93r,Theriac Diatessaron,40.0,2
+f93r,Theodoricon Euporistum,63.2,6
+f93r,Diasatyrion,25.0,2
+f93r,Diarodon Abbatis,12.5,1
+f93r,Rosata Novella,0,0
+f93r,Letitia Galeni,0,0
+f93r,Trifera Saracenica,70.6,6
+f93r,Paulinum,70.6,6
+f93r,Electuarium Justinum,55.6,5
+f93r,Electuarium de Baccis Lauri,42.9,3
+f93r,Syrupus de Fumaria,0,0
+f93r,Confectio Anacardia,57.1,4
+f93r,Electuarium Diacostum,42.9,3
+f93r,Unguentum Marciaton,0,0
+f93r,Suffuf al-Tib (Polvo aromatico de Avicena),14.3,1
+f93r,Itrifal Ustukhudus (Electuario de Espliego),33.3,2
+f93r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),40.0,2
+f93r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),53.3,4
+f93r,Unguentum Abulcasis (de vulneribus),25.0,1
+f93r,Theriac Abulcasis (contra venenos),55.6,5
+f93r,Antidotum Hadriani,62.5,5
+f93r,Electuarium Ducis,33.3,2
+f93r,Benedicta Laxativa,18.2,1
+f93r,Diatragacanthi,0,0
+f93r,Dianucum (Electuario de Nueces),66.7,4
+f93r,Electuarium Diaspermaton,30.8,2
+f93r,Philonium Romanum,57.1,4
+f93r,Theriac Diatessaron Magna,50.0,3
+f93v,Theriac Magna (Triaca de Andromachus),60.9,7
+f93v,Mithridatium,47.6,5
+f93v,Diascordium,58.8,5
+f93v,Pillulae Cochiae,0,0
+f93v,Pillulae Aureae,36.4,2
+f93v,Unguentum Apostolorum,16.7,1
+f93v,Electuarium de Succo Rosarum,0,0
+f93v,Aurea Alexandrina,52.6,5
+f93v,Confectio Hamech,30.8,2
+f93v,Hiera Picra (Hiera de Galeno),50.0,3
+f93v,Trifera Magna,40.0,5
+f93v,Diamargariton (Electuario de Perlas),25.0,2
+f93v,Diaciminum (Electuario de Comino),28.6,2
+f93v,Unguentum Basilicon,22.2,1
+f93v,Unguentum Populeon,0,0
+f93v,Pillulae de Hiera cum Agarico,36.4,2
+f93v,Pillulae Fetidae (Pildoras Fetidas),30.8,2
+f93v,Requies Magna (Requies Nicolai),30.8,2
+f93v,Diacodion (Jarabe de Adormidera),0,0
+f93v,Dialtea (Ungueento de Altea),0,0
+f93v,Philonium Persicum,63.2,6
+f93v,Oximel Compositum,16.7,1
+f93v,Theriac Diatessaron,18.2,1
+f93v,Theodoricon Euporistum,50.0,5
+f93v,Diasatyrion,23.5,2
+f93v,Diarodon Abbatis,35.3,3
+f93v,Rosata Novella,28.6,2
+f93v,Letitia Galeni,25.0,2
+f93v,Trifera Saracenica,55.6,5
+f93v,Paulinum,55.6,5
+f93v,Electuarium Justinum,42.1,4
+f93v,Electuarium de Baccis Lauri,13.3,1
+f93v,Syrupus de Fumaria,0,0
+f93v,Confectio Anacardia,53.3,4
+f93v,Electuarium Diacostum,26.7,2
+f93v,Unguentum Marciaton,0,0
+f93v,Suffuf al-Tib (Polvo aromatico de Avicena),40.0,3
+f93v,Itrifal Ustukhudus (Electuario de Espliego),46.2,3
+f93v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),18.2,1
+f93v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),50.0,4
+f93v,Unguentum Abulcasis (de vulneribus),0,0
+f93v,Theriac Abulcasis (contra venenos),52.6,5
+f93v,Antidotum Hadriani,47.1,4
+f93v,Electuarium Ducis,15.4,1
+f93v,Benedicta Laxativa,16.7,1
+f93v,Diatragacanthi,0,0
+f93v,Dianucum (Electuario de Nueces),46.2,3
+f93v,Electuarium Diaspermaton,14.3,1
+f93v,Philonium Romanum,40.0,3
+f93v,Theriac Diatessaron Magna,30.8,2
+f94r,Theriac Magna (Triaca de Andromachus),50.0,5
+f94r,Mithridatium,55.6,5
+f94r,Diascordium,42.9,3
+f94r,Pillulae Cochiae,0,0
+f94r,Pillulae Aureae,0,0
+f94r,Unguentum Apostolorum,22.2,1
+f94r,Electuarium de Succo Rosarum,25.0,1
+f94r,Aurea Alexandrina,50.0,4
+f94r,Confectio Hamech,20.0,1
+f94r,Hiera Picra (Hiera de Galeno),0,0
+f94r,Trifera Magna,36.4,4
+f94r,Diamargariton (Electuario de Perlas),0,0
+f94r,Diaciminum (Electuario de Comino),36.4,2
+f94r,Unguentum Basilicon,0,0
+f94r,Unguentum Populeon,0,0
+f94r,Pillulae de Hiera cum Agarico,0,0
+f94r,Pillulae Fetidae (Pildoras Fetidas),20.0,1
+f94r,Requies Magna (Requies Nicolai),0,0
+f94r,Diacodion (Jarabe de Adormidera),0,0
+f94r,Dialtea (Ungueento de Altea),0,0
+f94r,Philonium Persicum,37.5,3
+f94r,Oximel Compositum,66.7,3
+f94r,Theriac Diatessaron,50.0,2
+f94r,Theodoricon Euporistum,47.1,4
+f94r,Diasatyrion,28.6,2
+f94r,Diarodon Abbatis,0,0
+f94r,Rosata Novella,0,0
+f94r,Letitia Galeni,0,0
+f94r,Trifera Saracenica,40.0,3
+f94r,Paulinum,53.3,4
+f94r,Electuarium Justinum,50.0,4
+f94r,Electuarium de Baccis Lauri,83.3,5
+f94r,Syrupus de Fumaria,0,0
+f94r,Confectio Anacardia,33.3,2
+f94r,Electuarium Diacostum,33.3,2
+f94r,Unguentum Marciaton,0,0
+f94r,Suffuf al-Tib (Polvo aromatico de Avicena),0,0
+f94r,Itrifal Ustukhudus (Electuario de Espliego),20.0,1
+f94r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),50.0,2
+f94r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),30.8,2
+f94r,Unguentum Abulcasis (de vulneribus),33.3,1
+f94r,Theriac Abulcasis (contra venenos),50.0,4
+f94r,Antidotum Hadriani,57.1,4
+f94r,Electuarium Ducis,40.0,2
+f94r,Benedicta Laxativa,22.2,1
+f94r,Diatragacanthi,0,0
+f94r,Dianucum (Electuario de Nueces),20.0,1
+f94r,Electuarium Diaspermaton,54.5,3
+f94r,Philonium Romanum,50.0,3
+f94r,Theriac Diatessaron Magna,40.0,2
+f94v,Theriac Magna (Triaca de Andromachus),63.6,7
+f94v,Mithridatium,70.0,7
+f94v,Diascordium,62.5,5
+f94v,Pillulae Cochiae,0,0
+f94v,Pillulae Aureae,20.0,1
+f94v,Unguentum Apostolorum,18.2,1
+f94v,Electuarium de Succo Rosarum,20.0,1
+f94v,Aurea Alexandrina,66.7,6
+f94v,Confectio Hamech,33.3,2
+f94v,Hiera Picra (Hiera de Galeno),36.4,2
+f94v,Trifera Magna,50.0,6
+f94v,Diamargariton (Electuario de Perlas),13.3,1
+f94v,Diaciminum (Electuario de Comino),46.2,3
+f94v,Unguentum Basilicon,0,0
+f94v,Unguentum Populeon,0,0
+f94v,Pillulae de Hiera cum Agarico,20.0,1
+f94v,Pillulae Fetidae (Pildoras Fetidas),33.3,2
+f94v,Requies Magna (Requies Nicolai),16.7,1
+f94v,Diacodion (Jarabe de Adormidera),0,0
+f94v,Dialtea (Ungueento de Altea),0,0
+f94v,Philonium Persicum,66.7,6
+f94v,Oximel Compositum,54.5,3
+f94v,Theriac Diatessaron,60.0,3
+f94v,Theodoricon Euporistum,63.2,6
+f94v,Diasatyrion,50.0,4
+f94v,Diarodon Abbatis,12.5,1
+f94v,Rosata Novella,15.4,1
+f94v,Letitia Galeni,13.3,1
+f94v,Trifera Saracenica,70.6,6
+f94v,Paulinum,70.6,6
+f94v,Electuarium Justinum,55.6,5
+f94v,Electuarium de Baccis Lauri,71.4,5
+f94v,Syrupus de Fumaria,0,0
+f94v,Confectio Anacardia,71.4,5
+f94v,Electuarium Diacostum,42.9,3
+f94v,Unguentum Marciaton,0,0
+f94v,Suffuf al-Tib (Polvo aromatico de Avicena),14.3,1
+f94v,Itrifal Ustukhudus (Electuario de Espliego),50.0,3
+f94v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),60.0,3
+f94v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),53.3,4
+f94v,Unguentum Abulcasis (de vulneribus),25.0,1
+f94v,Theriac Abulcasis (contra venenos),77.8,7
+f94v,Antidotum Hadriani,87.5,7
+f94v,Electuarium Ducis,50.0,3
+f94v,Benedicta Laxativa,36.4,2
+f94v,Diatragacanthi,0,0
+f94v,Dianucum (Electuario de Nueces),50.0,3
+f94v,Electuarium Diaspermaton,46.2,3
+f94v,Philonium Romanum,71.4,5
+f94v,Theriac Diatessaron Magna,66.7,4
+f95r,Theriac Magna (Triaca de Andromachus),72.0,9
+f95r,Mithridatium,69.6,8
+f95r,Diascordium,42.1,4
+f95r,Pillulae Cochiae,18.2,1
+f95r,Pillulae Aureae,15.4,1
+f95r,Unguentum Apostolorum,42.9,3
+f95r,Electuarium de Succo Rosarum,15.4,1
+f95r,Aurea Alexandrina,66.7,7
+f95r,Confectio Hamech,26.7,2
+f95r,Hiera Picra (Hiera de Galeno),28.6,2
+f95r,Trifera Magna,74.1,10
+f95r,Diamargariton (Electuario de Perlas),11.1,1
+f95r,Diaciminum (Electuario de Comino),62.5,5
+f95r,Unguentum Basilicon,0,0
+f95r,Unguentum Populeon,0,0
+f95r,Pillulae de Hiera cum Agarico,15.4,1
+f95r,Pillulae Fetidae (Pildoras Fetidas),53.3,4
+f95r,Requies Magna (Requies Nicolai),13.3,1
+f95r,Diacodion (Jarabe de Adormidera),0,0
+f95r,Dialtea (Ungueento de Altea),0,0
+f95r,Philonium Persicum,66.7,7
+f95r,Oximel Compositum,42.9,3
+f95r,Theriac Diatessaron,30.8,2
+f95r,Theodoricon Euporistum,72.7,8
+f95r,Diasatyrion,42.1,4
+f95r,Diarodon Abbatis,10.5,1
+f95r,Rosata Novella,12.5,1
+f95r,Letitia Galeni,11.1,1
+f95r,Trifera Saracenica,70.0,7
+f95r,Paulinum,70.0,7
+f95r,Electuarium Justinum,66.7,7
+f95r,Electuarium de Baccis Lauri,47.1,4
+f95r,Syrupus de Fumaria,0,0
+f95r,Confectio Anacardia,70.6,6
+f95r,Electuarium Diacostum,47.1,4
+f95r,Unguentum Marciaton,0,0
+f95r,Suffuf al-Tib (Polvo aromatico de Avicena),11.8,1
+f95r,Itrifal Ustukhudus (Electuario de Espliego),40.0,3
+f95r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),30.8,2
+f95r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),55.6,5
+f95r,Unguentum Abulcasis (de vulneribus),18.2,1
+f95r,Theriac Abulcasis (contra venenos),76.2,8
+f95r,Antidotum Hadriani,63.2,6
+f95r,Electuarium Ducis,40.0,3
+f95r,Benedicta Laxativa,28.6,2
+f95r,Diatragacanthi,0,0
+f95r,Dianucum (Electuario de Nueces),53.3,4
+f95r,Electuarium Diaspermaton,50.0,4
+f95r,Philonium Romanum,70.6,6
+f95r,Theriac Diatessaron Magna,40.0,3
+f95v,Theriac Magna (Triaca de Andromachus),57.1,6
+f95v,Mithridatium,52.6,5
+f95v,Diascordium,53.3,4
+f95v,Pillulae Cochiae,0,0
+f95v,Pillulae Aureae,22.2,1
+f95v,Unguentum Apostolorum,0,0
+f95v,Electuarium de Succo Rosarum,22.2,1
+f95v,Aurea Alexandrina,58.8,5
+f95v,Confectio Hamech,18.2,1
+f95v,Hiera Picra (Hiera de Galeno),40.0,2
+f95v,Trifera Magna,43.5,5
+f95v,Diamargariton (Electuario de Perlas),28.6,2
+f95v,Diaciminum (Electuario de Comino),33.3,2
+f95v,Unguentum Basilicon,0,0
+f95v,Unguentum Populeon,0,0
+f95v,Pillulae de Hiera cum Agarico,22.2,1
+f95v,Pillulae Fetidae (Pildoras Fetidas),18.2,1
+f95v,Requies Magna (Requies Nicolai),18.2,1
+f95v,Diacodion (Jarabe de Adormidera),0,0
+f95v,Dialtea (Ungueento de Altea),0,0
+f95v,Philonium Persicum,70.6,6
+f95v,Oximel Compositum,40.0,2
+f95v,Theriac Diatessaron,0,0
+f95v,Theodoricon Euporistum,55.6,5
+f95v,Diasatyrion,40.0,3
+f95v,Diarodon Abbatis,26.7,2
+f95v,Rosata Novella,16.7,1
+f95v,Letitia Galeni,14.3,1
+f95v,Trifera Saracenica,62.5,5
+f95v,Paulinum,62.5,5
+f95v,Electuarium Justinum,47.1,4
+f95v,Electuarium de Baccis Lauri,30.8,2
+f95v,Syrupus de Fumaria,0,0
+f95v,Confectio Anacardia,61.5,4
+f95v,Electuarium Diacostum,46.2,3
+f95v,Unguentum Marciaton,0,0
+f95v,Suffuf al-Tib (Polvo aromatico de Avicena),30.8,2
+f95v,Itrifal Ustukhudus (Electuario de Espliego),36.4,2
+f95v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),0,0
+f95v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),57.1,4
+f95v,Unguentum Abulcasis (de vulneribus),0,0
+f95v,Theriac Abulcasis (contra venenos),47.1,4
+f95v,Antidotum Hadriani,66.7,5
+f95v,Electuarium Ducis,36.4,2
+f95v,Benedicta Laxativa,40.0,2
+f95v,Diatragacanthi,0,0
+f95v,Dianucum (Electuario de Nueces),36.4,2
+f95v,Electuarium Diaspermaton,33.3,2
+f95v,Philonium Romanum,46.2,3
+f95v,Theriac Diatessaron Magna,18.2,1
+f96r,Theriac Magna (Triaca de Andromachus),54.5,6
+f96r,Mithridatium,50.0,5
+f96r,Diascordium,50.0,4
+f96r,Pillulae Cochiae,0,0
+f96r,Pillulae Aureae,20.0,1
+f96r,Unguentum Apostolorum,18.2,1
+f96r,Electuarium de Succo Rosarum,0,0
+f96r,Aurea Alexandrina,44.4,4
+f96r,Confectio Hamech,16.7,1
+f96r,Hiera Picra (Hiera de Galeno),36.4,2
+f96r,Trifera Magna,41.7,5
+f96r,Diamargariton (Electuario de Perlas),26.7,2
+f96r,Diaciminum (Electuario de Comino),30.8,2
+f96r,Unguentum Basilicon,25.0,1
+f96r,Unguentum Populeon,0,0
+f96r,Pillulae de Hiera cum Agarico,20.0,1
+f96r,Pillulae Fetidae (Pildoras Fetidas),33.3,2
+f96r,Requies Magna (Requies Nicolai),16.7,1
+f96r,Diacodion (Jarabe de Adormidera),0,0
+f96r,Dialtea (Ungueento de Altea),0,0
+f96r,Philonium Persicum,66.7,6
+f96r,Oximel Compositum,18.2,1
+f96r,Theriac Diatessaron,20.0,1
+f96r,Theodoricon Euporistum,52.6,5
+f96r,Diasatyrion,37.5,3
+f96r,Diarodon Abbatis,25.0,2
+f96r,Rosata Novella,15.4,1
+f96r,Letitia Galeni,26.7,2
+f96r,Trifera Saracenica,58.8,5
+f96r,Paulinum,47.1,4
+f96r,Electuarium Justinum,44.4,4
+f96r,Electuarium de Baccis Lauri,14.3,1
+f96r,Syrupus de Fumaria,0,0
+f96r,Confectio Anacardia,57.1,4
+f96r,Electuarium Diacostum,28.6,2
+f96r,Unguentum Marciaton,0,0
+f96r,Suffuf al-Tib (Polvo aromatico de Avicena),28.6,2
+f96r,Itrifal Ustukhudus (Electuario de Espliego),33.3,2
+f96r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),20.0,1
+f96r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),53.3,4
+f96r,Unguentum Abulcasis (de vulneribus),0,0
+f96r,Theriac Abulcasis (contra venenos),55.6,5
+f96r,Antidotum Hadriani,37.5,3
+f96r,Electuarium Ducis,16.7,1
+f96r,Benedicta Laxativa,18.2,1
+f96r,Diatragacanthi,0,0
+f96r,Dianucum (Electuario de Nueces),50.0,3
+f96r,Electuarium Diaspermaton,15.4,1
+f96r,Philonium Romanum,42.9,3
+f96r,Theriac Diatessaron Magna,33.3,2
+f96v,Theriac Magna (Triaca de Andromachus),12.5,1
+f96v,Mithridatium,14.3,1
+f96v,Diascordium,0,0
+f96v,Pillulae Cochiae,0,0
+f96v,Pillulae Aureae,50.0,1
+f96v,Unguentum Apostolorum,0,0
+f96v,Electuarium de Succo Rosarum,0,0
+f96v,Aurea Alexandrina,16.7,1
+f96v,Confectio Hamech,0,0
+f96v,Hiera Picra (Hiera de Galeno),40.0,1
+f96v,Trifera Magna,11.1,1
+f96v,Diamargariton (Electuario de Perlas),22.2,1
+f96v,Diaciminum (Electuario de Comino),0,0
+f96v,Unguentum Basilicon,0,0
+f96v,Unguentum Populeon,0,0
+f96v,Pillulae de Hiera cum Agarico,50.0,1
+f96v,Pillulae Fetidae (Pildoras Fetidas),0,0
+f96v,Requies Magna (Requies Nicolai),33.3,1
+f96v,Diacodion (Jarabe de Adormidera),0,0
+f96v,Dialtea (Ungueento de Altea),0,0
+f96v,Philonium Persicum,16.7,1
+f96v,Oximel Compositum,0,0
+f96v,Theriac Diatessaron,0,0
+f96v,Theodoricon Euporistum,15.4,1
+f96v,Diasatyrion,20.0,1
+f96v,Diarodon Abbatis,20.0,1
+f96v,Rosata Novella,28.6,1
+f96v,Letitia Galeni,22.2,1
+f96v,Trifera Saracenica,18.2,1
+f96v,Paulinum,18.2,1
+f96v,Electuarium Justinum,16.7,1
+f96v,Electuarium de Baccis Lauri,0,0
+f96v,Syrupus de Fumaria,0,0
+f96v,Confectio Anacardia,25.0,1
+f96v,Electuarium Diacostum,0,0
+f96v,Unguentum Marciaton,0,0
+f96v,Suffuf al-Tib (Polvo aromatico de Avicena),25.0,1
+f96v,Itrifal Ustukhudus (Electuario de Espliego),33.3,1
+f96v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),0,0
+f96v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),22.2,1
+f96v,Unguentum Abulcasis (de vulneribus),0,0
+f96v,Theriac Abulcasis (contra venenos),16.7,1
+f96v,Antidotum Hadriani,20.0,1
+f96v,Electuarium Ducis,0,0
+f96v,Benedicta Laxativa,40.0,1
+f96v,Diatragacanthi,0,0
+f96v,Dianucum (Electuario de Nueces),0,0
+f96v,Electuarium Diaspermaton,0,0
+f96v,Philonium Romanum,25.0,1
+f96v,Theriac Diatessaron Magna,0,0
+f99r,Theriac Magna (Triaca de Andromachus),63.6,7
+f99r,Mithridatium,60.0,6
+f99r,Diascordium,25.0,2
+f99r,Pillulae Cochiae,0,0
+f99r,Pillulae Aureae,20.0,1
+f99r,Unguentum Apostolorum,0,0
+f99r,Electuarium de Succo Rosarum,20.0,1
+f99r,Aurea Alexandrina,66.7,6
+f99r,Confectio Hamech,33.3,2
+f99r,Hiera Picra (Hiera de Galeno),54.5,3
+f99r,Trifera Magna,58.3,7
+f99r,Diamargariton (Electuario de Perlas),26.7,2
+f99r,Diaciminum (Electuario de Comino),61.5,4
+f99r,Unguentum Basilicon,0,0
+f99r,Unguentum Populeon,0,0
+f99r,Pillulae de Hiera cum Agarico,20.0,1
+f99r,Pillulae Fetidae (Pildoras Fetidas),0,0
+f99r,Requies Magna (Requies Nicolai),16.7,1
+f99r,Diacodion (Jarabe de Adormidera),0,0
+f99r,Dialtea (Ungueento de Altea),0,0
+f99r,Philonium Persicum,55.6,5
+f99r,Oximel Compositum,54.5,3
+f99r,Theriac Diatessaron,20.0,1
+f99r,Theodoricon Euporistum,73.7,7
+f99r,Diasatyrion,37.5,3
+f99r,Diarodon Abbatis,25.0,2
+f99r,Rosata Novella,15.4,1
+f99r,Letitia Galeni,13.3,1
+f99r,Trifera Saracenica,58.8,5
+f99r,Paulinum,70.6,6
+f99r,Electuarium Justinum,77.8,7
+f99r,Electuarium de Baccis Lauri,42.9,3
+f99r,Syrupus de Fumaria,0,0
+f99r,Confectio Anacardia,57.1,4
+f99r,Electuarium Diacostum,57.1,4
+f99r,Unguentum Marciaton,0,0
+f99r,Suffuf al-Tib (Polvo aromatico de Avicena),28.6,2
+f99r,Itrifal Ustukhudus (Electuario de Espliego),50.0,3
+f99r,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),20.0,1
+f99r,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),66.7,5
+f99r,Unguentum Abulcasis (de vulneribus),0,0
+f99r,Theriac Abulcasis (contra venenos),44.4,4
+f99r,Antidotum Hadriani,50.0,4
+f99r,Electuarium Ducis,33.3,2
+f99r,Benedicta Laxativa,36.4,2
+f99r,Diatragacanthi,0,0
+f99r,Dianucum (Electuario de Nueces),50.0,3
+f99r,Electuarium Diaspermaton,61.5,4
+f99r,Philonium Romanum,57.1,4
+f99r,Theriac Diatessaron Magna,16.7,1
+f99v,Theriac Magna (Triaca de Andromachus),66.7,8
+f99v,Mithridatium,72.7,8
+f99v,Diascordium,44.4,4
+f99v,Pillulae Cochiae,0,0
+f99v,Pillulae Aureae,16.7,1
+f99v,Unguentum Apostolorum,15.4,1
+f99v,Electuarium de Succo Rosarum,50.0,3
+f99v,Aurea Alexandrina,90.0,9
+f99v,Confectio Hamech,42.9,3
+f99v,Hiera Picra (Hiera de Galeno),30.8,2
+f99v,Trifera Magna,61.5,8
+f99v,Diamargariton (Electuario de Perlas),35.3,3
+f99v,Diaciminum (Electuario de Comino),53.3,4
+f99v,Unguentum Basilicon,0,0
+f99v,Unguentum Populeon,0,0
+f99v,Pillulae de Hiera cum Agarico,16.7,1
+f99v,Pillulae Fetidae (Pildoras Fetidas),28.6,2
+f99v,Requies Magna (Requies Nicolai),28.6,2
+f99v,Diacodion (Jarabe de Adormidera),36.4,2
+f99v,Dialtea (Ungueento de Altea),0,0
+f99v,Philonium Persicum,70.0,7
+f99v,Oximel Compositum,46.2,3
+f99v,Theriac Diatessaron,16.7,1
+f99v,Theodoricon Euporistum,76.2,8
+f99v,Diasatyrion,44.4,4
+f99v,Diarodon Abbatis,33.3,3
+f99v,Rosata Novella,26.7,2
+f99v,Letitia Galeni,23.5,2
+f99v,Trifera Saracenica,73.7,7
+f99v,Paulinum,84.2,8
+f99v,Electuarium Justinum,70.0,7
+f99v,Electuarium de Baccis Lauri,62.5,5
+f99v,Syrupus de Fumaria,36.4,2
+f99v,Confectio Anacardia,62.5,5
+f99v,Electuarium Diacostum,50.0,4
+f99v,Unguentum Marciaton,0,0
+f99v,Suffuf al-Tib (Polvo aromatico de Avicena),25.0,2
+f99v,Itrifal Ustukhudus (Electuario de Espliego),28.6,2
+f99v,Tiryaq al-Arba (Theriac de 4 ingredientes - Avicena),16.7,1
+f99v,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),58.8,5
+f99v,Unguentum Abulcasis (de vulneribus),20.0,1
+f99v,Theriac Abulcasis (contra venenos),60.0,6
+f99v,Antidotum Hadriani,66.7,6
+f99v,Electuarium Ducis,57.1,4
+f99v,Benedicta Laxativa,46.2,3
+f99v,Diatragacanthi,36.4,2
+f99v,Dianucum (Electuario de Nueces),57.1,4
+f99v,Electuarium Diaspermaton,53.3,4
+f99v,Philonium Romanum,62.5,5
+f99v,Theriac Diatessaron Magna,42.9,3

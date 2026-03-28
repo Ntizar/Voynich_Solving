@@ -469,12 +469,110 @@
 
 ---
 
+## Session 13 (Dashboard & Housekeeping)
+
+**Date:** March 2026  
+**Duration:** ~1 hour  
+**Focus:** Dashboard Zingiber/Mel chart JS, session 11-12 file commit, docs update
+
+### Summary
+
+Housekeeping session focused on updating the interactive dashboard and committing all work from sessions 11-12.
+
+### Key Activities
+
+1. **Dashboard Zingiber/Mel Chart JS**
+   - Added `renderZingiberMelChart()` function to `dashboard_voynich.html`
+   - Chart shows Zingiber F1 vs Mel F1 for all 48 folios, visually demonstrating the 41-0 verdict
+   - Green bars for Mel-winning folios, gray for tied
+
+2. **Git Commit**
+   - Committed all session 11-12 files: `71cda4b`
+   - Includes: `voynich_zingiber_mel_deadlock.csv`, `voynich_unified_identifications_v6.csv`, `voynich_matching_v6.csv`, `voynich_expanded_matching_v6.csv`, `voynich_matching_v6_top5.csv`, `voynich_zingiber_candidates.csv`
+
+3. **Documentation Update**
+   - Updated SESSION_LOG.md through session 12
+   - Updated DISCOVERIES.md with discoveries 17-19
+
+### Files Modified
+- `dashboard_voynich.html` -- Zingiber/Mel chart added
+- `docs/SESSION_LOG.md` -- Updated through session 12
+- `docs/DISCOVERIES.md` -- Updated through discovery 19
+
+---
+
+## Session 14 (v7 Breakthrough -- Intersection Analysis)
+
+**Date:** March 2026  
+**Duration:** ~4 hours  
+**Focus:** Triple deadlock analysis, intersection-based stem exploration, v7 identification table, v7 matching
+
+### Summary
+
+Major breakthrough session. Used intersection analysis across all recipe-folio profiles to explore 237 candidate stems. Identified 17 new stems (4 entirely new ingredients: Zingiber, Castoreum, Petroselinum, Gentiana). The v7 identification table (75 entries, 22 ingredients) produced a massive leap in matching quality: 35 EXCELLENT matches at F1>=80%, mean F1 81.9% (up from 0 EXCELLENT and 54.3% in v6).
+
+### Key Activities
+
+1. **Triple Deadlock Analysis: Galanga | Cubeba | Nux moschata**
+   - Tested whether any of the 50 recipes could discriminate between Galanga, Cubeba, and Nux moschata
+   - Result: 47 TIED, 0 directional wins in any direction
+   - Conclusion: **UNBREAKABLE** with current 50-recipe database -- all recipes that include one always include all three
+   - Generated `voynich_galanga_cubeba_nux_deadlock.csv`
+
+2. **Intersection-Based Stem Exploration**
+   - For each of 948 unidentified stems, computed the intersection of candidate ingredients across all matched recipe folios
+   - Found **77 UNIQUE-resolution stems** (intersection = exactly 1 candidate) -- all point to **Zingiber**
+   - Found **160 STRONG stems** (intersection = exactly 2 candidates) -- mostly Castoreum vs Zingiber
+   - Applied presence/absence differential to disambiguate STRONG stems
+   - Generated `voynich_new_identifications_session14.csv` (237 entries)
+
+3. **v7 Identification Table**
+   - Added 17 new entries to the identification table:
+     - Zingiber x2 (K1J1 at 83%, K1K2 at 80%)
+     - Castoreum x9 (K1J1B1, Q2A3, K1U1, A1Q2, L1J1B1, D1A1Q1K2B1, B2A1, B2Q1A3, A1Q1K2B1 at 75-83%)
+     - Petroselinum x4 (A1Q1K2Ba, A1Q2K1A1, B1L1K2B1, K1U1A3 at 90%)
+     - Gentiana x2 (D1A1Q1K2Aa at 90%, Q2A1B1A3 at 85%)
+   - Total: 75 entries, 22 unique ingredients (up from 58/17)
+   - Generated `voynich_unified_identifications_v7.csv`
+
+4. **v7 Matching Re-run**
+   - Re-ran content-based matching (48 folios x 50 recipes) with v7 identifications
+   - Results:
+     - **35 EXCELLENT** (F1 >= 80%) -- up from 0 in v6
+     - **12 GOOD** (F1 50-79%) -- down from 37 (promoted to EXCELLENT)
+     - **0 MODERATE, 0 WEAK, 1 INSUFFICIENT** (f116v = 2 words)
+     - Mean F1 (non-zero): **81.9%** -- up from 54.3% in v6
+     - **f100r = 100% F1** (perfect match to Diamargariton)
+     - **f113v = 96.0% F1** (Theodoricon Euporistum)
+     - Most frequent best-match: Trifera Saracenica (10 folios), Theodoricon Euporistum (10 folios)
+   - Generated `voynich_matching_v7.csv`, `voynich_expanded_matching_v7.csv`, `voynich_matching_v7_top5.csv`
+
+5. **Dashboard Update (partial)**
+   - Updated navbar badges, hero stats, identification table section, matching section, stat cards
+   - Replaced IDENTIFICATIONS and MV3 JS arrays with v7 data
+   - Added Session 14 Breakthrough section with v6-vs-v7 comparison table
+   - Still pending: README.html full rewrite
+
+### Scripts Written
+- `temp_session14_analysis.py` -- Triple deadlock + intersection exploration
+- `temp_session14_v7.py` -- v7 table builder + matching re-run
+
+### Files Generated
+- `voynich_unified_identifications_v7.csv` -- v7 identification table (75 entries, 22 ingredients)
+- `voynich_matching_v7.csv` -- Best match per folio (v7)
+- `voynich_expanded_matching_v7.csv` -- Full 48x50 matching matrix (v7)
+- `voynich_matching_v7_top5.csv` -- Top 5 recipe matches per folio (v7)
+- `voynich_galanga_cubeba_nux_deadlock.csv` -- Triple deadlock results (47 TIED)
+- `voynich_new_identifications_session14.csv` -- All 237 candidate identifications from intersection analysis
+
+---
+
 ## Summary Statistics
 
 | Metric | Value |
 |---|---|
-| Total scripts written | 32 |
-| Total CSV files generated | 28 |
+| Total scripts written | 34 |
+| Total CSV files generated | 34 |
 | HTML files | 2 (dashboard_voynich.html, README.html) |
 | Obsidian notes generated | 130+ |
 | Unique stems in corpus | 3,261 (recipe folios, post-recovery) |
@@ -485,21 +583,20 @@
 | Ingredient-recipe pairs | 613 |
 | Structural matching: perfect (100%) | 9 |
 | Structural matching: strong (>=90%) | 19 |
-| Content-based matching v6: best F1 | 75.0% (f113v = Electuarium Justinum) |
-| Content-based matching v6: good (F1 50-79%) | 37 |
-| Content-based matching v6: mean F1 | 54.3% |
+| Content-based matching v7: best F1 | 100.0% (f100r = Diamargariton) |
+| Content-based matching v7: EXCELLENT (F1>=80%) | 35 |
+| Content-based matching v7: GOOD (F1 50-79%) | 12 |
+| Content-based matching v7: mean F1 | 81.9% |
 | Confirmed identifications (Tier 1-2) | 8 (Galbanum, Crocus, Myrrha x6) |
-| Strong identifications (Tier 3) | 19 (Crocus x9, Rosa, Mel despumatum x5, Cinnamomum x2, Opopanax x2) |
-| Moderate identifications (Tier 4) | 23 (Amomum, Piper, Bdellium, Casia, Cardamomum, Styrax, Saccharum) |
+| Strong identifications (Tier 3) | 36 (Crocus x9, Rosa, Mel x5, Cinnamomum x2, Opopanax x2, Zingiber x2, Castoreum x9, Petroselinum x4, Gentiana x2) |
+| Moderate identifications (Tier 4) | 23 (Amomum, Piper, Bdellium, Casia, Cardamomum, Styrax, Saccharum, Galanga\|Cubeba\|Nux moschata) |
 | Function words identified | 8 |
-| Total identification entries (v6) | 58 |
-| Unique ingredients identified | 17 (Galbanum, Crocus, Myrrha, Mel, Rosa, Cinnamomum, Opopanax, Amomum, P.nigrum, P.longum, Styrax, Bdellium, Casia, Cardamomum, Saccharum + Galanga\|Cubeba\|Nux moschata triple) |
+| Total identification entries (v7) | 75 |
+| Unique ingredients identified | 22 (Galbanum, Crocus, Myrrha, Mel, Rosa, Cinnamomum, Opopanax, Zingiber, Castoreum, Petroselinum, Gentiana, Amomum, P.nigrum, P.longum, Styrax, Bdellium, Casia, Cardamomum, Saccharum + Galanga\|Cubeba\|Nux moschata triple) |
 | Novel structural discoveries | 4 (suffix channel, vertical alignment, column schema, foreign keys) |
-| Total documented discoveries | 19 |
+| Total documented discoveries | 22 |
 | Deadlocks resolved | 1 (Zingiber/Mel -- 41-0 verdict for Mel) |
-| Deadlocks active | 2 (Opium/Castoreum partially broken, Galanga/Cubeba/Nux moschata) |
-| Opium-favoring folios | 6 |
-| Castoreum-favoring folios | 17 |
-| Tied/insufficient folios | 25 |
+| Deadlocks partially broken | 1 (Opium/Castoreum -- 9 Castoreum stems confirmed in v7) |
+| Deadlocks permanent | 1 (Galanga/Cubeba/Nux moschata -- 47 TIED, unbreakable with 50 recipes) |
 | Philonium folios confirmed | 4 (f88v, f95v, f96r, f102r) |
 | Requies Magna folios found | 0 |

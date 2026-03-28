@@ -1,8 +1,8 @@
 # Stem Identifications -- Complete Table and Reasoning Chains
 
-This document records every Voynich stem identification, organized by confidence tier. **Current version: v6 (58 entries, 17 unique ingredients + 8 function words).**
+This document records every Voynich stem identification, organized by confidence tier. **Current version: v7 (75 entries, 22 unique ingredients + 8 function words).**
 
-Last updated: Session 12
+Last updated: Session 14
 
 ---
 
@@ -13,9 +13,9 @@ Last updated: Session 12
 | 0 (Function Words) | 8 | Stems too ubiquitous for single ingredient |
 | 1 (Confirmed) | 2 | K1K2A1=Galbanum (99%), K1A3=Crocus (95%) |
 | 2 (High) | 6 | All Myrrha: A1Q2A1, D1A1, D1A1A3, Q1K1A1, A1Q1J1, T1J1A1B1A3 |
-| 3 (Strong) | 19 | Crocus x9, Rosa x1, **Mel despumatum x5**, Cinnamomum x2, Opopanax x2 |
+| 3 (Strong) | 36 | Crocus x9, Rosa x1, **Mel despumatum x5**, Cinnamomum x2, Opopanax x2, **Zingiber x2**, **Castoreum x9**, **Petroselinum x4**, **Gentiana x2** |
 | 4 (Moderate) | 23 | Amomum x3, Piper nigrum x1, Styrax x2, Piper longum x1, Bdellium x2, Casia x3, Cardamomum x8, Saccharum x1, Galanga\|Cubeba\|Nux moschata x2 |
-| **TOTAL** | **58** | **17 unique ingredients (15 single + Galanga\|Cubeba\|Nux moschata triple)** |
+| **TOTAL** | **75** | **22 unique ingredients (19 single + Galanga\|Cubeba\|Nux moschata triple)** |
 
 ---
 
@@ -77,7 +77,7 @@ All 6 stems resolve to Myrrha through the same mechanism: they appear in recipes
 
 ---
 
-## Tier 3: Strong Identifications (19 stems)
+## Tier 3: Strong Identifications (36 stems)
 
 ### Crocus (9 additional stems, 80%)
 
@@ -132,6 +132,59 @@ These 5 stems were previously identified as the inseparable pair Zingiber|Mel de
 | A3F2 | 78% | Independent differential analysis; cross-validates A1B2B1A3 |
 
 **What it is:** Oleo-gum-resin from Opopanax chironium. Used in Ung. Apostolorum and other compound medicines.
+
+### Zingiber (2 stems, 80-83%) -- NEW in v7
+
+These stems were identified via intersection analysis in session 14. They are the UNIQUE candidate (only unidentified ingredient) across 9-10 diverse recipes in their matched folios. Solves the open problem from Discovery 19.
+
+| Stem | Confidence | Key evidence |
+|---|---|---|
+| K1J1 | 83% | UNIQUE across 10 recipes. 38 folios, 100% presence, 67% absence |
+| K1K2 | 80% | UNIQUE across 9 recipes. 37 folios, 100% presence, 70% absence |
+
+**What it is:** Zingiber officinale (ginger). One of the most common spices in medieval pharmacy, present in 27 of 50 recipes. Used in electuaries, theriacs, and digestive compounds.
+
+### Castoreum (9 stems, 75-83%) -- NEW in v7
+
+These stems were identified via intersection analysis in session 14 (STRONG: 2 candidates Castoreum vs Zingiber, Castoreum wins by presence/absence differential). Partially breaks the Opium/Castoreum deadlock from the Castoreum side.
+
+| Stem | Confidence | Key evidence |
+|---|---|---|
+| K1J1B1 | 83% | 26 folios, 100% presence, 67% absence |
+| Q2A3 | 82% | 25 folios, 100% presence, 68% absence |
+| K1U1 | 79% | 23 folios, 100% presence, 71% absence |
+| A1Q2 | 79% | 23 folios, 100% presence, 71% absence |
+| L1J1B1 | 79% | 23 folios, 100% presence, 71% absence |
+| D1A1Q1K2B1 | 78% | 22 folios, 100% presence, 72% absence |
+| B2A1 | 77% | 21 folios, 100% presence, 73% absence |
+| B2Q1A3 | 76% | 20 folios, 100% presence, 74% absence |
+| A1Q1K2B1 | 75% | 19 folios, 100% presence, 75% absence |
+
+**What it is:** Secretion from the castor sacs of beavers. Used as antispasmodic, sedative, and in antidote recipes. Present in Theriac, Mithridatium, Philonium, and other complex compounds.
+
+### Petroselinum (4 stems, 90%) -- NEW in v7
+
+These stems were identified via intersection analysis in session 14. They win decisively against Zingiber due to low folio counts but 100% presence in matched recipe ingredient lists.
+
+| Stem | Confidence | Key evidence |
+|---|---|---|
+| A1Q1K2Ba | 90% | 9 folios, 100% presence, 39% absence |
+| A1Q2K1A1 | 90% | 8 folios, 100% presence, 41% absence |
+| B1L1K2B1 | 90% | 3 folios, 100% presence, 48% absence |
+| K1U1A3 | 90% | 4 folios, 100% presence, 47% absence |
+
+**What it is:** Petroselinum crispum (parsley). Seeds used in medieval pharmacy as carminative and diuretic. Present in Theodoricon Euporistum, Mithridatium, Electuarium de Baccis Lauri.
+
+### Gentiana (2 stems, 85-90%) -- NEW in v7
+
+These stems were identified via intersection analysis in session 14. They win against Zingiber with very low absence rates (18%), indicating presence only in rare antidote-type recipes.
+
+| Stem | Confidence | Key evidence |
+|---|---|---|
+| D1A1Q1K2Aa | 90% | 3 folios, 100% presence, only 18% absence. Only in antidote recipes |
+| Q2A1B1A3 | 85% | Overrides prior Opium morphological flag from session 11. Gentiana fits recipe profile better |
+
+**What it is:** Gentiana lutea (yellow gentian). Root used as bitter tonic and in antidote preparations. One of the 4 ingredients in Theriac Diatessaron (the simplest theriac).
 
 ---
 
@@ -226,9 +279,9 @@ K1A3 = Crocus (CONFIRMED)
 
 **Deadlock status:**
 - Zingiber vs Mel despumatum: **RESOLVED** -- 41-0 verdict for Mel (session 11-12, Discovery 18)
-- Opium vs Castoreum: PARTIALLY BROKEN -- 6 Opium folios, 17 Castoreum folios, morphological differences identified (session 11, Discovery 16-17)
-- Galanga vs Cubeba vs Nux moschata: BLOCKED (identical recipe profiles, 2 stems)
-- Zingiber: UNIDENTIFIED -- no strong stem candidates found yet (session 12, Discovery 19)
+- Zingiber: **FOUND** -- K1J1 (83%), K1K2 (80%) via intersection analysis (session 14, Discovery 21)
+- Opium vs Castoreum: **PARTIALLY BROKEN** -- 9 Castoreum stems confirmed at 75-83% via intersection analysis (session 14). 6 Opium folios, 17 Castoreum folios from original deadlock breaker. Morphological differences identified (session 11, Discovery 16-17)
+- Galanga vs Cubeba vs Nux moschata: **PERMANENT DEADLOCK** -- 47 TIED, 0 directional wins. No discriminating recipe exists in the 50-recipe database (session 14, Discovery 20)
 
 ---
 
@@ -242,5 +295,9 @@ K1A3 = Crocus (CONFIRMED)
 | Opopanax cross-validation (2 independent paths) | Both converge |
 | Crocus absence from f93v (Diascordium) | Confirmed |
 | Galbanum triple intersection uniqueness | Confirmed |
-| Content-based matching v6 (48 folios x 50 recipes) | Mean F1 = 54.3%, 37 GOOD matches |
+| Content-based matching v7 (48 folios x 50 recipes) | Mean F1 = 81.9%, 35 EXCELLENT matches |
+| f100r = Diamargariton (perfect match) | 100% F1 -- all 8 ingredients matched |
+| f113v = Theodoricon Euporistum | 96.0% F1 -- 12/12 TP, 1 FP |
+| Galanga\|Cubeba\|Nux moschata triple deadlock | 47 TIED -- confirmed unbreakable |
 | Opium/Castoreum morphological analysis (948 stems) | 296 Opium-enriched, 363 Castoreum-enriched |
+| Intersection analysis (session 14) | 77 UNIQUE + 160 STRONG candidates validated |

@@ -1,0 +1,241 @@
+Folio,Rank,Recipe,F1,N_TP
+f100r,1,Diamargariton (Electuario de Perlas),100.0,8
+f100r,2,Diarodon Abbatis,94.1,8
+f100r,3,Letitia Galeni,87.5,7
+f100r,4,Suffuf al-Tib (Polvo aromatico de Avicena),80.0,6
+f100r,5,Rosata Novella,71.4,5
+f100v,1,Diaciminum (Electuario de Comino),83.3,5
+f100v,2,Electuarium Diaspermaton,66.7,4
+f100v,3,Confectio Anacardia,61.5,4
+f100v,4,Electuarium Diacostum,61.5,4
+f100v,5,Philonium Romanum,61.5,4
+f101r,1,Trifera Magna,82.8,12
+f101r,2,Electuarium Justinum,78.3,9
+f101r,3,Theodoricon Euporistum,75.0,9
+f101r,4,Philonium Romanum,73.7,7
+f101r,5,Trifera Saracenica,72.7,8
+f101v,1,Philonium Romanum,80.0,6
+f101v,2,Trifera Saracenica,77.8,7
+f101v,3,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),75.0,6
+f101v,4,Philonium Persicum,73.7,7
+f101v,5,Electuarium Justinum,73.7,7
+f102r,1,Trifera Saracenica,80.0,8
+f102r,2,Mithridatium,78.3,9
+f102r,3,Philonium Persicum,76.2,8
+f102r,4,Trifera Magna,74.1,10
+f102r,5,Theodoricon Euporistum,72.7,8
+f102v,1,Trifera Saracenica,77.8,7
+f102v,2,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),75.0,6
+f102v,3,Philonium Persicum,73.7,7
+f102v,4,Electuarium Justinum,73.7,7
+f102v,5,Antidotum Hadriani,70.6,6
+f103r,1,Theodoricon Euporistum,73.7,7
+f103r,2,Trifera Saracenica,70.6,6
+f103r,3,Philonium Persicum,66.7,6
+f103r,4,Electuarium Justinum,66.7,6
+f103r,5,Antidotum Hadriani,62.5,5
+f103v,1,Theodoricon Euporistum,85.7,9
+f103v,2,Electuarium Justinum,80.0,8
+f103v,3,Trifera Saracenica,73.7,7
+f103v,4,Paulinum,73.7,7
+f103v,5,Mithridatium,72.7,8
+f104r,1,Theodoricon Euporistum,81.8,9
+f104r,2,Electuarium Justinum,76.2,8
+f104r,3,Theriac Magna (Triaca de Andromachus),72.0,9
+f104r,4,Trifera Saracenica,70.0,7
+f104r,5,Paulinum,70.0,7
+f104v,1,Trifera Saracenica,84.2,8
+f104v,2,Philonium Persicum,80.0,8
+f104v,3,Antidotum Hadriani,77.8,7
+f104v,4,Theodoricon Euporistum,76.2,8
+f104v,5,Paulinum,73.7,7
+f105r,1,Trifera Saracenica,90.0,9
+f105r,2,Philonium Persicum,85.7,9
+f105r,3,Antidotum Hadriani,84.2,8
+f105r,4,Theodoricon Euporistum,81.8,9
+f105r,5,Paulinum,80.0,8
+f105v,1,Theodoricon Euporistum,81.8,9
+f105v,2,Mithridatium,78.3,9
+f105v,3,Electuarium Justinum,76.2,8
+f105v,4,Trifera Magna,74.1,10
+f105v,5,Theriac Magna (Triaca de Andromachus),72.0,9
+f106r,1,Aurea Alexandrina,90.9,10
+f106r,2,Theodoricon Euporistum,87.0,10
+f106r,3,Trifera Saracenica,85.7,9
+f106r,4,Paulinum,85.7,9
+f106r,5,Mithridatium,83.3,10
+f106v,1,Philonium Persicum,84.2,8
+f106v,2,Trifera Saracenica,77.8,7
+f106v,3,Antidotum Hadriani,70.6,6
+f106v,4,Theodoricon Euporistum,70.0,7
+f106v,5,Mithridatium,66.7,7
+f107r,1,Trifera Saracenica,82.4,7
+f107r,2,Philonium Persicum,77.8,7
+f107r,3,Antidotum Hadriani,75.0,6
+f107r,4,Theodoricon Euporistum,73.7,7
+f107r,5,Confectio Anacardia,71.4,5
+f107v,1,Trifera Saracenica,90.0,9
+f107v,2,Philonium Persicum,85.7,9
+f107v,3,Theodoricon Euporistum,81.8,9
+f107v,4,Paulinum,80.0,8
+f107v,5,Mithridatium,78.3,9
+f108r,1,Theodoricon Euporistum,87.0,10
+f108r,2,Electuarium Justinum,81.8,9
+f108r,3,Trifera Magna,78.6,11
+f108r,4,Trifera Saracenica,76.2,8
+f108r,5,Paulinum,76.2,8
+f108v,1,Theodoricon Euporistum,90.9,10
+f108v,2,Electuarium Justinum,85.7,9
+f108v,3,Trifera Saracenica,80.0,8
+f108v,4,Paulinum,80.0,8
+f108v,5,Mithridatium,78.3,9
+f111r,1,Trifera Magna,78.6,11
+f111r,2,Theodoricon Euporistum,78.3,9
+f111r,3,Mithridatium,75.0,9
+f111r,4,Electuarium Justinum,72.7,8
+f111r,5,Theriac Magna (Triaca de Andromachus),69.2,9
+f111v,1,Theodoricon Euporistum,87.0,10
+f111v,2,Electuarium Justinum,81.8,9
+f111v,3,Trifera Magna,78.6,11
+f111v,4,Trifera Saracenica,76.2,8
+f111v,5,Paulinum,76.2,8
+f112r,1,Trifera Saracenica,84.2,8
+f112r,2,Philonium Persicum,80.0,8
+f112r,3,Antidotum Hadriani,77.8,7
+f112r,4,Theodoricon Euporistum,76.2,8
+f112r,5,Paulinum,73.7,7
+f112v,1,Antidotum Hadriani,84.2,8
+f112v,2,Theriac Abulcasis (contra venenos),76.2,8
+f112v,3,Theriac Magna (Triaca de Andromachus),72.0,9
+f112v,4,Trifera Saracenica,70.0,7
+f112v,5,Paulinum,70.0,7
+f113r,1,Theodoricon Euporistum,84.6,11
+f113r,2,Electuarium Justinum,80.0,10
+f113r,3,Trifera Magna,77.4,12
+f113r,4,Theriac Magna (Triaca de Andromachus),75.9,11
+f113r,5,Trifera Saracenica,75.0,9
+f113v,1,Theodoricon Euporistum,96.0,12
+f113v,2,Electuarium Justinum,91.7,11
+f113v,3,Trifera Saracenica,87.0,10
+f113v,4,Paulinum,87.0,10
+f113v,5,Trifera Magna,86.7,13
+f114r,1,Mithridatium,91.7,11
+f114r,2,Theriac Abulcasis (contra venenos),90.9,10
+f114r,3,Trifera Saracenica,85.7,9
+f114r,4,Philonium Persicum,81.8,9
+f114r,5,Antidotum Hadriani,80.0,8
+f114v,1,Trifera Saracenica,80.0,8
+f114v,2,Philonium Persicum,76.2,8
+f114v,3,Theriac Abulcasis (contra venenos),76.2,8
+f114v,4,Theodoricon Euporistum,72.7,8
+f114v,5,Confectio Anacardia,70.6,6
+f115r,1,Theodoricon Euporistum,69.6,8
+f115r,2,Trifera Saracenica,66.7,7
+f115r,3,Trifera Magna,64.3,9
+f115r,4,Philonium Persicum,63.6,7
+f115r,5,Electuarium Justinum,63.6,7
+f115v,1,Trifera Magna,83.9,13
+f115v,2,Trifera Saracenica,75.0,9
+f115v,3,Philonium Persicum,72.0,9
+f115v,4,Theriac Abulcasis (contra venenos),72.0,9
+f115v,5,Diasatyrion,69.6,8
+f116r,1,Trifera Magna,82.8,12
+f116r,2,Theodoricon Euporistum,66.7,8
+f116r,3,Trifera Saracenica,63.6,7
+f116r,4,Philonium Persicum,60.9,7
+f116r,5,Electuarium Justinum,60.9,7
+f116v,1,Theriac Magna (Triaca de Andromachus),0.0,0
+f116v,2,Mithridatium,0.0,0
+f116v,3,Diascordium,0.0,0
+f116v,4,Pillulae Cochiae,0.0,0
+f116v,5,Pillulae Aureae,0.0,0
+f87r,1,Confectio Hamech,57.1,2
+f87r,2,Itrifal Ustukhudus (Electuario de Espliego),57.1,2
+f87r,3,Pillulae Aureae,40.0,1
+f87r,4,Pillulae de Hiera cum Agarico,40.0,1
+f87r,5,Theriac Diatessaron,40.0,1
+f87v,1,Unguentum Apostolorum,88.9,4
+f87v,2,Pillulae Fetidae (Pildoras Fetidas),80.0,4
+f87v,3,Theriac Magna (Triaca de Andromachus),40.0,4
+f87v,4,Theriac Abulcasis (contra venenos),37.5,3
+f87v,5,Trifera Magna,36.4,4
+f88r,1,Trifera Magna,80.0,12
+f88r,2,Mithridatium,69.2,9
+f88r,3,Electuarium Justinum,66.7,8
+f88r,4,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),66.7,7
+f88r,5,Theriac Magna (Triaca de Andromachus),64.3,9
+f88v,1,Trifera Saracenica,90.0,9
+f88v,2,Philonium Persicum,85.7,9
+f88v,3,Theodoricon Euporistum,81.8,9
+f88v,4,Paulinum,80.0,8
+f88v,5,Mithridatium,78.3,9
+f89r,1,Mithridatium,84.6,11
+f89r,2,Philonium Persicum,83.3,10
+f89r,3,Trifera Magna,80.0,12
+f89r,4,Theodoricon Euporistum,80.0,10
+f89r,5,Theriac Magna (Triaca de Andromachus),78.6,11
+f89v,1,Trifera Saracenica,90.0,9
+f89v,2,Philonium Persicum,85.7,9
+f89v,3,Theodoricon Euporistum,81.8,9
+f89v,4,Paulinum,80.0,8
+f89v,5,Mithridatium,78.3,9
+f90r,1,Electuarium de Baccis Lauri,85.7,6
+f90r,2,Oximel Compositum,72.7,4
+f90r,3,Antidotum Hadriani,62.5,5
+f90r,4,Electuarium Diaspermaton,61.5,4
+f90r,5,Mithridatium,60.0,6
+f90v,1,Antidotum Hadriani,82.4,7
+f90v,2,Theriac Abulcasis (contra venenos),73.7,7
+f90v,3,Theriac Magna (Triaca de Andromachus),69.6,8
+f90v,4,Mithridatium,66.7,7
+f90v,5,Hiera Picra (Hiera de Galeno),66.7,4
+f93r,1,Philonium Persicum,77.8,7
+f93r,2,Trifera Saracenica,70.6,6
+f93r,3,Paulinum,70.6,6
+f93r,4,Aurea Alexandrina,66.7,6
+f93r,5,Dianucum (Electuario de Nueces),66.7,4
+f93v,1,Philonium Persicum,63.2,6
+f93v,2,Theriac Magna (Triaca de Andromachus),60.9,7
+f93v,3,Diascordium,58.8,5
+f93v,4,Trifera Saracenica,55.6,5
+f93v,5,Paulinum,55.6,5
+f94r,1,Electuarium de Baccis Lauri,83.3,5
+f94r,2,Oximel Compositum,66.7,3
+f94r,3,Antidotum Hadriani,57.1,4
+f94r,4,Mithridatium,55.6,5
+f94r,5,Electuarium Diaspermaton,54.5,3
+f94v,1,Antidotum Hadriani,87.5,7
+f94v,2,Theriac Abulcasis (contra venenos),77.8,7
+f94v,3,Electuarium de Baccis Lauri,71.4,5
+f94v,4,Confectio Anacardia,71.4,5
+f94v,5,Philonium Romanum,71.4,5
+f95r,1,Theriac Abulcasis (contra venenos),76.2,8
+f95r,2,Trifera Magna,74.1,10
+f95r,3,Theodoricon Euporistum,72.7,8
+f95r,4,Theriac Magna (Triaca de Andromachus),72.0,9
+f95r,5,Confectio Anacardia,70.6,6
+f95v,1,Philonium Persicum,70.6,6
+f95v,2,Antidotum Hadriani,66.7,5
+f95v,3,Trifera Saracenica,62.5,5
+f95v,4,Paulinum,62.5,5
+f95v,5,Confectio Anacardia,61.5,4
+f96r,1,Philonium Persicum,66.7,6
+f96r,2,Trifera Saracenica,58.8,5
+f96r,3,Confectio Anacardia,57.1,4
+f96r,4,Theriac Abulcasis (contra venenos),55.6,5
+f96r,5,Theriac Magna (Triaca de Andromachus),54.5,6
+f96v,1,Pillulae Aureae,50.0,1
+f96v,2,Pillulae de Hiera cum Agarico,50.0,1
+f96v,3,Hiera Picra (Hiera de Galeno),40.0,1
+f96v,4,Benedicta Laxativa,40.0,1
+f96v,5,Requies Magna (Requies Nicolai),33.3,1
+f99r,1,Electuarium Justinum,77.8,7
+f99r,2,Theodoricon Euporistum,73.7,7
+f99r,3,Paulinum,70.6,6
+f99r,4,Aurea Alexandrina,66.7,6
+f99r,5,Jawaarish Jalinusi (Digestivo de Galeno - Avicena),66.7,5
+f99v,1,Aurea Alexandrina,90.0,9
+f99v,2,Paulinum,84.2,8
+f99v,3,Theodoricon Euporistum,76.2,8
+f99v,4,Trifera Saracenica,73.7,7
+f99v,5,Mithridatium,72.7,8

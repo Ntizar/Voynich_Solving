@@ -218,14 +218,15 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
     <a class="nav-link" onclick="scrollToSection('recipes')">Recetas</a>
     <a class="nav-link" onclick="scrollToSection('heatmap')">Heatmap</a>
     <a class="nav-link" onclick="scrollToSection('charts')">Graficos</a>
-    <a class="nav-link" onclick="scrollToSection('matching-v3')">Matching v6</a>
+    <a class="nav-link" onclick="scrollToSection('session14')">Session 14</a>
+    <a class="nav-link" onclick="scrollToSection('matching-v3')">Matching v7</a>
     <a class="nav-link" onclick="scrollToSection('zingiber-mel')">Zingiber/Mel</a>
     <a class="nav-link" onclick="scrollToSection('deadlock')">Deadlock</a>
     <a class="nav-link" onclick="scrollToSection('folios')">Folios</a>
   </div>
   <div class="flex gap-3 items-center">
-    <span class="badge badge-glass no-dot">Sesion 12</span>
-    <span class="badge badge-success no-dot">v6 + Matching v6</span>
+    <span class="badge badge-glass no-dot">Session 14</span>
+    <span class="badge badge-success no-dot">v7 -- 81.9% mean F1</span>
   </div>
 </nav>
 
@@ -242,30 +243,30 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
     </h1>
     <p style="font-size: var(--text-lg); max-width: 700px; margin-bottom: 2rem;">
       Base de datos farmaceutica medieval codificada en el Manuscrito Voynich (STA1 2.0).
-      58 stems identificados, 17 ingredientes unicos, 50 recetas historicas cruzadas, 48 folios analizados. Content-based matching v6. Deadlock Zingiber/Mel resuelto (41-0).
+      75 stems identificados, 22 ingredientes unicos, 50 recetas historicas cruzadas, 48 folios analizados. Content-based matching v7: 35 EXCELLENT (F1>=80%), media F1 = 81.9%. Deadlock Zingiber/Mel resuelto (41-0). Zingiber encontrado. Castoreum confirmado.
     </p>
   </div>
 
   <!-- Global Stats -->
   <div class="grid grid-4 gap-4 animate-fade-up delay-1">
     <div class="card card-glass stat-card card-accent-blue">
-      <div class="stat-number text-gradient-blue">58</div>
+      <div class="stat-number text-gradient-blue">75</div>
       <div class="stat-label">Stems Identificados</div>
       <div class="mt-4">
         <div style="display:flex;justify-content:space-between;font-size:var(--text-xs);color:var(--text-muted);margin-bottom:0.25rem;">
-          <span>Cobertura del vocabulario</span><span style="color:var(--blue-300);">~1.8%</span>
+          <span>Cobertura del vocabulario</span><span style="color:var(--blue-300);">~2.3%</span>
         </div>
-        <div class="progress-wrap" style="height:6px;"><div class="progress-bar" style="width:1.8%;"></div></div>
+        <div class="progress-wrap" style="height:6px;"><div class="progress-bar" style="width:2.3%;"></div></div>
       </div>
     </div>
     <div class="card card-glass stat-card card-accent-orange">
-      <div class="stat-number" style="color:var(--orange-400);">17</div>
+      <div class="stat-number" style="color:var(--orange-400);">22</div>
       <div class="stat-label">Ingredientes Unicos</div>
       <div class="mt-4">
         <div style="display:flex;justify-content:space-between;font-size:var(--text-xs);color:var(--text-muted);margin-bottom:0.25rem;">
-          <span>De ~152 en base de recetas</span><span style="color:var(--orange-300);">11.2%</span>
+          <span>De ~152 en base de recetas</span><span style="color:var(--orange-300);">14.5%</span>
         </div>
-        <div class="progress-wrap" style="height:6px;"><div class="progress-bar orange" style="width:11.2%;"></div></div>
+        <div class="progress-wrap" style="height:6px;"><div class="progress-bar orange" style="width:14.5%;"></div></div>
       </div>
     </div>
     <div class="card card-glass stat-card">
@@ -279,13 +280,13 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
       </div>
     </div>
     <div class="card card-glass stat-card">
-      <div class="stat-number text-gradient">50</div>
-      <div class="stat-label">Recetas Historicas</div>
+      <div class="stat-number text-gradient">81.9%</div>
+      <div class="stat-label">Media F1 (v7)</div>
       <div class="mt-4">
         <div style="display:flex;justify-content:space-between;font-size:var(--text-xs);color:var(--text-muted);margin-bottom:0.25rem;">
-          <span>Content-based F1>=50%</span><span style="color:#86efac;">37 folios</span>
+          <span>35 EXCELLENT (F1>=80%)</span><span style="color:#86efac;">47/48 folios</span>
         </div>
-        <div class="progress-wrap" style="height:6px;"><div class="progress-bar" style="width:77%;background:linear-gradient(90deg,#22c55e,#86efac);box-shadow:0 0 12px rgba(34,197,94,0.5);"></div></div>
+        <div class="progress-wrap" style="height:6px;"><div class="progress-bar" style="width:97%;background:linear-gradient(90deg,#22c55e,#86efac);box-shadow:0 0 12px rgba(34,197,94,0.5);"></div></div>
       </div>
     </div>
   </div>
@@ -333,15 +334,15 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
 <section class="section" id="identifications">
   <div class="section-label">Desciframiento</div>
   <h2 style="margin-bottom:0.5rem;">Tabla de Identificaciones</h2>
-  <p style="margin-bottom:1.5rem;">58 stems con ingrediente asignado (v6). Tiers 0-4, de funcion gramatical a candidato moderado. Mel despumatum confirmado (antes Zingiber|Mel).</p>
+  <p style="margin-bottom:1.5rem;">75 stems con ingrediente asignado (v7). Tiers 0-4, de funcion gramatical a candidato moderado. 22 ingredientes unicos. Nuevos en v7: Zingiber, Castoreum, Petroselinum, Gentiana.</p>
 
   <!-- Filter chips -->
   <div class="flex gap-2 flex-wrap mb-4">
-    <span class="filter-chip active" onclick="filterTable('all')">Todos (58)</span>
+    <span class="filter-chip active" onclick="filterTable('all')">Todos (75)</span>
     <span class="filter-chip" onclick="filterTable(0)">Tier 0 -- Funcion (8)</span>
     <span class="filter-chip" onclick="filterTable(1)">Tier 1 -- Confirmado (2)</span>
     <span class="filter-chip" onclick="filterTable(2)">Tier 2 -- Alto (6)</span>
-    <span class="filter-chip" onclick="filterTable(3)">Tier 3 -- Fuerte (19)</span>
+    <span class="filter-chip" onclick="filterTable(3)">Tier 3 -- Fuerte (36)</span>
     <span class="filter-chip" onclick="filterTable(4)">Tier 4 -- Moderado (23)</span>
   </div>
 
@@ -474,27 +475,27 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
      CONTENT-BASED MATCHING V3
      ============================================================ -->
 <section class="section" id="matching-v3">
-  <div class="section-label">Session 12 -- UPDATED</div>
-  <h2 style="margin-bottom:0.5rem;">Content-Based Matching v6</h2>
-  <p style="margin-bottom:1.5rem;">Matching basado en ingredientes REALES identificados (v6 -- Mel despumatum confirmado). F1-score de ingredientes del folio vs cada receta historica (50 recetas).</p>
+  <div class="section-label">Session 14 -- v7 RESULTS</div>
+  <h2 style="margin-bottom:0.5rem;">Content-Based Matching v7</h2>
+  <p style="margin-bottom:1.5rem;">Matching basado en ingredientes REALES identificados (v7 -- 75 stems, 22 ingredientes). F1-score de ingredientes del folio vs cada receta historica (50 recetas). Salto masivo respecto a v6.</p>
 
   <!-- Summary stat row -->
   <div class="grid grid-4 gap-4 mb-6">
     <div class="card card-glass stat-card card-accent-blue">
-      <div class="stat-number" style="color:#86efac;">0</div>
+      <div class="stat-number" style="color:#86efac;">35</div>
       <div class="stat-label">Excellent (F1>=80%)</div>
-      <small>f113v baja a 75% (Mel single)</small>
+      <small>f100r logra 100% F1 (Diamargariton)</small>
     </div>
     <div class="card card-glass stat-card">
-      <div class="stat-number text-gradient-blue">37</div>
+      <div class="stat-number text-gradient-blue">12</div>
       <div class="stat-label">Good (F1 50-79%)</div>
     </div>
     <div class="card card-glass stat-card">
-      <div class="stat-number" style="color:var(--orange-400);">8</div>
+      <div class="stat-number" style="color:var(--orange-400);">0</div>
       <div class="stat-label">Moderate (F1 30-49%)</div>
     </div>
     <div class="card card-glass stat-card">
-      <div class="stat-number" style="color:var(--text-muted);">2+1</div>
+      <div class="stat-number" style="color:var(--text-muted);">0+1</div>
       <div class="stat-label">Weak + Insufficient</div>
     </div>
   </div>
@@ -503,23 +504,49 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
   <div class="card card-glass glass-blue p-6 mb-6">
     <div class="flex gap-4 items-center flex-wrap">
       <div>
-        <span class="badge badge-blue" style="font-size:var(--text-sm);">BEST MATCH v6</span>
-        <h3 style="margin-top:0.5rem;">f113v = Electuarium Justinum</h3>
-        <p style="margin-top:0.25rem;font-size:var(--text-sm);">F1 = 75.0% -- 9 ingredientes en comun de 14 en la receta. (Baja de 80% en v3 porque Mel es ahora ingrediente unico, no par)</p>
+        <span class="badge badge-blue" style="font-size:var(--text-sm);">BEST MATCH v7</span>
+        <h3 style="margin-top:0.5rem;">f100r = Diamargariton -- <span style="color:#86efac;">100% F1</span></h3>
+        <p style="margin-top:0.25rem;font-size:var(--text-sm);">F1 = 100.0% -- 8 ingredientes identificados, 8 en la receta, 0 falsos positivos, 0 falsos negativos. Match perfecto.</p>
       </div>
       <div style="flex:1;min-width:200px;">
         <div style="font-size:var(--text-xs);color:var(--text-muted);margin-bottom:0.5rem;">Ingredientes identificados en el folio:</div>
         <div class="flex gap-2 flex-wrap">
-          <span class="badge badge-blue no-dot">Amomum</span>
-          <span class="badge badge-blue no-dot">Bdellium</span>
           <span class="badge badge-blue no-dot">Cardamomum</span>
           <span class="badge badge-blue no-dot">Casia</span>
           <span class="badge badge-blue no-dot">Cinnamomum</span>
           <span class="badge badge-orange no-dot">Crocus</span>
+          <span class="badge badge-blue no-dot">Cubeba</span>
+          <span class="badge badge-blue no-dot">Galanga</span>
+          <span class="badge badge-blue no-dot">Nux moschata</span>
+          <span class="badge badge-success no-dot">Saccharum</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second highlight: f113v -->
+  <div class="card card-glass glass-orange p-6 mb-6">
+    <div class="flex gap-4 items-center flex-wrap">
+      <div>
+        <span class="badge badge-orange" style="font-size:var(--text-sm);">RUNNER-UP v7</span>
+        <h3 style="margin-top:0.5rem;">f113v = Theodoricon Euporistum -- <span style="color:#86efac;">96.0% F1</span></h3>
+        <p style="margin-top:0.25rem;font-size:var(--text-sm);">F1 = 96.0% -- 12 TP ingredientes, 1 FP (Bdellium), 0 FN. Receta compleja de 12 ingredientes casi perfectamente mapeada.</p>
+      </div>
+      <div style="flex:1;min-width:200px;">
+        <div style="font-size:var(--text-xs);color:var(--text-muted);margin-bottom:0.5rem;">Ingredientes (12 TP):</div>
+        <div class="flex gap-2 flex-wrap">
+          <span class="badge badge-blue no-dot">Amomum</span>
+          <span class="badge badge-blue no-dot">Cardamomum</span>
+          <span class="badge badge-blue no-dot">Casia</span>
+          <span class="badge badge-purple no-dot">Castoreum</span>
+          <span class="badge badge-blue no-dot">Cinnamomum</span>
+          <span class="badge badge-orange no-dot">Crocus</span>
           <span class="badge badge-success no-dot">Mel desp.</span>
           <span class="badge badge-orange no-dot">Myrrha</span>
+          <span class="badge badge-blue no-dot">Petroselinum</span>
           <span class="badge badge-blue no-dot">P. longum</span>
           <span class="badge badge-blue no-dot">P. nigrum</span>
+          <span class="badge badge-success no-dot">Zingiber</span>
         </div>
       </div>
     </div>
@@ -527,7 +554,7 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
 
   <!-- V3 Chart: F1 by folio -->
   <div class="card card-glass p-4 mb-4">
-    <h4 style="margin-bottom:1rem;font-size:var(--text-base);">F1 Score por Folio (Best Match v6)</h4>
+    <h4 style="margin-bottom:1rem;font-size:var(--text-base);">F1 Score por Folio (Best Match v7)</h4>
     <div class="chart-container" style="height:300px;"><canvas id="chart-v3-f1"></canvas></div>
   </div>
 
@@ -604,6 +631,113 @@ a { color: var(--blue-400); text-decoration: none; } a:hover { color: var(--blue
   <div class="card card-glass p-4">
     <h4 style="margin-bottom:1rem;font-size:var(--text-base);">Mel F1 vs Zingiber F1 por Folio (41-0)</h4>
     <div class="chart-container" style="height:350px;"><canvas id="chart-zingiber-mel"></canvas></div>
+  </div>
+</section>
+
+<hr class="divider-gradient mt-6 mb-6">
+
+<!-- ============================================================
+     SESSION 14 -- BREAKTHROUGH
+     ============================================================ -->
+<section class="section" id="session14">
+  <div class="section-label">Session 14 -- BREAKTHROUGH</div>
+  <h2 style="margin-bottom:0.5rem;">v6 &rarr; v7: <span class="text-gradient">El Gran Salto</span></h2>
+  <p style="margin-bottom:1.5rem;">Intersection analysis over 237 candidate stems unlocked 17 new identifications, 4 entirely new ingredients, and pushed matching quality from mediocre to <strong style="color:#86efac">excellent</strong> across the board.</p>
+
+  <!-- v6 vs v7 comparison stats -->
+  <div class="grid grid-4 gap-4 mb-6">
+    <div class="card card-glass stat-card card-accent-blue">
+      <div class="stat-number text-gradient">75</div>
+      <div class="stat-label">Stems v7</div>
+      <small style="font-size:10px;">58 &rarr; 75 (+29%)</small>
+    </div>
+    <div class="card card-glass stat-card card-accent-orange">
+      <div class="stat-number" style="color:var(--orange-400);">22</div>
+      <div class="stat-label">Ingredients v7</div>
+      <small style="font-size:10px;">17 &rarr; 22 (+29%)</small>
+    </div>
+    <div class="card card-glass stat-card" style="border-top:2px solid #22c55e;">
+      <div class="stat-number" style="color:#86efac;">35</div>
+      <div class="stat-label">EXCELLENT (F1&ge;80%)</div>
+      <small style="font-size:10px;">0 &rarr; 35 (from zero!)</small>
+    </div>
+    <div class="card card-glass stat-card" style="border-top:2px solid #22c55e;">
+      <div class="stat-number" style="color:#86efac;">81.9%</div>
+      <div class="stat-label">Mean F1 v7</div>
+      <small style="font-size:10px;">54.3% &rarr; 81.9% (+50.8%)</small>
+    </div>
+  </div>
+
+  <!-- New ingredients card -->
+  <div class="card card-glass glass-blue p-6 mb-6">
+    <h4 style="margin-bottom:1rem;">4 Nuevos Ingredientes Descubiertos</h4>
+    <div class="grid grid-4 gap-4" style="font-size:var(--text-sm);">
+      <div>
+        <p style="color:var(--text-primary);font-weight:var(--font-semi);margin-bottom:0.25rem;">Zingiber (Jengibre)</p>
+        <p>2 stems: K1J1, K1K2</p>
+        <p style="margin-top:0.25rem;"><span class="badge badge-success no-dot">80-83%</span></p>
+        <p style="margin-top:0.25rem;font-size:10px;color:var(--text-muted);">UNIQUE candidates across 9-10 recipes</p>
+      </div>
+      <div>
+        <p style="color:var(--text-primary);font-weight:var(--font-semi);margin-bottom:0.25rem;">Castoreum</p>
+        <p>9 stems: K1J1B1, Q2A3, K1U1, A1Q2, L1J1B1, D1A1Q1K2B1, B2A1, B2Q1A3, A1Q1K2B1</p>
+        <p style="margin-top:0.25rem;"><span class="badge badge-orange no-dot">75-83%</span></p>
+        <p style="margin-top:0.25rem;font-size:10px;color:var(--text-muted);">Partially breaks the Opium/Castoreum deadlock</p>
+      </div>
+      <div>
+        <p style="color:var(--text-primary);font-weight:var(--font-semi);margin-bottom:0.25rem;">Petroselinum (Perejil)</p>
+        <p>4 stems: A1Q1K2Ba, A1Q2K1A1, B1L1K2B1, K1U1A3</p>
+        <p style="margin-top:0.25rem;"><span class="badge badge-success no-dot">90%</span></p>
+        <p style="margin-top:0.25rem;font-size:10px;color:var(--text-muted);">Wins decisively vs Zingiber</p>
+      </div>
+      <div>
+        <p style="color:var(--text-primary);font-weight:var(--font-semi);margin-bottom:0.25rem;">Gentiana</p>
+        <p>2 stems: D1A1Q1K2Aa, Q2A1B1A3</p>
+        <p style="margin-top:0.25rem;"><span class="badge badge-success no-dot">85-90%</span></p>
+        <p style="margin-top:0.25rem;font-size:10px;color:var(--text-muted);">Only in antidote recipes -- very rare</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Triple deadlock result -->
+  <div class="card card-glass glass-orange p-6 mb-6">
+    <h4 style="margin-bottom:0.75rem;">Galanga | Cubeba | Nux moschata: <span style="color:#fca5a5;">UNBREAKABLE</span></h4>
+    <div class="grid grid-3 gap-4" style="font-size:var(--text-sm);">
+      <div>
+        <div class="stat-number" style="font-size:var(--text-2xl);color:var(--text-muted);">47</div>
+        <div class="stat-label">TIED folios</div>
+      </div>
+      <div>
+        <div class="stat-number" style="font-size:var(--text-2xl);color:var(--text-muted);">0</div>
+        <div class="stat-label">Directional wins</div>
+      </div>
+      <div style="display:flex;align-items:center;">
+        <p style="color:var(--text-secondary);">No existen recetas que contengan solo uno de los tres ingredientes sin los otros. Las 50 recetas que incluyen Galanga siempre incluyen Cubeba y Nux moschata. Deadlock permanente con la base actual.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- v6 vs v7 comparison table -->
+  <div class="card card-glass" style="padding:0;overflow:auto;">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metrica</th>
+          <th>v6 (Session 12)</th>
+          <th>v7 (Session 14)</th>
+          <th>Cambio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Total stems</td><td>58</td><td style="color:#86efac;font-weight:var(--font-semi);">75</td><td><span class="badge badge-success no-dot">+29%</span></td></tr>
+        <tr><td>Unique ingredients</td><td>17</td><td style="color:#86efac;font-weight:var(--font-semi);">22</td><td><span class="badge badge-success no-dot">+29%</span></td></tr>
+        <tr><td>EXCELLENT matches (F1&ge;80%)</td><td>0</td><td style="color:#86efac;font-weight:var(--font-semi);">35</td><td><span class="badge badge-success no-dot">+35</span></td></tr>
+        <tr><td>GOOD matches (F1 50-79%)</td><td>37</td><td style="font-weight:var(--font-semi);">12</td><td><span class="badge badge-blue no-dot">-25 (promoted)</span></td></tr>
+        <tr><td>Mean F1 (non-zero)</td><td>54.3%</td><td style="color:#86efac;font-weight:var(--font-semi);">81.9%</td><td><span class="badge badge-success no-dot">+50.8%</span></td></tr>
+        <tr><td>Best single match</td><td>f113v = 75.0%</td><td style="color:#86efac;font-weight:var(--font-semi);">f100r = 100.0%</td><td><span class="badge badge-success no-dot">PERFECT</span></td></tr>
+        <tr><td>Top recipe</td><td>Elec. Justinum (14)</td><td style="font-weight:var(--font-semi);">Trifera Saracenica (10)</td><td><span class="badge badge-blue no-dot">Diversified</span></td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
@@ -742,14 +876,14 @@ Resultado: 12 sub-folios recuperados</code></pre>
 // ============================================================
 
 const IDENTIFICATIONS = [
-  {stem:"C2A1",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"14 folios, 8 recipes. Zero candidates."},
-  {stem:"A1Q1J1A1",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"12 folios, 6 recipes. Zero candidates."},
-  {stem:"U2J1A1",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"10 folios, 6 recipes. Zero candidates."},
-  {stem:"A1Q2A3",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"16 folios, 5 recipes. Zero candidates."},
-  {stem:"D1A1Q1J1A1",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"14 folios, 5 recipes. Zero candidates."},
-  {stem:"A1B1A3",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"13 folios, 5 recipes. Zero candidates."},
-  {stem:"L1J1A1",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"18 folios, 5 recipes. Zero candidates."},
-  {stem:"L1A1",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"18 folios, 6 recipes. Zero candidates."},
+  {stem:"C2A1",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"14 folios, 8 recipes. Zero candidates. Grammatical marker."},
+  {stem:"A1Q1J1A1",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"12 folios, 6 recipes. Zero candidates. Likely structural word."},
+  {stem:"U2J1A1",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"10 folios, 6 recipes. Zero candidates. Likely structural/measurement word."},
+  {stem:"A1Q2A3",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"16 folios, 5 recipes. Zero candidates. High frequency structural word."},
+  {stem:"D1A1Q1J1A1",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"14 folios, 5 recipes. Zero candidates. Complex stem, structural."},
+  {stem:"A1B1A3",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"13 folios, 5 recipes. Zero candidates after intersection."},
+  {stem:"L1J1A1",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"18 folios, 5 recipes. Zero candidates. Structural word."},
+  {stem:"L1A1",ingredient:"FUNCTION_WORD",confidence:90,tier:0,source:"intersection_empty",reasoning:"18 folios, 6 recipes. Zero candidates. Structural word."},
   {stem:"K1K2A1",ingredient:"Galbanum",confidence:99,tier:1,source:"v1 + cross-val",reasoning:"Unique intersection across 4 diverse recipes; only resin that fits all."},
   {stem:"K1A3",ingredient:"Crocus",confidence:95,tier:1,source:"elimination_logic",reasoning:"Absent from Diascordium (has Cinnamomum). Crocus fits all remaining."},
   {stem:"A1Q2A1",ingredient:"Myrrha",confidence:92,tier:2,source:"v3_UNIQUE",reasoning:"UNIQUE across 4 recipes incl. Ung.Apostolorum."},
@@ -777,6 +911,23 @@ const IDENTIFICATIONS = [
   {stem:"P1K1J1A1",ingredient:"Cinnamomum",confidence:60,tier:3,source:"elimination_chain",reasoning:"Same elimination chain."},
   {stem:"A1B2B1A3",ingredient:"Opopanax",confidence:80,tier:3,source:"session6_new",reasoning:"Independent resolution to Opopanax across multiple recipes."},
   {stem:"A3F2",ingredient:"Opopanax",confidence:78,tier:3,source:"session6_new",reasoning:"Converges to Opopanax independently from A1B2B1A3."},
+  {stem:"K1J1",ingredient:"Zingiber",confidence:83,tier:3,source:"session14_UNIQUE",reasoning:"UNIQUE candidate across 10 recipes. 38 folios, 100% presence, 67% absence."},
+  {stem:"K1K2",ingredient:"Zingiber",confidence:80,tier:3,source:"session14_UNIQUE",reasoning:"UNIQUE candidate across 9 recipes. 37 folios, 100% presence, 70% absence."},
+  {stem:"K1J1B1",ingredient:"Castoreum",confidence:83,tier:3,source:"session14_STRONG",reasoning:"Castoreum vs Zingiber: Castoreum wins. 26 folios, 100% presence, 67% absence."},
+  {stem:"Q2A3",ingredient:"Castoreum",confidence:82,tier:3,source:"session14_STRONG",reasoning:"Castoreum vs Zingiber: Castoreum wins. 25 folios, 100% presence, 68% absence."},
+  {stem:"K1U1",ingredient:"Castoreum",confidence:79,tier:3,source:"session14_STRONG",reasoning:"Castoreum vs Zingiber: Castoreum wins. 23 folios."},
+  {stem:"A1Q2",ingredient:"Castoreum",confidence:79,tier:3,source:"session14_STRONG",reasoning:"Castoreum vs Zingiber: Castoreum wins. 23 folios."},
+  {stem:"L1J1B1",ingredient:"Castoreum",confidence:79,tier:3,source:"session14_STRONG",reasoning:"Castoreum vs Zingiber: Castoreum wins. 23 folios."},
+  {stem:"D1A1Q1K2B1",ingredient:"Castoreum",confidence:78,tier:3,source:"session14_STRONG",reasoning:"Castoreum vs Zingiber: Castoreum wins. 22 folios."},
+  {stem:"B2A1",ingredient:"Castoreum",confidence:77,tier:3,source:"session14_STRONG",reasoning:"Castoreum vs Zingiber: Castoreum wins. 21 folios."},
+  {stem:"B2Q1A3",ingredient:"Castoreum",confidence:76,tier:3,source:"session14_STRONG",reasoning:"Castoreum vs Zingiber: Castoreum wins. 20 folios."},
+  {stem:"A1Q1K2B1",ingredient:"Castoreum",confidence:75,tier:3,source:"session14_STRONG",reasoning:"Castoreum vs Zingiber: Castoreum wins. 19 folios."},
+  {stem:"A1Q1K2Ba",ingredient:"Petroselinum",confidence:90,tier:3,source:"session14_STRONG",reasoning:"Petroselinum vs Zingiber: Petroselinum wins. 9 folios. NEW ingredient."},
+  {stem:"A1Q2K1A1",ingredient:"Petroselinum",confidence:90,tier:3,source:"session14_STRONG",reasoning:"Petroselinum vs Zingiber: Petroselinum wins. 8 folios. NEW ingredient."},
+  {stem:"B1L1K2B1",ingredient:"Petroselinum",confidence:90,tier:3,source:"session14_STRONG",reasoning:"Petroselinum vs Zingiber: Petroselinum wins. 3 folios. NEW ingredient."},
+  {stem:"K1U1A3",ingredient:"Petroselinum",confidence:90,tier:3,source:"session14_STRONG",reasoning:"Petroselinum vs Zingiber: Petroselinum wins. 4 folios. NEW confirmation."},
+  {stem:"D1A1Q1K2Aa",ingredient:"Gentiana",confidence:90,tier:3,source:"session14_STRONG",reasoning:"Gentiana vs Zingiber: Gentiana wins. 3 folios, only in antidote recipes. NEW."},
+  {stem:"Q2A1B1A3",ingredient:"Gentiana",confidence:85,tier:3,source:"session14_STRONG",reasoning:"Gentiana vs Zingiber: Gentiana wins. Overrides prior Opium morphological flag."},
   {stem:"K1J1A1B2",ingredient:"Saccharum",confidence:75,tier:4,source:"elimination_chain",reasoning:"Top Saccharum 0.873 vs Cinnamomum 0.607."},
   {stem:"K1A1B2B1A3",ingredient:"Galanga|Cubeba|Nux mosch.",confidence:75,tier:4,source:"diamargariton_excl",reasoning:"Only in Diamargariton+Trifera. 3 identical profiles."},
   {stem:"T1A1",ingredient:"Galanga|Cubeba|Nux mosch.",confidence:75,tier:4,source:"diamargariton_excl",reasoning:"Same."},
@@ -879,8 +1030,8 @@ const RECIPE_TYPES = {
 // Perfect match folios
 const PERFECT_FOLIOS = ["f87r","f87v","f88r","f93v","f96v","f100r","f100v","f101v","f103v"];
 
-// Content-based matching v6 -- [folio, recipe, f1, overlap, folioCov, recipeCov, ingredients]
-const MV3 = [["f87r","Theriac Diatessaron",28.6,1,50.0,20.0,"Mel desp. | Rosa"],["f87v","Pillulae Fetidae",61.5,4,80.0,50.0,"Bdellium | Crocus | Galbanum | Myrrha | Opopanax"],["f88r","Jawaarish Jalinusi",52.2,6,54.5,50.0,"Cardamomum | Casia | Crocus | Cubeba | Galanga | Galbanum | Mel desp. | Nux mosch. | Opopanax | P. longum | P. nigrum"],["f88v","Trifera Saracenica",63.6,7,87.5,50.0,"Cardamomum | Casia | Crocus | Galbanum | Mel desp. | Myrrha | P. longum | P. nigrum"],["f89r","Trifera Saracenica",58.3,7,70.0,50.0,"Bdellium | Cardamomum | Casia | Crocus | Mel desp. | Myrrha | Opopanax | P. longum | P. nigrum | Styrax"],["f89v","Trifera Saracenica",63.6,7,87.5,50.0,"Cardamomum | Casia | Crocus | Galbanum | Mel desp. | Myrrha | P. longum | P. nigrum"],["f90r","Theriac Diatessaron",44.4,2,50.0,40.0,"Bdellium | Mel desp. | Myrrha | P. longum"],["f90v","Antidotum Hadriani",47.1,4,80.0,33.3,"Casia | Cinnamomum | Galbanum | Mel desp. | Myrrha"],["f93r","Paulinum",44.4,4,80.0,30.8,"Casia | Mel desp. | Myrrha | P. nigrum | Styrax"],["f93v","Diascordium",42.1,4,66.7,30.8,"Casia | Galbanum | Mel desp. | P. nigrum | Rosa | Styrax"],["f94r","Elec. Baccis Lauri",30.8,2,100.0,18.2,"Myrrha | P. longum"],["f94v","Confectio Anacardia",46.2,3,100.0,30.0,"Crocus | Mel desp. | P. longum"],["f95r","Elec. Justinum",54.5,6,75.0,42.9,"Amomum | Bdellium | Crocus | Mel desp. | Myrrha | Opopanax | P. longum | P. nigrum"],["f95v","Jawaarish Jalinusi",37.5,3,75.0,25.0,"Casia | Crocus | P. longum | Styrax"],["f96r","Jawaarish Jalinusi",44.4,4,66.7,33.3,"Cardamomum | Crocus | Galbanum | Mel desp. | P. nigrum | Styrax"],["f96v","Pillulae Aureae",25.0,1,100.0,14.3,"Crocus"],["f99r","Elec. Justinum",52.6,5,100.0,35.7,"Amomum | Casia | Crocus | Mel desp. | P. nigrum"],["f99v","Paulinum",52.6,5,83.3,38.5,"Casia | Cinnamomum | Myrrha | P. longum | P. nigrum | Saccharum"],["f100r","Suffuf al-Tib",70.6,6,75.0,66.7,"Cardamomum | Casia | Cinnamomum | Crocus | Cubeba | Galanga | Nux mosch. | Saccharum"],["f100v","Diaciminum",50.0,4,80.0,36.4,"Amomum | Galbanum | Mel desp. | P. longum | P. nigrum"],["f101r","Elec. Justinum",61.5,8,66.7,57.1,"Amomum | Casia | Cinnamomum | Crocus | Cubeba | Galanga | Galbanum | Mel desp. | Myrrha | Nux mosch. | P. longum | P. nigrum"],["f101v","Trifera Saracenica",57.1,6,85.7,42.9,"Cardamomum | Cinnamomum | Crocus | Galbanum | Mel desp. | Myrrha | P. nigrum"],["f102r","Trifera Saracenica",54.5,6,75.0,42.9,"Bdellium | Cardamomum | Casia | Crocus | Mel desp. | Myrrha | Opopanax | P. nigrum"],["f102v","Trifera Saracenica",57.1,6,85.7,42.9,"Cardamomum | Casia | Crocus | Galbanum | Mel desp. | Myrrha | P. longum"],["f103r","Elec. Justinum",52.6,5,100.0,35.7,"Amomum | Cardamomum | Crocus | Myrrha | P. longum"],["f103v","Elec. Justinum",60.0,6,100.0,42.9,"Amomum | Cardamomum | Cinnamomum | Crocus | Myrrha | P. longum"],["f104r","Elec. Justinum",57.1,6,85.7,42.9,"Amomum | Cardamomum | Crocus | Galbanum | Mel desp. | Myrrha | P. longum"],["f104v","Trifera Saracenica",57.1,6,85.7,42.9,"Cardamomum | Casia | Cinnamomum | Crocus | Galbanum | Myrrha | P. longum"],["f105r","Trifera Saracenica",63.6,7,87.5,50.0,"Bdellium | Cardamomum | Casia | Cinnamomum | Crocus | Mel desp. | Myrrha | P. longum"],["f105v","Elec. Justinum",57.1,6,85.7,42.9,"Amomum | Cardamomum | Crocus | Myrrha | Opopanax | P. longum | P. nigrum"],["f106r","Trifera Saracenica",63.6,7,87.5,50.0,"Cardamomum | Casia | Cinnamomum | Crocus | Myrrha | P. longum | P. nigrum | Saccharum"],["f106v","Philonium Persicum",50.0,6,100.0,33.3,"Cardamomum | Casia | Crocus | Myrrha | P. longum | Styrax"],["f107r","Trifera Saracenica",52.6,5,100.0,35.7,"Cardamomum | Cinnamomum | Crocus | Myrrha | P. longum"],["f107v","Trifera Saracenica",63.6,7,87.5,50.0,"Bdellium | Cardamomum | Casia | Crocus | Mel desp. | Myrrha | P. longum | P. nigrum"],["f108r","Elec. Justinum",63.6,7,87.5,50.0,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Myrrha | P. longum | P. nigrum"],["f108v","Elec. Justinum",66.7,7,100.0,50.0,"Amomum | Cardamomum | Casia | Cinnamomum | Crocus | Myrrha | P. longum"],["f111r","Elec. Justinum",54.5,6,75.0,42.9,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Myrrha | Opopanax | P. longum"],["f111v","Elec. Justinum",63.6,7,87.5,50.0,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Mel desp. | Myrrha | P. longum"],["f112r","Trifera Saracenica",57.1,6,85.7,42.9,"Bdellium | Cardamomum | Casia | Cinnamomum | Crocus | Myrrha | P. longum"],["f112v","Antidotum Hadriani",52.6,5,71.4,41.7,"Bdellium | Casia | Crocus | Galbanum | Mel desp. | Myrrha | P. longum"],["f113r","Elec. Justinum",64.0,8,72.7,57.1,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Galbanum | Mel desp. | Myrrha | P. longum | P. nigrum | Rosa"],["f113v","Elec. Justinum",75.0,9,90.0,64.3,"Amomum | Bdellium | Cardamomum | Casia | Cinnamomum | Crocus | Mel desp. | Myrrha | P. longum | P. nigrum"],["f114r","Trifera Saracenica",63.6,7,87.5,50.0,"Cardamomum | Cinnamomum | Crocus | Mel desp. | Myrrha | Opopanax | P. longum | P. nigrum"],["f114v","Trifera Saracenica",54.5,6,75.0,42.9,"Bdellium | Cardamomum | Cinnamomum | Crocus | Galbanum | Myrrha | P. longum | P. nigrum"],["f115r","Elec. Justinum",52.2,6,66.7,42.9,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Galbanum | Myrrha | P. longum | Rosa"],["f115v","Trifera Magna",55.0,11,91.7,39.3,"Bdellium | Cardamomum | Cinnamomum | Crocus | Cubeba | Galanga | Galbanum | Mel desp. | Myrrha | Nux mosch. | P. longum | P. nigrum"],["f116r","Trifera Magna",52.6,10,100.0,35.7,"Amomum | Bdellium | Cardamomum | Casia | Crocus | Cubeba | Galanga | Myrrha | Nux mosch. | P. longum"],["f116v","",0.0,0,0.0,0.0,""]];
+// Content-based matching v7 -- [folio, recipe, f1, nMatched, precision, recall, ingredients]
+const MV3 = [["f100r","Diamargariton (Electuario de Perlas)",100.0,8,100.0,100.0,"Cardamomum | Casia | Cinnamomum | Crocus | Cubeba | Galanga | Nux moschata | Saccharum"],["f100v","Diaciminum (Electuario de Comino)",83.3,5,83.3,83.3,"Amomum | Mel despumatum | Piper longum | Piper nigrum | Zingiber | Galbanum"],["f101r","Trifera Magna",82.8,12,100.0,70.6,"Amomum | Casia | Cinnamomum | Crocus | Cubeba | Galanga | Mel despumatum | Myrrha | Nux moschata | Piper longum | Piper nigrum | Zingiber"],["f101v","Philonium Romanum",80.0,6,75.0,85.7,"Cinnamomum | Crocus | Mel despumatum | Myrrha | Piper nigrum | Zingiber | Cardamomum | Galbanum"],["f102r","Trifera Saracenica",80.0,8,80.0,80.0,"Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Piper nigrum | Zingiber | Bdellium | Opopanax"],["f102v","Trifera Saracenica",77.8,7,87.5,70.0,"Cardamomum | Casia | Crocus | Mel despumatum | Myrrha | Piper longum | Zingiber | Galbanum"],["f103r","Theodoricon Euporistum",73.7,7,100.0,58.3,"Amomum | Cardamomum | Castoreum | Crocus | Myrrha | Piper longum | Zingiber"],["f103v","Theodoricon Euporistum",85.7,9,100.0,75.0,"Amomum | Cardamomum | Castoreum | Cinnamomum | Crocus | Myrrha | Petroselinum | Piper longum | Zingiber"],["f104r","Theodoricon Euporistum",81.8,9,90.0,75.0,"Amomum | Cardamomum | Castoreum | Crocus | Mel despumatum | Myrrha | Petroselinum | Piper longum | Zingiber | Galbanum"],["f104v","Trifera Saracenica",84.2,8,88.9,80.0,"Cardamomum | Casia | Castoreum | Cinnamomum | Crocus | Myrrha | Piper longum | Zingiber | Galbanum"],["f105r","Trifera Saracenica",90.0,9,90.0,90.0,"Cardamomum | Casia | Castoreum | Cinnamomum | Crocus | Mel despumatum | Myrrha | Piper longum | Zingiber | Bdellium"],["f105v","Theodoricon Euporistum",81.8,9,90.0,75.0,"Amomum | Cardamomum | Castoreum | Crocus | Myrrha | Petroselinum | Piper longum | Piper nigrum | Zingiber | Opopanax"],["f106r","Aurea Alexandrina",90.9,10,90.9,90.9,"Casia | Castoreum | Cinnamomum | Crocus | Myrrha | Petroselinum | Piper longum | Piper nigrum | Saccharum | Zingiber | Cardamomum"],["f106v","Philonium Persicum",84.2,8,100.0,72.7,"Cardamomum | Casia | Castoreum | Crocus | Myrrha | Piper longum | Styrax | Zingiber"],["f107r","Trifera Saracenica",82.4,7,100.0,70.0,"Cardamomum | Castoreum | Cinnamomum | Crocus | Myrrha | Piper longum | Zingiber"],["f107v","Trifera Saracenica",90.0,9,90.0,90.0,"Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Piper longum | Piper nigrum | Zingiber | Bdellium"],["f108r","Theodoricon Euporistum",87.0,10,90.9,83.3,"Amomum | Cardamomum | Casia | Castoreum | Crocus | Myrrha | Petroselinum | Piper longum | Piper nigrum | Zingiber | Bdellium"],["f108v","Theodoricon Euporistum",90.9,10,100.0,83.3,"Amomum | Cardamomum | Casia | Castoreum | Cinnamomum | Crocus | Myrrha | Petroselinum | Piper longum | Zingiber"],["f111r","Trifera Magna",78.6,11,100.0,64.7,"Amomum | Bdellium | Cardamomum | Casia | Castoreum | Crocus | Myrrha | Opopanax | Petroselinum | Piper longum | Zingiber"],["f111v","Theodoricon Euporistum",87.0,10,90.9,83.3,"Amomum | Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Petroselinum | Piper longum | Zingiber | Bdellium"],["f112r","Trifera Saracenica",84.2,8,88.9,80.0,"Cardamomum | Casia | Castoreum | Cinnamomum | Crocus | Myrrha | Piper longum | Zingiber | Bdellium"],["f112v","Antidotum Hadriani",84.2,8,80.0,88.9,"Casia | Castoreum | Crocus | Gentiana | Mel despumatum | Myrrha | Piper longum | Zingiber | Bdellium | Galbanum"],["f113r","Theodoricon Euporistum",84.6,11,78.6,91.7,"Amomum | Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Petroselinum | Piper longum | Piper nigrum | Zingiber | Bdellium | Galbanum | Rosa"],["f113v","Theodoricon Euporistum",96.0,12,92.3,100.0,"Amomum | Cardamomum | Casia | Castoreum | Cinnamomum | Crocus | Mel despumatum | Myrrha | Petroselinum | Piper longum | Piper nigrum | Zingiber | Bdellium"],["f114r","Mithridatium",91.7,11,100.0,84.6,"Cardamomum | Castoreum | Cinnamomum | Crocus | Gentiana | Mel despumatum | Myrrha | Opopanax | Piper longum | Piper nigrum | Zingiber"],["f114v","Trifera Saracenica",80.0,8,80.0,80.0,"Cardamomum | Castoreum | Cinnamomum | Crocus | Myrrha | Piper longum | Piper nigrum | Zingiber | Bdellium | Galbanum"],["f115r","Theodoricon Euporistum",69.6,8,72.7,66.7,"Amomum | Cardamomum | Casia | Castoreum | Crocus | Myrrha | Piper longum | Zingiber | Bdellium | Galbanum | Rosa"],["f115v","Trifera Magna",83.9,13,92.9,76.5,"Bdellium | Cardamomum | Castoreum | Cinnamomum | Crocus | Cubeba | Galanga | Mel despumatum | Myrrha | Nux moschata | Piper longum | Piper nigrum | Zingiber | Galbanum"],["f116r","Trifera Magna",82.8,12,100.0,70.6,"Amomum | Bdellium | Cardamomum | Casia | Castoreum | Crocus | Cubeba | Galanga | Myrrha | Nux moschata | Piper longum | Zingiber"],["f116v","",0.0,0,0.0,0.0,""],["f87r","Confectio Hamech",57.1,2,100.0,40.0,"Mel despumatum | Rosa"],["f87v","Unguentum Apostolorum",88.9,4,80.0,100.0,"Bdellium | Galbanum | Myrrha | Opopanax | Casia"],["f88r","Trifera Magna",80.0,12,92.3,70.6,"Cardamomum | Casia | Crocus | Cubeba | Galanga | Mel despumatum | Nux moschata | Opopanax | Petroselinum | Piper longum | Piper nigrum | Zingiber | Galbanum"],["f88v","Trifera Saracenica",90.0,9,90.0,90.0,"Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Piper longum | Piper nigrum | Zingiber | Galbanum"],["f89r","Mithridatium",84.6,11,84.6,84.6,"Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Opopanax | Petroselinum | Piper longum | Piper nigrum | Zingiber | Bdellium | Styrax"],["f89v","Trifera Saracenica",90.0,9,90.0,90.0,"Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Piper longum | Piper nigrum | Zingiber | Galbanum"],["f90r","Electuarium de Baccis Lauri",85.7,6,85.7,85.7,"Gentiana | Mel despumatum | Myrrha | Petroselinum | Piper longum | Zingiber | Bdellium"],["f90v","Antidotum Hadriani",82.4,7,87.5,77.8,"Casia | Cinnamomum | Crocus | Gentiana | Mel despumatum | Myrrha | Zingiber | Galbanum"],["f93r","Philonium Persicum",77.8,7,100.0,63.6,"Casia | Castoreum | Mel despumatum | Myrrha | Piper nigrum | Styrax | Zingiber"],["f93v","Philonium Persicum",63.2,6,75.0,54.5,"Casia | Castoreum | Crocus | Mel despumatum | Piper nigrum | Styrax | Galbanum | Rosa"],["f94r","Electuarium de Baccis Lauri",83.3,5,100.0,71.4,"Gentiana | Myrrha | Petroselinum | Piper longum | Zingiber"],["f94v","Antidotum Hadriani",87.5,7,100.0,77.8,"Castoreum | Crocus | Gentiana | Mel despumatum | Myrrha | Piper longum | Zingiber"],["f95r","Theriac Abulcasis (contra venenos)",76.2,8,80.0,72.7,"Castoreum | Crocus | Mel despumatum | Myrrha | Opopanax | Piper longum | Piper nigrum | Zingiber | Amomum | Bdellium"],["f95v","Philonium Persicum",70.6,6,100.0,54.5,"Casia | Castoreum | Crocus | Piper longum | Styrax | Zingiber"],["f96r","Philonium Persicum",66.7,6,85.7,54.5,"Cardamomum | Castoreum | Crocus | Mel despumatum | Piper nigrum | Styrax | Galbanum"],["f96v","Pillulae Aureae",50.0,1,100.0,33.3,"Crocus"],["f99r","Electuarium Justinum",77.8,7,100.0,63.6,"Amomum | Casia | Crocus | Mel despumatum | Petroselinum | Piper nigrum | Zingiber"],["f99v","Aurea Alexandrina",90.0,9,100.0,81.8,"Casia | Castoreum | Cinnamomum | Myrrha | Petroselinum | Piper longum | Piper nigrum | Saccharum | Zingiber"]];
 
 // Deadlock breaker v3 -- [folio, opiumF1, castF1, bothF1, verdict]
 const DL3 = [["f87r",28.6,33.3,37.5,"TIED"],["f87v",14.3,36.4,26.7,"CASTOREUM"],["f88r",43.5,48.3,55.0,"TIED"],["f88v",57.1,59.3,66.7,"TIED"],["f89r",57.1,59.3,66.7,"TIED"],["f89v",60.0,61.5,69.6,"TIED"],["f90r",70.6,62.5,63.2,"OPIUM"],["f90v",28.6,33.3,40.0,"TIED"],["f93r",47.1,43.5,52.6,"TIED"],["f93v",47.1,50.0,52.6,"TIED"],["f94r",30.8,21.1,28.6,"OPIUM"],["f94v",53.3,42.9,50.0,"OPIUM"],["f95r",63.2,56.0,63.6,"OPIUM"],["f95v",25.0,36.4,43.5,"CASTOREUM"],["f96r",44.4,47.1,48.0,"TIED"],["f96v",16.7,18.2,15.4,"TIED"],["f99r",47.1,52.2,52.6,"CASTOREUM"],["f99v",40.0,42.9,47.1,"TIED"],["f100r",32.0,32.0,38.9,"TIED"],["f100v",47.1,50.0,50.0,"TIED"],["f101r",54.5,57.1,58.3,"TIED"],["f101v",66.7,58.8,66.7,"OPIUM"],["f102r",52.6,56.0,63.6,"TIED"],["f102v",44.4,50.0,57.1,"CASTOREUM"],["f103r",37.5,45.5,42.1,"CASTOREUM"],["f103v",47.1,52.2,50.0,"CASTOREUM"],["f104r",52.6,56.0,54.5,"TIED"],["f104v",44.4,50.0,57.1,"CASTOREUM"],["f105r",60.0,61.5,69.6,"TIED"],["f105v",47.1,43.5,50.0,"TIED"],["f106r",52.6,56.0,63.6,"TIED"],["f106v",35.3,43.5,50.0,"CASTOREUM"],["f107r",50.0,45.5,52.6,"TIED"],["f107v",60.0,61.5,69.6,"TIED"],["f108r",42.1,56.0,54.5,"CASTOREUM"],["f108v",44.4,58.3,57.1,"CASTOREUM"],["f111r",31.6,48.0,45.5,"CASTOREUM"],["f111v",50.0,61.5,60.9,"CASTOREUM"],["f112r",44.4,50.0,57.1,"CASTOREUM"],["f112v",52.6,48.0,60.0,"TIED"],["f113r",52.2,62.1,61.5,"CASTOREUM"],["f113v",63.6,71.4,72.0,"CASTOREUM"],["f114r",70.0,63.2,69.6,"OPIUM"],["f114v",52.6,48.0,54.5,"TIED"],["f115r",30.0,46.2,43.5,"CASTOREUM"],["f115v",58.3,53.3,59.3,"TIED"],["f116r",28.6,44.4,52.6,"CASTOREUM"],["f116v",0.0,0.0,0.0,"INSUFFICIENT"]];

@@ -1,0 +1,238 @@
+Stem,Ingredient,Confidence,N_Folios,Presence_Pct,Absence_Pct,N_Candidates,Source,Recipes
+K1J1,Zingiber,83,38,100.0,66.7,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Diaciminum (Electuario de Comino)|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+K1K2,Zingiber,80,37,100.0,70.0,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Diaciminum (Electuario de Comino)|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q1A3,Zingiber,70,32,100.0,80.0,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+A1Q1K2,Zingiber,68,30,100.0,82.4,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Confectio Hamech|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Magna (Triaca de Andromachus)|Trifera Magna|Trifera Saracenica
+D1A1Q2A3,Zingiber,66,28,100.0,84.2,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+K1J1A1B1,Zingiber,65,27,100.0,85.0,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+B2,Zingiber,65,27,100.0,85.0,1,UNIQUE,Aurea Alexandrina|Diaciminum (Electuario de Comino)|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+D1A1Q1,Zingiber,64,26,100.0,85.7,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+C1,Zingiber,64,26,100.0,85.7,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1A1B1,Zingiber,64,25,100.0,86.4,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Confectio Hamech|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Magna (Triaca de Andromachus)|Trifera Magna|Trifera Saracenica
+B1,Zingiber,64,25,100.0,86.4,1,UNIQUE,Aurea Alexandrina|Diaciminum (Electuario de Comino)|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1B2A3,Zingiber,63,24,100.0,87.0,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+Q1A3,Zingiber,63,24,100.0,87.0,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+D1A1Q1J1,Zingiber,62,23,100.0,87.5,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q2K2B1,Zingiber,62,22,100.0,88.0,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Confectio Hamech|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+D1A1Q1A1,Zingiber,62,22,100.0,88.0,1,UNIQUE,Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+B1A1,Zingiber,62,21,100.0,88.5,1,UNIQUE,Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1J1Ba,Zingiber,62,21,100.0,88.5,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+K1B1,Zingiber,61,19,100.0,89.3,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+K1J1A1B1A3,Zingiber,60,18,100.0,89.7,1,UNIQUE,Aurea Alexandrina|Confectio Hamech|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Magna (Triaca de Andromachus)|Trifera Magna|Trifera Saracenica
+A1A3,Zingiber,60,18,100.0,89.7,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+Aa,Zingiber,60,18,100.0,89.7,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1B2Q1A3,Zingiber,60,18,100.0,89.7,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+D1A1B1A3,Zingiber,60,17,100.0,90.0,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q2,Zingiber,60,16,100.0,90.3,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Confectio Hamech|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+A2Q1K2,Zingiber,60,16,100.0,90.3,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A2Q1A3,Zingiber,59,15,100.0,90.6,1,UNIQUE,Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+D1A1Q1K1,Zingiber,59,15,100.0,90.6,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A3C1A3,Zingiber,59,15,100.0,90.6,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Mithridatium|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+K1A1U1,Zingiber,59,14,100.0,90.9,1,UNIQUE,Aurea Alexandrina|Diaciminum (Electuario de Comino)|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1J1BaA3,Zingiber,59,14,100.0,90.9,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q2J1A1B1,Zingiber,59,13,100.0,91.2,1,UNIQUE,Antidotum Hadriani|Confectio Hamech|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1U1J1,Zingiber,58,10,100.0,91.9,1,UNIQUE,Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1A1Q1,Zingiber,58,10,100.0,91.9,1,UNIQUE,Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1J1Q1A3,Zingiber,58,10,100.0,91.9,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Saracenica
+Q2K1J1B1,Zingiber,58,10,100.0,91.9,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Electuarium de Baccis Lauri|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q2K1B1,Zingiber,58,10,100.0,91.9,1,UNIQUE,Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+A3B2,Zingiber,58,9,100.0,92.1,1,UNIQUE,Electuarium de Baccis Lauri|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q2J1A1B1,Zingiber,58,8,100.0,92.3,1,UNIQUE,Diaciminum (Electuario de Comino)|Electuarium de Baccis Lauri|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1A1B2,Zingiber,58,8,100.0,92.3,1,UNIQUE,Diaciminum (Electuario de Comino)|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+L1B1,Zingiber,58,8,100.0,92.3,1,UNIQUE,Electuarium de Baccis Lauri|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+P1K1J1B1A3,Zingiber,58,8,100.0,92.3,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Mithridatium|Theodoricon Euporistum
+C2A1C1A3,Zingiber,58,7,100.0,92.5,1,UNIQUE,Aurea Alexandrina|Confectio Hamech|Diaciminum (Electuario de Comino)|Mithridatium|Trifera Magna|Trifera Saracenica
+A2Q2K2,Zingiber,58,7,100.0,92.5,1,UNIQUE,Antidotum Hadriani|Aurea Alexandrina|Confectio Hamech|Mithridatium|Theodoricon Euporistum|Trifera Saracenica
+K1K2Ba,Zingiber,58,7,100.0,92.5,1,UNIQUE,Electuarium de Baccis Lauri|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q2J1A1B1A3,Zingiber,57,6,100.0,92.7,1,UNIQUE,Confectio Hamech|Mithridatium|Philonium Persicum|Trifera Magna|Trifera Saracenica
+U1K2,Zingiber,57,6,100.0,92.7,1,UNIQUE,Confectio Hamech|Mithridatium|Philonium Persicum|Trifera Saracenica
+B2B1A3,Zingiber,57,6,100.0,92.7,1,UNIQUE,Confectio Hamech|Mithridatium|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna
+A1Q2A3B2,Zingiber,57,6,100.0,92.7,1,UNIQUE,Aurea Alexandrina|Electuarium de Baccis Lauri|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+U1,Zingiber,57,6,100.0,92.7,1,UNIQUE,Electuarium de Baccis Lauri|Mithridatium|Theodoricon Euporistum|Theriac Magna (Triaca de Andromachus)|Trifera Saracenica
+A1Q1K1A1,Zingiber,57,6,100.0,92.7,1,UNIQUE,Electuarium de Baccis Lauri|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1B2Q1K2Ba,Zingiber,57,6,100.0,92.7,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Philonium Persicum|Trifera Saracenica
+Q1J1A1B1,Zingiber,57,6,100.0,92.7,1,UNIQUE,Diaciminum (Electuario de Comino)|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1J1Q2,Zingiber,57,5,100.0,92.9,1,UNIQUE,Confectio Hamech|Theodoricon Euporistum|Trifera Magna
+A1C2A3,Zingiber,57,5,100.0,92.9,1,UNIQUE,Electuarium de Baccis Lauri|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+L1Q1,Zingiber,57,5,100.0,92.9,1,UNIQUE,Electuarium de Baccis Lauri|Philonium Persicum|Theodoricon Euporistum|Trifera Magna
+A1Q1Aa,Zingiber,57,5,100.0,92.9,1,UNIQUE,Aurea Alexandrina|Electuarium de Baccis Lauri|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Saracenica
+A1Q2A3B2A3,Zingiber,57,5,100.0,92.9,1,UNIQUE,Electuarium de Baccis Lauri|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+A1Q2A1B1,Zingiber,57,5,100.0,92.9,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Theodoricon Euporistum|Trifera Saracenica
+U2A1B1,Zingiber,57,4,100.0,93.0,1,UNIQUE,Confectio Hamech|Philonium Persicum|Theriac Magna (Triaca de Andromachus)|Trifera Saracenica
+A2L1A1,Zingiber,57,4,100.0,93.0,1,UNIQUE,Electuarium de Baccis Lauri|Mithridatium|Theodoricon Euporistum|Trifera Saracenica
+A2Q2,Zingiber,57,4,100.0,93.0,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum
+A2Q2A1,Zingiber,57,4,100.0,93.0,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Mithridatium|Philonium Persicum
+K1A1BaA3,Zingiber,57,4,100.0,93.0,1,UNIQUE,Electuarium de Baccis Lauri|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+D1A1K2A1,Zingiber,57,4,100.0,93.0,1,UNIQUE,Electuarium de Baccis Lauri|Theodoricon Euporistum|Trifera Saracenica
+U2J1A1B1,Zingiber,57,3,100.0,93.2,1,UNIQUE,Confectio Hamech|Mithridatium|Trifera Saracenica
+B1K1K2A1,Zingiber,57,3,100.0,93.2,1,UNIQUE,Confectio Hamech|Theodoricon Euporistum|Trifera Saracenica
+K1A1U2J1,Zingiber,57,3,100.0,93.2,1,UNIQUE,Diaciminum (Electuario de Comino)|Trifera Saracenica
+D1A1U2,Zingiber,57,3,100.0,93.2,1,UNIQUE,Electuarium de Baccis Lauri|Mithridatium|Trifera Saracenica
+A2Q1K1B1,Zingiber,57,3,100.0,93.2,1,UNIQUE,Diaciminum (Electuario de Comino)|Mithridatium|Philonium Persicum
+D1A1Q2K1A1,Zingiber,57,3,100.0,93.2,1,UNIQUE,Electuarium de Baccis Lauri|Philonium Persicum|Theriac Magna (Triaca de Andromachus)
+L1Q1K2,Zingiber,57,3,100.0,93.2,1,UNIQUE,Electuarium de Baccis Lauri|Trifera Magna|Trifera Saracenica
+A2Q1K2A1B1,Zingiber,57,3,100.0,93.2,1,UNIQUE,Aurea Alexandrina|Electuarium de Baccis Lauri|Trifera Saracenica
+K1A1B2Q1,Zingiber,57,3,100.0,93.2,1,UNIQUE,Aurea Alexandrina|Electuarium de Baccis Lauri|Theriac Abulcasis (contra venenos)
+A1P1A3C1,Zingiber,57,3,100.0,93.2,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Trifera Saracenica
+Q1K1B1,Zingiber,57,3,100.0,93.2,1,UNIQUE,Antidotum Hadriani|Electuarium de Baccis Lauri|Philonium Persicum
+A1P1K1A1,Zingiber,57,3,100.0,93.2,1,UNIQUE,Aurea Alexandrina|Diaciminum (Electuario de Comino)|Trifera Saracenica
+A1Q1K2Ba,Petroselinum,90,9,100.0,39.5,2,STRONG,Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Theodoricon Euporistum|Trifera Magna
+A1Q2K1A1,Petroselinum,90,8,100.0,41.0,2,STRONG,Aurea Alexandrina|Electuarium de Baccis Lauri|Mithridatium|Theodoricon Euporistum|Trifera Magna
+K1U1A3,Petroselinum,90,4,100.0,46.5,2,STRONG,Electuarium de Baccis Lauri|Theodoricon Euporistum|Trifera Magna
+D1A1Q1K2Aa,Gentiana,90,3,100.0,18.2,2,STRONG,Antidotum Hadriani|Electuarium de Baccis Lauri
+B1L1K2B1,Petroselinum,90,3,100.0,47.7,2,STRONG,Electuarium de Baccis Lauri|Theodoricon Euporistum|Trifera Magna
+Q2A1B1A3,Gentiana,90,3,100.0,18.2,2,STRONG,Antidotum Hadriani|Electuarium de Baccis Lauri|Mithridatium
+K1J1B1,Castoreum,83,26,100.0,66.7,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+Q2A3,Castoreum,82,25,100.0,68.2,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+K1U1,Castoreum,79,23,100.0,70.8,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+A1Q2,Castoreum,79,23,100.0,70.8,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Theriac Magna (Triaca de Andromachus)|Trifera Magna|Trifera Saracenica
+L1J1B1,Castoreum,79,23,100.0,70.8,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q1K2B1,Castoreum,78,22,100.0,72.0,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+B2A1,Castoreum,77,21,100.0,73.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+B2Q1A3,Castoreum,76,20,100.0,74.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q1K2B1,Castoreum,75,19,100.0,75.0,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+K1A1B1A3,Castoreum,74,18,100.0,75.9,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Magna (Triaca de Andromachus)|Trifera Magna|Trifera Saracenica
+K1J1B1A3,Castoreum,74,18,100.0,75.9,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1Q1A3,Castoreum,74,18,100.0,75.9,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+L1J1A1B1,Castoreum,73,17,100.0,76.7,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+L1A3,Castoreum,73,17,100.0,76.7,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+B2K1J1B1,Castoreum,73,17,100.0,76.7,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+L1J1Ba,Castoreum,73,17,100.0,76.7,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1B2Q1K2,Castoreum,73,16,100.0,77.4,2,STRONG,Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+K1U2,Castoreum,73,16,100.0,77.4,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+B2Q1K2,Castoreum,73,16,100.0,77.4,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q2J1,Castoreum,72,15,100.0,78.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1A1Q1A3,Castoreum,72,15,100.0,78.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+A1Q1M1,Castoreum,72,15,100.0,78.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+A2Q2A3,Castoreum,72,15,100.0,78.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+A1Q2J1B1,Castoreum,72,15,100.0,78.1,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q2J1,Castoreum,72,15,100.0,78.1,2,STRONG,Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q1M1,Castoreum,72,15,100.0,78.1,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+D1A1Q2J1B1,Castoreum,72,15,100.0,78.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1P1K1J1B1,Castoreum,72,15,100.0,78.1,2,STRONG,Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q2K2B1,Castoreum,72,15,100.0,78.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1J1A3,Castoreum,71,14,100.0,78.8,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1K2B1,Castoreum,71,14,100.0,78.8,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q1J1Ba,Castoreum,71,14,100.0,78.8,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q1K2Ba,Castoreum,71,14,100.0,78.8,2,STRONG,Antidotum Hadriani|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+L1J1A3,Castoreum,71,13,100.0,79.4,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q2J1Ba,Castoreum,71,13,100.0,79.4,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1B1A3,Castoreum,71,13,100.0,79.4,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+B2K1J1,Castoreum,71,13,100.0,79.4,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q1J1B1,Castoreum,71,13,100.0,79.4,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+B2Q1K2B1,Castoreum,71,13,100.0,79.4,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A2K1J1,Castoreum,70,12,100.0,80.0,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1K2,Castoreum,70,12,100.0,80.0,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Trifera Saracenica
+K1A1Q2A3,Castoreum,70,12,100.0,80.0,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1J1U1,Castoreum,70,12,100.0,80.0,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q2A1,Castoreum,70,12,100.0,80.0,2,STRONG,Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1P1K1J1,Castoreum,70,12,100.0,80.0,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+C1A1,Castoreum,70,12,100.0,80.0,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1P1K1J1B1,Castoreum,70,12,100.0,80.0,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+B2Q1,Castoreum,70,12,100.0,80.0,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+Q2J1A1,Castoreum,69,11,100.0,80.6,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Magna (Triaca de Andromachus)|Trifera Magna|Trifera Saracenica
+A1Q1J1A3,Castoreum,69,11,100.0,80.6,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+L1K2B1,Castoreum,69,11,100.0,80.6,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q2K2A1,Castoreum,69,11,100.0,80.6,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A3B2A1,Castoreum,69,11,100.0,80.6,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+A1B2Q1K2B1,Castoreum,69,11,100.0,80.6,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Saracenica
+L1J1B1A3,Castoreum,69,11,100.0,80.6,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1Q2A3,Castoreum,69,11,100.0,80.6,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+AaQ1A3,Castoreum,69,11,100.0,80.6,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+B2A3,Castoreum,69,11,100.0,80.6,2,STRONG,Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q2A3C1A3,Castoreum,69,10,100.0,81.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1B1,Castoreum,69,10,100.0,81.1,2,STRONG,Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Saracenica
+A1Q1K1J1,Castoreum,69,10,100.0,81.1,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Theriac Magna (Triaca de Andromachus)|Trifera Saracenica
+A1Q1K1,Castoreum,69,10,100.0,81.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q1K1B1,Castoreum,69,10,100.0,81.1,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+D1A1Q1K1J1B1,Castoreum,69,10,100.0,81.1,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q2K2Ba,Castoreum,69,10,100.0,81.1,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+Q1K2B1,Castoreum,69,10,100.0,81.1,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+Q1K2A1,Castoreum,68,9,100.0,81.6,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Saracenica
+D1A1Q2K1,Castoreum,68,9,100.0,81.6,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+L1A1B1A3,Castoreum,68,9,100.0,81.6,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Magna (Triaca de Andromachus)|Trifera Saracenica
+A3C1,Castoreum,68,9,100.0,81.6,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1P1K1B1,Castoreum,68,9,100.0,81.6,2,STRONG,Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Saracenica
+A2K1J1A1,Castoreum,68,9,100.0,81.6,2,STRONG,Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Saracenica
+A1Q2K1J1,Castoreum,68,9,100.0,81.6,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+A2Q1J1A1,Castoreum,68,8,100.0,82.1,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+L1K2A1,Castoreum,68,8,100.0,82.1,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+B2Q1J1,Castoreum,68,8,100.0,82.1,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+Q2K1J1,Castoreum,68,8,100.0,82.1,2,STRONG,Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1P1K1,Castoreum,68,8,100.0,82.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Theriac Magna (Triaca de Andromachus)|Trifera Saracenica
+P1A1,Castoreum,68,8,100.0,82.1,2,STRONG,Mithridatium|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Saracenica
+A2Q2K2B1,Castoreum,68,8,100.0,82.1,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q2K2Ba,Castoreum,68,8,100.0,82.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q2K1J1B1,Castoreum,68,8,100.0,82.1,2,STRONG,Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q1K1J1B1,Castoreum,68,8,100.0,82.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1J1A1Q1A3,Castoreum,68,7,100.0,82.5,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+K1J1Aa,Castoreum,68,7,100.0,82.5,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1A1Q2,Castoreum,68,7,100.0,82.5,2,STRONG,Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+B2K1,Castoreum,68,7,100.0,82.5,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+M1,Castoreum,68,7,100.0,82.5,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+Q1M1,Castoreum,68,7,100.0,82.5,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q1K2A1B1,Castoreum,68,7,100.0,82.5,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Saracenica
+A2Q1K2B1,Castoreum,68,7,100.0,82.5,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Trifera Magna
+D1A1Q1Aa,Castoreum,68,7,100.0,82.5,2,STRONG,Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)
+Q1,Castoreum,68,7,100.0,82.5,2,STRONG,Mithridatium|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Saracenica
+B2L1J1B1,Castoreum,68,7,100.0,82.5,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+A1Q1J1Ba,Castoreum,68,7,100.0,82.5,2,STRONG,Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+D1A1M1,Castoreum,68,7,100.0,82.5,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+Q1K2Ba,Castoreum,68,7,100.0,82.5,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Trifera Magna
+D1A1P1K1J1,Castoreum,68,7,100.0,82.5,2,STRONG,Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1K2B1A3,Castoreum,68,7,100.0,82.5,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Trifera Saracenica
+B2K1B1,Castoreum,67,6,100.0,82.9,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1K2Q1,Castoreum,67,6,100.0,82.9,2,STRONG,Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Saracenica
+B1Aa,Castoreum,67,6,100.0,82.9,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A2K1A1,Castoreum,67,6,100.0,82.9,2,STRONG,Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Theriac Magna (Triaca de Andromachus)|Trifera Saracenica
+D1A1Q1K1A1,Castoreum,67,6,100.0,82.9,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Theriac Magna (Triaca de Andromachus)
+Q2K2B1,Castoreum,67,6,100.0,82.9,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q1L1,Castoreum,67,6,100.0,82.9,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+A3C1A1,Castoreum,67,6,100.0,82.9,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica
+A1Q1J1B1A3,Castoreum,67,6,100.0,82.9,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+P1K1B1A3,Castoreum,67,6,100.0,82.9,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+LbK2B1,Castoreum,67,6,100.0,82.9,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+K1A3C1A3,Castoreum,67,6,100.0,82.9,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum
+C1A3C1A3,Castoreum,67,6,100.0,82.9,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Trifera Magna
+A1B2B1,Castoreum,67,5,100.0,83.3,2,STRONG,Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1P2A3,Castoreum,67,5,100.0,83.3,2,STRONG,Mithridatium|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+D1A1BaA3,Castoreum,67,5,100.0,83.3,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+Q2L1A1,Castoreum,67,5,100.0,83.3,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)
+D1A1Q1K2A3,Castoreum,67,5,100.0,83.3,2,STRONG,Antidotum Hadriani|Theodoricon Euporistum|Theriac Magna (Triaca de Andromachus)|Trifera Magna
+A1Q2K1,Castoreum,67,5,100.0,83.3,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q1K1J1Ba,Castoreum,67,5,100.0,83.3,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica
+A1P1K1B1,Castoreum,67,5,100.0,83.3,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+A1Q1L1J1,Castoreum,67,5,100.0,83.3,2,STRONG,Aurea Alexandrina|Mithridatium|Philonium Persicum|Theodoricon Euporistum
+A1Q1J1A1Ba,Castoreum,67,5,100.0,83.3,2,STRONG,Aurea Alexandrina|Mithridatium|Theodoricon Euporistum|Trifera Saracenica
+P1K1A1B1A3,Castoreum,67,5,100.0,83.3,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q1K2K1,Castoreum,67,5,100.0,83.3,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1Q1A3B2,Castoreum,67,5,100.0,83.3,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+B2Q1K1J1B1,Castoreum,67,5,100.0,83.3,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+P1K1J1,Castoreum,67,5,100.0,83.3,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+D1A1Q1J1BaA3,Castoreum,67,5,100.0,83.3,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica
+B2Q2A3,Castoreum,67,5,100.0,83.3,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Magna|Trifera Saracenica
+A1K2A3,Castoreum,66,4,100.0,83.7,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Trifera Saracenica
+L1J1Aa,Castoreum,66,4,100.0,83.7,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica
+D1A1Q1K1Ba,Castoreum,66,4,100.0,83.7,2,STRONG,Antidotum Hadriani|Mithridatium|Philonium Persicum|Theodoricon Euporistum
+A1Q1K1B1,Castoreum,66,4,100.0,83.7,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum|Trifera Magna
+A1Q1K1A3,Castoreum,66,4,100.0,83.7,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica
+L1Ba,Castoreum,66,4,100.0,83.7,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)
+A2Q1K1J1B1,Castoreum,66,4,100.0,83.7,2,STRONG,Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna|Trifera Saracenica
+Q2K1B1,Castoreum,66,4,100.0,83.7,2,STRONG,Mithridatium|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Saracenica
+A1Q1A3C1A3,Castoreum,66,4,100.0,83.7,2,STRONG,Philonium Persicum|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Magna
+K1U2A3,Castoreum,66,4,100.0,83.7,2,STRONG,Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Saracenica
+B2K1K2B1,Castoreum,66,4,100.0,83.7,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica
+K1M1,Castoreum,66,4,100.0,83.7,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica
+C2A3C1A3,Castoreum,66,4,100.0,83.7,2,STRONG,Antidotum Hadriani|Philonium Persicum|Theodoricon Euporistum|Trifera Saracenica
+P1K1J1A1B1A3,Castoreum,66,4,100.0,83.7,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica
+K1J1P1,Castoreum,66,3,100.0,84.1,2,STRONG,Antidotum Hadriani|Mithridatium|Theodoricon Euporistum
+B1A3B2A3,Castoreum,66,3,100.0,84.1,2,STRONG,Theodoricon Euporistum|Theriac Abulcasis (contra venenos)|Trifera Saracenica
+Q1A3C1,Castoreum,66,3,100.0,84.1,2,STRONG,Mithridatium|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)
+B1L1J1B1,Castoreum,66,3,100.0,84.1,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Theriac Abulcasis (contra venenos)
+A1B2Q1J1A1,Castoreum,66,3,100.0,84.1,2,STRONG,Antidotum Hadriani|Aurea Alexandrina|Theodoricon Euporistum
+A1Q1J1K1,Castoreum,66,3,100.0,84.1,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica
+A1B2L1,Castoreum,66,3,100.0,84.1,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica
+K1P1K1,Castoreum,66,3,100.0,84.1,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica
+B1B2K1,Castoreum,66,3,100.0,84.1,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica
+D1A1P1K1,Castoreum,66,3,100.0,84.1,2,STRONG,Aurea Alexandrina|Philonium Persicum|Theodoricon Euporistum
+B2Q1L1J1B1,Castoreum,66,3,100.0,84.1,2,STRONG,Aurea Alexandrina|Theodoricon Euporistum|Trifera Saracenica

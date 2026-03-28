@@ -1,0 +1,49 @@
+Folio,Best_Recipe,F1,N_Matched,Precision,Recall,TP_Ingredients,FP_Ingredients
+f100r,Diamargariton (Electuario de Perlas),100.0,8,100.0,100.0,Cardamomum | Casia | Cinnamomum | Crocus | Cubeba | Galanga | Nux moschata | Saccharum,
+f100v,Diaciminum (Electuario de Comino),83.3,5,83.3,83.3,Amomum | Mel despumatum | Piper longum | Piper nigrum | Zingiber,Galbanum
+f101r,Trifera Magna,82.8,12,100.0,70.6,Amomum | Casia | Cinnamomum | Crocus | Cubeba | Galanga | Mel despumatum | Myrrha | Nux moschata | Piper longum | Piper nigrum | Zingiber,
+f101v,Philonium Romanum,80.0,6,75.0,85.7,Cinnamomum | Crocus | Mel despumatum | Myrrha | Piper nigrum | Zingiber,Cardamomum | Galbanum
+f102r,Trifera Saracenica,80.0,8,80.0,80.0,Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Piper nigrum | Zingiber,Bdellium | Opopanax
+f102v,Trifera Saracenica,77.8,7,87.5,70.0,Cardamomum | Casia | Crocus | Mel despumatum | Myrrha | Piper longum | Zingiber,Galbanum
+f103r,Theodoricon Euporistum,73.7,7,100.0,58.3,Amomum | Cardamomum | Castoreum | Crocus | Myrrha | Piper longum | Zingiber,
+f103v,Theodoricon Euporistum,85.7,9,100.0,75.0,Amomum | Cardamomum | Castoreum | Cinnamomum | Crocus | Myrrha | Petroselinum | Piper longum | Zingiber,
+f104r,Theodoricon Euporistum,81.8,9,90.0,75.0,Amomum | Cardamomum | Castoreum | Crocus | Mel despumatum | Myrrha | Petroselinum | Piper longum | Zingiber,Galbanum
+f104v,Trifera Saracenica,84.2,8,88.9,80.0,Cardamomum | Casia | Castoreum | Cinnamomum | Crocus | Myrrha | Piper longum | Zingiber,Galbanum
+f105r,Trifera Saracenica,90.0,9,90.0,90.0,Cardamomum | Casia | Castoreum | Cinnamomum | Crocus | Mel despumatum | Myrrha | Piper longum | Zingiber,Bdellium
+f105v,Theodoricon Euporistum,81.8,9,90.0,75.0,Amomum | Cardamomum | Castoreum | Crocus | Myrrha | Petroselinum | Piper longum | Piper nigrum | Zingiber,Opopanax
+f106r,Aurea Alexandrina,90.9,10,90.9,90.9,Casia | Castoreum | Cinnamomum | Crocus | Myrrha | Petroselinum | Piper longum | Piper nigrum | Saccharum | Zingiber,Cardamomum
+f106v,Philonium Persicum,84.2,8,100.0,72.7,Cardamomum | Casia | Castoreum | Crocus | Myrrha | Piper longum | Styrax | Zingiber,
+f107r,Trifera Saracenica,82.4,7,100.0,70.0,Cardamomum | Castoreum | Cinnamomum | Crocus | Myrrha | Piper longum | Zingiber,
+f107v,Trifera Saracenica,90.0,9,90.0,90.0,Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Piper longum | Piper nigrum | Zingiber,Bdellium
+f108r,Theodoricon Euporistum,87.0,10,90.9,83.3,Amomum | Cardamomum | Casia | Castoreum | Crocus | Myrrha | Petroselinum | Piper longum | Piper nigrum | Zingiber,Bdellium
+f108v,Theodoricon Euporistum,90.9,10,100.0,83.3,Amomum | Cardamomum | Casia | Castoreum | Cinnamomum | Crocus | Myrrha | Petroselinum | Piper longum | Zingiber,
+f111r,Trifera Magna,78.6,11,100.0,64.7,Amomum | Bdellium | Cardamomum | Casia | Castoreum | Crocus | Myrrha | Opopanax | Petroselinum | Piper longum | Zingiber,
+f111v,Theodoricon Euporistum,87.0,10,90.9,83.3,Amomum | Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Petroselinum | Piper longum | Zingiber,Bdellium
+f112r,Trifera Saracenica,84.2,8,88.9,80.0,Cardamomum | Casia | Castoreum | Cinnamomum | Crocus | Myrrha | Piper longum | Zingiber,Bdellium
+f112v,Antidotum Hadriani,84.2,8,80.0,88.9,Casia | Castoreum | Crocus | Gentiana | Mel despumatum | Myrrha | Piper longum | Zingiber,Bdellium | Galbanum
+f113r,Theodoricon Euporistum,84.6,11,78.6,91.7,Amomum | Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Petroselinum | Piper longum | Piper nigrum | Zingiber,Bdellium | Galbanum | Rosa
+f113v,Theodoricon Euporistum,96.0,12,92.3,100.0,Amomum | Cardamomum | Casia | Castoreum | Cinnamomum | Crocus | Mel despumatum | Myrrha | Petroselinum | Piper longum | Piper nigrum | Zingiber,Bdellium
+f114r,Mithridatium,91.7,11,100.0,84.6,Cardamomum | Castoreum | Cinnamomum | Crocus | Gentiana | Mel despumatum | Myrrha | Opopanax | Piper longum | Piper nigrum | Zingiber,
+f114v,Trifera Saracenica,80.0,8,80.0,80.0,Cardamomum | Castoreum | Cinnamomum | Crocus | Myrrha | Piper longum | Piper nigrum | Zingiber,Bdellium | Galbanum
+f115r,Theodoricon Euporistum,69.6,8,72.7,66.7,Amomum | Cardamomum | Casia | Castoreum | Crocus | Myrrha | Piper longum | Zingiber,Bdellium | Galbanum | Rosa
+f115v,Trifera Magna,83.9,13,92.9,76.5,Bdellium | Cardamomum | Castoreum | Cinnamomum | Crocus | Cubeba | Galanga | Mel despumatum | Myrrha | Nux moschata | Piper longum | Piper nigrum | Zingiber,Galbanum
+f116r,Trifera Magna,82.8,12,100.0,70.6,Amomum | Bdellium | Cardamomum | Casia | Castoreum | Crocus | Cubeba | Galanga | Myrrha | Nux moschata | Piper longum | Zingiber,
+f116v,,0,0,0,0,,
+f87r,Confectio Hamech,57.1,2,100.0,40.0,Mel despumatum | Rosa,
+f87v,Unguentum Apostolorum,88.9,4,80.0,100.0,Bdellium | Galbanum | Myrrha | Opopanax,Casia
+f88r,Trifera Magna,80.0,12,92.3,70.6,Cardamomum | Casia | Crocus | Cubeba | Galanga | Mel despumatum | Nux moschata | Opopanax | Petroselinum | Piper longum | Piper nigrum | Zingiber,Galbanum
+f88v,Trifera Saracenica,90.0,9,90.0,90.0,Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Piper longum | Piper nigrum | Zingiber,Galbanum
+f89r,Mithridatium,84.6,11,84.6,84.6,Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Opopanax | Petroselinum | Piper longum | Piper nigrum | Zingiber,Bdellium | Styrax
+f89v,Trifera Saracenica,90.0,9,90.0,90.0,Cardamomum | Casia | Castoreum | Crocus | Mel despumatum | Myrrha | Piper longum | Piper nigrum | Zingiber,Galbanum
+f90r,Electuarium de Baccis Lauri,85.7,6,85.7,85.7,Gentiana | Mel despumatum | Myrrha | Petroselinum | Piper longum | Zingiber,Bdellium
+f90v,Antidotum Hadriani,82.4,7,87.5,77.8,Casia | Cinnamomum | Crocus | Gentiana | Mel despumatum | Myrrha | Zingiber,Galbanum
+f93r,Philonium Persicum,77.8,7,100.0,63.6,Casia | Castoreum | Mel despumatum | Myrrha | Piper nigrum | Styrax | Zingiber,
+f93v,Philonium Persicum,63.2,6,75.0,54.5,Casia | Castoreum | Crocus | Mel despumatum | Piper nigrum | Styrax,Galbanum | Rosa
+f94r,Electuarium de Baccis Lauri,83.3,5,100.0,71.4,Gentiana | Myrrha | Petroselinum | Piper longum | Zingiber,
+f94v,Antidotum Hadriani,87.5,7,100.0,77.8,Castoreum | Crocus | Gentiana | Mel despumatum | Myrrha | Piper longum | Zingiber,
+f95r,Theriac Abulcasis (contra venenos),76.2,8,80.0,72.7,Castoreum | Crocus | Mel despumatum | Myrrha | Opopanax | Piper longum | Piper nigrum | Zingiber,Amomum | Bdellium
+f95v,Philonium Persicum,70.6,6,100.0,54.5,Casia | Castoreum | Crocus | Piper longum | Styrax | Zingiber,
+f96r,Philonium Persicum,66.7,6,85.7,54.5,Cardamomum | Castoreum | Crocus | Mel despumatum | Piper nigrum | Styrax,Galbanum
+f96v,Pillulae Aureae,50.0,1,100.0,33.3,Crocus,
+f99r,Electuarium Justinum,77.8,7,100.0,63.6,Amomum | Casia | Crocus | Mel despumatum | Petroselinum | Piper nigrum | Zingiber,
+f99v,Aurea Alexandrina,90.0,9,100.0,81.8,Casia | Castoreum | Cinnamomum | Myrrha | Petroselinum | Piper longum | Piper nigrum | Saccharum | Zingiber,

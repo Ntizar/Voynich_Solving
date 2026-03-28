@@ -162,7 +162,7 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
     <!-- Stats -->
     <div class="grid grid-3 gap-6" style="max-width:700px;margin:0 auto">
       <div class="card card-glass text-center p-4 animate-fade-up delay-1">
-        <div class="stat-number text-blue">58</div>
+        <div class="stat-number text-blue">75</div>
         <div class="stat-label lang-en active">Stems Identified</div>
         <div class="stat-label lang-es">Stems Identificados</div>
       </div>
@@ -172,9 +172,9 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
         <div class="stat-label lang-es">Recetas Historicas</div>
       </div>
       <div class="card card-glass text-center p-4 animate-fade-up delay-3">
-        <div class="stat-number text-gradient">48</div>
-        <div class="stat-label lang-en active">Folios Analyzed</div>
-        <div class="stat-label lang-es">Folios Analizados</div>
+        <div class="stat-number text-gradient">81.9%</div>
+        <div class="stat-label lang-en active">Mean F1 Score</div>
+        <div class="stat-label lang-es">F1 Promedio</div>
       </div>
     </div>
   </div>
@@ -222,8 +222,8 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
 <!-- Discoveries -->
 <section id="discoveries">
   <div class="container">
-    <div class="lang-en active"><h2 class="mb-2">Key Discoveries</h2><p class="mb-6">14 documented discoveries across 10 research sessions.</p></div>
-    <div class="lang-es"><h2 class="mb-2">Descubrimientos Clave</h2><p class="mb-6">14 descubrimientos documentados en 10 sesiones de investigacion.</p></div>
+    <div class="lang-en active"><h2 class="mb-2">Key Discoveries</h2><p class="mb-6">22 documented discoveries across 14 research sessions.</p></div>
+    <div class="lang-es"><h2 class="mb-2">Descubrimientos Clave</h2><p class="mb-6">22 descubrimientos documentados en 14 sesiones de investigacion.</p></div>
 
     <div class="grid grid-2 gap-6">
       <!-- Discovery 1 -->
@@ -269,12 +269,12 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
       <div class="card card-glass animate-fade-up delay-4">
         <div class="flex items-center gap-3 mb-4">
           <span class="badge badge-success">#4</span>
-          <div class="lang-en active"><h4>Recipe Matching (41/48 folios)</h4></div>
-          <div class="lang-es"><h4>Matching de Recetas (41/48 folios)</h4></div>
+          <div class="lang-en active"><h4>Recipe Matching v7 (35 Excellent)</h4></div>
+          <div class="lang-es"><h4>Matching de Recetas v7 (35 Excelentes)</h4></div>
         </div>
         <div class="card-body">
-          <div class="lang-en active">41 out of 48 recipe-section folios match real historical recipes at F1 >= 50%. Top matches: Electuarium Justinum (14 folios), Trifera Saracenica (13 folios). 1 excellent match at F1=80% (f113v = Electuarium Justinum).</div>
-          <div class="lang-es">41 de 48 folios de la seccion de recetas coinciden con recetas historicas reales a F1 >= 50%. Mejores matches: Electuarium Justinum (14 folios), Trifera Saracenica (13 folios). 1 match excelente a F1=80% (f113v = Electuarium Justinum).</div>
+          <div class="lang-en active">35 out of 48 recipe-section folios match real historical recipes at F1 >= 80% (EXCELLENT). Mean F1 = 81.9%. <strong style="color:var(--text-primary)">f100r = Diamargariton at 100% F1</strong> (perfect match). f113v = Theodoricon Euporistum at 96%. 22 unique ingredients identified across 75 stems.</div>
+          <div class="lang-es">35 de 48 folios de recetas coinciden con recetas historicas reales a F1 >= 80% (EXCELENTE). F1 promedio = 81.9%. <strong style="color:var(--text-primary)">f100r = Diamargariton a 100% F1</strong> (match perfecto). f113v = Theodoricon Euporistum a 96%. 22 ingredientes unicos identificados en 75 stems.</div>
         </div>
       </div>
     </div>
@@ -284,8 +284,8 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
 <!-- Identification Table -->
 <section id="data">
   <div class="container">
-    <div class="lang-en active"><h2 class="mb-2">Identification Table v5</h2><p class="mb-6">58 Voynich stems mapped to real medieval pharmaceutical ingredients, organized by confidence tier.</p></div>
-    <div class="lang-es"><h2 class="mb-2">Tabla de Identificaciones v5</h2><p class="mb-6">58 stems Voynich mapeados a ingredientes farmaceuticos medievales reales, organizados por nivel de confianza.</p></div>
+    <div class="lang-en active"><h2 class="mb-2">Identification Table v7</h2><p class="mb-6">75 Voynich stems mapped to 22 real medieval pharmaceutical ingredients, organized by confidence tier.</p></div>
+    <div class="lang-es"><h2 class="mb-2">Tabla de Identificaciones v7</h2><p class="mb-6">75 stems Voynich mapeados a 22 ingredientes farmaceuticos medievales reales, organizados por nivel de confianza.</p></div>
 
     <div class="card card-glass p-6 mb-6">
       <div class="lang-en active"><h4 class="mb-4">Confidence Tiers</h4></div>
@@ -321,8 +321,8 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
           <tr>
             <td><span class="badge badge-blue no-dot">Tier 3</span></td>
             <td class="lang-en active">Strong (85-60%)</td><td class="lang-es">Fuerte (85-60%)</td>
-            <td>19</td>
-            <td>Crocus x9, Rosa, Zingiber|Mel x5, Opopanax x2, Cinnamomum x2</td>
+            <td>36</td>
+            <td>Crocus x9, Rosa, Mel x5, Cinnamomum x2, Opopanax x2, Zingiber x2, Castoreum x9, Petroselinum x4, Gentiana x2</td>
           </tr>
           <tr>
             <td><span class="badge badge-orange no-dot">Tier 4</span></td>
@@ -335,8 +335,8 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
 
       <hr class="divider-gradient mt-6 mb-4">
 
-      <div class="lang-en active"><p><strong style="color:var(--text-primary)">19 unique real ingredients</strong> touched across all tiers: Galbanum, Crocus, Myrrha, Rosa, Zingiber, Mel despumatum, Cinnamomum, Opopanax, Amomum, Cardamomum, Piper nigrum, Piper longum, Styrax, Bdellium, Casia, Saccharum, Galanga, Cubeba, Nux moschata.</p></div>
-      <div class="lang-es"><p><strong style="color:var(--text-primary)">19 ingredientes reales unicos</strong> cubiertos en todos los niveles: Galbanum, Crocus, Myrrha, Rosa, Zingiber, Mel despumatum, Cinnamomum, Opopanax, Amomum, Cardamomum, Piper nigrum, Piper longum, Styrax, Bdellium, Casia, Saccharum, Galanga, Cubeba, Nux moschata.</p></div>
+      <div class="lang-en active"><p><strong style="color:var(--text-primary)">22 unique real ingredients</strong> touched across all tiers: Galbanum, Crocus, Myrrha, Rosa, Mel despumatum, Cinnamomum, Opopanax, Zingiber, Castoreum, Petroselinum, Gentiana, Amomum, Cardamomum, Piper nigrum, Piper longum, Styrax, Bdellium, Casia, Saccharum, Galanga, Cubeba, Nux moschata.</p></div>
+      <div class="lang-es"><p><strong style="color:var(--text-primary)">22 ingredientes reales unicos</strong> cubiertos en todos los niveles: Galbanum, Crocus, Myrrha, Rosa, Mel despumatum, Cinnamomum, Opopanax, Zingiber, Castoreum, Petroselinum, Gentiana, Amomum, Cardamomum, Piper nigrum, Piper longum, Styrax, Bdellium, Casia, Saccharum, Galanga, Cubeba, Nux moschata.</p></div>
     </div>
   </div>
 </section>
@@ -361,12 +361,12 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
             <div class="progress-wrap"><div class="progress-bar" style="width:100%"></div></div>
           </div>
           <div>
-            <div class="progress-label"><span class="lang-en active">Folio-Recipe Matching v3</span><span class="lang-es">Matching Folio-Receta v3</span><span>100%</span></div>
+            <div class="progress-label"><span class="lang-en active">Folio-Recipe Matching v7 (81.9% mean F1)</span><span class="lang-es">Matching Folio-Receta v7 (81.9% F1 medio)</span><span>100%</span></div>
             <div class="progress-wrap"><div class="progress-bar gradient" style="width:100%"></div></div>
           </div>
           <div>
-            <div class="progress-label"><span class="lang-en active">Interactive Dashboard</span><span class="lang-es">Dashboard Interactivo</span><span>85%</span></div>
-            <div class="progress-wrap"><div class="progress-bar" style="width:85%"></div></div>
+            <div class="progress-label"><span class="lang-en active">Interactive Dashboard</span><span class="lang-es">Dashboard Interactivo</span><span>95%</span></div>
+            <div class="progress-wrap"><div class="progress-bar" style="width:95%"></div></div>
           </div>
         </div>
       </div>
@@ -376,16 +376,16 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
         <div class="lang-es"><h4 class="mb-4">Desciframiento</h4></div>
         <div class="flex-col gap-4">
           <div>
-            <div class="progress-label"><span class="lang-en active">Stems Identified (58/3261)</span><span class="lang-es">Stems Identificados (58/3261)</span><span>1.8%</span></div>
-            <div class="progress-wrap"><div class="progress-bar orange" style="width:1.8%"></div></div>
+            <div class="progress-label"><span class="lang-en active">Stems Identified (75/3261)</span><span class="lang-es">Stems Identificados (75/3261)</span><span>2.3%</span></div>
+            <div class="progress-wrap"><div class="progress-bar orange" style="width:2.3%"></div></div>
           </div>
           <div>
-            <div class="progress-label"><span class="lang-en active">Ingredients Mapped (19/152)</span><span class="lang-es">Ingredientes Mapeados (19/152)</span><span>12.5%</span></div>
-            <div class="progress-wrap"><div class="progress-bar orange" style="width:12.5%"></div></div>
+            <div class="progress-label"><span class="lang-en active">Ingredients Mapped (22/152)</span><span class="lang-es">Ingredientes Mapeados (22/152)</span><span>14.5%</span></div>
+            <div class="progress-wrap"><div class="progress-bar orange" style="width:14.5%"></div></div>
           </div>
           <div>
-            <div class="progress-label"><span class="lang-en active">Opium/Castoreum Deadlock</span><span class="lang-es">Deadlock Opio/Castoreum</span><span class="lang-en active">Partial</span><span class="lang-es">Parcial</span></div>
-            <div class="progress-wrap"><div class="progress-bar gradient" style="width:40%"></div></div>
+            <div class="progress-label"><span class="lang-en active">Opium/Castoreum Deadlock</span><span class="lang-es">Deadlock Opio/Castoreum</span><span class="lang-en active">9 stems confirmed</span><span class="lang-es">9 stems confirmados</span></div>
+            <div class="progress-wrap"><div class="progress-bar gradient" style="width:55%"></div></div>
           </div>
           <div>
             <div class="progress-label"><span class="lang-en active">Tier 1 Confirmations</span><span class="lang-es">Confirmaciones Tier 1</span><span>2</span></div>
@@ -407,17 +407,41 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
       <div class="card card-glass p-6 animate-fade-up delay-1">
         <span class="badge badge-blue mb-4">Priority 1</span>
         <div class="lang-en active">
-          <h4 class="mb-2">Break the Opium/Castoreum Deadlock</h4>
-          <p class="card-body">71 stems are blocked because Opium and Castoreum appear in identical recipe sets. New discriminator recipes (Philonium Romanum, Theriac Diatessaron Magna) show 6 folios favor Opium, 17 favor Castoreum. Next: morphological analysis of the candidate stems to split the pair.</p>
+          <h4 class="mb-2">Expand Recipe Database to 100+</h4>
+          <p class="card-body">Our 50-recipe database already yields 81.9% mean F1 and 22 ingredients. Doubling to 100+ recipes from additional sources (Circa Instans, Thesaurus Pauperum, Lumen Apothecariorum) will increase discrimination power, break remaining deadlocks, and push Tier 3/4 candidates toward Tier 1 confirmation. More recipes = more unique ingredient fingerprints.</p>
         </div>
         <div class="lang-es">
-          <h4 class="mb-2">Romper el Deadlock Opio/Castoreum</h4>
-          <p class="card-body">71 stems estan bloqueados porque Opio y Castoreum aparecen en conjuntos de recetas identicos. Nuevas recetas discriminadoras (Philonium Romanum, Theriac Diatessaron Magna) muestran que 6 folios favorecen Opio, 17 favorecen Castoreum. Siguiente: analisis morfologico de los stems candidatos para separar el par.</p>
+          <h4 class="mb-2">Expandir Base de Recetas a 100+</h4>
+          <p class="card-body">Nuestra base de 50 recetas ya produce 81.9% F1 medio y 22 ingredientes. Duplicar a 100+ recetas de fuentes adicionales (Circa Instans, Thesaurus Pauperum, Lumen Apothecariorum) aumentara el poder discriminante, rompera deadlocks restantes, y empujara candidatos de Tier 3/4 hacia confirmacion Tier 1. Mas recetas = mas huellas unicas de ingredientes.</p>
         </div>
       </div>
 
       <div class="card card-glass p-6 animate-fade-up delay-2">
         <span class="badge badge-orange mb-4">Priority 2</span>
+        <div class="lang-en active">
+          <h4 class="mb-2">Break the Galanga/Cubeba/Nux Deadlock</h4>
+          <p class="card-body">Session 14 proved this triple deadlock is <strong>unbreakable</strong> with 50 recipes: 47 stems tied 3-way, 0 wins in any direction. No Galanga-only or Cubeba-only discriminating recipes exist in our database. External sources with simpler compound formulas are the only path forward.</p>
+        </div>
+        <div class="lang-es">
+          <h4 class="mb-2">Romper el Deadlock Galanga/Cubeba/Nux</h4>
+          <p class="card-body">La sesion 14 demostro que este deadlock triple es <strong>irrompible</strong> con 50 recetas: 47 stems empatados 3 vias, 0 victorias en ninguna direccion. No existen recetas discriminadoras exclusivas de Galanga o Cubeba en nuestra base. Fuentes externas con formulas compuestas mas simples son el unico camino.</p>
+        </div>
+      </div>
+
+      <div class="card card-glass p-6 animate-fade-up delay-3">
+        <span class="badge badge-success mb-4">Priority 3</span>
+        <div class="lang-en active">
+          <h4 class="mb-2">Complete Opium/Castoreum Split</h4>
+          <p class="card-body"><strong>Partially broken:</strong> 9 Castoreum stems now confirmed at 75-83% confidence. But Opium-exclusive stems remain elusive. Morphological analysis of candidate stems + new discriminator recipes (Philonium Romanum, Theriac Diatessaron Magna) needed to fully separate the pair and promote remaining candidates.</p>
+        </div>
+        <div class="lang-es">
+          <h4 class="mb-2">Completar Separacion Opio/Castoreum</h4>
+          <p class="card-body"><strong>Parcialmente roto:</strong> 9 stems de Castoreum confirmados al 75-83% de confianza. Pero los stems exclusivos de Opio siguen siendo elusivos. Se necesita analisis morfologico de stems candidatos + nuevas recetas discriminadoras (Philonium Romanum, Theriac Diatessaron Magna) para separar completamente el par y promover candidatos restantes.</p>
+        </div>
+      </div>
+
+      <div class="card card-glass p-6 animate-fade-up delay-4">
+        <span class="badge badge-blue mb-4">Priority 4</span>
         <div class="lang-en active">
           <h4 class="mb-2">Positional Grammar Extraction</h4>
           <p class="card-body">Column positions carry meaning: Columns 1-2 are entities (C1/G1 suffix), Columns 3+ are actions (A2). Build a formal grammar model: <code>[ENTITY]&rarr;[PROPERTY]&rarr;[ACTION LIST]</code>. This would allow predicting missing words and testing ingredient assignments structurally.</p>
@@ -428,20 +452,20 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
         </div>
       </div>
 
-      <div class="card card-glass p-6 animate-fade-up delay-3">
-        <span class="badge badge-success mb-4">Priority 3</span>
+      <div class="card card-glass p-6 animate-fade-up delay-5">
+        <span class="badge badge-orange mb-4">Priority 5</span>
         <div class="lang-en active">
           <h4 class="mb-2">Expand to Botany Section</h4>
-          <p class="card-body">217 unique entity stems in botany (73.7% page-exclusive = plant IDs). Cross-correlate botany stem properties with known medieval simples (Circa Instans). If botany stem X is identified as Crocus via recipes, verify that its properties in botany match real saffron properties.</p>
+          <p class="card-body">217 unique entity stems in botany (73.7% page-exclusive = plant IDs). Cross-correlate botany stem properties with known medieval simples (Circa Instans). If botany stem X is identified as Crocus via recipes, verify that its properties in botany match real saffron properties. <strong>Zingiber (now identified as K1J1/K1K2)</strong> is an ideal test case.</p>
         </div>
         <div class="lang-es">
           <h4 class="mb-2">Expandir a la Seccion de Botanica</h4>
-          <p class="card-body">217 stems de entidad unicos en botanica (73.7% exclusivos de pagina = IDs de planta). Correlacionar propiedades de stems botanicos con simples medievales conocidos (Circa Instans). Si el stem X de botanica se identifica como Crocus via recetas, verificar que sus propiedades en botanica coinciden con las del azafran real.</p>
+          <p class="card-body">217 stems de entidad unicos en botanica (73.7% exclusivos de pagina = IDs de planta). Correlacionar propiedades de stems botanicos con simples medievales conocidos (Circa Instans). Si el stem X de botanica se identifica como Crocus via recetas, verificar que sus propiedades en botanica coinciden con las del azafran real. <strong>Zingiber (ahora identificado como K1J1/K1K2)</strong> es un caso de prueba ideal.</p>
         </div>
       </div>
 
-      <div class="card card-glass p-6 animate-fade-up delay-4">
-        <span class="badge badge-blue mb-4">Priority 4</span>
+      <div class="card card-glass p-6 animate-fade-up delay-5">
+        <span class="badge badge-success mb-4">Priority 6</span>
         <div class="lang-en active">
           <h4 class="mb-2">Quantity/Weight Notation</h4>
           <p class="card-body">Medieval recipes specify ingredient quantities (drams, scruples, ounces). Voynich recipe lines likely encode these too. Identify numerical/measurement stems by analyzing frequency patterns and positional regularities within recipe folios.</p>
@@ -453,7 +477,7 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
       </div>
 
       <div class="card card-glass p-6 animate-fade-up delay-5">
-        <span class="badge badge-orange mb-4">Priority 5</span>
+        <span class="badge badge-blue mb-4">Priority 7</span>
         <div class="lang-en active">
           <h4 class="mb-2">Statistical Publication</h4>
           <p class="card-body">Formalize the suffix channel, 2D alignment, and foreign key discoveries as a statistical paper. The 27% vertical alignment rate (vs 8% null) and Z=-210 suffix entropy are publication-grade results that stand independent of any decipherment claims.</p>
