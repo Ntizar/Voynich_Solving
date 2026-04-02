@@ -1,5 +1,10 @@
 # Methodology -- Analytical Pipeline and Tools
 
+> **Cleanup note (Session 15):** Some exploratory scripts referenced below (v1-v6 solvers,
+> visualization tools, etc.) have been removed from the repository. The methodology they
+> implemented is preserved here for reference. Current validation scripts are in `scripts/`.
+> Provenance scripts that generated the frozen CSV data remain as `temp_*.py` in the root.
+
 ## Data Sources
 
 ### Primary: STA1 2.0 Transcription

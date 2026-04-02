@@ -1,9 +1,0 @@
-Stem_Voynich,Identificacion,Confianza,Categoria,Razonamiento
-K1K2A1,Galbanum,ALTA (99%),ACTIVO,Unica interseccion en 3 recetas
-K1A3,Crocus (Azafran),ALTA (95%),ESPECIA,Eliminacion: no aparece en f93v pero Cinnamomum si
-BaA3,Clase: Goma-resina,ALTA (90%),ACTIVO,Siempre mapea a goma-resina en 3 recetas
-U2J1A1,Clase: Farmaco potente (Opium/Aloe),MEDIA (70%),ACTIVO,ACTIVO principal en 2 recetas
-K1J1A1,Cinnamomum (Canela) [tentativo],MEDIA (65%),ESPECIA,Frecuencia alta + presente en f93v y f96v
-L1A1,Piper longum | Zingiber,MEDIA (60%),ESPECIA,2 candidatos restantes tras eliminar Cinnamomum
-D1A1Q1K1A1,Piper longum | Zingiber,MEDIA (60%),ESPECIA,El otro de los 2 candidatos
-D1A1Q1J1A1,Squilla|Petroselinum|Phu|Acorus,BAJA (40%),ESPECIA,4 candidatos exactos

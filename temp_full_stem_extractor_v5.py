@@ -6,6 +6,11 @@ Extracts ALL stems (not just shared ones) from every recipe folio in the corpus.
 This fills the critical gap: the previous stems file only had stems appearing
 in 2+ matched folios. We need folio-exclusive stems to identify unique ingredients.
 
+PROVENANCE SCRIPT: This script generated voynich_all_recipe_folio_stems.csv (kept).
+It also reads voynich_unified_identifications_v4c.csv and writes
+voynich_differential_analysis_v5.csv, both removed during Session 15 cleanup.
+Kept for traceability, not re-execution.
+
 Output: voynich_all_recipe_folio_stems.csv
   Columns: Folio, Stem, Final_Atom, Token_Count, Is_Shared (appears in 2+ recipe folios)
 

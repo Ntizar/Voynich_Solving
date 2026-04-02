@@ -2,6 +2,11 @@
 """
 Session 14 Part 2: Build v7 identification table + re-run matching.
 Select only high-quality new identifications, build v7 CSV, and re-run content matching.
+
+PROVENANCE SCRIPT: This script generated voynich_unified_identifications_v7.csv,
+voynich_matching_v7.csv, voynich_expanded_matching_v7.csv, and voynich_matching_v7_top5.csv.
+It reads voynich_unified_identifications_v6.csv and voynich_new_identifications_session14.csv,
+which were removed during the Session 15 cleanup. Kept for traceability, not re-execution.
 """
 import sys, csv, re, os
 from collections import defaultdict, Counter

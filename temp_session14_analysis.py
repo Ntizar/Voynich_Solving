@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """
 Session 14: Break Galanga|Cubeba|Nux moschata triple deadlock + explore new identifications.
+
+PROVENANCE SCRIPT: This script generated voynich_new_identifications_session14.csv and
+voynich_galanga_cubeba_nux_deadlock.csv, which were removed during the Session 15 cleanup.
+It also reads voynich_deadlock_morphology_v3.csv (removed). Kept for traceability, not re-execution.
 """
 import sys, csv, re, os
 from collections import defaultdict, Counter

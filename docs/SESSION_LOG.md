@@ -1,5 +1,10 @@
 # Session Log -- Chronological Record
 
+> **Cleanup note (Session 15):** Many scripts and CSV files referenced in earlier sessions
+> have been deleted as part of a major repository cleanup. Only v7-current data files and
+> provenance scripts remain. The historical narrative below is preserved unmodified as a
+> record of the analytical journey from v1 to v7.
+
 ## Session 1: Foundation and Structural Analysis
 
 ### Work Done
