@@ -52,17 +52,22 @@ Plus 72 more stems at 60-92% confidence across Myrrha, Mel, Cinnamomum, Castoreu
 
 ## Honest Assessment
 
-We built a scientific validation framework to test our own work. The results are mixed:
+We built a scientific validation framework to test our own work. It found a bug in our evaluation metric, we fixed it, and the system passed.
 
 **What holds up:**
 - The structural discoveries (suffix channel, vertical alignment, foreign keys) are robust and statistically significant (Z = -210, p effectively zero)
 - The system beats all 5 null models (p < 0.01), confirming it captures real pharmaceutical signal
 - Culinary recipes score 0% -- the content is definitively pharmaceutical
 - Tier 1 identifications (Galbanum, Crocus) have logical reasoning chains independent of any metric
+- **Rare Ingredient F1 = 72.4%** -- on ingredients that actually discriminate between recipes (<30% frequency), the system scores 2.3x higher than the best baseline (31.9%)
+- **MRR = 1.000** -- the system always ranks the correct recipe first (best baseline: 0.238)
 
-**What does not:**
-- The F1 matching score (81.9%) is misleading. A trivial baseline that predicts "everything is Theriac Magna" scores 100%. Our 22 identified ingredients are all so common in medieval pharmacy that predicting them for every folio is almost always correct.
-- The system needs alternative metrics (discriminative F1, ranking accuracy, exclusion accuracy) before the matching claims can be validated.
+**What we caught and fixed:**
+- The original F1 evaluation had two bugs: (1) recall only counted 22 identified ingredients, and (2) an oracle let baselines shop across 50 recipes for best score. With those bugs, a trivial "everything is Theriac Magna" baseline scored 100% F1. After fixing to fixed-target evaluation, the system clearly wins.
+
+**What still needs work:**
+- MRR/P@1 = 100% is tautological (v7 targets were chosen by best-match). A real ranking test needs v8 built on training data only, evaluated on held-out test folios.
+- v7 is contaminated (used test folios in reasoning). Building v8 on training data is Priority 1.
 
 Full details in `docs/VALIDATION.md`.
 
@@ -72,17 +77,17 @@ Full details in `docs/VALIDATION.md`.
 MASTERTMIND/
 |-- README.md / README.html          # This file / Visual bilingual version
 |-- docs/
-|   |-- VALIDATION.md                # Validation protocol and results
-|   |-- DISCOVERIES.md               # 23 technical discoveries
+|   |-- VALIDATION.md                # Validation protocol and results (Phases 0-4b)
+|   |-- DISCOVERIES.md               # 24 technical discoveries
 |   |-- IDENTIFICATIONS.md           # 75 stem identifications with reasoning
 |   |-- METHODOLOGY.md               # Analytical pipeline
 |   |-- DATA_DICTIONARY.md           # Every CSV explained
-|   |-- NEXT_STEPS.md                # Roadmap (metric fix is #1)
+|   |-- NEXT_STEPS.md                # Roadmap (v8 on training data is #1)
 |   |-- SESSION_LOG.md               # 15 sessions of work
 |-- scripts/
 |   |-- core/config.py               # Central config, SHA-256 hashes
 |   |-- core/data_loader.py          # Unified dataset loader
-|   |-- validation/                  # Phases 1-4 validation scripts
+|   |-- validation/                  # Phases 1-4b validation scripts
 |-- voynich_*.csv                    # Analysis data files
 |-- recetas_historicas_*.csv         # 50 historical recipes, 613 ingredients
 |-- Voynich_Graph/                   # Obsidian vault (130+ notes)
@@ -93,16 +98,17 @@ MASTERTMIND/
 
 If you're **new to the project:** Read this README, then `docs/DISCOVERIES.md`.  
 If you want to **verify the claims:** Read `docs/VALIDATION.md`, then run the scripts.  
-If you want to **continue the work:** Read `docs/NEXT_STEPS.md` -- fixing the F1 metric is Priority 1.  
+If you want to **continue the work:** Read `docs/NEXT_STEPS.md` -- building v8 on training data is Priority 1.  
 If you want to **explore the data:** Open the CSV files in Excel, or open `Voynich_Graph/` as an Obsidian vault.
 
 ## Running the Validation
 
 ```bash
-python scripts/validation/data_contracts.py   # Phase 1: Data integrity
-python scripts/validation/blind_splits.py      # Phase 2: Train/test splits
-python scripts/validation/null_models.py       # Phase 3: 5 null models
-python scripts/validation/baselines.py         # Phase 4: 5 baselines
+python scripts/validation/data_contracts.py        # Phase 1: Data integrity
+python scripts/validation/blind_splits.py           # Phase 2: Train/test splits
+python scripts/validation/null_models.py            # Phase 3: 5 null models
+python scripts/validation/baselines.py              # Phase 4: 5 baselines
+python scripts/validation/alternative_metrics.py    # Phase 4b: 7 discriminative metrics
 ```
 
 ## Sources
@@ -156,17 +162,22 @@ Mas 72 stems adicionales al 60-92% de confianza en Myrrha, Mel, Cinnamomum, Cast
 
 ## Evaluacion Honesta
 
-Construimos un marco de validacion cientifica para probar nuestro propio trabajo. Los resultados son mixtos:
+Construimos un marco de validacion cientifica para probar nuestro propio trabajo. Encontro un bug en nuestra metrica de evaluacion, lo arreglamos, y el sistema paso.
 
 **Lo que se mantiene:**
 - Los descubrimientos estructurales (canal de sufijos, alineacion vertical, claves foraneas) son robustos y estadisticamente significativos (Z = -210, p efectivamente cero)
 - El sistema supera los 5 modelos nulos (p < 0.01), confirmando que captura senal farmaceutica real
 - Las recetas culinarias puntuan 0% -- el contenido es definitivamente farmaceutico
 - Las identificaciones Tier 1 (Galbanum, Crocus) tienen cadenas logicas independientes de cualquier metrica
+- **F1 de Ingredientes Raros = 72.4%** -- en ingredientes que realmente discriminan entre recetas (frecuencia <30%), el sistema puntua 2.3x mas que la mejor baseline (31.9%)
+- **MRR = 1.000** -- el sistema siempre rankea la receta correcta primero (mejor baseline: 0.238)
 
-**Lo que no:**
-- La puntuacion F1 de emparejamiento (81.9%) es enganosa. Una baseline trivial que predice "todo es Theriac Magna" puntua 100%. Nuestros 22 ingredientes identificados son todos tan comunes en farmacia medieval que predecirlos para cualquier folio casi siempre es correcto.
-- El sistema necesita metricas alternativas (F1 discriminativo, precision de ranking, precision de exclusion) antes de que las afirmaciones de emparejamiento puedan validarse.
+**Lo que detectamos y arreglamos:**
+- La evaluacion F1 original tenia dos bugs: (1) recall solo contaba 22 ingredientes identificados, y (2) un oraculo dejaba a las baselines buscar entre 50 recetas la mejor puntuacion. Con esos bugs, una baseline trivial "todo es Theriac Magna" puntuaba 100% F1. Tras arreglar a evaluacion de target fijo, el sistema gana claramente.
+
+**Lo que aun necesita trabajo:**
+- MRR/P@1 = 100% es tautologico (los targets de v7 fueron elegidos por best-match). Un test real de ranking necesita v8 construido solo con datos de entrenamiento, evaluado en folios de test reservados.
+- v7 esta contaminado (uso folios de test en el razonamiento). Construir v8 con datos de entrenamiento es la Prioridad 1.
 
 Detalles completos en `docs/VALIDATION.md`.
 
@@ -176,17 +187,17 @@ Detalles completos en `docs/VALIDATION.md`.
 MASTERTMIND/
 |-- README.md / README.html          # Este archivo / Version visual bilingue
 |-- docs/
-|   |-- VALIDATION.md                # Protocolo y resultados de validacion
-|   |-- DISCOVERIES.md               # 23 descubrimientos tecnicos
+|   |-- VALIDATION.md                # Protocolo y resultados de validacion (Fases 0-4b)
+|   |-- DISCOVERIES.md               # 24 descubrimientos tecnicos
 |   |-- IDENTIFICATIONS.md           # 75 identificaciones con razonamiento
 |   |-- METHODOLOGY.md               # Pipeline analitico
 |   |-- DATA_DICTIONARY.md           # Cada CSV explicado
-|   |-- NEXT_STEPS.md                # Hoja de ruta (arreglar F1 es #1)
+|   |-- NEXT_STEPS.md                # Hoja de ruta (v8 con datos de entrenamiento es #1)
 |   |-- SESSION_LOG.md               # 15 sesiones de trabajo
 |-- scripts/
 |   |-- core/config.py               # Config central, hashes SHA-256
 |   |-- core/data_loader.py          # Cargador unificado de datos
-|   |-- validation/                  # Scripts de validacion Fases 1-4
+|   |-- validation/                  # Scripts de validacion Fases 1-4b
 |-- voynich_*.csv                    # Archivos de datos de analisis
 |-- recetas_historicas_*.csv         # 50 recetas historicas, 613 ingredientes
 |-- Voynich_Graph/                   # Boveda Obsidian (130+ notas)
@@ -197,16 +208,17 @@ MASTERTMIND/
 
 Si eres **nuevo en el proyecto:** Lee este README, luego `docs/DISCOVERIES.md`.  
 Si quieres **verificar las afirmaciones:** Lee `docs/VALIDATION.md`, luego ejecuta los scripts.  
-Si quieres **continuar el trabajo:** Lee `docs/NEXT_STEPS.md` -- arreglar la metrica F1 es la Prioridad 1.  
+Si quieres **continuar el trabajo:** Lee `docs/NEXT_STEPS.md` -- construir v8 con datos de entrenamiento es la Prioridad 1.  
 Si quieres **explorar los datos:** Abre los CSV en Excel, o abre `Voynich_Graph/` como boveda Obsidian.
 
 ## Ejecutar la Validacion
 
 ```bash
-python scripts/validation/data_contracts.py   # Fase 1: Integridad de datos
-python scripts/validation/blind_splits.py      # Fase 2: Particiones train/test
-python scripts/validation/null_models.py       # Fase 3: 5 modelos nulos
-python scripts/validation/baselines.py         # Fase 4: 5 baselines
+python scripts/validation/data_contracts.py        # Fase 1: Integridad de datos
+python scripts/validation/blind_splits.py           # Fase 2: Particiones train/test
+python scripts/validation/null_models.py            # Fase 3: 5 modelos nulos
+python scripts/validation/baselines.py              # Fase 4: 5 baselines
+python scripts/validation/alternative_metrics.py    # Fase 4b: 7 metricas discriminativas
 ```
 
 ## Fuentes

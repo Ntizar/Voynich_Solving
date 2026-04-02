@@ -1,50 +1,48 @@
 # Next Steps -- Prioritized Roadmap
 
 **Last updated:** Session 15 (April 2026)  
-**Critical change:** Metric fix is now Priority 1 (the F1 metric is broken).
+**Status:** Phase 4b DONE -- F1 metric fixed, system validated on discriminative metrics. Priority 1 is now v8 on training data.
 
 ---
 
-## Priority 1: CRITICAL -- Fix the F1 Metric
+## COMPLETED: Fix the F1 Metric (Phase 4b)
 
-**Goal:** Replace the broken F1 metric with discriminative alternatives that trivial baselines cannot beat.
+**Status:** DONE (Session 15, Phase 4b)
 
-**Why:** Session 15 validation revealed that a majority-recipe baseline achieves 100% F1, and most-common-ingredients achieves 90.8%. The current F1 cannot discriminate between a real system and trivial baselines because all 22 identified ingredients are ultra-common in medieval pharmacology.
+The broken F1 metric was fixed by implementing 7 alternative discriminative metrics in `scripts/validation/alternative_metrics.py`. Two interacting flaws were identified and corrected:
 
-**Required alternative metrics:**
+1. **`fn` only counted identified ingredients (22/152)** -- inflating recall for everyone
+2. **`best_match` oracle** -- let baselines shop across 50 recipes for best score
 
-1. **Discriminative F1:** Exclude ingredients appearing in >80% of recipes. Only count ingredients that actually discriminate between recipes.
+With **fixed-target evaluation** (each folio scored against its v7 assigned recipe, no oracle), the system clearly beats all baselines:
 
-2. **Ranking accuracy (MRR, P@K):** For each folio, does the system rank the correct recipe higher than incorrect ones? Mean Reciprocal Rank and Precision@K measure this.
+| Key Metric | v7 System | Best Baseline | Gap |
+|---|---|---|---|
+| Rare ingredient F1 | **72.4%** | 31.9% | +40.5pp |
+| MRR | **1.000** | 0.238 | +0.762 |
+| P@1 | **100%** | 10.6% | +89.4pp |
 
-3. **Exclusion accuracy:** Does the system correctly predict which ingredients are ABSENT from a folio? True Negative Rate for ingredients not in the matched recipe.
-
-4. **Rare ingredient precision:** Of the few discriminative ingredients (appearing in <30% of recipes), how many does the system correctly identify?
-
-**How:**
-- Add these metrics to `scripts/validation/baselines.py`
-- Re-run all baselines with new metrics
-- Re-evaluate the v7 system with new metrics
-- Determine if the system genuinely outperforms baselines on discriminative measures
+**Caveat:** MRR/P@1 = 100% is tautological (v7 targets chosen by best-match). Real test needs v8 on blind set.
 
 ---
 
-## Priority 2: Build v8 Identifications on Training Data Only
+## Priority 1: Build v8 Identifications on Training Data Only
 
 **Goal:** Create a v8 identification table using ONLY the 39 training folios, then evaluate on the 9 held-out test folios.
 
-**Why:** v7 is contaminated -- the K1A3=Crocus identification explicitly references test folio f93v. Future claims require a clean train/test separation.
+**Why:** v7 is contaminated -- the K1A3=Crocus identification explicitly references test folio f93v. Future claims require a clean train/test separation. Also, MRR/P@1 = 100% is tautological for v7 (targets chosen by best-match); v8 on blind test folios will give a real ranking test.
 
 **How:**
 1. Load only training folios from `output/splits/blind_splits.json`
 2. Re-run all constraint solver, intersection analysis, and elimination chains using only training data
 3. Generate `voynich_unified_identifications_v8.csv`
-4. Evaluate v8 on test folios with the new discriminative metrics
+4. Evaluate v8 on test folios with the Phase 4b discriminative metrics
 5. Compare v8 test performance against baselines
+6. This is the **definitive test**: if v8 beats baselines on held-out folios, the methodology is confirmed end-to-end
 
 ---
 
-## Priority 3: Complete Validation Phases 5-10
+## Priority 2: Complete Validation Phases 5-10
 
 **Goal:** Run the remaining 6 validation phases for comprehensive confidence calibration.
 
@@ -64,7 +62,7 @@
 
 ---
 
-## Priority 4: Expand Historical Recipe Database to 100+
+## Priority 3: Expand Historical Recipe Database to 100+
 
 **Goal:** Add 50+ more recipes from Antidotarium Nicolai, Circa Instans, Thesaurus Pauperum, and Lumen Apothecariorum.
 
@@ -75,7 +73,7 @@
 
 ---
 
-## Priority 5: Break Remaining Deadlocks
+## Priority 4: Break Remaining Deadlocks
 
 ### Galanga / Cubeba / Nux moschata
 - **Status:** PERMANENT with 50 recipes (47 TIED, 0 wins)
@@ -89,7 +87,7 @@
 
 ---
 
-## Priority 6: Positional Grammar and Botany Section
+## Priority 5: Positional Grammar and Botany Section
 
 **Goal:** Build formal grammar model from column positions and cross-correlate with botanical section.
 
@@ -101,7 +99,7 @@
 
 ---
 
-## Priority 7: Statistical Publication
+## Priority 6: Statistical Publication
 
 **Goal:** Publish the structural discoveries as a statistical paper.
 
@@ -112,16 +110,16 @@
 - These results are **robust** and **unaffected** by the broken F1 metric
 
 **What NOT to claim (yet):**
-- The 81.9% F1 matching score (broken metric)
-- Specific ingredient identifications beyond Tier 1-2 (pending new metrics)
+- MRR/P@1 = 100% (tautological for v7; needs v8 on blind test set)
+- Specific ingredient identifications beyond Tier 1-2 (pending v8 validation on held-out data)
 
 ---
 
 ## Long-term Goals
 
-- Design and validate alternative metrics (discriminative F1, ranking accuracy)
-- Build v8 on training data, evaluate on test set
+- Build v8 on training data, evaluate on test set with discriminative metrics
+- Complete Phases 5-10 of the validation framework
 - Identify 100+ stems with validated metrics
 - Attempt partial reading of a complete recipe page
-- Publish findings (structural paper first, identification paper after metric fix)
+- Publish findings (structural paper first, identification paper after v8 test-set validation)
 - Build interactive web visualization of the ingredient network

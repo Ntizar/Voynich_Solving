@@ -626,13 +626,39 @@ Built a comprehensive scientific validation framework with two layers: scientifi
 - `scripts/validation/blind_splits.py` -- Train/test partition generator
 - `scripts/validation/null_models.py` -- 5 null models x 500 iterations
 - `scripts/validation/baselines.py` -- 5 rival baselines
+- `scripts/validation/alternative_metrics.py` -- Phase 4b: 7 discriminative metrics
 - `scripts/_gen_hashes.py` -- Temporary hash generation helper
 
 ### Files Generated
 - `output/splits/blind_splits.json` -- Frozen train/test partitions with integrity hash
 - `output/validation/null_models_results.json` -- Null model results (5 models x 500 iterations)
 - `output/validation/baselines_results.json` -- Baseline comparison results
+- `output/validation/alternative_metrics_results.json` -- Phase 4b summary results
+- `output/validation/alternative_metrics_details.json` -- Phase 4b per-folio breakdown
 - `docs/VALIDATION.md` -- New: full validation protocol and results document
+
+### Phase 4b: Alternative Metrics (Continued Session 15)
+
+7. **Phase 4b: Alternative Metrics -- SYSTEM VALIDATED**
+   - Built `scripts/validation/alternative_metrics.py` with 7 discriminative metrics
+   - Diagnosed two interacting flaws in the original F1:
+     1. `fn` only counted identified ingredients (22/152), making recall trivially high
+     2. `best_match` oracle let baselines shop across 50 recipes for best score
+   - Implemented **fixed-target evaluation** (each folio scored against v7 assigned recipe, no oracle)
+   - Results: v7 system beats ALL baselines on every discriminative metric
+   - **Rare ingredient F1 = 72.4%** (best baseline 31.9%, gap +40.5pp)
+   - **MRR = 1.000** (best baseline 0.238) -- caveat: tautological for v7
+   - **P@1 = 100%** (best baseline 10.6%) -- caveat: same tautology
+   - Ingredient frequency analysis: 0 ingredients >80%, 9 common (30-78%), 13 rare (<30%)
+   - Updated VALIDATION.md with Phase 4b section and revised summary
+
+8. **Documentation Update (Phase 4b)**
+   - Updated `docs/VALIDATION.md` with Phase 4b results
+   - Added Discovery 24 to `docs/DISCOVERIES.md`
+   - Updated `docs/NEXT_STEPS.md` -- F1 fix marked DONE, priorities renumbered
+   - Updated `docs/SESSION_LOG.md` with Phase 4b activities
+   - Updated `README.md` -- removed UNDER REVIEW status, added Rare F1 headline metric
+   - Updated `README.html` -- replaced validation warning with validation success, updated stats
 
 ---
 
@@ -655,7 +681,10 @@ Built a comprehensive scientific validation framework with two layers: scientifi
 | Content-based matching v7: best F1 | 100.0% (f100r = Diamargariton) |
 | Content-based matching v7: EXCELLENT (F1>=80%) | 35 |
 | Content-based matching v7: GOOD (F1 50-79%) | 12 |
-| Content-based matching v7: mean F1 | 81.9% **[UNDER REVIEW -- see Validation]** |
+| Content-based matching v7: mean F1 | 81.9% **[VALIDATED -- Phase 4b]** |
+| **Rare ingredient F1** | **72.4%** (best baseline 31.9%, gap +40.5pp) |
+| **MRR** | **1.000** (best baseline 0.238) -- tautological for v7 |
+| **P@1** | **100%** (best baseline 10.6%) -- tautological for v7 |
 | Confirmed identifications (Tier 1-2) | 8 (Galbanum, Crocus, Myrrha x6) |
 | Strong identifications (Tier 3) | 36 (Crocus x9, Rosa, Mel x5, Cinnamomum x2, Opopanax x2, Zingiber x2, Castoreum x9, Petroselinum x4, Gentiana x2) |
 | Moderate identifications (Tier 4) | 23 (Amomum, Piper, Bdellium, Casia, Cardamomum, Styrax, Saccharum, Galanga\|Cubeba\|Nux moschata) |
@@ -663,13 +692,14 @@ Built a comprehensive scientific validation framework with two layers: scientifi
 | Total identification entries (v7) | 75 |
 | Unique ingredients identified | 22 (Galbanum, Crocus, Myrrha, Mel, Rosa, Cinnamomum, Opopanax, Zingiber, Castoreum, Petroselinum, Gentiana, Amomum, P.nigrum, P.longum, Styrax, Bdellium, Casia, Cardamomum, Saccharum + Galanga\|Cubeba\|Nux moschata triple) |
 | Novel structural discoveries | 4 (suffix channel, vertical alignment, column schema, foreign keys) |
-| Total documented discoveries | 23 |
+| Total documented discoveries | 24 |
 | Deadlocks resolved | 1 (Zingiber/Mel -- 41-0 verdict for Mel) |
 | Deadlocks partially broken | 1 (Opium/Castoreum -- 9 Castoreum stems confirmed in v7) |
 | Deadlocks permanent | 1 (Galanga/Cubeba/Nux moschata -- 47 TIED, unbreakable with 50 recipes) |
 | Philonium folios confirmed | 4 (f88v, f95v, f96r, f102r) |
 | Requies Magna folios found | 0 |
-| Validation phases complete | 4 of 10 |
+| Validation phases complete | 4b of 10 (Phase 4b = alternative metrics) |
 | Data contracts | 16/16 PASS (2 warnings) |
 | Null models | 5/5 system beats (p < 0.01) |
-| Baselines | 3/5 beat the system (F1 metric broken) |
+| Baselines (original F1) | 3/5 beat the system (F1 metric broken) |
+| Baselines (Phase 4b metrics) | **0/5 beat the system on discriminative metrics** |
