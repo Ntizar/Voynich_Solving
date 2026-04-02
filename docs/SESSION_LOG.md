@@ -567,11 +567,80 @@ Major breakthrough session. Used intersection analysis across all recipe-folio p
 
 ---
 
+## Session 15 (Scientific Validation Framework)
+
+**Date:** April 2026  
+**Duration:** ~6 hours  
+**Focus:** Build and run scientific validation framework (Phases 0-4), discover F1 metric is broken, update all documentation
+
+### Summary
+
+Built a comprehensive scientific validation framework with two layers: scientific validation (null models, baselines) and technical self-validation (data contracts, blind splits). The framework revealed a **critical finding**: the F1 metric used to evaluate the v7 matching system is non-discriminative. A trivial majority-recipe baseline achieves 100% F1, and a most-common-ingredients baseline achieves 90.8%, both beating the system's 81.9%. The structural discoveries remain robust. All documentation updated to honestly reflect these findings.
+
+### Key Activities
+
+1. **Phase 0: Infrastructure**
+   - Created `scripts/core/config.py` with central configuration, SHA-256 hashes for all 12 source files, seed=42, threshold constants, STA1 atom regex
+   - Created `scripts/core/data_loader.py` for unified dataset loading
+   - Organized directory structure: `scripts/core/`, `scripts/validation/`, `scripts/analysis/`
+
+2. **Phase 1: Data Contracts**
+   - Built `scripts/validation/data_contracts.py` with 16 integrity contracts
+   - Result: **16/16 PASS, 2 warnings**
+   - Warning 1: Pillulae Cochiae subcategory count mismatch (5 vs 6)
+   - Warning 2: Theriac/Mithridatium/Diascordium flat tables incomplete for large recipes
+
+3. **Phase 2: Blind Splits**
+   - Built `scripts/validation/blind_splits.py` with deterministic train/test partitions (seed=42)
+   - 9 test folios, 10 test recipes
+   - v7 confirmed contaminated (expected -- K1A3=Crocus references test folio f93v)
+   - Output: `output/splits/blind_splits.json` with SHA-256 integrity hash
+
+4. **Phase 3: Null Models -- System beats ALL (p < 0.01)**
+   - Built `scripts/validation/null_models.py` with 5 null models x 500 iterations
+   - Wrong genre (culinary): 0% vs 81.9% -- confirms pharmaceutical specificity
+   - Shuffled ingredients: 49.8% vs 81.9% -- real recipe composition matters (+32pp)
+   - **Permuted stems: 74.5% -- only +7.4pp real advantage from specific mappings**
+   - Permuted folios: 75.0% -- folio-specific composition adds little
+   - Random stems: 17.5% -- system far from random
+
+5. **Phase 4: Baselines -- CRITICAL: F1 metric is broken**
+   - Built `scripts/validation/baselines.py` with 5 rival baselines
+   - **Majority recipe baseline = 100% F1** (predicting Theriac Magna for everything)
+   - **Most common ingredients = 90.8%** (beats system without using any Voynich data)
+   - **All ingredients = 87.2%** (also beats system)
+   - Frequency rank = 66.7% (system wins)
+   - Root cause: 22 identified ingredients are all ultra-common, F1 can't discriminate
+
+6. **Documentation Update**
+   - Created `docs/VALIDATION.md` with full protocol and results
+   - Updated `README.md` with validation status, honest assessment, new structure
+   - Updated `README.html` with validation alert, corrected stats, revised priorities
+   - Updated all docs/ files (DISCOVERIES, METHODOLOGY, DATA_DICTIONARY, NEXT_STEPS, SESSION_LOG)
+   - Fixed `.gitignore` to include `scripts/` (was accidentally excluded!)
+
+### Scripts Written
+- `scripts/core/config.py` -- Central config with SHA-256 hashes
+- `scripts/core/data_loader.py` -- Unified data loader
+- `scripts/validation/data_contracts.py` -- 16 data integrity contracts
+- `scripts/validation/blind_splits.py` -- Train/test partition generator
+- `scripts/validation/null_models.py` -- 5 null models x 500 iterations
+- `scripts/validation/baselines.py` -- 5 rival baselines
+- `scripts/_gen_hashes.py` -- Temporary hash generation helper
+
+### Files Generated
+- `output/splits/blind_splits.json` -- Frozen train/test partitions with integrity hash
+- `output/validation/null_models_results.json` -- Null model results (5 models x 500 iterations)
+- `output/validation/baselines_results.json` -- Baseline comparison results
+- `docs/VALIDATION.md` -- New: full validation protocol and results document
+
+---
+
 ## Summary Statistics
 
 | Metric | Value |
 |---|---|
-| Total scripts written | 34 |
+| Total scripts written | 40+ |
 | Total CSV files generated | 34 |
 | HTML files | 2 (dashboard_voynich.html, README.html) |
 | Obsidian notes generated | 130+ |
@@ -586,7 +655,7 @@ Major breakthrough session. Used intersection analysis across all recipe-folio p
 | Content-based matching v7: best F1 | 100.0% (f100r = Diamargariton) |
 | Content-based matching v7: EXCELLENT (F1>=80%) | 35 |
 | Content-based matching v7: GOOD (F1 50-79%) | 12 |
-| Content-based matching v7: mean F1 | 81.9% |
+| Content-based matching v7: mean F1 | 81.9% **[UNDER REVIEW -- see Validation]** |
 | Confirmed identifications (Tier 1-2) | 8 (Galbanum, Crocus, Myrrha x6) |
 | Strong identifications (Tier 3) | 36 (Crocus x9, Rosa, Mel x5, Cinnamomum x2, Opopanax x2, Zingiber x2, Castoreum x9, Petroselinum x4, Gentiana x2) |
 | Moderate identifications (Tier 4) | 23 (Amomum, Piper, Bdellium, Casia, Cardamomum, Styrax, Saccharum, Galanga\|Cubeba\|Nux moschata) |
@@ -594,9 +663,13 @@ Major breakthrough session. Used intersection analysis across all recipe-folio p
 | Total identification entries (v7) | 75 |
 | Unique ingredients identified | 22 (Galbanum, Crocus, Myrrha, Mel, Rosa, Cinnamomum, Opopanax, Zingiber, Castoreum, Petroselinum, Gentiana, Amomum, P.nigrum, P.longum, Styrax, Bdellium, Casia, Cardamomum, Saccharum + Galanga\|Cubeba\|Nux moschata triple) |
 | Novel structural discoveries | 4 (suffix channel, vertical alignment, column schema, foreign keys) |
-| Total documented discoveries | 22 |
+| Total documented discoveries | 23 |
 | Deadlocks resolved | 1 (Zingiber/Mel -- 41-0 verdict for Mel) |
 | Deadlocks partially broken | 1 (Opium/Castoreum -- 9 Castoreum stems confirmed in v7) |
 | Deadlocks permanent | 1 (Galanga/Cubeba/Nux moschata -- 47 TIED, unbreakable with 50 recipes) |
 | Philonium folios confirmed | 4 (f88v, f95v, f96r, f102r) |
 | Requies Magna folios found | 0 |
+| Validation phases complete | 4 of 10 |
+| Data contracts | 16/16 PASS (2 warnings) |
+| Null models | 5/5 system beats (p < 0.01) |
+| Baselines | 3/5 beat the system (F1 metric broken) |

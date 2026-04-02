@@ -2,7 +2,9 @@
 
 This document records every Voynich stem identification, organized by confidence tier. **Current version: v7 (75 entries, 22 unique ingredients + 8 function words).**
 
-Last updated: Session 14
+Last updated: Session 15
+
+**VALIDATION NOTE (Session 15):** The F1 metric used to evaluate these identifications is non-discriminative (a majority-recipe baseline achieves 100% F1). The identifications below await re-evaluation with alternative metrics (discriminative F1, ranking accuracy, exclusion accuracy). Tier 1-2 identifications have reasoning chains independent of F1 and remain solid. See `docs/VALIDATION.md` for full details.
 
 ---
 
@@ -295,9 +297,15 @@ K1A3 = Crocus (CONFIRMED)
 | Opopanax cross-validation (2 independent paths) | Both converge |
 | Crocus absence from f93v (Diascordium) | Confirmed |
 | Galbanum triple intersection uniqueness | Confirmed |
-| Content-based matching v7 (48 folios x 50 recipes) | Mean F1 = 81.9%, 35 EXCELLENT matches |
-| f100r = Diamargariton (perfect match) | 100% F1 -- all 8 ingredients matched |
-| f113v = Theodoricon Euporistum | 96.0% F1 -- 12/12 TP, 1 FP |
+| Content-based matching v7 (48 folios x 50 recipes) | Mean F1 = 81.9% **[UNDER REVIEW]** |
+| f100r = Diamargariton (perfect match) | 100% F1 **[metric non-discriminative]** |
+| f113v = Theodoricon Euporistum | 96.0% F1 **[metric non-discriminative]** |
 | Galanga\|Cubeba\|Nux moschata triple deadlock | 47 TIED -- confirmed unbreakable |
 | Opium/Castoreum morphological analysis (948 stems) | 296 Opium-enriched, 363 Castoreum-enriched |
 | Intersection analysis (session 14) | 77 UNIQUE + 160 STRONG candidates validated |
+| **Data contracts (session 15)** | **16/16 PASS, 2 warnings** |
+| **Null models (session 15)** | **System beats all 5 (p < 0.01)** |
+| **Wrong genre null (session 15)** | **0% F1 -- confirms pharmaceutical** |
+| **Permuted stems null (session 15)** | **74.5% -- only +7.4pp real advantage** |
+| **Majority recipe baseline (session 15)** | **100% F1 -- F1 metric is broken** |
+| **Most common ingredients baseline** | **90.8% F1 -- beats system** |

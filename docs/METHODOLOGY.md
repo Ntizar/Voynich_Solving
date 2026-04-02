@@ -46,14 +46,19 @@
 ### Secondary: Historical Recipe Database
 
 - **File:** `recetas_historicas_medievales.csv`
+- **Flat file:** `recetas_historicas_ingredientes_flat.csv` (613 ingredient-recipe rows)
 - **Sources:** Manually compiled from:
   - Antidotarium Nicolai (Salerno, s.XII)
   - Galeno / Andromachus (Theriac Magna)
   - Mitridates VI / Galeno (Mithridatium)
   - Jeronimo Fracastoro (Diascordium)
   - Circa Instans (Salerno, s.XII)
-  - Grabadin (Unguentum Apostolorum)
-- **8 recipes** with full ingredient lists classified as ACTIVO/ESPECIA/BASE
+  - Grabadin / Mesue (compound medicines)
+  - Avicenna Canon
+  - Abulcasis al-Tasrif
+  - Salernitano compilations
+- **50 recipes** with full ingredient lists classified as ACTIVO/ESPECIA/BASE
+- **152 unique ingredients**, 613 ingredient-recipe pairs
 
 ---
 
@@ -143,3 +148,37 @@ ATOM_PATTERN = re.compile(
 2. Our stem extraction treats the LAST recognized atom as the suffix -- compound suffixes (e.g., B2B1A2) are not yet handled
 3. Historical recipe matching by ingredient count alone has limited discriminating power -- the same count could match multiple recipes. We use it as a FILTER, not a proof.
 4. The 60% conflict rate in the consistency test suggests the frequency-rank heuristic for assigning ingredients to stems is too crude. The constraint solver approach (intersecting by CATEGORY, not by rank) produces much better results.
+5. **CRITICAL (Session 15):** The F1 metric used for content-based matching is non-discriminative with only 22 identified ingredients. A majority-recipe baseline achieves 100% F1. See `docs/VALIDATION.md` for details.
+
+---
+
+## Phase 5: Validation Framework (Session 15)
+
+A scientific validation framework was built to test the hypothesis rigorously:
+
+### Validation Pipeline
+
+12. **Data contracts** (`scripts/validation/data_contracts.py`)
+    - 16 integrity checks: schema validation, uniqueness, referential integrity, normalization, numeric sanity
+    - Detects data drift via SHA-256 hashes in `scripts/core/config.py`
+
+13. **Blind splits** (`scripts/validation/blind_splits.py`)
+    - Deterministic train/test partition (seed=42, 80/20 split)
+    - Contamination detector for retrospective leakage analysis
+    - Outputs: `output/splits/blind_splits.json`
+
+14. **Null models** (`scripts/validation/null_models.py`)
+    - 5 null models x 500 iterations each: wrong genre, random stems, shuffled ingredients, permuted stems, permuted folios
+    - Computes p-values against the real system's F1
+    - Outputs: `output/validation/null_models_results.json`
+
+15. **Baselines** (`scripts/validation/baselines.py`)
+    - 5 rival baselines: majority recipe, most common ingredients, all ingredients, frequency rank, random
+    - Revealed F1 metric is non-discriminative (majority baseline = 100%)
+    - Outputs: `output/validation/baselines_results.json`
+
+### Configuration
+
+- `scripts/core/config.py` -- Central config with paths, SHA-256 hashes, seeds, thresholds
+- `scripts/core/data_loader.py` -- Unified loader for all 12 source files
+- All validation scripts are deterministic (seed=42) and reproducible

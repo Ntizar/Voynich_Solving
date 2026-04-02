@@ -132,7 +132,7 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
   </a>
   <ul class="navbar-nav">
     <li><a class="nav-link" href="#discoveries">Discoveries</a></li>
-    <li><a class="nav-link" href="#data">Data</a></li>
+    <li><a class="nav-link" href="#data">Validation & Data</a></li>
     <li><a class="nav-link" href="#next">Next Steps</a></li>
   </ul>
   <div class="flex gap-2">
@@ -172,9 +172,9 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
         <div class="stat-label lang-es">Recetas Historicas</div>
       </div>
       <div class="card card-glass text-center p-4 animate-fade-up delay-3">
-        <div class="stat-number text-gradient">81.9%</div>
-        <div class="stat-label lang-en active">Mean F1 Score</div>
-        <div class="stat-label lang-es">F1 Promedio</div>
+        <div class="stat-number" style="color:var(--orange-400)">81.9%</div>
+        <div class="stat-label lang-en active">Mean F1 <span class="badge badge-warning no-dot" style="font-size:0.6rem;vertical-align:middle">UNDER REVIEW</span></div>
+        <div class="stat-label lang-es">F1 Promedio <span class="badge badge-warning no-dot" style="font-size:0.6rem;vertical-align:middle">EN REVISION</span></div>
       </div>
     </div>
   </div>
@@ -222,8 +222,8 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
 <!-- Discoveries -->
 <section id="discoveries">
   <div class="container">
-    <div class="lang-en active"><h2 class="mb-2">Key Discoveries</h2><p class="mb-6">22 documented discoveries across 14 research sessions.</p></div>
-    <div class="lang-es"><h2 class="mb-2">Descubrimientos Clave</h2><p class="mb-6">22 descubrimientos documentados en 14 sesiones de investigacion.</p></div>
+    <div class="lang-en active"><h2 class="mb-2">Key Discoveries</h2><p class="mb-6">23 documented discoveries across 15 research sessions.</p></div>
+    <div class="lang-es"><h2 class="mb-2">Descubrimientos Clave</h2><p class="mb-6">23 descubrimientos documentados en 15 sesiones de investigacion.</p></div>
 
     <div class="grid grid-2 gap-6">
       <!-- Discovery 1 -->
@@ -268,13 +268,13 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
       <!-- Discovery 4 -->
       <div class="card card-glass animate-fade-up delay-4">
         <div class="flex items-center gap-3 mb-4">
-          <span class="badge badge-success">#4</span>
-          <div class="lang-en active"><h4>Recipe Matching v7 (35 Excellent)</h4></div>
-          <div class="lang-es"><h4>Matching de Recetas v7 (35 Excelentes)</h4></div>
+          <span class="badge badge-warning">#4</span>
+          <div class="lang-en active"><h4>Recipe Matching v7 <span class="badge badge-warning no-dot" style="font-size:0.65rem">F1 UNDER REVIEW</span></h4></div>
+          <div class="lang-es"><h4>Matching de Recetas v7 <span class="badge badge-warning no-dot" style="font-size:0.65rem">F1 EN REVISION</span></h4></div>
         </div>
         <div class="card-body">
-          <div class="lang-en active">35 out of 48 recipe-section folios match real historical recipes at F1 >= 80% (EXCELLENT). Mean F1 = 81.9%. <strong style="color:var(--text-primary)">f100r = Diamargariton at 100% F1</strong> (perfect match). f113v = Theodoricon Euporistum at 96%. 22 unique ingredients identified across 75 stems.</div>
-          <div class="lang-es">35 de 48 folios de recetas coinciden con recetas historicas reales a F1 >= 80% (EXCELENTE). F1 promedio = 81.9%. <strong style="color:var(--text-primary)">f100r = Diamargariton a 100% F1</strong> (match perfecto). f113v = Theodoricon Euporistum a 96%. 22 ingredientes unicos identificados en 75 stems.</div>
+          <div class="lang-en active">35 out of 48 recipe-section folios match real historical recipes at F1 >= 80%. Mean F1 = 81.9%. <strong style="color:var(--orange-300)">However, validation (Session 15) revealed the F1 metric is non-discriminative:</strong> a majority-recipe baseline achieves 100% F1, and a most-common-ingredients baseline achieves 90.8%. The 81.9% claim requires alternative metrics to confirm. Structural discoveries remain unaffected.</div>
+          <div class="lang-es">35 de 48 folios de recetas coinciden con recetas historicas reales a F1 >= 80%. F1 promedio = 81.9%. <strong style="color:var(--orange-300)">Sin embargo, la validacion (Sesion 15) revelo que la metrica F1 no es discriminativa:</strong> una baseline de receta mayoritaria logra 100% F1, y una baseline de ingredientes mas comunes logra 90.8%. La afirmacion del 81.9% requiere metricas alternativas para confirmarse. Los descubrimientos estructurales no se ven afectados.</div>
         </div>
       </div>
     </div>
@@ -284,6 +284,46 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
 <!-- Identification Table -->
 <section id="data">
   <div class="container">
+    <!-- Validation Alert -->
+    <div class="card card-glass glass-orange p-6 mb-6 animate-fade-up">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="badge badge-danger no-dot" style="font-size:var(--text-sm)">VALIDATION ALERT</span>
+      </div>
+      <div class="card-body">
+        <div class="lang-en active">
+          <h4 class="mb-2" style="color:var(--orange-300)">F1 Metric Under Review (Session 15)</h4>
+          <p class="mb-4">A scientific validation framework (Phases 0-4) tested the system against null models and rival baselines. <strong style="color:var(--text-primary)">Key finding: the F1 metric is non-discriminative</strong> with only 22 identified ingredients (all ultra-common in medieval pharmacology).</p>
+          <table class="mb-4">
+            <thead><tr><th>Test</th><th>F1 Score</th><th>Implication</th></tr></thead>
+            <tbody>
+              <tr><td>Our system (v7)</td><td style="color:var(--blue-300)">81.9%</td><td>The claim under test</td></tr>
+              <tr><td style="color:var(--orange-300)">Majority recipe baseline</td><td style="color:var(--orange-300)">100.0%</td><td>Predicting "everything is Theriac Magna" gets perfect score</td></tr>
+              <tr><td style="color:var(--orange-300)">Most common ingredients</td><td style="color:var(--orange-300)">90.8%</td><td>Predicting the 22 most common ingredients everywhere beats us</td></tr>
+              <tr><td>Shuffled ingredients null</td><td>49.8%</td><td>Real recipe composition adds +32pp</td></tr>
+              <tr><td>Wrong genre (culinary)</td><td>0.0%</td><td>Confirms pharmaceutical specificity</td></tr>
+              <tr><td>Permuted stems null</td><td style="color:var(--orange-300)">74.5%</td><td>Only +7.4pp real advantage from specific mappings</td></tr>
+            </tbody>
+          </table>
+          <p><strong style="color:var(--text-primary)">What remains solid:</strong> Structural discoveries (suffix channel, vertical alignment, foreign keys) are independent of F1. Tier 1 identifications have logical chains that don't depend on F1. The system beats ALL null models (p &lt; 0.01). Alternative metrics are needed.</p>
+        </div>
+        <div class="lang-es">
+          <h4 class="mb-2" style="color:var(--orange-300)">Metrica F1 en Revision (Sesion 15)</h4>
+          <p class="mb-4">Un marco de validacion cientifica (Fases 0-4) probo el sistema contra modelos nulos y baselines rivales. <strong style="color:var(--text-primary)">Hallazgo clave: la metrica F1 no es discriminativa</strong> con solo 22 ingredientes identificados (todos ultra-comunes en farmacologia medieval).</p>
+          <table class="mb-4">
+            <thead><tr><th>Prueba</th><th>F1</th><th>Implicacion</th></tr></thead>
+            <tbody>
+              <tr><td>Nuestro sistema (v7)</td><td style="color:var(--blue-300)">81.9%</td><td>La afirmacion bajo prueba</td></tr>
+              <tr><td style="color:var(--orange-300)">Baseline receta mayoritaria</td><td style="color:var(--orange-300)">100.0%</td><td>Predecir "todo es Theriac Magna" da puntuacion perfecta</td></tr>
+              <tr><td style="color:var(--orange-300)">Ingredientes mas comunes</td><td style="color:var(--orange-300)">90.8%</td><td>Predecir los 22 ingredientes mas comunes supera al sistema</td></tr>
+              <tr><td>Ingredientes barajados</td><td>49.8%</td><td>La composicion real de recetas anade +32pp</td></tr>
+              <tr><td>Genero incorrecto (culinario)</td><td>0.0%</td><td>Confirma especificidad farmaceutica</td></tr>
+              <tr><td>Stems permutados</td><td style="color:var(--orange-300)">74.5%</td><td>Solo +7.4pp de ventaja real por mapeos especificos</td></tr>
+            </tbody>
+          </table>
+          <p><strong style="color:var(--text-primary)">Lo que sigue solido:</strong> Los descubrimientos estructurales (canal de sufijos, alineacion vertical, claves foraneas) son independientes del F1. Las identificaciones Tier 1 tienen cadenas logicas que no dependen del F1. El sistema supera TODOS los modelos nulos (p &lt; 0.01). Se necesitan metricas alternativas.</p>
+        </div>
+      </div>
+    </div>
     <div class="lang-en active"><h2 class="mb-2">Identification Table v7</h2><p class="mb-6">75 Voynich stems mapped to 22 real medieval pharmaceutical ingredients, organized by confidence tier.</p></div>
     <div class="lang-es"><h2 class="mb-2">Tabla de Identificaciones v7</h2><p class="mb-6">75 stems Voynich mapeados a 22 ingredientes farmaceuticos medievales reales, organizados por nivel de confianza.</p></div>
 
@@ -361,8 +401,8 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
             <div class="progress-wrap"><div class="progress-bar" style="width:100%"></div></div>
           </div>
           <div>
-            <div class="progress-label"><span class="lang-en active">Folio-Recipe Matching v7 (81.9% mean F1)</span><span class="lang-es">Matching Folio-Receta v7 (81.9% F1 medio)</span><span>100%</span></div>
-            <div class="progress-wrap"><div class="progress-bar gradient" style="width:100%"></div></div>
+            <div class="progress-label"><span class="lang-en active">Folio-Recipe Matching v7 (81.9% F1 -- under review)</span><span class="lang-es">Matching Folio-Receta v7 (81.9% F1 -- en revision)</span><span>100%</span></div>
+            <div class="progress-wrap"><div class="progress-bar orange" style="width:100%"></div></div>
           </div>
           <div>
             <div class="progress-label"><span class="lang-en active">Interactive Dashboard</span><span class="lang-es">Dashboard Interactivo</span><span>95%</span></div>
@@ -405,86 +445,74 @@ a{color:var(--blue-400);text-decoration:none}a:hover{text-decoration:underline}
 
     <div class="grid grid-3 gap-6">
       <div class="card card-glass p-6 animate-fade-up delay-1">
-        <span class="badge badge-blue mb-4">Priority 1</span>
+        <span class="badge badge-danger mb-4">Priority 1 -- CRITICAL</span>
         <div class="lang-en active">
-          <h4 class="mb-2">Expand Recipe Database to 100+</h4>
-          <p class="card-body">Our 50-recipe database already yields 81.9% mean F1 and 22 ingredients. Doubling to 100+ recipes from additional sources (Circa Instans, Thesaurus Pauperum, Lumen Apothecariorum) will increase discrimination power, break remaining deadlocks, and push Tier 3/4 candidates toward Tier 1 confirmation. More recipes = more unique ingredient fingerprints.</p>
+          <h4 class="mb-2">Fix the F1 Metric</h4>
+          <p class="card-body">The current F1 metric is non-discriminative: a majority-recipe baseline scores 100%, and most-common-ingredients scores 90.8%. We need <strong style="color:var(--text-primary)">discriminative F1</strong> (excluding ingredients in &gt;80% of recipes), <strong style="color:var(--text-primary)">ranking accuracy</strong> (does the system rank the correct recipe higher?), and <strong style="color:var(--text-primary)">exclusion accuracy</strong> (does the system correctly predict ingredient ABSENCE?). This is the single most important next step.</p>
         </div>
         <div class="lang-es">
-          <h4 class="mb-2">Expandir Base de Recetas a 100+</h4>
-          <p class="card-body">Nuestra base de 50 recetas ya produce 81.9% F1 medio y 22 ingredientes. Duplicar a 100+ recetas de fuentes adicionales (Circa Instans, Thesaurus Pauperum, Lumen Apothecariorum) aumentara el poder discriminante, rompera deadlocks restantes, y empujara candidatos de Tier 3/4 hacia confirmacion Tier 1. Mas recetas = mas huellas unicas de ingredientes.</p>
+          <h4 class="mb-2">Arreglar la Metrica F1</h4>
+          <p class="card-body">La metrica F1 actual no es discriminativa: una baseline de receta mayoritaria logra 100%, e ingredientes mas comunes logra 90.8%. Necesitamos <strong style="color:var(--text-primary)">F1 discriminativo</strong> (excluyendo ingredientes en &gt;80% de recetas), <strong style="color:var(--text-primary)">precision de ranking</strong> (el sistema rankea la receta correcta mas alto?), y <strong style="color:var(--text-primary)">precision de exclusion</strong> (el sistema predice correctamente la AUSENCIA de ingredientes?). Este es el paso siguiente mas importante.</p>
         </div>
       </div>
 
       <div class="card card-glass p-6 animate-fade-up delay-2">
-        <span class="badge badge-orange mb-4">Priority 2</span>
+        <span class="badge badge-blue mb-4">Priority 2</span>
         <div class="lang-en active">
-          <h4 class="mb-2">Break the Galanga/Cubeba/Nux Deadlock</h4>
-          <p class="card-body">Session 14 proved this triple deadlock is <strong>unbreakable</strong> with 50 recipes: 47 stems tied 3-way, 0 wins in any direction. No Galanga-only or Cubeba-only discriminating recipes exist in our database. External sources with simpler compound formulas are the only path forward.</p>
+          <h4 class="mb-2">Expand Recipe Database to 100+</h4>
+          <p class="card-body">Our 50-recipe database needs expansion. More recipes from Circa Instans, Thesaurus Pauperum, and Lumen Apothecariorum will increase discrimination power, break remaining deadlocks, and provide better baselines for the new metrics.</p>
         </div>
         <div class="lang-es">
-          <h4 class="mb-2">Romper el Deadlock Galanga/Cubeba/Nux</h4>
-          <p class="card-body">La sesion 14 demostro que este deadlock triple es <strong>irrompible</strong> con 50 recetas: 47 stems empatados 3 vias, 0 victorias en ninguna direccion. No existen recetas discriminadoras exclusivas de Galanga o Cubeba en nuestra base. Fuentes externas con formulas compuestas mas simples son el unico camino.</p>
+          <h4 class="mb-2">Expandir Base de Recetas a 100+</h4>
+          <p class="card-body">Nuestra base de 50 recetas necesita expansion. Mas recetas del Circa Instans, Thesaurus Pauperum y Lumen Apothecariorum aumentaran el poder discriminante, romperan deadlocks restantes y proporcionaran mejores baselines para las nuevas metricas.</p>
         </div>
       </div>
 
       <div class="card card-glass p-6 animate-fade-up delay-3">
-        <span class="badge badge-success mb-4">Priority 3</span>
+        <span class="badge badge-orange mb-4">Priority 3</span>
         <div class="lang-en active">
-          <h4 class="mb-2">Complete Opium/Castoreum Split</h4>
-          <p class="card-body"><strong>Partially broken:</strong> 9 Castoreum stems now confirmed at 75-83% confidence. But Opium-exclusive stems remain elusive. Morphological analysis of candidate stems + new discriminator recipes (Philonium Romanum, Theriac Diatessaron Magna) needed to fully separate the pair and promote remaining candidates.</p>
+          <h4 class="mb-2">Complete Validation Phases 5-10</h4>
+          <p class="card-body">Remaining phases: transliteration round-trip test, contradiction engine, bootstrap/ablation analysis, FDR correction, automated semaphore report. These will provide comprehensive confidence calibration for all identifications.</p>
         </div>
         <div class="lang-es">
-          <h4 class="mb-2">Completar Separacion Opio/Castoreum</h4>
-          <p class="card-body"><strong>Parcialmente roto:</strong> 9 stems de Castoreum confirmados al 75-83% de confianza. Pero los stems exclusivos de Opio siguen siendo elusivos. Se necesita analisis morfologico de stems candidatos + nuevas recetas discriminadoras (Philonium Romanum, Theriac Diatessaron Magna) para separar completamente el par y promover candidatos restantes.</p>
+          <h4 class="mb-2">Completar Fases de Validacion 5-10</h4>
+          <p class="card-body">Fases restantes: prueba de ida y vuelta de transliteracion, motor de contradicciones, analisis bootstrap/ablacion, correccion FDR, reporte semaforo automatizado. Proporcionaran calibracion de confianza integral para todas las identificaciones.</p>
         </div>
       </div>
 
       <div class="card card-glass p-6 animate-fade-up delay-4">
         <span class="badge badge-blue mb-4">Priority 4</span>
         <div class="lang-en active">
-          <h4 class="mb-2">Positional Grammar Extraction</h4>
-          <p class="card-body">Column positions carry meaning: Columns 1-2 are entities (C1/G1 suffix), Columns 3+ are actions (A2). Build a formal grammar model: <code>[ENTITY]&rarr;[PROPERTY]&rarr;[ACTION LIST]</code>. This would allow predicting missing words and testing ingredient assignments structurally.</p>
+          <h4 class="mb-2">Break Remaining Deadlocks</h4>
+          <p class="card-body">Galanga/Cubeba/Nux moschata triple deadlock is <strong>unbreakable</strong> with 50 recipes (47 TIED). Opium/Castoreum is partially broken (9 Castoreum stems confirmed). External sources with simpler formulas, morphological analysis, or botanical cross-reference may help.</p>
         </div>
         <div class="lang-es">
-          <h4 class="mb-2">Extraccion de Gramatica Posicional</h4>
-          <p class="card-body">Las posiciones de columna portan significado: Columnas 1-2 son entidades (sufijo C1/G1), Columnas 3+ son acciones (A2). Construir un modelo gramatical formal: <code>[ENTIDAD]&rarr;[PROPIEDAD]&rarr;[LISTA DE ACCIONES]</code>. Esto permitiria predecir palabras faltantes y probar asignaciones de ingredientes estructuralmente.</p>
+          <h4 class="mb-2">Romper Deadlocks Restantes</h4>
+          <p class="card-body">El deadlock triple Galanga/Cubeba/Nux moschata es <strong>irrompible</strong> con 50 recetas (47 EMPATE). Opio/Castoreum parcialmente roto (9 stems de Castoreum confirmados). Fuentes externas con formulas mas simples, analisis morfologico o referencia cruzada botanica pueden ayudar.</p>
         </div>
       </div>
 
       <div class="card card-glass p-6 animate-fade-up delay-5">
         <span class="badge badge-orange mb-4">Priority 5</span>
         <div class="lang-en active">
-          <h4 class="mb-2">Expand to Botany Section</h4>
-          <p class="card-body">217 unique entity stems in botany (73.7% page-exclusive = plant IDs). Cross-correlate botany stem properties with known medieval simples (Circa Instans). If botany stem X is identified as Crocus via recipes, verify that its properties in botany match real saffron properties. <strong>Zingiber (now identified as K1J1/K1K2)</strong> is an ideal test case.</p>
+          <h4 class="mb-2">Positional Grammar & Botany Section</h4>
+          <p class="card-body">Build a formal grammar model from column positions: <code>[ENTITY]&rarr;[PROPERTY]&rarr;[ACTION LIST]</code>. Cross-correlate 217 botany stems with known medieval simples. Zingiber and Crocus identifications can be verified against botanical illustrations.</p>
         </div>
         <div class="lang-es">
-          <h4 class="mb-2">Expandir a la Seccion de Botanica</h4>
-          <p class="card-body">217 stems de entidad unicos en botanica (73.7% exclusivos de pagina = IDs de planta). Correlacionar propiedades de stems botanicos con simples medievales conocidos (Circa Instans). Si el stem X de botanica se identifica como Crocus via recetas, verificar que sus propiedades en botanica coinciden con las del azafran real. <strong>Zingiber (ahora identificado como K1J1/K1K2)</strong> es un caso de prueba ideal.</p>
+          <h4 class="mb-2">Gramatica Posicional y Seccion Botanica</h4>
+          <p class="card-body">Construir modelo gramatical formal de posiciones: <code>[ENTIDAD]&rarr;[PROPIEDAD]&rarr;[LISTA ACCIONES]</code>. Correlacionar 217 stems botanicos con simples medievales conocidos. Las identificaciones de Zingiber y Crocus pueden verificarse contra ilustraciones botanicas.</p>
         </div>
       </div>
 
       <div class="card card-glass p-6 animate-fade-up delay-5">
         <span class="badge badge-success mb-4">Priority 6</span>
         <div class="lang-en active">
-          <h4 class="mb-2">Quantity/Weight Notation</h4>
-          <p class="card-body">Medieval recipes specify ingredient quantities (drams, scruples, ounces). Voynich recipe lines likely encode these too. Identify numerical/measurement stems by analyzing frequency patterns and positional regularities within recipe folios.</p>
-        </div>
-        <div class="lang-es">
-          <h4 class="mb-2">Notacion de Cantidades/Pesos</h4>
-          <p class="card-body">Las recetas medievales especifican cantidades de ingredientes (dracmas, escrupulos, onzas). Las lineas de recetas Voynich probablemente tambien las codifican. Identificar stems de numeros/medidas analizando patrones de frecuencia y regularidades posicionales dentro de los folios de recetas.</p>
-        </div>
-      </div>
-
-      <div class="card card-glass p-6 animate-fade-up delay-5">
-        <span class="badge badge-blue mb-4">Priority 7</span>
-        <div class="lang-en active">
           <h4 class="mb-2">Statistical Publication</h4>
-          <p class="card-body">Formalize the suffix channel, 2D alignment, and foreign key discoveries as a statistical paper. The 27% vertical alignment rate (vs 8% null) and Z=-210 suffix entropy are publication-grade results that stand independent of any decipherment claims.</p>
+          <p class="card-body">Formalize the suffix channel, 2D alignment, and foreign key discoveries as a statistical paper. The 27% vertical alignment rate (vs 8% null) and Z=-210 suffix entropy are publication-grade results that stand independent of any decipherment claims or the broken F1 metric.</p>
         </div>
         <div class="lang-es">
           <h4 class="mb-2">Publicacion Estadistica</h4>
-          <p class="card-body">Formalizar los descubrimientos del canal de sufijos, alineacion 2D y claves foraneas como articulo estadistico. La tasa de alineacion vertical del 27% (vs 8% nulo) y Z=-210 de entropia de sufijos son resultados de calidad publicable que son independientes de cualquier afirmacion de desciframiento.</p>
+          <p class="card-body">Formalizar los descubrimientos del canal de sufijos, alineacion 2D y claves foraneas como articulo estadistico. La tasa de alineacion vertical del 27% (vs 8% nulo) y Z=-210 de entropia de sufijos son resultados publicables que son independientes de las afirmaciones de desciframiento o la metrica F1 rota.</p>
         </div>
       </div>
 

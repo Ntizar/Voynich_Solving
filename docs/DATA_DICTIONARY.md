@@ -203,3 +203,112 @@ Every generated CSV file, its columns, and how to interpret them.
 | Metodo | Method used |
 | Cadena_Razonamiento | Full step-by-step reasoning chain |
 | Verificacion_Visual | What to look for on voynich.nu |
+
+---
+
+## 12. voynich_unified_identifications_v7.csv
+
+**What:** Current identification table (v7, 75 entries, 22 unique ingredients + 8 function words).
+
+| Column | Description |
+|---|---|
+| Stem | Voynich stem (STA1 atoms) |
+| Identified_Ingredient | Real medieval ingredient or "FUNCTION_WORD" |
+| Confidence | Confidence percentage (0-100) |
+| Tier | 0 (function), 1 (confirmed), 2 (high), 3 (strong), 4 (moderate) |
+| Method | Identification method (constraint, elimination, intersection, etc.) |
+| Source_Session | Session where identification was made |
+
+**Note:** v7 identifications are **contaminated** (built using test data). See `docs/VALIDATION.md`.
+
+---
+
+## 13. voynich_matching_v7.csv
+
+**What:** Best recipe match per folio using v7 identifications.
+
+| Column | Description |
+|---|---|
+| Folio | Voynich folio (f87r, f87v, etc.) |
+| Best_Recipe | Name of best-matching historical recipe |
+| F1 | F1 score (0-1) **[UNDER REVIEW -- see Validation]** |
+| Precision | Precision score |
+| Recall | Recall score |
+| N_Identified | Number of identified ingredients in folio |
+
+---
+
+## 14. voynich_expanded_matching_v7.csv
+
+**What:** Full 48x50 matching matrix (v7).
+
+Each row is a folio, each column is a recipe, values are F1 scores. Used for heatmap visualizations and comparative analysis.
+
+---
+
+## 15. recetas_historicas_ingredientes_flat.csv
+
+**What:** Flat ingredient table (613 rows) for all 50 historical recipes.
+
+| Column | Description |
+|---|---|
+| Nombre_Receta | Recipe name (foreign key to recipe database) |
+| Ingrediente | Ingredient name |
+| Categoria | ACTIVO / ESPECIA / BASE |
+
+---
+
+## 16. voynich_all_recipe_folio_stems.csv
+
+**What:** Complete stem extraction from all 48 recipe folios (8,232 rows).
+
+| Column | Description |
+|---|---|
+| Folio | Recipe folio identifier |
+| Stem | Voynich stem (atoms minus final suffix) |
+| Count | Number of occurrences in folio |
+| Suffix | Most common final atom |
+
+---
+
+## Validation Output Files
+
+These files are in the `output/` directory (gitignored -- regenerable by running the validation scripts).
+
+### output/splits/blind_splits.json
+
+**What:** Frozen train/test partitions with integrity hash.
+
+| Field | Description |
+|---|---|
+| seed | Random seed used (42) |
+| test_fraction | Test set fraction (0.2) |
+| test_folios | List of 9 test folios |
+| train_folios | List of 39 training folios |
+| test_recipes | List of 10 test recipes |
+| train_recipes | List of 40 training recipes |
+| sha256 | Integrity hash of the partition data |
+
+### output/validation/null_models_results.json
+
+**What:** Results from 5 null models x 500 iterations each.
+
+| Field | Description |
+|---|---|
+| model_name | Name of null model (wrong_genre, random_stems, etc.) |
+| system_f1 | System's mean F1 (81.9%) |
+| null_mean_f1 | Mean F1 across 500 null iterations |
+| null_std_f1 | Standard deviation of null F1 |
+| p_value | Proportion of null iterations >= system F1 |
+| delta_pp | Percentage point difference (system - null) |
+
+### output/validation/baselines_results.json
+
+**What:** Results from 5 rival baselines.
+
+| Field | Description |
+|---|---|
+| baseline_name | Name of baseline (majority_recipe, most_common, etc.) |
+| baseline_f1 | Baseline's mean F1 |
+| system_f1 | System's mean F1 (81.9%) |
+| system_wins | Whether system beats this baseline (boolean) |

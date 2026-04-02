@@ -13,8 +13,10 @@ AGENTS.MD/
 agents/
 design-system/
 ine/
-scripts/
 nul
+
+# --- Output files (regenerable) ---
+output/
 
 # --- Python ---
 __pycache__/

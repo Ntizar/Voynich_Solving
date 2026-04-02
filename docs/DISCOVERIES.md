@@ -724,3 +724,74 @@ The jump from 0 to 35 EXCELLENT matches demonstrates that the v7 identifications
 - `voynich_expanded_matching_v7.csv` -- Full 48x50 matrix
 - `voynich_matching_v7_top5.csv` -- Top 5 matches per folio
 - Script: `temp_session14_v7.py`
+
+---
+
+## Discovery 23: Validation Framework Reveals F1 Metric is Non-Discriminative
+
+**Date:** Session 15  
+**Status:** CONFIRMED -- CRITICAL  
+**Significance:** The 81.9% mean F1 claim must be heavily qualified or retracted. Alternative metrics needed.
+
+### Finding
+
+A comprehensive scientific validation framework (Phases 0-4) tested the v7 matching system against null models and rival baselines. The system beats all null models (p < 0.01), confirming it captures real signal. However, the F1 metric itself is **non-discriminative** with only 22 identified ingredients (all ultra-common in medieval pharmacology).
+
+### Null Model Results (Phase 3)
+
+| Null Model | Mean F1 | vs System (81.9%) | p-value |
+|---|---|---|---|
+| Wrong genre (culinary) | 0.0% | +81.9pp | < 0.001 |
+| Random stems | 17.5% | +64.4pp | < 0.001 |
+| Shuffled ingredients | 49.8% | +32.1pp | < 0.001 |
+| **Permuted stems** | **74.5%** | **+7.4pp** | < 0.01 |
+| Permuted folios | 75.0% | +6.9pp | < 0.01 |
+
+The permuted stems null is the most concerning: randomly reassigning which stems map to which ingredients (keeping the same 22 ingredients) still achieves 74.5%. Only 7.4 percentage points of the F1 come from the SPECIFIC stem-to-ingredient mappings.
+
+### Baseline Results (Phase 4) -- THE CRITICAL FINDING
+
+| Baseline | F1 Score | vs System |
+|---|---|---|
+| **Majority recipe** | **100.0%** | System LOSES by 18.1pp |
+| **Most common ingredients** | **90.8%** | System LOSES by 8.9pp |
+| **All ingredients** | **87.2%** | System LOSES by 5.3pp |
+| Frequency rank | 66.7% | System wins |
+| Random baseline | 42.1% | System wins |
+
+**The majority-recipe baseline achieves 100% F1** by predicting "every folio is Theriac Magna." Since Theriac Magna contains all 22 identified ingredients, this gets perfect precision and recall. The F1 metric is fundamentally broken for this evaluation.
+
+### Root Cause
+
+With only 22 identified ingredients -- all ultra-common in medieval pharmacology (Myrrha, Crocus, Castoreum, Galbanum, Mel, Zingiber, etc. appear in 30-80% of recipes) -- the F1 metric cannot discriminate between a real system and trivial baselines. The ingredients are so ubiquitous that predicting them for every folio scores high by default.
+
+### What Remains Valid
+
+1. **Structural discoveries** (suffix channel H=1.246 bits Z=-210, vertical alignment 27% vs 8%, cross-section foreign keys 46.9%) are completely independent of the F1 metric and remain robust.
+2. **Tier 1 identifications** (Galbanum, Crocus) have logical reasoning chains that don't depend on F1.
+3. **Null model rejections** (all 5 pass at p < 0.01) confirm the system captures real pharmaceutical signal.
+4. **Genre specificity** (0% culinary null) confirms the manuscript content is pharmaceutical, not culinary.
+
+### What Is Broken
+
+1. The **81.9% mean F1 claim** from Discovery 22 cannot be used as evidence of system quality.
+2. The **35 EXCELLENT matches** designation is misleading -- trivial baselines score higher.
+3. The **v7 identification table** needs evaluation with alternative metrics before its quality can be assessed.
+
+### Required Next Steps
+
+1. **Discriminative F1:** Exclude ingredients appearing in >80% of recipes
+2. **Ranking accuracy:** Does the system rank the correct recipe higher? (MRR, P@K)
+3. **Exclusion accuracy:** Does the system correctly predict ingredient ABSENCE?
+4. **Build v8 on training data only:** v7 is contaminated (used test folios in reasoning)
+5. **Complete Phases 5-10:** Transliteration test, contradiction engine, bootstrap/ablation, FDR correction
+
+### Files
+
+- `scripts/validation/data_contracts.py` -- Phase 1: 16 data contracts
+- `scripts/validation/blind_splits.py` -- Phase 2: train/test splits
+- `scripts/validation/null_models.py` -- Phase 3: 5 null models x 500 iterations
+- `scripts/validation/baselines.py` -- Phase 4: 5 rival baselines
+- `output/validation/null_models_results.json` -- Full null model results
+- `output/validation/baselines_results.json` -- Full baseline results
+- `docs/VALIDATION.md` -- Complete validation protocol and results
