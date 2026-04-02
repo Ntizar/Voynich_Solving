@@ -40,8 +40,8 @@ PATHS = {
 
 # ── Reproducibility ──────────────────────────────────────────────────────────
 RANDOM_SEED = 42
-VERSION = "v7"
-FRAMEWORK_VERSION = "0.1.0"
+VERSION = "v8"
+FRAMEWORK_VERSION = "0.2.0"  # v0.2.0: v8 builder, comparative corpus, cipher tests, sensitivity
 
 # ── Data integrity hashes (SHA-256, frozen at validation framework creation) ─
 # These are the expected hashes. If a file changes, validation halts.

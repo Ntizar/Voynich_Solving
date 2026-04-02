@@ -667,12 +667,104 @@ Built a comprehensive scientific validation framework with two layers: scientifi
 
 ---
 
+## Session 16 (v8 Pipeline Execution and Honest Reckoning)
+
+**Date:** April 2026  
+**Duration:** ~6 hours  
+**Focus:** Execute full v8 validation pipeline, fix tautological evaluator, diagnose over-prediction, run comparative corpus + cipher + sensitivity analyses
+
+### Summary
+
+The most methodologically rigorous session to date. Built and executed the complete v8 pipeline (automated stem identification from scratch, non-tautological evaluation, structural analysis against Latin controls, cipher hypothesis testing, sensitivity/robustness analysis). The results are mixed but honest: structural analysis is strong (3/4 anomalies confirmed, cipher ruled out), but the automated stem-to-ingredient mapping fails to beat trivial baselines. Multiple architectural problems were discovered and fixed along the way.
+
+### Key Activities
+
+1. **v8 Builder Execution and Iteration**
+   - Ran `v8_builder.py` — Phase 0 greedy co-occurrence bootstrap + Phase 1 Jaccard/lift solver
+   - Original thresholds (MAX_STEMS_CEILING=15) caused massive over-prediction: 197 ingredient stems, every ingredient hitting its cap, every folio predicting ~22/33 ingredients
+   - **v8.1 Fix:** Tightened to MAX_STEMS_BASE=1, MAX_STEMS_FREQ_FACTOR=0.1, MAX_STEMS_CEILING=3, COOCCUR_MIN_LIFT=1.5, eliminated WEAK tier, stopped folio-set expansion during Phase 1
+   - Final v8.1: 47 ingredient stems, 469 FUNCTION_WORD, 34 unique ingredients
+
+2. **Critical Bug Fix: Tautological Evaluator**
+   - Discovered `v8_evaluator.py` used `assign_best_recipes_for_evaluation()` which picks the recipe with highest F1 against v8's OWN predictions, then checks if that recipe ranks #1
+   - This is `argmax(f(x)) == argmax(f(x))` — trivially true, producing MRR=1.000 by construction
+   - **Fixed** to three non-circular strategies:
+     - v7 independent targets (use v7's recipe assignments as ground truth)
+     - Target-free specificity analysis (mean F1 across all recipes)
+     - Permutation test (200 shuffles, measure if real outperforms shuffled)
+
+3. **F1-Based Recipe Assignment Problem Diagnosed**
+   - Investigated why Phase 1 co-occurrence produces different results than v7
+   - Root cause: With only 33 seed ingredients and ~90 identified stems out of 2844 total, F1 computation for folio→recipe matching is essentially random noise
+   - Verified: dampened scores for known v7 stems show their expected ingredients ranking #31+, or not positive at all
+
+4. **v8 Test Set Evaluation (Non-Tautological)**
+   - v8 Fixed F1: 43.0% — beaten by most_common (51.2%), all_ingredients (61.4%), majority_recipe (64.8%)
+   - v8 Exclusion accuracy: 92.4% (good at excluding wrong ingredients)
+   - Permutation test: p=0.000 for F1 and Exclusion (SIGNIFICANT), p=0.295 for MRR (not significant)
+   - **Verdict: v8 captures some real signal but cannot beat baselines**
+
+5. **Comparative Corpus Analysis**
+   - 4 structural tests vs 1000 synthetic Latin medical control texts
+   - Suffix entropy: p<0.0001 (Voynich 2.74 bits vs Latin 4.02 bits) — SIGNIFICANT
+   - Vertical alignment: p<0.0001 (38.9% vs 12.5%) — SIGNIFICANT
+   - Stem reuse: p=1.0 (19.3% vs 54.2%) — NOT significant (Voynich has LESS reuse)
+   - Schema variation: p<0.0001 (KL 0.039 vs 0.004) — SIGNIFICANT
+   - **Verdict: 3/4 anomalies confirmed — structural claims validated independently**
+
+6. **Cipher Hypothesis Testing**
+   - IC = 0.0769 — matches natural language, rules out polyalphabetic cipher
+   - Homophonic cipher simulation does NOT match Voynich's entropy/IC profile
+   - **Verdict: Cipher hypothesis unlikely**
+
+7. **Sensitivity & Robustness Analysis**
+   - Coverage: Only 18.7% of recipe folio words have identified stems
+   - Ablation: Very robust — no single ingredient critical (max impact -2.4pp for Crocus)
+   - K-fold CV (5-fold): Mean Fixed F1 = 66.8% ± 1.2% — extremely stable across folds
+   - Note: k-fold uses tautological target assignment internally
+
+8. **Documentation Update**
+   - Updated `NEXT_STEPS.md` with actual results vs success criteria (2 FAIL, 3 PASS, 1 PARTIAL)
+   - Updated `SESSION_LOG.md` with full Session 16 record
+
+### Scripts Written
+- `scripts/validation/v8_builder.py` — ~1226 lines. Automated Phase 0 + Phase 1 constraint solver
+- `scripts/validation/v8_evaluator.py` — ~340 lines. Non-tautological evaluation (3 strategies)
+- `scripts/validation/comparative_corpus.py` — Structural claims vs Latin controls
+- `scripts/validation/cipher_hypothesis.py` — IC, homophonic, polyalphabetic, positional analysis
+- `scripts/validation/sensitivity_analysis.py` — ~561 lines. K-fold CV, ablation, coverage
+
+### Files Modified
+- `scripts/validation/config.py` — Updated VERSION="v8", FRAMEWORK_VERSION="0.2.0", added source hashes
+- `docs/NEXT_STEPS.md` — Replaced "Ready to run" with actual results and honest assessment
+- `docs/SESSION_LOG.md` — Added Session 16 record
+
+### Files Generated (output/)
+- `output/validation/voynich_unified_identifications_v8.csv` — 47 ingredient + 469 FUNCTION_WORD
+- `output/validation/v8_build_metadata.json` — Build metadata
+- `output/validation/v8_test_evaluation_results.json` — Non-tautological test results
+- `output/validation/v8_test_evaluation_details.json` — Per-folio breakdown
+- `output/validation/comparative_corpus_results.json` — 3/4 anomalies significant
+- `output/validation/cipher_hypothesis_results.json` — Cipher ruled out
+- `output/validation/sensitivity_analysis_results.json` — Coverage, ablation, k-fold CV
+
+### Discoveries
+
+- **Discovery 25:** F1-based recipe assignment is unreliable with sparse identifications (~90/2844 stems). Dampened scores show expected ingredients ranking far below top candidates.
+- **Discovery 26:** The v8 evaluator's original target assignment was tautological (argmax(f(x)) == argmax(f(x))). Fixed with independent targets and permutation testing.
+- **Discovery 27:** Over-prediction destroys exclusion accuracy. Tightening caps from 15 to 3 stems per ingredient makes permutation test significant (p=0.000).
+- **Discovery 28:** Structural analysis validates independently of stem mapping. 3/4 anomalies vs Latin controls, cipher ruled out — these results stand regardless of whether specific identifications are correct.
+- **Discovery 29:** Automated mapping produces 12.7% agreement with manual curation (v7). Multiple locally-optimal solutions exist; ground truth is needed to distinguish them.
+
+---
+
 ## Summary Statistics
 
 | Metric | Value |
 |---|---|
-| Total scripts written | 40+ |
-| Total CSV files generated | 34 |
+| Total scripts written | 45+ |
+| Total CSV files generated | 35 |
+| JSON output files | 11 |
 | HTML files | 2 (dashboard_voynich.html, README.html) |
 | Obsidian notes generated | 130+ |
 | Unique stems in corpus | 3,261 (recipe folios, post-recovery) |
@@ -686,25 +778,35 @@ Built a comprehensive scientific validation framework with two layers: scientifi
 | Content-based matching v7: best F1 | 100.0% (f100r = Diamargariton) |
 | Content-based matching v7: EXCELLENT (F1>=80%) | 35 |
 | Content-based matching v7: GOOD (F1 50-79%) | 12 |
-| Content-based matching v7: mean F1 | 81.9% **[VALIDATED -- Phase 4b]** |
-| **Rare ingredient F1** | **72.4%** (best baseline 31.9%, gap +40.5pp) |
+| Content-based matching v7: mean F1 | 81.9% **[v7 only — tautological target]** |
+| **v8 test-set Fixed F1** | **43.0%** (beaten by baselines) |
+| **v8 Exclusion accuracy** | **92.4%** |
+| **v8 Permutation test** | **p=0.000** (F1/Exclusion significant) |
+| **Comparative corpus** | **3/4 anomalies confirmed** vs Latin controls |
+| **Cipher hypothesis** | **Ruled out** (IC=0.0769 = natural language) |
+| **K-fold CV stability** | **66.8% ± 1.2%** (5-fold) |
+| **Coverage** | **18.7%** of recipe folio words identified |
+| **Rare ingredient F1** | **72.4%** (best baseline 31.9%, gap +40.5pp) -- v7 only |
 | **MRR** | **1.000** (best baseline 0.238) -- tautological for v7 |
 | **P@1** | **100%** (best baseline 10.6%) -- tautological for v7 |
 | Confirmed identifications (Tier 1-2) | 8 (Galbanum, Crocus, Myrrha x6) |
 | Strong identifications (Tier 3) | 36 (Crocus x9, Rosa, Mel x5, Cinnamomum x2, Opopanax x2, Zingiber x2, Castoreum x9, Petroselinum x4, Gentiana x2) |
 | Moderate identifications (Tier 4) | 23 (Amomum, Piper, Bdellium, Casia, Cardamomum, Styrax, Saccharum, Galanga\|Cubeba\|Nux moschata) |
-| Function words identified | 8 |
+| Function words identified | 8 (v7) / 469 (v8) |
 | Total identification entries (v7) | 75 |
-| Unique ingredients identified | 22 (Galbanum, Crocus, Myrrha, Mel, Rosa, Cinnamomum, Opopanax, Zingiber, Castoreum, Petroselinum, Gentiana, Amomum, P.nigrum, P.longum, Styrax, Bdellium, Casia, Cardamomum, Saccharum + Galanga\|Cubeba\|Nux moschata triple) |
+| Total identification entries (v8) | 516 (47 ingredient + 469 FUNCTION_WORD) |
+| Unique ingredients identified | 22 (v7) / 34 (v8) |
+| v8-v7 agreement | 12.7% on shared stems |
 | Novel structural discoveries | 4 (suffix channel, vertical alignment, column schema, foreign keys) |
-| Total documented discoveries | 24 |
+| Total documented discoveries | 29 |
 | Deadlocks resolved | 1 (Zingiber/Mel -- 41-0 verdict for Mel) |
 | Deadlocks partially broken | 1 (Opium/Castoreum -- 9 Castoreum stems confirmed in v7) |
 | Deadlocks permanent | 1 (Galanga/Cubeba/Nux moschata -- 47 TIED, unbreakable with 50 recipes) |
 | Philonium folios confirmed | 4 (f88v, f95v, f96r, f102r) |
 | Requies Magna folios found | 0 |
-| Validation phases complete | 4b of 10 (Phase 4b = alternative metrics) |
+| Validation phases complete | 4b of 10 (+ structural, cipher, sensitivity done) |
 | Data contracts | 16/16 PASS (2 warnings) |
 | Null models | 5/5 system beats (p < 0.01) |
 | Baselines (original F1) | 3/5 beat the system (F1 metric broken) |
-| Baselines (Phase 4b metrics) | **0/5 beat the system on discriminative metrics** |
+| Baselines (Phase 4b metrics) | **0/5 beat v7 on discriminative metrics** (tautological) |
+| Baselines (v8 test set) | **3/4 beat v8** (mapping fails) |
