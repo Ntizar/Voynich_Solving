@@ -1,11 +1,11 @@
 # Voynich Solving -- Structural Decipherment of the Voynich Manuscript
 
-> **[EN]** A computational project proving the Voynich Manuscript is a medieval pharmaceutical database.  
-> **[ES]** Un proyecto computacional que demuestra que el Manuscrito Voynich es una base de datos farmaceutica medieval.
+> **[EN]** A computational project investigating whether the Voynich Manuscript is a medieval pharmaceutical database.  
+> **[ES]** Un proyecto computacional que investiga si el Manuscrito Voynich es una base de datos farmaceutica medieval.
 
 **Author / Autor:** Ntizar  
-**Status / Estado:** Active research / Investigacion activa  
-**Sessions / Sesiones:** 15 (April 2026 / Abril 2026)
+**Status / Estado:** Research complete / Investigacion completada  
+**Sessions / Sesiones:** 16 (April 2026 / Abril 2026)
 
 ---
 
@@ -15,32 +15,73 @@
 
 The Voynich Manuscript (MS 408, Beinecke Library, Yale) is a 600-year-old book that nobody can read. Written in an unknown script, filled with drawings of unidentified plants, astronomical diagrams, and bathing figures, it has defeated every cryptographer, linguist, and codebreaker who has tried to crack it for over a century.
 
-Most attempts treat it as encrypted text -- a cipher hiding a natural language underneath. They try to "decode" individual letters into Latin, German, Hebrew, or dozens of other languages. None have succeeded.
+Most attempts treat it as encrypted text -- a cipher hiding a natural language underneath. None have succeeded.
 
 **This project takes a completely different approach.**
 
-## The Insight
+## The Hypothesis
 
 Instead of trying to read individual words, we treat the manuscript as what it structurally *looks like*: a **database**. Specifically, a medieval pharmaceutical compendium -- a *Materia Medica* (plant catalog) cross-referenced with an *Antidotarium* (recipe book).
 
-The evidence:
+## What We Proved
 
-- **The text is written in columns, not prose.** Suffixes align vertically across consecutive lines at 27% (vs 8% in Latin/Spanish). The author wrote in a grid, like filling a spreadsheet.
-- **Each section uses a different "schema."** Botany pages use entity-naming tags (C1). Recipe pages use ingredient-reference tags (B2) and action tags (A2). Different sections, different database tables.
-- **Plant pages reference recipe pages.** 46.9% of plant stems reappear in recipe sections with changed suffixes (C1 -> B2), exactly like a foreign key in a relational database.
+### Structural analysis (VALIDATED)
 
-This is not a cipher over natural language. It is a **structured notation system** for pharmaceutical recipes.
+Three independent statistical tests confirm the Voynich recipe section has anomalous structure compared to Latin medical texts:
 
-## What We Found
+| Test | Voynich | Latin Controls | p-value | Verdict |
+|---|---|---|---|---|
+| Suffix entropy | 2.74 bits | 4.02 bits | < 0.0001 | **SIGNIFICANT** -- much lower entropy, consistent with structured notation |
+| Vertical alignment | 38.9% | 12.5% | < 0.0001 | **SIGNIFICANT** -- text written in columnar grid, not prose |
+| Schema variation (KL divergence) | 0.039 | 0.004 | < 0.0001 | **SIGNIFICANT** -- different sections use different "database schemas" |
+| Stem reuse | 19.3% | 54.2% | 1.000 | NOT significant -- Voynich has less reuse, not more |
 
-Using the STA1 2.0 transcription by Cesar Diaz-Cerio (a structural alphabet that decomposes each Voynich glyph into atomic components), we:
+**3 out of 4 structural anomalies confirmed against 1000 Monte Carlo simulations of synthetic Latin medical controls.**
 
-1. **Extracted 3,261 unique vocabulary stems** from 48 recipe folios
-2. **Compiled 50 real medieval pharmaceutical recipes** from historical sources (Antidotarium Nicolai, Galeno, Avicenna, Abulcasis, and others)
-3. **Matched Voynich folios to historical recipes** by mapping stems to real ingredients through constraint propagation, elimination chains, and intersection analysis
-4. **Identified 75 stems** corresponding to 22 real medieval ingredients (Galbanum, Crocus, Myrrha, Mel, Castoreum, Zingiber, and 16 others)
+### Cipher hypothesis (RULED OUT)
 
-### Confirmed Identifications
+- Index of Coincidence = 0.0769 -- matches natural language, rules out polyalphabetic cipher
+- Homophonic substitution simulation does NOT match Voynich's entropy/IC profile
+- **The text is not a cipher over a natural language.** It has the statistical properties of a natural language or structured notation, not an encryption.
+
+### Cross-validation stability (CONFIRMED)
+
+- 5-fold cross-validation: Mean F1 = 66.8% +/- 1.2% -- extremely stable
+- Ablation: No single ingredient is critical (max impact -2.4pp for Crocus)
+- Permutation test: p = 0.000 for F1 and Exclusion accuracy -- the mapping captures real signal
+
+## What We Could NOT Prove
+
+### Specific stem-to-ingredient identifications (FAILED against baselines)
+
+We built v7 (manually curated, 75 stems, 22 ingredients) and v8 (fully automated, 47 ingredient stems, 34 ingredients). The results:
+
+| Method | Fixed F1 | vs Best Baseline |
+|---|---|---|
+| v8 automated (test set) | 43.0% | **BEATEN** by most_common (51.2%), all_ings (61.4%), majority_recipe (64.8%) |
+| v7 curated (all data) | 81.9% | Wins on discriminative metrics (Rare F1 72.4%), but MRR/P@1 = 100% is tautological |
+
+**The automated pipeline captures some real signal (permutation test p=0.000) but cannot beat trivial baselines.** The manually curated v7 identifications perform better but their evaluation is circular (targets chosen by best-match).
+
+Key problems:
+- **Coverage is only 18.7%** -- the vast majority of the text remains unexplained
+- **v8 vs v7 agreement is 12.7%** -- without ground truth, multiple locally-optimal mappings exist
+- The 22 identified ingredients are all ultra-common in medieval recipes, inflating baseline scores
+
+## Honest Bottom Line
+
+**What we can claim:**
+1. The Voynich recipe section has statistically anomalous structure consistent with a pharmaceutical database (3/4 tests, p < 0.0001)
+2. It is NOT a cipher (IC = 0.0769)
+3. The structural patterns cannot be explained by normal Latin manuscript conventions
+
+**What we cannot claim:**
+1. That specific Voynich stems correspond to specific ingredients (mapping fails against baselines)
+2. That we can "read" any part of the manuscript
+
+The structural findings are publication-worthy. The decipherment remains unsolved.
+
+## Key Identifications (v7 -- manually curated, NOT independently validated)
 
 | Voynich Stem | Ingredient | Confidence | How |
 |---|---|---|---|
@@ -48,28 +89,7 @@ Using the STA1 2.0 transcription by Cesar Diaz-Cerio (a structural alphabet that
 | `K1A3` | **Crocus** (Saffron) | 95% | Absent from the Diascordium folio, which has Cinnamomum but not Crocus |
 | `BaA3` | **Plant gum-resin class** | 90% | Always maps to a gum-resin regardless of recipe |
 
-Plus 72 more stems at 60-92% confidence across Myrrha, Mel, Cinnamomum, Castoreum, Zingiber, Petroselinum, Gentiana, Rosa, Opopanax, and others. Full table in `Voynich_Solving/docs/IDENTIFICATIONS.md`.
-
-## Honest Assessment
-
-We built a scientific validation framework to test our own work. It found a bug in our evaluation metric, we fixed it, and the system passed.
-
-**What holds up:**
-- The structural discoveries (suffix channel, vertical alignment, foreign keys) are robust and statistically significant (Z = -210, p effectively zero)
-- The system beats all 5 null models (p < 0.01), confirming it captures real pharmaceutical signal
-- Culinary recipes score 0% -- the content is definitively pharmaceutical
-- Tier 1 identifications (Galbanum, Crocus) have logical reasoning chains independent of any metric
-- **Rare Ingredient F1 = 72.4%** -- on ingredients that actually discriminate between recipes (<30% frequency), the system scores 2.3x higher than the best baseline (31.9%)
-- **MRR = 1.000** -- the system always ranks the correct recipe first (best baseline: 0.238)
-
-**What we caught and fixed:**
-- The original F1 evaluation had two bugs: (1) recall only counted 22 identified ingredients, and (2) an oracle let baselines shop across 50 recipes for best score. With those bugs, a trivial "everything is Theriac Magna" baseline scored 100% F1. After fixing to fixed-target evaluation, the system clearly wins.
-
-**What still needs work:**
-- MRR/P@1 = 100% is tautological (v7 targets were chosen by best-match). A real ranking test needs v8 built on training data only, evaluated on held-out test folios.
-- v7 is contaminated (used test folios in reasoning). Building v8 on training data is Priority 1.
-
-Full details in `Voynich_Solving/docs/VALIDATION.md`.
+Plus 72 more stems at 60-92% confidence. Full table in `IDENTIFICATIONS.md`. **Caveat:** These identifications have not been independently validated. v8 automated replication produced only 12.7% agreement.
 
 ## Project Structure
 
@@ -79,12 +99,12 @@ Voynich_Solving/
 |   |-- README.md                      # This file (bilingual EN/ES)
 |   |-- README.html                    # Visual bilingual landing page
 |   |-- METHODOLOGY.md                 # Analytical pipeline
-|   |-- DISCOVERIES.md                 # 24 technical discoveries
+|   |-- DISCOVERIES.md                 # 29 technical discoveries
 |   |-- IDENTIFICATIONS.md            # 75 stem identifications with reasoning
 |   |-- VALIDATION.md                  # Validation protocol and results (Phases 0-4b)
 |   |-- DATA_DICTIONARY.md            # Every CSV explained
-|   |-- NEXT_STEPS.md                  # Roadmap (v8 on training data is #1)
-|   |-- SESSION_LOG.md                 # 15 sessions of work
+|   |-- NEXT_STEPS.md                  # Roadmap and honest assessment
+|   |-- SESSION_LOG.md                 # 16 sessions of work
 |-- data/
 |   |-- corpus/                        # Voynich transcription (STA1 2.0)
 |   |-- identifications/               # Stem-to-ingredient mappings (v7)
@@ -92,38 +112,47 @@ Voynich_Solving/
 |   |-- matching/                      # Folio-to-recipe matching results
 |   |-- analysis/                      # Cross-consistency & mega-index
 |-- scripts/
-|   |-- validation/                    # Phases 1-4b validation framework
+|   |-- validation/                    # Full validation framework
 |   |   |-- config.py                  # Central config, SHA-256 hashes
 |   |   |-- data_loader.py            # Unified dataset loader
-|   |   |-- data_contracts.py         # Phase 1: Data integrity
-|   |   |-- blind_splits.py           # Phase 2: Train/test splits
-|   |   |-- null_models.py            # Phase 3: 5 null models
+|   |   |-- data_contracts.py         # Phase 1: Data integrity (16/16 PASS)
+|   |   |-- blind_splits.py           # Phase 2: Train/test splits (seed=42)
+|   |   |-- null_models.py            # Phase 3: 5 null models (all beaten)
 |   |   |-- baselines.py              # Phase 4: 5 baselines
 |   |   |-- alternative_metrics.py    # Phase 4b: 7 discriminative metrics
+|   |   |-- v8_builder.py             # Automated constraint solver (no curation)
+|   |   |-- v8_evaluator.py           # Non-tautological evaluation (3 strategies)
+|   |   |-- comparative_corpus.py     # Structural analysis vs Latin controls
+|   |   |-- cipher_hypothesis.py      # IC, homophonic, polyalphabetic tests
+|   |   |-- sensitivity_analysis.py   # K-fold CV, ablation, coverage
 |   |-- analysis/                      # Research session scripts (provenance)
 |   |-- utils/                         # Hash generator, Obsidian vault generator
 |-- output/                            # Validation outputs (regenerable)
 |   |-- splits/                        # Frozen train/test split
-|   |-- validation/                    # Phase 3-4b results (JSON)
+|   |-- validation/                    # All validation results (JSON/CSV)
 |-- dashboard/                         # Interactive dashboard + design system
 ```
 
-## How to Navigate
-
-If you're **new to the project:** Read this README, then `Voynich_Solving/docs/DISCOVERIES.md`.  
-If you want to **verify the claims:** Read `Voynich_Solving/docs/VALIDATION.md`, then run the scripts.  
-If you want to **continue the work:** Read `Voynich_Solving/docs/NEXT_STEPS.md` -- building v8 on training data is Priority 1.  
-If you want to **explore the data:** Open the CSV files in `Voynich_Solving/data/` in Excel or any spreadsheet tool.
-
-## Running the Validation
+## Running the Full Validation
 
 ```bash
 cd Voynich_Solving
-python scripts/validation/data_contracts.py        # Phase 1: Data integrity
-python scripts/validation/blind_splits.py           # Phase 2: Train/test splits
-python scripts/validation/null_models.py            # Phase 3: 5 null models
-python scripts/validation/baselines.py              # Phase 4: 5 baselines
-python scripts/validation/alternative_metrics.py    # Phase 4b: 7 discriminative metrics
+
+# Phase 1-4b: Core validation
+python -m scripts.validation.data_contracts        # 16 data integrity contracts
+python -m scripts.validation.blind_splits           # Train/test splits (seed=42)
+python -m scripts.validation.null_models            # 5 null models x 500 iterations
+python -m scripts.validation.baselines              # 5 rival baselines
+python -m scripts.validation.alternative_metrics    # 7 discriminative metrics
+
+# v8: Automated pipeline + blind test
+python -m scripts.validation.v8_builder             # Build v8 identifications (train only)
+python -m scripts.validation.v8_evaluator           # Evaluate on test set (non-tautological)
+
+# Independent analyses
+python -m scripts.validation.comparative_corpus     # Structural claims vs Latin controls
+python -m scripts.validation.cipher_hypothesis      # Cipher hypothesis testing
+python -m scripts.validation.sensitivity_analysis   # K-fold CV, ablation, coverage
 ```
 
 ## Sources
@@ -138,108 +167,85 @@ python scripts/validation/alternative_metrics.py    # Phase 4b: 7 discriminative
 
 ## El Misterio
 
-El Manuscrito Voynich (MS 408, Biblioteca Beinecke, Yale) es un libro de 600 anos que nadie puede leer. Escrito en un sistema de escritura desconocido, lleno de dibujos de plantas no identificadas, diagramas astronomicos y figuras banandose, ha derrotado a todo criptografo, linguista y descifrador que ha intentado descifrarlo durante mas de un siglo.
-
-La mayoria de intentos lo tratan como texto cifrado -- un codigo que esconde un idioma natural debajo. Intentan "decodificar" letras individuales a latin, aleman, hebreo o docenas de otros idiomas. Ninguno ha tenido exito.
+El Manuscrito Voynich (MS 408, Biblioteca Beinecke, Yale) es un libro de 600 anos que nadie puede leer. Escrito en un sistema de escritura desconocido, ha derrotado a todo criptografo y linguista que ha intentado descifrarlo durante mas de un siglo.
 
 **Este proyecto toma un enfoque completamente diferente.**
 
-## La Idea
+## La Hipotesis
 
-En lugar de intentar leer palabras individuales, tratamos el manuscrito como lo que estructuralmente *parece ser*: una **base de datos**. Especificamente, un compendio farmaceutico medieval -- una *Materia Medica* (catalogo de plantas) cruzada con un *Antidotarium* (libro de recetas).
+En lugar de intentar leer palabras individuales, tratamos el manuscrito como lo que estructuralmente *parece ser*: una **base de datos farmaceutica medieval** -- una *Materia Medica* cruzada con un *Antidotarium*.
 
-La evidencia:
+## Lo Que Demostramos
 
-- **El texto esta escrito en columnas, no en prosa.** Los sufijos se alinean verticalmente entre lineas consecutivas al 27% (vs 8% en latin/castellano). El autor escribia en una cuadricula, como rellenando una hoja de calculo.
-- **Cada seccion usa un "esquema" diferente.** Las paginas de botanica usan etiquetas de entidad (C1). Las paginas de recetas usan etiquetas de ingrediente (B2) y de accion (A2). Diferentes secciones, diferentes tablas de base de datos.
-- **Las paginas de plantas referencian las de recetas.** El 46.9% de los stems exclusivos de botanica reaparecen en secciones de recetas con sufijos cambiados (C1 -> B2), exactamente como una clave foranea en una base de datos relacional.
+### Analisis estructural (VALIDADO)
 
-Esto no es un cifrado sobre lenguaje natural. Es un **sistema de notacion estructurado** para recetas farmaceuticas.
+Tres tests estadisticos independientes confirman que la seccion de recetas tiene estructura anomala vs textos medicos latinos:
 
-## Lo Que Encontramos
+| Test | Voynich | Controles Latinos | p-valor | Veredicto |
+|---|---|---|---|---|
+| Entropia de sufijos | 2.74 bits | 4.02 bits | < 0.0001 | **SIGNIFICATIVO** |
+| Alineacion vertical | 38.9% | 12.5% | < 0.0001 | **SIGNIFICATIVO** |
+| Variacion de esquema (KL) | 0.039 | 0.004 | < 0.0001 | **SIGNIFICATIVO** |
+| Reutilizacion de stems | 19.3% | 54.2% | 1.000 | NO significativo |
 
-Usando la transcripcion STA1 2.0 de Cesar Diaz-Cerio (un alfabeto estructural que descompone cada glifo Voynich en componentes atomicos):
+**3 de 4 anomalias confirmadas contra 1000 simulaciones Monte Carlo.**
 
-1. **Extrajimos 3,261 stems unicos de vocabulario** de 48 folios de recetas
-2. **Compilamos 50 recetas farmaceuticas medievales reales** de fuentes historicas (Antidotarium Nicolai, Galeno, Avicenna, Abulcasis, y otros)
-3. **Emparejamos folios Voynich con recetas historicas** mapeando stems a ingredientes reales mediante propagacion de restricciones, cadenas de eliminacion y analisis de interseccion
-4. **Identificamos 75 stems** correspondientes a 22 ingredientes medievales reales (Galbanum, Crocus, Myrrha, Mel, Castoreum, Zingiber, y 16 mas)
+### Hipotesis del cifrado (DESCARTADA)
 
-### Identificaciones Confirmadas
+- Indice de Coincidencia = 0.0769 -- coincide con lenguaje natural, descarta cifrado polialfabetico
+- La simulacion homofoica NO coincide con el perfil del Voynich
+- **El texto no es un cifrado.** Tiene propiedades de lenguaje natural o notacion estructurada.
 
-| Stem Voynich | Ingrediente | Confianza | Como |
-|---|---|---|---|
-| `K1K2A1` | **Galbanum** (resina de Ferula) | 99% | Unico ingrediente en la interseccion de 3 recetas |
-| `K1A3` | **Crocus** (Azafran) | 95% | Ausente del folio de Diascordium, que tiene Cinnamomum pero no Crocus |
-| `BaA3` | **Clase semantica: goma-resina vegetal** | 90% | Siempre mapea a una goma-resina sin importar la receta |
+### Estabilidad (CONFIRMADA)
 
-Mas 72 stems adicionales al 60-92% de confianza en Myrrha, Mel, Cinnamomum, Castoreum, Zingiber, Petroselinum, Gentiana, Rosa, Opopanax, y otros. Tabla completa en `Voynich_Solving/docs/IDENTIFICATIONS.md`.
+- Validacion cruzada 5-fold: F1 medio = 66.8% +/- 1.2%
+- Ablacion: ningun ingrediente es critico (impacto maximo -2.4pp)
+- Test de permutacion: p = 0.000 para F1 y Exclusion
 
-## Evaluacion Honesta
+## Lo Que NO Pudimos Demostrar
 
-Construimos un marco de validacion cientifica para probar nuestro propio trabajo. Encontro un bug en nuestra metrica de evaluacion, lo arreglamos, y el sistema paso.
+### Identificaciones especificas de stems (FALLO contra baselines)
 
-**Lo que se mantiene:**
-- Los descubrimientos estructurales (canal de sufijos, alineacion vertical, claves foraneas) son robustos y estadisticamente significativos (Z = -210, p efectivamente cero)
-- El sistema supera los 5 modelos nulos (p < 0.01), confirmando que captura senal farmaceutica real
-- Las recetas culinarias puntuan 0% -- el contenido es definitivamente farmaceutico
-- Las identificaciones Tier 1 (Galbanum, Crocus) tienen cadenas logicas independientes de cualquier metrica
-- **F1 de Ingredientes Raros = 72.4%** -- en ingredientes que realmente discriminan entre recetas (frecuencia <30%), el sistema puntua 2.3x mas que la mejor baseline (31.9%)
-- **MRR = 1.000** -- el sistema siempre rankea la receta correcta primero (mejor baseline: 0.238)
+| Metodo | F1 Fijo | vs Mejor Baseline |
+|---|---|---|
+| v8 automatizado (test) | 43.0% | **SUPERADO** por baselines triviales (51-65%) |
+| v7 curado (todos los datos) | 81.9% | Gana en metricas discriminativas, pero MRR/P@1 = 100% es tautologico |
 
-**Lo que detectamos y arreglamos:**
-- La evaluacion F1 original tenia dos bugs: (1) recall solo contaba 22 ingredientes identificados, y (2) un oraculo dejaba a las baselines buscar entre 50 recetas la mejor puntuacion. Con esos bugs, una baseline trivial "todo es Theriac Magna" puntuaba 100% F1. Tras arreglar a evaluacion de target fijo, el sistema gana claramente.
+**El pipeline automatizado captura senal real (p=0.000) pero no puede superar heuristicas triviales.** La cobertura es solo del 18.7%.
 
-**Lo que aun necesita trabajo:**
-- MRR/P@1 = 100% es tautologico (los targets de v7 fueron elegidos por best-match). Un test real de ranking necesita v8 construido solo con datos de entrenamiento, evaluado en folios de test reservados.
-- v7 esta contaminado (uso folios de test en el razonamiento). Construir v8 con datos de entrenamiento es la Prioridad 1.
+## Conclusion Honesta
 
-Detalles completos en `docs/VALIDATION.md`.
+**Lo que podemos afirmar:**
+1. La seccion de recetas tiene estructura anomala consistente con una base de datos farmaceutica (3/4 tests, p < 0.0001)
+2. NO es un cifrado (IC = 0.0769)
+3. Los patrones estructurales no se explican por convenciones normales de manuscritos latinos
 
-## Estructura del Proyecto
+**Lo que no podemos afirmar:**
+1. Que stems especificos correspondan a ingredientes especificos (mapeo falla contra baselines)
+2. Que podamos "leer" ninguna parte del manuscrito
 
-```
-Voynich_Solving/
-|-- docs/                              # Documentacion
-|   |-- README.md                      # Este archivo (bilingue EN/ES)
-|   |-- README.html                    # Pagina visual bilingue
-|   |-- METHODOLOGY.md                 # Pipeline analitico
-|   |-- DISCOVERIES.md                 # 24 descubrimientos tecnicos
-|   |-- IDENTIFICATIONS.md            # 75 identificaciones con razonamiento
-|   |-- VALIDATION.md                  # Protocolo y resultados (Fases 0-4b)
-|   |-- DATA_DICTIONARY.md            # Cada CSV explicado
-|   |-- NEXT_STEPS.md                  # Hoja de ruta (v8 con datos de entrenamiento es #1)
-|   |-- SESSION_LOG.md                 # 15 sesiones de trabajo
-|-- data/
-|   |-- corpus/                        # Transcripcion Voynich (STA1 2.0)
-|   |-- identifications/               # Mapeos stem-a-ingrediente (v7)
-|   |-- recipes/                       # 50 recetas medievales historicas
-|   |-- matching/                      # Resultados matching folio-receta
-|   |-- analysis/                      # Consistencia cruzada y mega-indice
-|-- scripts/
-|   |-- validation/                    # Framework de validacion Fases 1-4b
-|   |-- analysis/                      # Scripts de sesiones de investigacion
-|   |-- utils/                         # Generador de hashes, generador Obsidian
-|-- output/                            # Salidas de validacion (regenerables)
-|-- dashboard/                         # Dashboard interactivo + design system
-```
+Los hallazgos estructurales son publicables. El desciframiento sigue sin resolver.
 
-## Como Navegar
-
-Si eres **nuevo en el proyecto:** Lee este README, luego `Voynich_Solving/docs/DISCOVERIES.md`.  
-Si quieres **verificar las afirmaciones:** Lee `Voynich_Solving/docs/VALIDATION.md`, luego ejecuta los scripts.  
-Si quieres **continuar el trabajo:** Lee `Voynich_Solving/docs/NEXT_STEPS.md` -- construir v8 con datos de entrenamiento es la Prioridad 1.  
-Si quieres **explorar los datos:** Abre los CSV en `Voynich_Solving/data/` en Excel o cualquier hoja de calculo.
-
-## Ejecutar la Validacion
+## Ejecutar la Validacion Completa
 
 ```bash
 cd Voynich_Solving
-python scripts/validation/data_contracts.py        # Fase 1: Integridad de datos
-python scripts/validation/blind_splits.py           # Fase 2: Particiones train/test
-python scripts/validation/null_models.py            # Fase 3: 5 modelos nulos
-python scripts/validation/baselines.py              # Fase 4: 5 baselines
-python scripts/validation/alternative_metrics.py    # Fase 4b: 7 metricas discriminativas
+
+# Fases 1-4b: Validacion core
+python -m scripts.validation.data_contracts
+python -m scripts.validation.blind_splits
+python -m scripts.validation.null_models
+python -m scripts.validation.baselines
+python -m scripts.validation.alternative_metrics
+
+# v8: Pipeline automatizado + test ciego
+python -m scripts.validation.v8_builder
+python -m scripts.validation.v8_evaluator
+
+# Analisis independientes
+python -m scripts.validation.comparative_corpus
+python -m scripts.validation.cipher_hypothesis
+python -m scripts.validation.sensitivity_analysis
 ```
 
 ## Fuentes
