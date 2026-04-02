@@ -24,8 +24,8 @@ import random
 
 sys.path.insert(0, os.path.normpath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-from scripts.core.config import PATHS, SPLIT, RANDOM_SEED, ensure_output_dirs
-from scripts.core import data_loader as dl
+from scripts.validation.config import PATHS, SPLIT, RANDOM_SEED, ensure_output_dirs
+from scripts.validation import data_loader as dl
 
 sys.stdout.reconfigure(encoding='utf-8')
 

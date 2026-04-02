@@ -5,14 +5,14 @@ Single source of truth for loading all project data.
 Every validation script imports from here instead of re-parsing files.
 
 Usage:
-    from scripts.core.data_loader import load_all, load_corpus, load_recipes, ...
+    from scripts.validation.data_loader import load_all, load_corpus, load_recipes, ...
 """
 import csv
 import os
 import re
 from collections import defaultdict
 
-from scripts.core.config import PATHS, ATOM_PATTERN, FINAL_ATOMS
+from scripts.validation.config import PATHS, ATOM_PATTERN, FINAL_ATOMS
 
 
 # ── Generic CSV loader ───────────────────────────────────────────────────────

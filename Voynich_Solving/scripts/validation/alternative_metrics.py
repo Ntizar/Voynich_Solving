@@ -27,8 +27,8 @@ from collections import Counter
 
 sys.path.insert(0, os.path.normpath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-from scripts.core.config import RANDOM_SEED, PATHS, ensure_output_dirs
-from scripts.core import data_loader as dl
+from scripts.validation.config import RANDOM_SEED, PATHS, ensure_output_dirs
+from scripts.validation import data_loader as dl
 
 sys.stdout.reconfigure(encoding='utf-8')
 

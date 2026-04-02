@@ -5,35 +5,33 @@ Every script in the validation framework reads from here.
 If a source file hash changes, the pipeline detects it and halts.
 
 Usage:
-    import sys, os
-    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
-    from scripts.core.config import CONFIG
+    from scripts.validation.config import CONFIG
 """
 import os
 import hashlib
 
 # ── Paths ────────────────────────────────────────────────────────────────────
+# ROOT points to Voynich_Solving/ (two levels up from scripts/validation/)
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
 PATHS = {
     # Primary corpus
-    "corpus_sta": os.path.join(ROOT, "voynich_sta.txt"),
-    "corpus_eva": os.path.join(ROOT, "zenodo_voynich", "corpus", "voynich_eva.txt"),
+    "corpus_sta": os.path.join(ROOT, "data", "corpus", "voynich_sta.txt"),
     # Historical recipes
-    "recipes_main": os.path.join(ROOT, "recetas_historicas_medievales.csv"),
-    "recipes_flat": os.path.join(ROOT, "recetas_historicas_ingredientes_flat.csv"),
+    "recipes_main": os.path.join(ROOT, "data", "recipes", "recetas_historicas_medievales.csv"),
+    "recipes_flat": os.path.join(ROOT, "data", "recipes", "recetas_historicas_ingredientes_flat.csv"),
     # Stem & folio data
-    "mega_index": os.path.join(ROOT, "voynich_mega_indice_conexiones.csv"),
-    "recipe_folio_stems": os.path.join(ROOT, "voynich_all_recipe_folio_stems.csv"),
-    "recipe_profiles": os.path.join(ROOT, "voynich_todas_recetas_perfil.csv"),
+    "mega_index": os.path.join(ROOT, "data", "analysis", "voynich_mega_indice_conexiones.csv"),
+    "recipe_folio_stems": os.path.join(ROOT, "data", "identifications", "voynich_all_recipe_folio_stems.csv"),
+    "recipe_profiles": os.path.join(ROOT, "data", "recipes", "voynich_todas_recetas_perfil.csv"),
     # Identifications (versioned)
-    "identifications_v7": os.path.join(ROOT, "voynich_unified_identifications_v7.csv"),
+    "identifications_v7": os.path.join(ROOT, "data", "identifications", "voynich_unified_identifications_v7.csv"),
     # Matching results
-    "matching_v7": os.path.join(ROOT, "voynich_matching_v7.csv"),
-    "expanded_matching_v7": os.path.join(ROOT, "voynich_expanded_matching_v7.csv"),
+    "matching_v7": os.path.join(ROOT, "data", "matching", "voynich_matching_v7.csv"),
+    "expanded_matching_v7": os.path.join(ROOT, "data", "matching", "voynich_expanded_matching_v7.csv"),
     # Cross-checks
-    "consistency": os.path.join(ROOT, "voynich_consistencia_cruzada.csv"),
-    "historical_crosses": os.path.join(ROOT, "voynich_cruces_recetas_historicas.csv"),
+    "consistency": os.path.join(ROOT, "data", "analysis", "voynich_consistencia_cruzada.csv"),
+    "historical_crosses": os.path.join(ROOT, "data", "matching", "voynich_cruces_recetas_historicas.csv"),
     # Output directories
     "output_validation": os.path.join(ROOT, "output", "validation"),
     "output_splits": os.path.join(ROOT, "output", "splits"),
@@ -49,7 +47,6 @@ FRAMEWORK_VERSION = "0.1.0"
 # These are the expected hashes. If a file changes, validation halts.
 SOURCE_HASHES = {
     "corpus_sta": "81c331b7d8e76761e27d350c3b37ccfbe192848e6c8a227bcb5d40fb29259b17",
-    "corpus_eva": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
     "recipes_main": "c6406ef2fcc491855b7c583b4c48d3372a0ec2142eb66e5314b03d87eb5c6ae3",
     "recipes_flat": "92e09259b6aa1a39b67fa8c1fd4d87097a334715c254d0b27bc440983963abb3",
     "mega_index": "58f40d3d88d533c80ea35aa0c9556365f9885af649fa631810b4d120a61f9793",

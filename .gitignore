@@ -2,21 +2,20 @@
 # Voynich_Solving -- .gitignore
 # ==============================================
 
-# --- External source data (download separately) ---
+# --- External source data (not part of this project) ---
 zenodo_voynich/
 
-# --- Other projects sharing this directory ---
+# --- Other projects / systems sharing this directory ---
 .github/
 .netlify/
 .pytest_cache/
 AGENTS.MD/
 agents/
-design-system/
+/design-system/
 ine/
-nul
 
-# --- Output files (regenerable) ---
-output/
+# --- Validation output (regenerable from scripts) ---
+Voynich_Solving/output/
 
 # --- Python ---
 __pycache__/
@@ -29,6 +28,7 @@ venv/
 Thumbs.db
 .DS_Store
 desktop.ini
+nul
 
 # --- Editor ---
 .vscode/
