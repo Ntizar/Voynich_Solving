@@ -438,6 +438,85 @@
 
 ## Session 12: v6 Identification Update, Re-matching, and Zingiber Search
 
+---
+
+## Session 17: Final Blind Push, External Corpus Expansion, and End-State Assessment
+
+### Work Done
+
+1. **Reframed the repository around two claims**
+   - Structural claim: supported by the evidence
+   - Semantic stem-to-ingredient claim: still exploratory
+   - Updated root documentation and split conceptual tracks into `structural_analysis/` and `mapping_hypotheses/`
+
+2. **Built a multi-representation benchmark**
+   - Added `scripts/validation/multi_representation_benchmark.py`
+   - Ran the same builder/evaluator over:
+     - `sta_stem_frozen`
+     - `sta_token`
+     - `eva_token`
+   - Result: all three failed against blind-test baselines
+
+3. **Diagnosed the historical recipe corpus**
+   - Added `scripts/validation/recipe_corpus_diagnostics.py`
+   - Measured ingredient concentration, recipe overlap, and train-support gaps for held-out test recipes
+   - Found severe overlap and weak support for several blind-test recipe families, especially topical/sedative material
+
+4. **Operationalized disciplined corpus expansion**
+   - Added:
+     - `scripts/validation/recipe_expansion_prioritizer.py`
+     - `docs/RECIPE_EXPANSION.md`
+     - candidate CSV templates and seed backlog
+   - Prioritized external-source search around the worst-supported blind-test recipes
+
+5. **Mined open external pharmacopoeia witnesses**
+   - Located usable Internet Archive witnesses for Amsterdam pharmacopoeia material
+   - Extracted conservative working entries for:
+     - `Mithridatium Damocratis`
+     - `Philonium Mesuae`
+     - `Populeum`
+     - plus a partial `Theriaca Andromachii` subset
+   - Documented in `docs/SOURCE_NOTES_AMSTERDAM_1701.md`
+
+6. **Built an augmented-corpus benchmark track**
+   - Added `scripts/validation/augmented_recipe_benchmark.py`
+   - Added parallel augmented corpus files under `data/recipes/augmented/`
+   - Re-ran blind benchmarking without modifying the frozen base corpus
+
+### Key Results
+
+#### Multi-representation benchmark (base corpus)
+- `sta_stem_frozen`: `41.0%` Fixed-F1 vs best baseline `64.8%`
+- `sta_token`: `47.6%` Fixed-F1 vs best baseline `73.5%`
+- `eva_token`: `42.9%` Fixed-F1 vs best baseline `67.8%`
+
+#### Augmented-corpus benchmark (external witnesses added)
+- `sta_stem_frozen`: `44.6%` Fixed-F1 vs best baseline `70.5%`
+- `sta_token`: `51.7%` Fixed-F1 vs best baseline `67.6%`
+- `eva_token`: `60.5%` Fixed-F1 vs best baseline `87.6%`
+
+### Final Assessment
+
+- The structural thesis remains the strongest result in the project.
+- The semantic track captures some non-random signal, but still does not beat trivial baselines under blind evaluation.
+- Real external recipe expansion improved some numbers but did not produce a decisive semantic win.
+- Current honest end-state:
+  - **structure: defensible**
+  - **decipherment / reading: unproven**
+
+### Files Added / Updated
+
+- `scripts/validation/multi_representation_benchmark.py`
+- `scripts/validation/recipe_corpus_diagnostics.py`
+- `scripts/validation/recipe_expansion_prioritizer.py`
+- `scripts/validation/augmented_recipe_benchmark.py`
+- `docs/RECIPE_EXPANSION.md`
+- `docs/SOURCE_NOTES_AMSTERDAM_1701.md`
+- `data/recipes/augmented/*`
+- `README.md`
+- `docs/README.md`
+- `docs/NEXT_STEPS.md`
+
 ### Work Done
 
 1. **Updated Identification Table v5 -> v6**

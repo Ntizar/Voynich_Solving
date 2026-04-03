@@ -1,0 +1,2 @@
+Candidate_Recipe,Source,Type,Status,Priority,Why_This_Helps,Target_Test_Recipe,Target_Unseen_Ingredients,Expected_New_Ingredients,Likely_Overlap_Risk,Notes
+Example Recipe,Example Source,Topical sedative,pending,high,"Supports under-covered test recipe with ingredients absent from train",Unguentum Populeon,"Populus|Sempervivum|Solanum","Populus|Sempervivum|Solanum",low,"Replace this row with real candidate"

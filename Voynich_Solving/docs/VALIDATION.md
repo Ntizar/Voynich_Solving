@@ -1,8 +1,8 @@
 # Validation Framework -- Protocol and Results
 
 **Date:** Session 15 (April 2026)  
-**Status:** Phases 0-4b complete. Phases 5-10 pending.  
-**Critical finding:** The original F1 metric was broken (Phase 4). Fixed with discriminative metrics (Phase 4b) -- system validated.
+**Status:** Phases 0-4b complete. Later blind-test work shows structural claims are stronger than stem-to-ingredient claims.  
+**Critical finding:** The original F1 metric was broken (Phase 4). Phase 4b repaired the evaluation, but it did not by itself convert v7 into an independently validated decipherment.
 
 ---
 
@@ -183,7 +183,7 @@ See **Phase 4b** below for the fix.
 
 ## Phase 4b: Alternative Metrics (THE FIX)
 
-**Status:** COMPLETE -- System is VALIDATED on discriminative metrics
+**Status:** COMPLETE -- evaluation repaired; v7 performs better on discriminative metrics but remains exploratory
 
 `scripts/validation/alternative_metrics.py` fixes both flaws in the original F1:
 1. **Fixed-target evaluation:** Each folio is scored against its v7 assigned recipe only (no best_match oracle shopping across 50 recipes)
@@ -209,7 +209,7 @@ Note: No ingredient exceeds 80%. The original Phase 4 analysis incorrectly state
 | Exclusion accuracy | 92.1% | 93.6% (most_common) | -1.6pp | Slight weakness |
 | Rare precision | **72.0%** | 37.2% | **+34.8pp** | Strong advantage |
 
-*MRR/P@1/P@3 are tautologically perfect because v7 targets WERE chosen by best-match. The real test of ranking will come with v8 evaluated on blind test folios.
+*MRR/P@1/P@3 are tautologically perfect because v7 targets WERE chosen by best-match. They should not be used as independent evidence for the mapping. The real ranking test must come from blind evaluation.
 
 ### Full Comparison Table
 
@@ -224,19 +224,19 @@ Note: No ingredient exceeds 80%. The original Phase 4 analysis incorrectly state
 
 ### Key Findings
 
-1. **Rare F1 is the headline metric.** At 72.4% vs 31.9% best baseline (+40.5pp), the system clearly outperforms on the ingredients that actually discriminate between recipes. Trivial baselines cannot replicate this because they don't know which rare ingredients belong to which recipe.
+1. **Rare F1 is the most informative v7 metric, not a final validation stamp.** At 72.4% vs 31.9% best baseline (+40.5pp), v7 looks stronger on discriminative ingredients than trivial baselines. But because v7 is contaminated and manually curated, this still belongs to the exploratory track.
 
-2. **The original F1 was broken by the oracle, not by ingredient frequency.** Fixed-target F1 is still 81.9% (identical to the original, because v7 targets happened to be the best matches). But now baselines score 71-77% instead of 87-100%.
+2. **The original F1 was broken by the oracle, not by ingredient frequency alone.** Fixed-target F1 is still 81.9% (identical to the original, because v7 targets happened to be the best matches). But this should be read as a cleaner exploratory score, not as decisive proof of the mapping.
 
 3. **Exclusion is the one weak spot.** The `most_common_ings` baseline slightly beats the system on exclusion (93.6% vs 92.1%). This makes sense: predicting fewer ingredients = fewer false positives on absent ingredients. The gap is only 1.6pp.
 
-4. **Root cause confirmed: the best_match oracle was the problem.** When forced to predict against a fixed target (as any real system would), baselines collapse from 87-100% to 64-77%.
+4. **Root cause confirmed: the best_match oracle was a major problem.** When forced to predict against a fixed target, baselines collapse from 87-100% to 64-77%. Even so, contamination and circular manual reasoning still prevent a strong semantic claim.
 
 ### Implications
 
-- The 81.9% F1 claim can be **reinstated** as the fixed-target F1, with the caveat that it should be reported alongside Rare F1 (72.4%) for discriminative power
-- The system adds genuine value: +40pp on rare ingredients, +35pp on rare precision
-- Priority 2 remains: build v8 on training data only and evaluate on blind test set with these metrics
+- The 81.9% figure is best treated as an exploratory fixed-target score for v7, not as a standalone validation claim
+- The framework does show that rare-ingredient performance contains real signal worth studying further
+- Priority remains: evaluate train-only mappings on blind test data and compare them against baselines under the same protocol
 
 ---
 
@@ -293,15 +293,15 @@ Single command that runs all phases sequentially and produces a final validation
 
 ## Summary
 
-The validation framework reveals a **positive picture** after the Phase 4b metric fix:
+The validation framework reveals a mixed picture after the Phase 4b metric fix and later blind-test work:
 
 **Strengths:**
 - Structural discoveries (suffix channel, vertical alignment, foreign keys) are robust and independent of F1
 - System beats all null models (p < 0.01), confirming it captures real signal
 - Wrong-genre null (0%) confirms pharmaceutical specificity
 - Shuffled ingredients null (+32pp) confirms real recipe composition matters
-- **Rare F1 = 72.4% vs 31.9% best baseline (+40pp)** -- the system outperforms on discriminative ingredients
-- **Rare precision = 72.0% vs 37.2%** -- the system correctly identifies rare ingredients
+- **Rare F1 = 72.4% vs 31.9% best baseline (+40pp)** -- v7 exploratory mapping outperforms baselines on discriminative ingredients
+- **Rare precision = 72.0% vs 37.2%** -- v7 exploratory mapping captures useful rare-ingredient signal
 - Data contracts pass 16/16 with only minor documentation warnings
 - The original F1 metric flaw was the best_match oracle, now fixed with fixed-target evaluation
 
@@ -310,8 +310,9 @@ The validation framework reveals a **positive picture** after the Phase 4b metri
 - v7 identifications are contaminated (built using test data) -- need v8 on training data only
 - MRR/P@1 are tautologically 100% because v7 targets ARE the best matches -- real ranking test needs v8 on blind set
 - Exclusion accuracy is marginally worse than most_common baseline (-1.6pp)
+- Later blind-test work shows v8 train-only mapping does not beat trivial baselines, so semantic claims remain unresolved
 
 **Path Forward:**
-1. Build v8 identifications using ONLY training data
-2. Evaluate v8 on held-out test set with Phase 4b metrics
-3. Complete Phases 5-10
+1. Keep structural claims separate from semantic mapping claims
+2. Evaluate train-only mappings on held-out test data with the same metrics and baselines
+3. Add contradiction checks, FDR correction, and cross-representation robustness tests

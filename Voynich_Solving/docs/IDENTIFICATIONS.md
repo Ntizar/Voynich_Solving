@@ -1,10 +1,10 @@
-# Stem Identifications -- Complete Table and Reasoning Chains
+# Stem Identification Hypotheses -- Complete Table and Reasoning Chains
 
-This document records every Voynich stem identification, organized by confidence tier. **Current version: v7 (75 entries, 22 unique ingredients + 8 function words).**
+This document records every Voynich stem-to-ingredient hypothesis, organized by confidence tier. **Current version: v7 exploratory set (75 entries, 22 unique ingredients + 8 function words).**
 
 Last updated: Session 15
 
-**VALIDATION NOTE (Session 15):** The F1 metric used to evaluate these identifications is non-discriminative (a majority-recipe baseline achieves 100% F1). The identifications below await re-evaluation with alternative metrics (discriminative F1, ranking accuracy, exclusion accuracy). Tier 1-2 identifications have reasoning chains independent of F1 and remain solid. See `docs/VALIDATION.md` for full details.
+**VALIDATION NOTE (updated):** These entries should be treated as manual hypotheses, not established readings. Later validation work showed that v7 is contaminated by test-folio exposure, `MRR/P@1` are tautological for v7, and blind train-only automation does not beat trivial baselines. Tier 1-2 entries remain the strongest manual hypotheses because their reasoning chains are less dependent on global metrics, but they still await cleaner external validation. See `docs/VALIDATION.md` for full details.
 
 ---
 
@@ -13,7 +13,7 @@ Last updated: Session 15
 | Tier | Count | Description |
 |---|---|---|
 | 0 (Function Words) | 8 | Stems too ubiquitous for single ingredient |
-| 1 (Confirmed) | 2 | K1K2A1=Galbanum (99%), K1A3=Crocus (95%) |
+| 1 (Strongest manual hypotheses) | 2 | K1K2A1=Galbanum (99%), K1A3=Crocus (95%) |
 | 2 (High) | 6 | All Myrrha: A1Q2A1, D1A1, D1A1A3, Q1K1A1, A1Q1J1, T1J1A1B1A3 |
 | 3 (Strong) | 36 | Crocus x9, Rosa x1, **Mel despumatum x5**, Cinnamomum x2, Opopanax x2, **Zingiber x2**, **Castoreum x9**, **Petroselinum x4**, **Gentiana x2** |
 | 4 (Moderate) | 23 | Amomum x3, Piper nigrum x1, Styrax x2, Piper longum x1, Bdellium x2, Casia x3, Cardamomum x8, Saccharum x1, Galanga\|Cubeba\|Nux moschata x2 |
@@ -38,7 +38,7 @@ These stems appear across too many recipes to correspond to any single ingredien
 
 ---
 
-## Tier 1: Confirmed Identifications
+## Tier 1: Strongest Manual Hypotheses
 
 ### [K1K2A1] = Galbanum (99%)
 
@@ -302,7 +302,7 @@ K1A3 = Crocus (CONFIRMED)
 | f113v = Theodoricon Euporistum | 96.0% F1 **[metric non-discriminative]** |
 | Galanga\|Cubeba\|Nux moschata triple deadlock | 47 TIED -- confirmed unbreakable |
 | Opium/Castoreum morphological analysis (948 stems) | 296 Opium-enriched, 363 Castoreum-enriched |
-| Intersection analysis (session 14) | 77 UNIQUE + 160 STRONG candidates validated |
+| Intersection analysis (session 14) | 77 UNIQUE + 160 STRONG candidates generated |
 | **Data contracts (session 15)** | **16/16 PASS, 2 warnings** |
 | **Null models (session 15)** | **System beats all 5 (p < 0.01)** |
 | **Wrong genre null (session 15)** | **0% F1 -- confirms pharmaceutical** |

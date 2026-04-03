@@ -5,7 +5,7 @@
 
 **Author / Autor:** Ntizar  
 **Status / Estado:** Research complete / Investigacion completada  
-**Sessions / Sesiones:** 16 (April 2026 / Abril 2026)
+**Sessions / Sesiones:** 17 (April 2026 / Abril 2026)
 
 ---
 
@@ -63,6 +63,25 @@ We built v7 (manually curated, 75 stems, 22 ingredients) and v8 (fully automated
 
 **The automated pipeline captures some real signal (permutation test p=0.000) but cannot beat trivial baselines.** The manually curated v7 identifications perform better but their evaluation is circular (targets chosen by best-match).
 
+### Final hard push (Session 17)
+
+The project also tested a final series of stricter experiments:
+
+- a shared benchmark across `STA stems`, `STA tokens`, and `EVA tokens`
+- corpus diagnostics for recipe overlap and train-support gaps
+- external-source mining from open Amsterdam pharmacopoeia witnesses
+- an augmented recipe corpus tested in parallel, without overwriting the frozen validation corpus
+
+The augmented benchmark still failed across all tested representations:
+
+| Representation | Fixed F1 | Best Baseline | Verdict |
+|---|---:|---:|---|
+| `sta_stem_frozen` | 44.6% | 70.5% | FAIL |
+| `sta_token` | 51.7% | 67.6% | FAIL |
+| `eva_token` | 60.5% | 87.6% | FAIL |
+
+This is the strongest reason the repository now separates **structure** from **reading**.
+
 Key problems:
 - **Coverage is only 18.7%** -- the vast majority of the text remains unexplained
 - **v8 vs v7 agreement is 12.7%** -- without ground truth, multiple locally-optimal mappings exist
@@ -80,6 +99,8 @@ Key problems:
 2. That we can "read" any part of the manuscript
 
 The structural findings are publication-worthy. The decipherment remains unsolved.
+
+The semantic track should be treated as unresolved unless a future blind-test experiment beats the best baseline by a clear and reproducible margin.
 
 ## Key Identifications (v7 -- manually curated, NOT independently validated)
 

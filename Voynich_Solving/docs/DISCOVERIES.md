@@ -2,6 +2,8 @@
 
 This document records every structural discovery made during the project, in chronological order, with statistical evidence.
 
+**Interpretation note (Session 16):** Discoveries about structural regularities remain the strongest part of the project. Discoveries that depend on exact folio-to-recipe matches or exact stem-to-ingredient assignments should now be read as exploratory hypotheses unless they are independently revalidated under blind, non-circular conditions.
+
 ---
 
 ## Discovery 1: Functional Suffix Channel
@@ -798,15 +800,15 @@ With only 22 identified ingredients -- all ultra-common in medieval pharmacology
 
 ---
 
-## Discovery 24: Phase 4b -- System Validated on Discriminative Metrics
+## Discovery 24: Phase 4b -- Discriminative Metrics Repaired the Evaluation
 
 **Date:** Session 15 (continued)  
-**Status:** CONFIRMED -- POSITIVE  
-**Significance:** Completely reverses the Phase 4 "broken metric" finding. The v7 system IS validated once the right metrics are used.
+**Status:** CONFIRMED -- METHOD CORRECTION  
+**Significance:** Refines the Phase 4 "broken metric" finding. Phase 4b improved the metric, but later blind-test work showed this did not independently validate the semantic mapping.
 
 ### Finding
 
-After Discovery 23 revealed the F1 metric was non-discriminative (due to two interacting flaws), we implemented 7 alternative metrics in Phase 4b. The v7 system **clearly beats all 5 baselines** on every discriminative metric.
+After Discovery 23 revealed the F1 metric was non-discriminative (due to two interacting flaws), we implemented 7 alternative metrics in Phase 4b. Under that repaired scoring scheme, v7 looks much stronger than trivial baselines on several discriminative metrics, especially Rare F1.
 
 ### Root Cause of the Broken F1 (Two Flaws)
 
@@ -847,10 +849,11 @@ The real problem was never ingredient frequency -- it was the oracle evaluation 
 
 ### What This Means
 
-1. **The v7 identification table is validated.** The system's stem-to-ingredient mappings produce recipe matches that trivial baselines cannot replicate.
-2. **Discovery 22 (v7 = "The Great Leap") is reinstated** -- the 81.9% F1 is real when evaluated honestly (fixed-target, no oracle).
-3. **Discovery 23 is refined, not retracted.** The original F1 evaluation WAS broken (two real flaws found). The honest conclusion is: "the metric had bugs, we fixed them, and the system passes."
-4. **MRR/P@1 perfection is NOT evidence** until v8 is built on training data and tested on held-out folios.
+1. **Phase 4b repaired an important evaluation bug.** The original F1-based story was overstated because the scoring setup was flawed.
+2. **v7 retains exploratory value.** Its rare-ingredient performance suggests non-trivial signal worth following up.
+3. **Discovery 23 is refined, not retracted.** The original F1 evaluation really was broken, and Phase 4b improved the measurement.
+4. **This still does not independently validate the mapping.** Later work showed v7 remained contaminated and v8 blind-test performance did not beat trivial baselines.
+5. **MRR/P@1 perfection is NOT evidence** until a train-only system succeeds on held-out folios.
 
 ### Files
 

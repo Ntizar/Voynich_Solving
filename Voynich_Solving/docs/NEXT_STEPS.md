@@ -69,6 +69,18 @@ The comparative corpus analysis and cipher hypothesis tests are independently va
 
 The automated pipeline's failure suggests several avenues:
 
+### Cross-representation benchmark
+- Run the same evaluator on at least three input representations: STA1 2.0, a plain glyph/token transcription without atomic decomposition, and one independent transcription
+- Keep the split, baselines, null models, contradiction checks, and FDR protocol identical across all three
+- Treat findings that survive representation changes as robust; treat unstable mappings as fragile
+
+### Status update: benchmark implemented
+- `scripts/validation/multi_representation_benchmark.py` now runs the same train/test builder + evaluator across three representations
+- Current result: **none** of the tested representations beats trivial baselines on blind test folios
+- `sta_token` is the least bad variant so far (`Fixed-F1 = 47.6%`, `Rare-F1 = 25.8%`) but still loses badly to `majority_recipe = 73.5%`
+- `sta_stem_frozen` scores `41.0%` Fixed-F1; `eva_token` scores `42.9%`
+- Interpretation: the semantic pipeline remains fragile, and changing the input encoding alone does not rescue the mapping claim
+
 ### Hybrid approach (most promising)
 - Use v7's curated stem mappings as seeds for v8's automated pipeline
 - Tests whether automation can IMPROVE on manual curation rather than REPLACE it
@@ -78,6 +90,34 @@ The automated pipeline's failure suggests several avenues:
 - More recipes improve discrimination and reduce baseline inflation
 - Target: 100+ recipes from diverse sources (Antidotarium Nicolai, Circa Instans, Arabic sources)
 - More rare ingredients would make baselines harder to beat
+- `scripts/validation/recipe_corpus_diagnostics.py` now quantifies why expansion is needed
+- Current corpus problem: recipe overlap is high (`Theriac Diatessaron` vs `Tiryaq al-Arba` = Jaccard 1.000; several other pairs >0.60)
+- Frequency concentration is also high: `Cinnamomum` appears in 78% of recipes, `Mel despumatum` in 58%, `Zingiber` in 54%, `Crocus` in 52%
+- Some blind-test recipes are under-supported by train: `Unguentum Populeon` has only 58.3% ingredient support in train, `Diasatyrion` 64.3%, `Diascordium` 69.2%
+- Practical implication: expansion should prioritize underrepresented topical, sedative, and antidote subfamilies plus recipes carrying ingredients not already saturated by the current corpus
+- Corpus expansion is now operationalized via:
+  - `docs/RECIPE_EXPANSION.md`
+  - `data/recipes/recipe_expansion_candidates_template.csv`
+  - `data/recipes/recipe_expansion_candidates_seed.csv`
+  - `scripts/validation/recipe_expansion_prioritizer.py`
+- Current top queue from the prioritizer:
+  - `Unguentum Populeon` variant / close Salernitan topical parallel
+  - `Diasatyrion` witness with the aphrodisiac ingredient set
+  - `Diascordium` witness preserving `Scordium`, `Bistorta`, `Dictamnus`, `Styrax`
+- First external-source expansion has now been tested in a **parallel augmented corpus**, documented in:
+  - `docs/SOURCE_NOTES_AMSTERDAM_1701.md`
+  - `data/recipes/augmented/`
+  - `scripts/validation/augmented_recipe_benchmark.py`
+- Added witnesses tested:
+  - `Mithridatium Damocratis (Amsterdam 1701)`
+  - `Philonium Mesuae (Amsterdam 1701)`
+  - `Populeum (Amsterdam 1701)`
+  - `Theriaca Andromachii (Amsterdam 1698 OCR subset)`
+- Result of the augmented benchmark: **still fail across all tested representations**
+  - `sta_stem_frozen`: `44.6%` Fixed-F1 vs best baseline `70.5%`
+  - `sta_token`: `51.7%` Fixed-F1 vs best baseline `67.6%`
+  - `eva_token`: `60.5%` Fixed-F1 vs best baseline `87.6%`
+- Interpretation: real external recipe expansion can move the numbers, but has not yet produced the kind of decisive blind-test gain that would justify strong semantic claims
 
 ### Address low coverage
 - 81.3% of words are FUNCTION_WORD or unidentified
