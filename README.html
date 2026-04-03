@@ -1,275 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voynich Solving -- Final Research Summary</title>
+  <title>Voynich Solving -- Estado final del proyecto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Voynich_Solving/dashboard/design-system/ntizar.css">
   <style>
-    :root {
-      --bg: #08101c;
-      --panel: rgba(12, 19, 33, 0.78);
-      --panel-strong: rgba(18, 28, 46, 0.92);
-      --text: #eef4ff;
-      --muted: #9db0cb;
-      --blue: #67a4ff;
-      --orange: #f59b42;
-      --green: #52d792;
-      --red: #ff7b7b;
-      --border: rgba(255,255,255,0.10);
-      --shadow: 0 12px 40px rgba(0,0,0,0.35);
-      --radius: 18px;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(103,164,255,0.18), transparent 28%),
-        radial-gradient(circle at bottom right, rgba(245,155,66,0.16), transparent 26%),
-        var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-    }
-    .wrap {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 32px 20px 80px;
-    }
-    .hero, .panel {
-      background: var(--panel);
-      backdrop-filter: blur(18px);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-    .hero {
-      padding: 32px;
-      margin-bottom: 24px;
-    }
-    .eyebrow {
-      display: inline-block;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(103,164,255,0.14);
-      color: var(--blue);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-    h1, h2, h3 { margin: 0 0 12px; line-height: 1.1; }
-    h1 { font-size: clamp(32px, 5vw, 54px); }
-    h2 { font-size: 26px; }
-    h3 { font-size: 18px; }
-    p { margin: 0 0 12px; color: var(--muted); }
-    strong { color: var(--text); }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 22px;
-    }
-    .stat {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 14px;
-      padding: 18px;
-    }
-    .stat .n {
-      font-size: 28px;
-      font-weight: 800;
-      margin-bottom: 6px;
-    }
-    .blue { color: var(--blue); }
-    .orange { color: var(--orange); }
-    .green { color: var(--green); }
-    .red { color: var(--red); }
-    .sections {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 24px;
-      margin-top: 24px;
-    }
-    .panel {
-      padding: 24px;
-    }
-    .list {
-      padding-left: 18px;
-      margin: 0;
-      color: var(--muted);
-    }
-    .list li { margin: 0 0 10px; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 8px;
-      font-size: 14px;
-    }
-    th, td {
-      padding: 10px 8px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      text-align: left;
-    }
-    th {
-      color: var(--muted);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: .06em;
-    }
-    code {
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.9em;
-      color: var(--text);
-      background: rgba(255,255,255,0.08);
-      border-radius: 8px;
-      padding: 2px 6px;
-    }
-    .callout {
-      margin-top: 18px;
-      padding: 16px 18px;
-      border-radius: 14px;
-      background: rgba(255,123,123,0.10);
-      border: 1px solid rgba(255,123,123,0.22);
-    }
-    .callout p { color: #ffd1d1; }
-    .footer {
-      margin-top: 24px;
-      padding: 18px 20px;
-      border-radius: 14px;
-      background: var(--panel-strong);
-      border: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 14px;
-    }
-    a { color: var(--blue); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    @media (max-width: 900px) {
-      .grid, .sections { grid-template-columns: 1fr; }
+    .bg-scene { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+    .scene-orb { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .25; animation: ntizar-float 12s ease-in-out infinite; }
+    .scene-orb.blue { background: var(--blue-500); width: 420px; height: 420px; top: -120px; left: -120px; }
+    .scene-orb.orange { background: var(--orange-500); width: 320px; height: 320px; right: -80px; top: 18%; animation-delay: .8s; }
+    .scene-orb.purple { background: #8b5cf6; width: 260px; height: 260px; left: 58%; bottom: 8%; animation-delay: 1.3s; }
+    .page { position: relative; z-index: 1; }
+    .hero { padding: 5rem 0 3rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.4fr .9fr; gap: 1.5rem; align-items: stretch; }
+    .hero-title { font-size: clamp(2.8rem, 6vw, 4.8rem); line-height: 1.02; font-weight: var(--font-black); margin-bottom: 1rem; }
+    .hero-sub { font-size: var(--text-lg); max-width: 760px; }
+    .section { padding: 1.5rem 0 2rem; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+    .section-kicker { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-wider); color: var(--text-muted); margin-bottom: .5rem; }
+    .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .metrics-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .callout { padding: 1.25rem; border-radius: var(--radius-xl); border: 1px solid var(--border-default); background: var(--glass-bg-standard); backdrop-filter: var(--glass-blur-md) saturate(1.5); }
+    .callout-red { background: rgba(239,68,68,.08); border-color: rgba(239,68,68,.22); }
+    .callout-green { background: rgba(34,197,94,.08); border-color: rgba(34,197,94,.22); }
+    .big-number { font-size: var(--text-4xl); font-weight: var(--font-black); line-height: 1; }
+    .muted-list { margin: 0; padding-left: 1.1rem; color: var(--text-secondary); }
+    .muted-list li { margin-bottom: .55rem; }
+    .readable p + p { margin-top: .9rem; }
+    .table-wrap { overflow-x: auto; }
+    .summary-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem; }
+    .pill-link { display: inline-flex; align-items: center; gap: .4rem; padding: .5rem .85rem; border-radius: var(--radius-full); border: 1px solid var(--border-default); background: var(--glass-bg-subtle); }
+    .navbar-nav { display: flex; list-style: none; gap: .3rem; }
+    .nav-link { display: inline-flex; align-items: center; gap: .375rem; padding: .5rem .875rem; font-size: var(--text-sm); font-weight: var(--font-medium); color: var(--text-secondary); text-decoration: none; border-radius: var(--radius-md); border: 1px solid transparent; transition: all var(--transition-fast); }
+    .nav-link:hover { color: var(--text-primary); background: var(--glass-bg-subtle); border-color: var(--border-subtle); }
+    .stat-card { min-height: 150px; }
+    .table-clean { width: 100%; border-collapse: collapse; }
+    .table-clean th, .table-clean td { padding: .8rem .6rem; border-bottom: 1px solid var(--border-subtle); text-align: left; }
+    .table-clean th { color: var(--text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-wider); }
+    @media (max-width: 980px) {
+      .hero-grid, .metrics-grid, .metrics-grid-3, .summary-grid { grid-template-columns: 1fr; }
+      .navbar { padding: .75rem 1rem; }
+      .navbar-nav { display: none; }
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <section class="hero">
-      <div class="eyebrow">Session 17 Final Summary</div>
-      <h1>Voynich Solving</h1>
-      <p>
-        A computational investigation into whether the Voynich recipe section behaves like a medieval pharmaceutical database.
-        After the final blind push, the project supports a <strong>structural thesis</strong>, but not a demonstrated <strong>semantic decoding</strong>.
-      </p>
-      <div class="grid">
-        <div class="stat">
-          <div class="n green">3 / 4</div>
-          <div>Structural anomalies significant vs Latin controls</div>
-        </div>
-        <div class="stat">
-          <div class="n blue">0.0769</div>
-          <div>Index of coincidence, inconsistent with a classical cipher</div>
-        </div>
-        <div class="stat">
-          <div class="n red">51.7%</div>
-          <div>Best augmented blind Fixed-F1 (`sta_token`), still below baseline</div>
-        </div>
-        <div class="stat">
-          <div class="n orange">18.7%</div>
-          <div>Approximate direct text coverage from identified stems</div>
+  <div class="bg-scene">
+    <div class="scene-orb blue"></div>
+    <div class="scene-orb orange"></div>
+    <div class="scene-orb purple"></div>
+  </div>
+
+  <div class="page">
+    <nav class="navbar">
+      <a class="navbar-brand" href="#top">
+        <span class="navbar-brand-dot"></span>
+        Voynich Solving
+      </a>
+      <ul class="navbar-nav">
+        <li><a class="nav-link" href="#propuesta">Propuesta</a></li>
+        <li><a class="nav-link" href="#resultado">Resultado</a></li>
+        <li><a class="nav-link" href="#ultima-ronda">Ultima ronda</a></li>
+        <li><a class="nav-link" href="#siguiente">Siguiente paso</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="card card-glass glass-intense p-8">
+            <div class="badge badge-blue no-dot mb-4">17 sesiones de investigacion</div>
+            <h1 class="hero-title">El Voynich como <span class="text-gradient">notacion farmaceutica</span>, no como promesa de desciframiento</h1>
+            <p class="hero-sub">
+              Este proyecto intento comprobar si la seccion de recetas del Manuscrito Voynich se comporta como una base de datos farmaceutica medieval.
+              La conclusion final es mas interesante y mas dura a la vez: la <strong style="color:var(--text-primary)">estructura</strong> se sostiene, la <strong style="color:var(--text-primary)">lectura semantica</strong> todavia no.
+            </p>
+            <div class="footer-links">
+              <a class="pill-link" href="README.md">Leer README</a>
+              <a class="pill-link" href="Voynich_Solving/docs/VALIDATION.md">Validacion</a>
+              <a class="pill-link" href="Voynich_Solving/docs/RECIPE_EXPANSION.md">Expansion de recetas</a>
+            </div>
+          </div>
+
+          <div class="metrics-grid card card-glass p-6" style="grid-template-columns:1fr 1fr; align-content:start;">
+            <div class="stat-card card glass-subtle p-4 text-center">
+              <div class="big-number text-gradient">3/4</div>
+              <p><strong>tests estructurales</strong><br>significativos vs controles latinos</p>
+            </div>
+            <div class="stat-card card glass-subtle p-4 text-center">
+              <div class="big-number text-blue">0.0769</div>
+              <p><strong>IC</strong><br>no parece un cifrado clasico</p>
+            </div>
+            <div class="stat-card card glass-subtle p-4 text-center">
+              <div class="big-number" style="color:#fca5a5">51.7%</div>
+              <p><strong>mejor Fixed-F1</strong><br>en corpus aumentado</p>
+            </div>
+            <div class="stat-card card glass-subtle p-4 text-center">
+              <div class="big-number text-orange">18.7%</div>
+              <p><strong>cobertura</strong><br>directa aproximada del texto</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="sections">
-      <div class="panel">
-        <h2>What Was Done In The Final Weeks</h2>
-        <ul class="list">
-          <li>Rewrote the documentation to separate <strong>structure</strong> from <strong>reading</strong>.</li>
-          <li>Built a shared blind benchmark across three input representations: <code>STA stems</code>, <code>STA tokens</code>, and <code>EVA tokens</code>.</li>
-          <li>Diagnosed the historical recipe corpus for overlap, ingredient concentration, and poor train support.</li>
-          <li>Created a disciplined corpus-expansion workflow with candidate scoring and source tracking.</li>
-          <li>Mined open external pharmacopoeia witnesses from Amsterdam editions and tested them in a parallel augmented corpus.</li>
-        </ul>
-      </div>
-      <div class="panel">
-        <h2>What Holds Up</h2>
-        <ul class="list">
-          <li>The recipe section shows anomalous structure compatible with a database or structured notation system.</li>
-          <li>The text does not behave like a normal polyalphabetic or homophonic cipher.</li>
-          <li>The structural signal is robust across validation-style checks and corpus comparison.</li>
-        </ul>
-        <h2 style="margin-top:18px">What Does Not Hold Up</h2>
-        <ul class="list">
-          <li>Specific <code>stem -&gt; ingredient</code> readings do not beat trivial baselines in blind evaluation.</li>
-          <li>The manual v7 table remains contaminated by test exposure and circular target selection.</li>
-          <li>External recipe expansion improved some scores, but did not produce a decisive semantic win.</li>
-        </ul>
-      </div>
-    </section>
+    <section class="section" id="propuesta">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">La propuesta</div>
+            <h2>No intentar leer primero, sino entender la forma del texto</h2>
+          </div>
+        </div>
 
-    <section class="panel" style="margin-top:24px">
-      <h2>Blind Benchmark Results</h2>
-      <p>Base corpus benchmark:</p>
-      <table>
-        <thead>
-          <tr><th>Representation</th><th>Fixed-F1</th><th>Best Baseline</th><th>Gap</th><th>Verdict</th></tr>
-        </thead>
-        <tbody>
-          <tr><td><code>sta_stem_frozen</code></td><td>41.0%</td><td>64.8%</td><td class="red">-23.7</td><td class="red">FAIL</td></tr>
-          <tr><td><code>sta_token</code></td><td>47.6%</td><td>73.5%</td><td class="red">-25.9</td><td class="red">FAIL</td></tr>
-          <tr><td><code>eva_token</code></td><td>42.9%</td><td>67.8%</td><td class="red">-25.0</td><td class="red">FAIL</td></tr>
-        </tbody>
-      </table>
+        <div class="summary-grid">
+          <div class="card card-accent-blue p-6 readable">
+            <h3>La idea original</h3>
+            <p>
+              En lugar de asumir que el Voynich es prosa cifrada, este proyecto lo trata como algo mas cercano a un sistema de fichas, registros y campos funcionales.
+              En esa lectura, cada linea de receta se parece menos a una frase y mas a una entrada de una base de datos medieval.
+            </p>
+            <p>
+              Eso permitia plantear dos preguntas separadas: si hay una estructura farmaceutica real y, solo despues, si algunos stems pueden mapearse con seguridad a ingredientes historicos.
+            </p>
+          </div>
 
-      <p style="margin-top:18px">Augmented corpus benchmark with external Amsterdam witnesses:</p>
-      <table>
-        <thead>
-          <tr><th>Representation</th><th>Fixed-F1</th><th>Best Baseline</th><th>Gap</th><th>Verdict</th></tr>
-        </thead>
-        <tbody>
-          <tr><td><code>sta_stem_frozen</code></td><td>44.6%</td><td>70.5%</td><td class="red">-25.9</td><td class="red">FAIL</td></tr>
-          <tr><td><code>sta_token</code></td><td>51.7%</td><td>67.6%</td><td class="red">-15.9</td><td class="red">FAIL</td></tr>
-          <tr><td><code>eva_token</code></td><td>60.5%</td><td>87.6%</td><td class="red">-27.1</td><td class="red">FAIL</td></tr>
-        </tbody>
-      </table>
-
-      <div class="callout">
-        <p>
-          Final conclusion: the semantic pipeline can capture some non-random signal, but after representation changes,
-          blind evaluation, and external corpus expansion, it still does not justify a claim of decipherment.
-        </p>
+          <div class="card card-accent-orange p-6">
+            <h3>Las dos preguntas clave</h3>
+            <ul class="muted-list">
+              <li><strong>Estructura:</strong> la seccion de recetas se comporta como una base de datos farmaceutica?</li>
+              <li><strong>Semantica:</strong> podemos demostrar que un stem concreto significa un ingrediente concreto?</li>
+            </ul>
+            <p style="margin-top:1rem;">
+              La investigacion final muestra que la primera pregunta tiene una respuesta bastante fuerte. La segunda, de momento, no.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="sections" style="margin-top:24px">
-      <div class="panel">
-        <h2>Files Added In The Final Push</h2>
-        <ul class="list">
-          <li><code>scripts/validation/multi_representation_benchmark.py</code></li>
-          <li><code>scripts/validation/recipe_corpus_diagnostics.py</code></li>
-          <li><code>scripts/validation/recipe_expansion_prioritizer.py</code></li>
-          <li><code>scripts/validation/augmented_recipe_benchmark.py</code></li>
-          <li><code>docs/RECIPE_EXPANSION.md</code></li>
-          <li><code>docs/SOURCE_NOTES_AMSTERDAM_1701.md</code></li>
-          <li><code>data/recipes/augmented/*</code></li>
-        </ul>
-      </div>
-      <div class="panel">
-        <h2>Recommended Interpretation</h2>
-        <ul class="list">
-          <li>Publish or present the structural results as the main contribution.</li>
-          <li>Treat semantic mappings as competitive hypotheses, not readings.</li>
-          <li>Only reopen the decipherment claim if a future blind experiment beats the best baseline by a clear margin.</li>
-        </ul>
+    <section class="section" id="resultado">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Resultado</div>
+            <h2>Que se sostiene y que no</h2>
+          </div>
+        </div>
+
+        <div class="summary-grid">
+          <div class="callout callout-green readable">
+            <h3 style="margin-bottom:.75rem; color:var(--text-primary)">Lo que si se sostiene</h3>
+            <ul class="muted-list">
+              <li>La seccion de recetas tiene una estructura estadistica anomala frente a controles medicos latinos.</li>
+              <li>Hay alineacion vertical, selectividad de sufijos y variacion de esquema compatibles con notacion funcional.</li>
+              <li>El perfil global no encaja bien con un cifrado clasico corriente.</li>
+            </ul>
+          </div>
+
+          <div class="callout callout-red readable">
+            <h3 style="margin-bottom:.75rem; color:var(--text-primary)">Lo que no hemos podido demostrar</h3>
+            <ul class="muted-list">
+              <li>Que los mappings `stem -> ingrediente` superen de forma clara a baselines triviales en test ciego.</li>
+              <li>Que `v7` sea una validacion independiente: estaba contaminado y varias metricas eran tautologicas.</li>
+              <li>Que ya podamos "leer" el manuscrito en ningun sentido fuerte.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <div class="footer">
-      Key documents: <a href="README.md">README.md</a>,
-      <a href="docs/README.md">docs/README.md</a>,
-      <a href="docs/VALIDATION.md">docs/VALIDATION.md</a>,
-      <a href="docs/NEXT_STEPS.md">docs/NEXT_STEPS.md</a>,
-      <a href="docs/RECIPE_EXPANSION.md">docs/RECIPE_EXPANSION.md</a>.
-    </div>
+    <section class="section" id="ultima-ronda">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Ultima ronda</div>
+            <h2>Que se hizo estas semanas para intentar salvar la linea semantica</h2>
+          </div>
+        </div>
+
+        <div class="metrics-grid-3">
+          <div class="card card-glass p-6">
+            <h3>1. Benchmark comun</h3>
+            <p>Se comparo el mismo evaluador sobre tres representaciones de entrada: <code>STA stems</code>, <code>STA tokens</code> y <code>EVA tokens</code>.</p>
+          </div>
+          <div class="card card-glass p-6">
+            <h3>2. Corpus bajo lupa</h3>
+            <p>Se midio el solapamiento entre recetas, la concentracion de ingredientes y el soporte real que train da a las recetas de test.</p>
+          </div>
+          <div class="card card-glass p-6">
+            <h3>3. Fuentes externas</h3>
+            <p>Se buscaron nuevas recetas en farmacopeas abiertas y se monto un corpus aumentado paralelo con testigos de Amsterdam.</p>
+          </div>
+        </div>
+
+        <div class="card card-glass p-6" style="margin-top:1rem;">
+          <h3 style="margin-bottom:1rem;">Resultados duros</h3>
+          <div class="table-wrap">
+            <table class="table-clean">
+              <thead>
+                <tr>
+                  <th>Experimento</th>
+                  <th>Representacion</th>
+                  <th>Fixed-F1</th>
+                  <th>Mejor baseline</th>
+                  <th>Veredicto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Benchmark base</td>
+                  <td><code>sta_stem_frozen</code></td>
+                  <td>41.0%</td>
+                  <td>64.8%</td>
+                  <td style="color:#fca5a5;">falla</td>
+                </tr>
+                <tr>
+                  <td>Benchmark base</td>
+                  <td><code>sta_token</code></td>
+                  <td>47.6%</td>
+                  <td>73.5%</td>
+                  <td style="color:#fca5a5;">falla</td>
+                </tr>
+                <tr>
+                  <td>Benchmark base</td>
+                  <td><code>eva_token</code></td>
+                  <td>42.9%</td>
+                  <td>67.8%</td>
+                  <td style="color:#fca5a5;">falla</td>
+                </tr>
+                <tr>
+                  <td>Corpus aumentado</td>
+                  <td><code>sta_stem_frozen</code></td>
+                  <td>44.6%</td>
+                  <td>70.5%</td>
+                  <td style="color:#fca5a5;">falla</td>
+                </tr>
+                <tr>
+                  <td>Corpus aumentado</td>
+                  <td><code>sta_token</code></td>
+                  <td>51.7%</td>
+                  <td>67.6%</td>
+                  <td style="color:#fca5a5;">falla</td>
+                </tr>
+                <tr>
+                  <td>Corpus aumentado</td>
+                  <td><code>eva_token</code></td>
+                  <td>60.5%</td>
+                  <td>87.6%</td>
+                  <td style="color:#fca5a5;">falla</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top:1rem;">
+            La expansion externa y el cambio de representacion no fueron inutiles: sirvieron para poner a prueba la hipotesis con mas dureza. Pero no han dado la clase de victoria ciega que haria falta para hablar de desciframiento.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="siguiente">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Estado y proximo paso</div>
+            <h2>La situacion natural del proyecto ahora mismo</h2>
+          </div>
+        </div>
+
+        <div class="summary-grid">
+          <div class="card card-accent-blue p-6 readable">
+            <h3>Si se cierra aqui</h3>
+            <p>
+              Se puede cerrar bien y con valor real. El proyecto dejaria una tesis estrecha pero fuerte: la seccion de recetas del Voynich parece una notacion farmaceutica estructurada y no una prosa cifrada cualquiera.
+            </p>
+            <p>
+              Esa conclusion ya justifica publicar, resumir o presentar el trabajo sin inflar la parte semantica.
+            </p>
+          </div>
+
+          <div class="card card-accent-orange p-6 readable">
+            <h3>Si algun dia se reabre</h3>
+            <p>
+              Solo deberia reabrirse con una regla simple: no volver a hablar de lectura hasta que una evaluacion ciega gane de forma clara a la mejor baseline y mantenga esa ventaja al repetir el experimento.
+            </p>
+            <p>
+              Si eso no pasa, la interpretacion correcta sigue siendo estructural, no semantica.
+            </p>
+          </div>
+        </div>
+
+        <div class="card card-glass p-6" style="margin-top:1rem;">
+          <h3>Documentos principales</h3>
+          <div class="footer-links">
+            <a class="pill-link" href="README.md">README narrativo</a>
+            <a class="pill-link" href="Voynich_Solving/docs/README.md">Resumen tecnico honesto</a>
+            <a class="pill-link" href="Voynich_Solving/docs/VALIDATION.md">Validacion</a>
+            <a class="pill-link" href="Voynich_Solving/docs/NEXT_STEPS.md">Roadmap final</a>
+            <a class="pill-link" href="Voynich_Solving/docs/RECIPE_EXPANSION.md">Expansion de corpus</a>
+            <a class="pill-link" href="Voynich_Solving/docs/SOURCE_NOTES_AMSTERDAM_1701.md">Fuentes Amsterdam</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 </html>

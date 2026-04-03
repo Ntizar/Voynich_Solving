@@ -1,201 +1,140 @@
-# Voynich Solving -- Structural Analysis and Mapping Hypotheses
+# Voynich Solving
 
-> **[EN]** A computational research project on whether the Voynich recipe section behaves like a medieval pharmaceutical database.  
-> **[ES]** Un proyecto de investigacion computacional sobre si la seccion de recetas del Voynich se comporta como una base de datos farmaceutica medieval.
+> Un proyecto computacional para comprobar si la seccion de recetas del Manuscrito Voynich se parece a una base de datos farmaceutica medieval.
 
-**Author / Autor:** Ntizar  
-**Status / Estado:** Research complete, semantic track unresolved / Investigacion completada, linea semantica sin resolver  
-**Sessions / Sesiones:** 17 (April 2026 / Abril 2026)
+**Autor:** Ntizar  
+**Estado:** investigacion completada, linea semantica no resuelta  
+**Sesiones:** 17
 
----
+## La idea, en claro
 
-# English
+La propuesta de este proyecto nunca fue solo "adivinar palabras" del Voynich.
 
-## Current Position
+La idea fuerte era otra: tratar la seccion de recetas no como prosa cifrada, sino como un sistema de notacion estructurado, parecido a una base de datos medieval de ingredientes y recetas.
 
-The project now distinguishes between two separate claims:
+Eso implicaba dos preguntas distintas:
 
-1. **Structural claim:** the Voynich recipe section shows unusual statistical structure compatible with a pharmaceutical database.
-2. **Reading claim:** specific `stem -> ingredient` assignments remain working hypotheses, not demonstrated decipherment.
+1. **Pregunta estructural:** la seccion de recetas se comporta como una base de datos farmaceutica?
+2. **Pregunta semantica:** podemos demostrar que un stem concreto del Voynich significa un ingrediente concreto?
 
-That distinction matters because the repository's own blind-validation work found that:
+La investigacion de estas semanas ha dejado claro que esas dos preguntas no tienen hoy la misma respuesta.
 
-- v7 manual identifications are contaminated by test-folio exposure
-- v7 ranking metrics (`MRR`, `P@1`) are tautological because targets were chosen by best match
-- v8 train-only automation captures some signal but does **not** beat trivial baselines on blind test folios
-- multi-representation testing (`STA stems`, `STA tokens`, `EVA tokens`) also fails to beat baselines
-- a final augmented-corpus experiment with externally sourced Amsterdam pharmacopoeia witnesses also fails to produce a decisive semantic win
+## Lo que si se sostiene
 
-## What Holds Up Best
+La parte mas fuerte del proyecto es la **estructura**.
 
-The strongest result in the repository is the **structural analysis**, not the semantic mapping.
+La seccion de recetas del Voynich muestra varios rasgos anomalo-estables frente a controles medicos latinos:
 
-- Structural anomalies vs Latin medical controls: 3 of 4 tests significant
-- Cipher hypothesis: not supported by the observed entropy / IC profile
-- Cross-validation / permutation analyses: indicate real non-random structure is present
+- entropia de sufijos mucho mas baja de lo esperable
+- alineacion vertical muy superior a la de textos en prosa
+- variacion de esquema entre secciones compatible con escritura tabular o notacion funcional
+- perfil estadistico que no encaja bien con un cifrado clasico
 
-Defensible summary:
+Resumen honesto y defendible:
 
-> The Voynich recipe section has statistically unusual structure compatible with a pharmaceutical database, but specific stem-to-ingredient readings remain provisional.
+> La seccion de recetas del Voynich parece una notacion estructurada compatible con una base de datos farmaceutica medieval.
 
-## What Does Not Yet Hold Up
+Esa es, ahora mismo, la tesis fuerte del repositorio.
 
-The repository does **not** currently justify a claim of decipherment.
+## Lo que no hemos conseguido demostrar
 
-- v7 uses all folios in manual reasoning, including test folios
-- fixed-target discriminative metrics are informative, but v7 is still exploratory because of contamination
-- v8 test-set evaluation underperforms simple baselines
-- only 18.7% of recipe-folio words are covered by identified stems
-- v8 and v7 agree on only about 12.7% of mappings
+La parte debil sigue siendo la **lectura semantica**.
 
-## Final Session Outcome
+El proyecto genero hipotesis interesantes de tipo `stem -> ingrediente`, pero al endurecer la validacion aparecieron los limites:
 
-The final session pushed the semantic track as far as the current methodology could reasonably go:
+- `v7` estaba contaminado por haber usado informacion de todos los folios, incluidos los de test
+- varias metricas perfectas de `v7` eran tautologicas porque los targets se habian elegido por best-match
+- `v8`, construido solo con train, captura algo de senal pero pierde contra baselines triviales en test ciego
+- la cobertura directa del texto sigue siendo baja: alrededor del `18.7%`
 
-- built a shared benchmark across multiple input representations
-- diagnosed corpus overlap and train-support weaknesses
-- searched open external sources for additional recipe witnesses
-- integrated a conservative augmented corpus in parallel
-- re-ran blind benchmarking on the augmented corpus
+En otras palabras: hay estructura real, pero no hemos podido convertirla en una lectura demostrada.
 
-Result:
+## La ultima ronda, a por todas
 
-- `sta_stem_frozen`: `44.6%` Fixed-F1 vs best baseline `70.5%`
-- `sta_token`: `51.7%` Fixed-F1 vs best baseline `67.6%`
-- `eva_token`: `60.5%` Fixed-F1 vs best baseline `87.6%`
+La sesion final intento exprimir la linea semantica con el criterio mas duro posible:
 
-These experiments moved some numbers but did **not** produce the kind of clear, reproducible blind-test advantage needed to claim semantic decoding.
+- benchmark comun sobre varias representaciones de entrada
+  - `STA stems`
+  - `STA tokens`
+  - `EVA tokens`
+- diagnostico del corpus de recetas historicas
+- ampliacion del corpus con nuevas recetas priorizadas
+- busqueda en fuentes abiertas externas
+- incorporacion paralela de testigos de farmacopeas de Amsterdam
+- nueva evaluacion ciega sobre corpus aumentado
 
-Final technical position:
+El resultado fue util, pero no suficiente.
 
-> The structural thesis survives. The specific stem-to-ingredient reading thesis remains unproven.
+### Benchmark base
 
-## Repository Split
+| Representacion | Fixed-F1 | Mejor baseline | Resultado |
+|---|---:|---:|---|
+| `sta_stem_frozen` | 41.0% | 64.8% | falla |
+| `sta_token` | 47.6% | 73.5% | falla |
+| `eva_token` | 42.9% | 67.8% | falla |
 
-The project is now organized conceptually as two products:
+### Benchmark con corpus aumentado
 
-### `structural_analysis/`
+| Representacion | Fixed-F1 | Mejor baseline | Resultado |
+|---|---:|---:|---|
+| `sta_stem_frozen` | 44.6% | 70.5% | falla |
+| `sta_token` | 51.7% | 67.6% | falla |
+| `eva_token` | 60.5% | 87.6% | falla |
 
-Claims that are comparatively robust and publication-facing:
+La expansion externa movio algunas cifras, pero no produjo una victoria clara y reproducible sobre las baselines.
 
-- suffix/selectivity structure
-- vertical alignment / columnar writing
-- section-level schema variation
-- cipher-vs-notation diagnostics
-- comparative corpus tests against controls
+## Donde estamos ahora
 
-Entry point: `structural_analysis/README.md`
+La conclusion del proyecto no es "hemos resuelto el Voynich".
 
-### `mapping_hypotheses/`
+La conclusion seria y util es esta:
 
-Exploratory material that should be treated as hypothesis generation:
+1. **La hipotesis estructural sigue viva y es defendible.**
+2. **La hipotesis semantica sigue abierta, pero no demostrada.**
+3. **No hay base honesta para vender desciframiento.**
 
-- v7 manual stem identifications
-- v8 automated train-only mapping
-- folio-to-recipe matching
-- contradiction checks, FDR, round-trip validation, and coverage work still pending or partial
+Si este trabajo se presenta fuera del repositorio, la forma correcta de contarlo es:
 
-Entry point: `mapping_hypotheses/README.md`
+> El Voynich, al menos en la seccion de recetas, muestra una estructura compatible con una base de datos farmaceutica medieval; las asignaciones concretas de stems a ingredientes siguen siendo hipotesis de trabajo.
 
-## Key Files
+## Proximos pasos realistas
 
-- `docs/README.md` -- honest project overview
-- `docs/VALIDATION.md` -- validation framework, limits, and blind-test results
-- `docs/IDENTIFICATIONS.md` -- v7 exploratory stem hypotheses
-- `docs/NEXT_STEPS.md` -- current roadmap
-- `docs/RECIPE_EXPANSION.md` -- disciplined corpus expansion workflow
-- `docs/SOURCE_NOTES_AMSTERDAM_1701.md` -- external-source notes for augmented-corpus experiments
-- `structural_analysis/README.md` -- robust structural track
-- `mapping_hypotheses/README.md` -- exploratory semantic track
+Quedan dos caminos posibles.
 
-## Recommended Reading Order
+### Camino 1: cerrar bien la linea semantica
 
-1. `docs/README.md`
-2. `structural_analysis/README.md`
-3. `docs/VALIDATION.md`
-4. `mapping_hypotheses/README.md`
-5. `docs/NEXT_STEPS.md`
-6. `docs/RECIPE_EXPANSION.md`
+Congelar el estado actual y dejar la parte de mapping como linea exploratoria no confirmada.
 
----
+Esto tiene sentido si el objetivo es publicar o enseñar el proyecto con honestidad metodologica.
 
-# Castellano
+### Camino 2: ultima reanudacion futura, pero con regla dura
 
-## Posicion Actual
+Solo reabrir la linea semantica si aparece una mejora que cumpla al menos estas condiciones:
 
-El proyecto ahora separa dos afirmaciones distintas:
+- test ciego real
+- ganancia clara frente a la mejor baseline
+- repetibilidad
+- baja contradiccion interna
 
-1. **Afirmacion estructural:** la seccion de recetas del Voynich muestra una estructura estadistica anomala compatible con una base de datos farmaceutica.
-2. **Afirmacion de lectura:** las asignaciones concretas `stem -> ingrediente` siguen siendo hipotesis de trabajo, no un desciframiento demostrado.
+Si eso no ocurre, lo correcto es mantener el proyecto como evidencia estructural, no como desciframiento.
 
-La distincion importa porque la propia validacion del repositorio encontro que:
+## Como esta organizado el repo
 
-- v7 manual esta contaminado por exposicion a folios de test
-- las metricas de ranking de v7 (`MRR`, `P@1`) son tautologicas porque los targets se eligieron por best match
-- v8, construido solo con train, captura algo de senal pero **no** supera baselines triviales en test ciego
+- `Voynich_Solving/structural_analysis/`  
+  La parte mas robusta y publicable.
 
-## Lo Mas Solido
+- `Voynich_Solving/mapping_hypotheses/`  
+  La parte exploratoria de `stem -> ingrediente`.
 
-El resultado mas fuerte del repositorio es el **analisis estructural**, no el mapeo semantico.
+- `Voynich_Solving/docs/VALIDATION.md`  
+  Validacion y limites reales del pipeline.
 
-- Anomalias estructurales frente a controles latinos: 3 de 4 tests significativos
-- Hipotesis de cifrado: no queda respaldada por el perfil observado de entropia / IC
-- Validacion cruzada / permutacion: indican que existe estructura real no aleatoria
+- `Voynich_Solving/docs/RECIPE_EXPANSION.md`  
+  Como se intento ampliar el corpus sin hacer trampas.
 
-Resumen defendible:
+- `Voynich_Solving/docs/SOURCE_NOTES_AMSTERDAM_1701.md`  
+  Fuentes externas usadas en la ultima ronda.
 
-> La seccion de recetas del Voynich tiene una estructura estadisticamente anomala compatible con una base de datos farmaceutica, pero las lecturas stem-a-ingrediente siguen siendo provisionales.
+## En una frase
 
-## Lo Que Aun No Se Sostiene
-
-El repositorio **no** justifica todavia una afirmacion de desciframiento.
-
-- v7 usa todos los folios en el razonamiento manual, incluidos los de test
-- las metricas discriminativas son utiles, pero v7 sigue siendo exploratorio por la contaminacion
-- la evaluacion ciega de v8 rinde peor que baselines simples
-- solo el 18.7% de las palabras de recetas queda cubierto por stems identificados
-- v8 y v7 solo coinciden en torno al 12.7% de los mapeos
-
-## Division del Repositorio
-
-El proyecto queda dividido conceptualmente en dos productos:
-
-### `structural_analysis/`
-
-Afirmaciones mas robustas y orientadas a publicacion:
-
-- estructura de sufijos / selectividad
-- alineacion vertical / escritura columnar
-- variacion de esquemas por seccion
-- diagnosticos cifrado-vs-notacion
-- comparativas contra corpus de control
-
-Entrada: `structural_analysis/README.md`
-
-### `mapping_hypotheses/`
-
-Material exploratorio que debe leerse como generacion de hipotesis:
-
-- identificaciones manuales v7
-- mapeo automatizado v8 con train-only
-- matching folio-receta
-- contradicciones, FDR, round-trip y cobertura aun pendientes o parciales
-
-Entrada: `mapping_hypotheses/README.md`
-
-## Archivos Clave
-
-- `docs/README.md` -- resumen honesto del proyecto
-- `docs/VALIDATION.md` -- marco de validacion, limites y resultados ciegos
-- `docs/IDENTIFICATIONS.md` -- hipotesis exploratorias de stems v7
-- `docs/NEXT_STEPS.md` -- hoja de ruta actual
-- `structural_analysis/README.md` -- linea estructural robusta
-- `mapping_hypotheses/README.md` -- linea semantica exploratoria
-
-## Orden Recomendado de Lectura
-
-1. `docs/README.md`
-2. `structural_analysis/README.md`
-3. `docs/VALIDATION.md`
-4. `mapping_hypotheses/README.md`
-5. `docs/NEXT_STEPS.md`
+Este proyecto no ha descifrado el Voynich, pero si ha reunido evidencia seria de que su seccion de recetas se parece mas a una notacion farmaceutica estructurada que a una prosa cifrada cualquiera.
